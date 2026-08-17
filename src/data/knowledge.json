@@ -1,0 +1,497 @@
+{
+"page": {
+"title": "Knowledge Corner",
+"description": "SpotOptics is pleased to present information on the principles of their wavefront sensors and wavefront sensor based systems. You can learn more on Zernike polynomials, Shack Hartmann wavefront sensor comparison with interferometers, aberrations and photo gallery on aberrations. FAQ on SH test is also available."
+},
+"articles": [
+{
+  "id": "shack-hartmann-vs-hartmann",
+  "title": "Shack-Hartmann vs. Hartmann Test",
+  "image": "assets/images/knowledge/hartmann.webp",
+  "caption": "Hartmann Screen Test vs Shack-Hartmann Test Setup",
+  "description": "In the classical Hartmann test, a screen with holes is placed before the element being tested. The spots corresponding to these holes are recorded on a CCD, before or after the focus. The positions of these spots are mapped back onto the optical element, and the difference between the positions of these spots and the holes of the screen are used to compute the aberrations. This method is mostly obsolete now, as the Shack-Hartmann test has replaced it.",
+  "button_text": "Read More",
+  "url": "/knowledge/shack-hartmann-vs-hartmann",
+
+  "details": {
+    "page_title": "Shack-Hartmann vs. Hartmann Test",
+"subtitle": "A technical comparison of classical Hartmann screen testing and modern Shack-Hartmann wavefront sensors, highlighting calibration advantages, precision, and sensitivity.",
+    "hero": {
+      "title": "Shack-Hartmann vs. Hartmann Test",
+      "image": "assets/images/knowledge/hartmann.webp",
+      "caption": "Hartmann Screen Test vs Shack-Hartmann Test Setup"
+    },
+
+    "hartmann_test": {
+      "title": "Hartmann Test",
+      "description": "In the classical <a target='_blank' href='https://books.google.it/books?id=pNYTUBvV41YC&pg=PA325&lpg=PA325&dq=hartmann+test&source=bl&ots=Hvex45g-mn&sig=ACfU3U06b0Jy8pk7L58FNmJInS2J8Mwdzw&hl=en&sa=X&ved=2ahUKEwj7vr7robLjAhXvs4sKHQKdCdg4ChDoATAFegQICRAB#v=onepage&q=hartmann%20test&f=false'> Hartmann test</a>, a screen with holes is placed before the element being tested. The spots corresponding to these holes are recorded on a CCD, before or after (as in the figure at right) the focus. The positions of these spots are mapped back onto the optical element, and the difference between the positions of these spots and the holes of the screen are used to compute the aberrations. This method is mostly obsolete now, as the Shack-Hartmann test has replaced it."
+    },
+
+    "shack_hartmann_test": {
+      "title": "Shack-Hartmann Test",
+      "description": "In the <a target='_blank' href='https://pubmed.ncbi.nlm.nih.gov/11583233/'>Shack-Hartmann test </a>, a lenslet array is placed in the transferred pupil: light from the optical system being tested comes to a focus and is made parallel by the collimator, which also images the pupil on the array.",
+      "aberration_analysis": "The displacements, shown by red arrows, due to the aberrations from the optical system, with respect to the ideal wavefront, shown by black arrow, are used to compute the aberrations (in terms of <a target='_blank' href='https://en.wikipedia.org/wiki/Zernike_polynomials'> Zernike polynomials</a>) and the wavefront."
+    },
+
+    "technology_history": {
+      "title": "Application of Shack-Hartmann Technology",
+      "paragraphs": [
+        "The Shack-Hartmann technology was first applied to the <a target='_blank' href='https://www.eso.org/sci/facilities/lasilla/telescopes/ntt.html'>ESO 3.5mt NTT Astronomical telescope<a/>.",
+        "Since ESO is a Scientific European Consortium the technology cannot be patented.",
+        "We acknowledge ESO scientists <a target='_blank' href='https://www.eso.org/public/teles-instr/technology/active_optics/'>R. N. Wilson and L. Noethe</a> for being the first who applied this technology to Astronomy."
+      ],
+      "organization": "ESO",
+      "telescope": "ESO 3.5mt NTT Astronomical telescope",
+      "scientists": [
+        "R. N. Wilson",
+        "L. Noethe"
+      ]
+    },
+
+    "comparison": {
+      "title": "Why Shack-Hartmann is Better",
+      "description": "The Shack-Hartmann system is easier to calibrate and is of much higher precision compared to the Hartmann method. The use of a lenslet array leads to higher sensitivity.",
+      "advantages": [
+        "Easier calibration",
+        "Higher precision",
+        "Higher sensitivity through the use of a lenslet array"
+      ]
+    },
+
+    "spotoptics_sensors": {
+      "title": "SpotOptics Shack-Hartmann Wavefront Sensors",
+      "description": "SpotOptics Shack-Hartmann wavefront sensors can test optical systems on-axis as well as off-axis. Some models are also suitable for laser metrology.",
+      "capabilities": [
+        "Testing optical systems on-axis",
+        "Testing optical systems off-axis",
+        "Suitable models for laser metrology",
+        "Testing at different wavelengths"
+      ],
+      "wavelength_range": {
+        "minimum": "193 nm",
+        "maximum": "10.6 microns",
+        "description": "Our instruments can test at different wavelengths in the range 193nm to 10.6 microns."
+      },
+      "accessories": "We also offer a complete set of accessories to make easier your optical setup."
+    },
+
+    "key_points": [
+      {
+        "title": "Hartmann Test",
+        "description": "Uses a screen with holes and records corresponding spots on a CCD to calculate optical aberrations."
+      },
+      {
+        "title": "Shack-Hartmann Test",
+        "description": "Uses a lenslet array and measures spot displacements relative to the ideal wavefront."
+      },
+      {
+        "title": "Higher Precision",
+        "description": "The Shack-Hartmann system provides much higher precision compared to the classical Hartmann method."
+      },
+      {
+        "title": "Higher Sensitivity",
+        "description": "The lenslet array provides higher sensitivity for wavefront measurements."
+      },
+      {
+        "title": "Wide Wavelength Range",
+        "description": "SpotOptics instruments can test wavelengths ranging from 193nm to 10.6 microns."
+      }
+    ],
+
+    "conclusion": {
+      "title": "Conclusion",
+      "description": "The Shack-Hartmann system has replaced the classical Hartmann test for many applications because it is easier to calibrate, provides higher precision and offers higher sensitivity through the use of a lenslet array.",
+      "final_text": "SpotOptics Shack-Hartmann wavefront sensors provide solutions for on-axis and off-axis optical testing, with selected models also suitable for laser metrology."
+    }
+  }
+},
+{
+  "id": "wavefront-sensor-accuracy",
+  "slug": "wavefront-sensor-accuracy",
+  "title": "Exceptional Accuracy and Precision of our Wavefront Sensors",
+  "image": "assets/images/knowledge/image_2022-10-19_154624673.png",
+  "caption": "Veeco Results vs Optino Results - Contour of Wavefront",
+  "description": "SpotOptics Shack-Hartmann wavefront sensors results have been compared with results from the most popular interferometers: Zygo, Veeco, Fisba, and 4D Technology.",
+  "button_text": "Read More",
+  "url": "/knowledge/wavefront-sensor-accuracy",
+  "details":{
+"page": {
+  "breadcrum": [
+    {
+      "label": "Knowledge Corner",
+      "url": "/knowledge"
+    },
+    {
+      "label": "Wavefront Sensor Accuracy",
+      "url": "/knowledge/wavefront-sensor-accuracy"
+    }
+  ],
+"title": "Exceptional accuracy and precision of our Wavefront Sensors",
+"subtitle": "Independent comparison of SpotOptics Shack-Hartmann wavefront sensors with industry-standard interferometers including Zygo and Veeco systems."
+},
+"hero": {
+"title": "Exceptional accuracy and precision of our Wavefront Sensors",
+"description": "Independent comparison of SpotOptics Shack-Hartmann wavefront sensors with industry-standard interferometers including Zygo and Veeco systems.",
+"image": "/assets/images/focal-lance.png"
+},
+"comparison": {
+"title": "Veeco results vs Optino results contour of wavefront",
+"left_image": "assets/images/knowledge/image_2022-10-19_154624673-left.png",
+"right_image": "assets/images/knowledge/image_2022-10-19_154624673-right.png"  
+
+},
+"overview": {
+"icon": "accuracy",
+"text": "SpotOptics Shack-Hartmann wavefront sensors’ results have been compared with results from the most popular <a target='_blank' href='https://en.wikipedia.org/wiki/Interferometry'>interferometers</a >: Zygo, Veeco, Fisba, and 4D Technology."
+},
+"zygo_comparison": {
+"title": "SpotOptics Optino vs. Zygo Interferometer",
+"image": "/assets/images/knowledge/HDD_photo.png",
+"description": "A direct comparison between Zygo GPIxp HR interferometer measurements and SpotOptics Optino/SenSoft wavefront sensor results.",
+"bullets": [
+"A small area (7 mm) of a hard-disk platter was tested using the Zygo GPIxp HR (high resolution) interferometer.",
+"The same area was tested with our standard instrument Optino/SenSoft.",
+"A high-quality lambda/20 flat mirror was used for the calibration.",
+"Both tests were done in double pass at 632.8 nm."
+],
+"download": {
+"title": "Download document",
+"description": "Accuracy of SpotOptics Wavefront Sensors",
+"url": "/assets/brochures/knowledge/Accuracy-of-SpotOptics-wavefront-sensors.pdf"
+}
+},
+"measured_parameters": {
+"title": "Measured parameters",
+"columns": [
+"Parameter",
+"Zygo GPIxp HR",
+"Optino Pro",
+"Difference"
+],
+"rows": [
+{
+"parameter": "P-V (nm)",
+"zygo": "93.2",
+"optino": "100.2",
+"difference": "7"
+},
+{
+"parameter": "RMS (nm)",
+"zygo": "18.3",
+"optino": "20.3",
+"difference": "2"
+},
+{
+"parameter": "Defocus (nm)",
+"zygo": "-23.2",
+"optino": "-19.9",
+"difference": "-3.3"
+},
+{
+"parameter": "P-V (waves)",
+"zygo": "0.1473",
+"optino": "0.1596",
+"difference": "0.011"
+}
+]
+},
+"surface_plots": {
+"title": "3D surface plot comparison",
+"items": [
+{
+"title": "3D surface plot from Zygo",
+"image": "/assets/images/knowledge/Optino_Zygo_small-left.png"
+},
+{
+"title": "3D surface plot from Optino",
+"image": "/assets/images/knowledge/Optino_Zygo_small-right.png"
+}
+]
+},
+"veeco_comparison": {
+"title": "SpotOptics Optino vs. Veeco Interferometer",
+"description": "Comparison of a flat mirror measurement using a high-resolution Veeco interferometer and the SpotOptics Optino/SenSoft system.",
+"bullets": [
+"A small area (9 mm) of a flat mirror was tested using a high-resolution Veeco interferometer.",
+"The same area was tested with our standard instrument Optino/SenSoft mounting a cooled CCD camera.",
+"Both tests were done at 632.8 nm."
+],
+"download": {
+"title": "Download document",
+"description": "Accuracy of SpotOptics Wavefront Sensors",
+"url": "/downloads/accuracy-spotoptics-wavefront-sensors.pdf"
+}
+},
+"contour_comparison": {
+"title": "Contour comparison",
+"items": [
+{
+"title": "Contour of wavefront  from Veeco",
+"image": "assets/images/knowledge/image_2022-10-19_154624673-left.png",
+"metrics": "Veeco: PV 10 nm, RMS 1 nm"
+},
+{
+"title": " Contour of wavefront from",
+"image": "assets/images/knowledge/image_2022-10-19_154624673-right.png",
+"metrics": "Optino: PV 14 nm, RMS 2.1 nm"
+}
+]
+},
+"conclusion": {
+"icon": "analytics",
+"text": "The wavefront from Veeco (left) and the wavefront as measured by SenSoft (right) show a clear correspondence between the two measurement techniques."
+},
+"final_plot": {
+"title": "Veeco contour plot analysis",
+"image": "assets/images/knowledge/Veeco.webp",
+"caption": "Final contour plot demonstrating the agreement between interferometric measurements and SpotOptics wavefront sensor analysis."
+}
+
+}
+},
+{
+  "id": "lenslet-array-focal-length",
+  "title": "Importance of Using Lenslet Arrays with Long Focal Length",
+  "image_gallery": [
+    {
+      "image": "assets/images/knowledge/Lenslet-fl-22mm_Collimator_Diamond_turned_marks_Clealry_visible_notext.webp",
+      "caption": "Shack-Hartmann image taken with OMI-22 lenslet array with fl=22 mm. The diamond turning marks are clearly visible."
+    },
+    {
+      "image": "assets/images/knowledge/Lenslet-fl-11mm_Collimator_Diamond_turned_marks_Barely_visible_notext.webp",
+      "caption": "Shack-Hartmann image taken with OMI-11 lenslet array with fl=11 mm. The diamond turning marks are hardly visible."
+    }
+  ],
+  "description": "Shack-Hartmann image of aspherical lens fl=50mm taken with OMI lenslet array fl=22mm and fl=11mm.",
+  "button_text": "Read More",
+  "url": "/knowledge/lensletFocalLengthDetail",
+
+  "details": {
+    "page_title": "Importance of Using Lenslet Arrays with Long Focal Length",
+
+    "intro": {
+      "title": "Shack-Hartmann Image Comparison",
+      "description": "Shack-Hartmann image of an aspherical lens with fl=50 mm taken with OMI lenslet arrays with fl=22 mm and fl=11 mm."
+    },
+
+    "image_comparison": {
+      "title": "Shack-Hartmann Image Comparison",
+      "items": [
+        {
+          "title": "OMI-22 Lenslet Array",
+          "focal_length": "fl = 22 mm",
+          "image": "assets/images/knowledge/Lenslet-fl-22mm_Collimator_Diamond_turned_marks_Clealry_visible_notext.webp",
+          "caption": "Shack-Hartmann image taken with OMI-22 lenslet array with fl=22 mm. The diamond turning marks are clearly visible."
+        },
+        {
+          "title": "OMI-11 Lenslet Array",
+          "focal_length": "fl = 11 mm",
+          "image": "assets/images/knowledge/Lenslet-fl-11mm_Collimator_Diamond_turned_marks_Barely_visible_notext.webp",
+          "caption": "Shack-Hartmann image taken with OMI-11 lenslet array with fl=11 mm. The diamond turning marks are hardly visible."
+        }
+      ]
+    },
+
+    "overview": {
+      "title": "Why Long Focal Length Matters",
+      "paragraphs": [
+        "We explain the importance of using Shack-Hartmann lenslet arrays with long focal length using a simulation computed with our Sensoft simulation package.",
+        "10 nm of Coma are added to a perfect wave (Standard Zernike coefficients).",
+        "The spot displacements on the normalized pupil are computed for two different cases."
+      ]
+    },
+
+    "simulation_cases": {
+      "title": "Simulation Cases",
+      "items": [
+        {
+          "title": "Standard lenslet array",
+          "description": "Assuming our standard lenslet array with focal length = 22 mm."
+        },
+        {
+          "title": "Generic array",
+          "description": "Assuming a generic array with focal length = 5 mm."
+        }
+      ]
+    },
+
+    "simulation_result": {
+      "description": "The result shows that the length of the displacement is proportional to the focal length. It is therefore easier to detect Coma when fl = 22 mm."
+    },
+
+    "noise_simulation": {
+      "title": "Effect of Random Noise",
+      "paragraphs": [
+        "An additional simulation is performed by adding 0.2 micron random noise to the spot displacements for the two cases.",
+        "In the presence of modest noise, with fl=5 mm the Coma displacements disappear inside the noise, while for fl=22 mm the Coma pattern is still visible in the displacements."
+      ]
+    },
+
+    "figure_1": {
+      "title": "Spot displacements due to Coma aberration",
+      "description": "Spot displacements due to Coma aberration (PV = 48 nm) that one can expect using Shack-Hartmann lenslet array with focal length fl = 22 mm (our standard choice, left) and fl = 5 mm (right).",
+      "image": "assets/images/knowledge/Coma_spot_Displacements.jpg"
+    },
+
+    "figure_2": {
+      "title": "Adding Random Noise",
+      "description": "Adding random noise of max 0.2 um. For lenslet array with focal length fl = 5 mm (right) the displacements are inside the noise while for fl = 22 mm (left) the Coma pattern is still visible in the displacements.",
+      "image": "assets/images/knowledge/Coma_spot_Displacements_with_noise-1.webp"
+    },
+
+    "conclusions": {
+      "title": "Conclusions",
+      "items": [
+        {
+          "title": "Longer focal length means higher accuracy",
+          "description": "Deviation on camera chip is proportional to focal length."
+        },
+        {
+          "title": "Longer focal length means higher accuracy",
+          "description": "Deviation on camera chip is proportional to focal length."
+        },
+        {
+          "title": "Longer focal length means coarser sampling",
+          "description": "Because of that, we improve the sampling by a factor ~3X using sophisticated mathematical interpolation."
+        },
+        {
+          "title": "Short focal length",
+          "description": "Gives unstable and unreliable results since it is very poor in resolving aberrations especially in presence of noise and also causes thermal instability as the lenslet array is too close to the camera chip and often INSIDE the camera body."
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Learn More About Lenslet Arrays",
+      "description": "Explore how lenslet array focal length affects Shack-Hartmann wavefront measurement accuracy."
+    }
+  }
+},
+{
+  "id": "zernike-polynomials",
+  "title": "Zernike Polynomials in Sensoft",
+  "image": "assets/images/knowledge/Zernike-convention-1.webp",
+  "caption": "Zernike polynomials used in Sensoft - our wavefront sensor software",
+  "description": "Zernike polynomials represent a particular phase aberration W at a point P on a circular pupil and they are generally expressed in terms of the normalized radius r of the pupil and the azimuthal angle φ, by the following expression: rⁿ cos(mφ + φ₀).",
+  "button_text": "Read More",
+  "url": "/knowledge/zernike-polynomials",
+
+  "details": {
+    "page_title": "Zernike Polynomials in Sensoft",
+
+    "hero": {
+      "title": "Zernike polynomials used in Sensoft – our wavefront sensor software",
+      "image": "assets/images/knowledge/Zernike-convention-1.webp",
+      "description": "Zernike polynomials represent a particular phase aberration W at a point P on a circular pupil and they are generally expressed in terms of the normalized radius r of the pupil and the azimuthal angle φ, by the following expression:",
+      "formula": "rⁿ cos(mφ + φ₀)"
+    },
+
+    "introduction": {
+      "paragraphs": [
+        "This is the general expression in terms of the Seidel  polynomials. The Standard Zernike polynomials, on the other hand, involve aberration balancing, in which aberrations of a lower order are combined with those of the higher order for reducing the wavefront error. For example, the expression for 3rd order spherical aberration also contains a defocus term.  φ0   is the zero-offset : it gives the orientation of the particular aberration with respect to the x-axis."
+      ]
+    },
+
+    "annular_zernike": {
+      "title": "Annular Zernike Polynomials",
+      "description": "Finally, the Annular Zernike polynomials also take into account the effect of the annulus ε of the optical element."
+    },
+
+    "sensoft_selection": {
+      "title": "Zernike polynomial options in Sensoft",
+      "description": "SpotOptics wavefront sensor software SenSoft allow you to select among four polynomials to fit to the data."
+    },
+
+    "polynomial_types": [
+      {
+        "number": 1,
+        "title": "Annular Zernike polynomials",
+        "description": "Annular Zernike polynomials are based on diffraction theory and take into account the presence of the central obscuration in the pupil. They are the most general form of Zernike polynomials. They are normally used in astronomical wavefront sensors (like Puntino) to take into account the obscuration by the secondary mirror of the telescope."
+      },
+      {
+        "number": 2,
+        "title": "Standard Zernike polynomials",
+        "description": "Standard Zernike polynomials follow from Annular Zernike polynomials, with the central obscuration factor, and are normalized over the pupil."
+      },
+      {
+        "number": 3,
+        "title": "Fringe Zernike polynomials",
+        "description": "Fringe Zernike polynomials are the same as Standard Zernike polynomials without the normalization factors. They are mainly used in the field of interferometry, as suggested by the name."
+      },
+      {
+        "number": 4,
+        "title": "Seidel polynomials",
+        "description": "The Seidel polynomials are the extension of Seidel aberrations from geometrical optics."
+      }
+    ],
+
+    "comparison_table": {
+      "title": "Zernike polynomial comparison",
+      "columns": [
+        "Aberration",
+        "Standard Zernike",
+        "Annular Zernike",
+        "Seidel"
+      ],
+      "rows": [
+        {
+          "aberration": "Tilt (n=1,m=1)",
+          "standard_zernike": "2r cos(φ + φ₀)",
+          "annular_zernike": "2r cos(φ + φ₀) / √(1 + ε²)",
+          "seidel": "r cos(φ + φ₀)"
+        },
+        {
+          "aberration": "Defocus (n=2,m=0)",
+          "standard_zernike": "√3 (2r² - 1)",
+          "annular_zernike": "√3 [2r² - (1 + ε²)] / (1 - ε²)",
+          "seidel": "r²"
+        },
+        {
+          "aberration": "Coma (n=3,m=1)",
+          "standard_zernike": "√8 (3r³ - 2r) cos(φ + φ₀)",
+          "annular_zernike": "√8 [3r³ - 2r(1 + ε²)] cos(φ + φ₀) / [(1 - ε²)²] × normalization terms",
+          "seidel": "r³ cos(φ + φ₀)"
+        },
+        {
+          "aberration": "Spherical 3rd order (n=4,m=0)",
+          "standard_zernike": "√5(6r⁴ - 6r² + 1)",
+          "annular_zernike": "√5 [6r⁴ - 6(1 + ε²)r² + (1 + ε² + ε⁴)] / (1 - ε²)²",
+          "seidel": "r⁴"
+        },
+        {
+          "aberration": "Astigmatism (n=2,m=2)",
+          "standard_zernike": "√6 r² cos(2φ + φ₂)",
+          "annular_zernike": "√6 r² cos(2φ + φ₂) / √(1 + ε² + ε⁴)",
+          "seidel": "r² cos(2φ + φ₂)"
+        },
+        {
+          "aberration": "Triangular Coma (n=3,m=3)",
+          "standard_zernike": "√8 r³ cos(3φ + φ₃)",
+          "annular_zernike": "√8 r³ cos(3φ + φ₃) / √(1 + ε² + ε⁴ + ε⁶)",
+          "seidel": "r³ cos(3φ + φ₃)"
+        },
+        {
+          "aberration": "Quadratic Astigmatism (n=4,m=4)",
+          "standard_zernike": "√10 r⁴ cos(4φ + φ₄)",
+          "annular_zernike": "√10 r⁴ cos(4φ + φ₄) / √(1 + ε² + ε⁴ + ε⁶ + ε⁸)",
+          "seidel": "r⁴ cos(4φ + φ₄)"
+        }
+      ]
+    },
+
+    "key_parameters": {
+      "normalized_radius": "r",
+      "azimuthal_angle": "φ",
+      "zero_offset": "φ₀",
+      "annulus": "ε",
+      "wavefront_aberration": "W"
+    },
+
+    "summary": {
+      "title": "Summary",
+      "description": "Zernike polynomials provide a mathematical representation of wavefront aberrations over a circular pupil. Sensoft provides multiple polynomial conventions for fitting wavefront sensor data, including Annular Zernike, Standard Zernike, Fringe Zernike and Seidel polynomials."
+    }
+  }
+}
+]
+}

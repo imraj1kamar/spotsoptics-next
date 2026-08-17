@@ -1,0 +1,71 @@
+{
+  "page": {
+    "title": "Downloads",
+    "description": "Download brochures of our Shack-Hartmann wavefront sensors, alignment system and software for acquisition and analysis of Shack-Hartmann images."
+  },
+  "downloads": [{
+    "title": "OMI: Single Pass (transmission)",
+    "button_text": "Download OMI brochure",
+    "file": "assets/brochures/omi-brochure.pdf"
+  }, {
+    "title": "OMI-DUV-Vis: Single Pass covering from DUV to NIR (120-1100 nm) wavelength range",
+    "button_text": "Download OMI-DUV-VIS-NIR brochure",
+    "file": "assets/brochures/omi-duv-vis-nir-brochure.pdf"
+  }, {
+    "title": "OMI-UV-Vis: Single Pass covering from UV to NIR (300-1100 nm) wavelength range",
+    "button_text": "Download OMI-UV-VIS-NIR brochure",
+    "file": "assets/brochures/omi-uv-vis-nir-brochure.pdf"
+  }, {
+    "title": "OMI-45 Vis-NIR: Single Pass covering from Vis to NIR (300-1100 nm) wavelength range",
+    "button_text": "Download OMI-45-VIS-NIR brochure",
+    "file": "assets/brochures/omi-45-vis-nir-brochure.pdf"
+  }, {
+    "title": "OMI-SWIR: Single Pass for the SWIR (700-1600 nm) wavelength range",
+    "button_text": "Download OMI-SWIR brochure",
+    "file": "assets/brochures/omi-swir-brochure.pdf"
+  }, {
+    "title": "OMI-MWIR: Single Pass for the MWIR (1.5-6 μm) wavelength range",
+    "button_text": "Download OMI-MWIR brochure",
+    "file": "assets/brochures/omi-mwir-brochure.pdf"
+  }, {
+    "title": "Optino/Optino-μ: Single and Double Pass (both transmission and reflection)",
+    "button_text": "Download Optino brochure",
+    "file": "assets/brochures/optino-brochure.pdf"
+  }, {
+    "title": "iOptino: Dual channel (Shack-Hartmann wavefront sensor and direct image)",
+    "button_text": "Download iOptino brochure",
+    "file": "assets/brochures/ioptino-brochure.pdf"
+  }, {
+    "title": "Lentino: Single and Double Pass, motorized. Test diameters from 0.3 mm up to 20 mm",
+    "button_text": "Download Lentino brochure",
+    "file": "assets/brochures/lentino-brochure.pdf"
+  }, {
+    "title": "Opal: Single and Double Pass, motorized. Test diameters from 0.3 mm up to 60 mm",
+    "button_text": "Download Opal brochure",
+    "file": "assets/brochures/opal-brochure.pdf"
+  }, {
+    "title": "Stella: Single pass. Test on-axis and off-axis in the field up to 100°",
+    "button_text": "Download Stella brochure",
+    "file": "assets/brochures/stella-brochure.pdf"
+  }, {
+    "title": "Sfera: Test of mobile phone lenses and small lenses",
+    "button_text": "Download Sfera brochure",
+    "file": "assets/brochures/sfera-brochure.pdf"
+  }, {
+    "title": "Puntino: Dual channel wavefront sensor for testing Astronomical Telescopes",
+    "button_text": "Download Puntino brochure",
+    "file": "assets/brochures/puntino-brochure.pdf"
+  }, {
+    "title": "5Star: Single Pass. Simultaneous test of optical systems on-axis and off-axis. 5/9/13 wavefront sensors",
+    "button_text": "Download 5Star brochure",
+    "file": "assets/brochures/5star-brochure.pdf"
+  }, {
+    "title": "SpotOptics instruments and wavelength range: from UV (193 nm) to SWIR (1550 nm) MWIR (1.5-6 μ) and LWIR (10.6 μ high power CO₂ lasers)",
+    "button_text": "Download brochure with SpotOptics wavefront sensors for different wavelength ranges",
+    "file": "assets/brochures/spotoptics-wavelength-range-brochure.pdf"
+  }, {
+    "title": "Accuracy of SpotOptics Wavefront Sensors: SpotOptics WFS vs. Interferometers",
+    "button_text": "Download brochure on Accuracy of SpotOptics wavefront sensors",
+    "file": "assets/brochures/spotoptics-accuracy-brochure.pdf"
+  }]
+}

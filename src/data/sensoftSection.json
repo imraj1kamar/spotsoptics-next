@@ -1,0 +1,20 @@
+{
+  "tagline": "SENSOFT™ SOFTWARE",
+  "heading_main": "Powerful software.",
+  "heading_sub": "Smarter results.",
+  "description": "SenSoft offers a complete suite of tools for acquisition, analysis and visualization of wavefront data.",
+  "features": [
+    "Real-time analysis & visualization",
+    "Zernike, MTF, PSF & more",
+    "Intuitive interface & automation",
+    "Compatible with all SpotOptics sensors"
+  ],
+  "button": {
+    "text": "EXPLORE SENSOFT",
+    "url": "/software"
+  },
+  "image": {
+    "url": "/assets/images/sensoft-monitor.png",
+    "alt": "SenSoft Software Interface Display"
+  }
+}

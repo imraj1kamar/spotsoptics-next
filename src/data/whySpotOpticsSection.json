@@ -1,0 +1,36 @@
+{
+  "tagline": "WHY SPOTOPTICS?",
+  "heading_main": "Engineering precision.",
+  "heading_sub": "Delivering trust.",
+  "description": "We combine cutting-edge technology with deep domain expertise to deliver reliable, accurate and innovative optical metrology solutions.",
+  "button": {
+    "text": "LEARN MORE",
+    "url": "/about"
+  },
+  "features": [
+    {
+      "id": "unmatched-accuracy",
+      "title": "Unmatched Accuracy",
+      "description": "High sensitivity and precision for reliable measurements.",
+      "icon_type": "ACCURACY"
+    },
+    {
+      "id": "advanced-technology",
+      "title": "Advanced Technology",
+      "description": "State-of-the-art sensors and proprietary algorithms.",
+      "icon_type": "TECHNOLOGY"
+    },
+    {
+      "id": "custom-solutions",
+      "title": "Custom Solutions",
+      "description": "Tailored systems for unique research and industry needs.",
+      "icon_type": "SOLUTIONS"
+    },
+    {
+      "id": "global-support",
+      "title": "Global Support",
+      "description": "Expert assistance whenever and wherever you need it.",
+      "icon_type": "SUPPORT"
+    }
+  ]
+}

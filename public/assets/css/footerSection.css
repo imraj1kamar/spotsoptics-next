@@ -1,0 +1,103 @@
+/* ==========================================================================
+   SPOTOPTICS FOOTER SECTION - EXACT MATCH CSS
+   ========================================================================== */
+
+.footer-section-wrapper {
+  background-color: #060B18 !important; /* Deep Dark Navy Background */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #94A3B8;
+}
+
+.text-primary-blue {
+  color: var(--primary-blue) !important;
+}
+
+.footer-logo-target-icon {
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+}
+
+.footer-tagline {
+  letter-spacing: 0.8px;
+  font-size: 0.8rem;
+}
+
+.footer-desc {
+  color: #94A3B8 !important;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Social Buttons */
+.footer-social-btn {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-blue) ;
+  transition: all 0.2s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: var(--primary-blue) ;
+  transform: translateY(-2px);
+}
+
+/* Column Headings */
+.footer-col-title {
+  font-size: 0.825rem;
+  letter-spacing: 1.2px;
+}
+
+/* Navigation Links */
+.footer-nav-link {
+  color: #94A3B8 !important;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: #FFFFFF !important;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  font-size: 0.8rem;
+  color: #64748B !important;
+}
+
+.footer-legal-link {
+  color: #94A3B8 !important;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: #FFFFFF !important;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991.98px) {
+  .footer-col-title {
+    margin-top: 10px;
+  }
+}
+
+.footer-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(30, 94, 255, 0.2) 0%, rgba(6, 11, 24, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+  .footer-section-wrapper {
+    padding-top: 40px !important;
+  }
+  .footer-bottom-bar {
+    text-align: center;
+  }
+}

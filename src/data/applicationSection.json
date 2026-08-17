@@ -1,0 +1,44 @@
+{
+  "tagline": "APPLICATIONS",
+  "heading_main": "Real-world applications.",
+  "heading_sub": "Proven performance.",
+  "description": "SpotOptics solutions are trusted in advanced optical systems across research, industrial and scientific domains.",
+  "button": {
+    "text": "EXPLORE APPLICATIONS",
+    "url": "/applications"
+  },
+  "applications": [
+    {
+      "id": "automotive-optics",
+      "title": "Automotive Optics",
+      "description": "HUD testing, windshield analysis and automotive lighting.",
+      "image": "/assets/images/applications/display.png",
+      "url": "/applications#automotive",
+      "icon_type": "AUTOMOTIVE"
+    },
+    {
+      "id": "ophthalmic-optics",
+      "title": "Ophthalmic Optics",
+      "description": "Lens testing, IOL measurement and vision science.",
+      "image": "/assets/images/applications/Ophthalmic-Optics.png",
+      "url": "/applications#ophthalmic",
+      "icon_type": "OPHTHALMIC"
+    },
+    {
+      "id": "telescope-metrology",
+      "title": "Telescope Metrology",
+      "description": "Large aperture testing, mirror analysis and alignment.",
+      "image": "/assets/images/applications/telescope-metrology.png",
+      "url": "/applications#telescope",
+      "icon_type": "TELESCOPE"
+    },
+    {
+      "id": "imaging-systems",
+      "title": "Imaging Systems",
+      "description": "Camera lens testing, MTF/OTF and image quality evaluation.",
+      "image": "/assets/images/applications/Imaging-Systems.png",
+      "url": "/applications#imaging",
+      "icon_type": "IMAGING"
+    }
+  ]
+}

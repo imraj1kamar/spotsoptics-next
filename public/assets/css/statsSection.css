@@ -1,0 +1,57 @@
+/* ==========================================================================
+   SPOTOPTICS STATS SECTION - CSS
+   ========================================================================== */
+
+.stats-section-wrapper {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: transparent;
+}
+
+.stats-card-box {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+
+.stats-icon-wrapper {
+  color: var(--primary-blue) !important;
+}
+
+.stats-value {
+  color: #0F172A !important;
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stats-label {
+  color: #64748B !important;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  margin-top: 3px;
+}
+
+/* Vertical Dividers for Tablet & Desktop */
+.border-end-md {
+  border-right: none;
+}
+
+@media (min-width: 768px) {
+  .border-end-md {
+    border-right: 1px solid #E2E8F0;
+  }
+}
+
+/* Responsive Sizing for Mobile Devices */
+@media (max-width: 575.98px) {
+  .stats-card-box {
+    padding: 1.25rem !important;
+  }
+  .stats-value {
+    font-size: 1.35rem;
+  }
+  .stats-label {
+    font-size: 0.75rem;
+  }
+}

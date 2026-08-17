@@ -1,0 +1,128 @@
+
+.tech-cta-section {
+  background: #ffffff;
+}
+
+.tech-cta-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 32px 36px;
+  background:
+    radial-gradient(circle at 92% 50%, rgba(96,165,250,0.28), transparent 18%),
+    radial-gradient(circle at 82% 50%, rgba(30,94,255,0.18), transparent 28%),
+    linear-gradient(90deg, #0b2f78 0%, #0d3f9c 45%, #0a347f 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 18px 40px rgba(8,30,80,0.28);
+}
+
+.tech-cta-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.08) 30%, transparent 55%),
+    repeating-linear-gradient(
+      -25deg,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 2px,
+      transparent 2px,
+      transparent 10px
+    );
+  pointer-events: none;
+}
+
+.tech-cta-card::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  width: 220px;
+  height: 220px;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(circle, rgba(96,165,250,0.28) 0%, rgba(96,165,250,0.08) 35%, transparent 70%);
+  filter: blur(2px);
+}
+
+.tech-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tech-cta-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.tech-cta-text {
+  color: rgba(255,255,255,0.82);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+.tech-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: 700;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.tech-btn-primary:hover {
+  background: #f8fafc;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.tech-btn-outline {
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.28);
+  color: #ffffff;
+  font-weight: 700;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.tech-btn-outline:hover {
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .tech-cta-card {
+    padding: 28px;
+  }
+
+  .tech-cta-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-cta-text {
+    font-size: 0.95rem;
+  }
+
+  .tech-btn-primary,
+  .tech-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}

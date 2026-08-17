@@ -1,0 +1,214 @@
+{
+"page": {
+"title": "Our Technology",
+"subtitle": "Integrated optical metrology technology for precision wavefront measurement and advanced optical analysis.",
+"description": "SpotOptics combines Shack-Hartmann wavefront sensors, SenSoft analysis software, precision optical systems, and application-specific metrology expertise to deliver accurate and reliable optical measurements for research, industrial testing, and advanced optical engineering."
+},
+"hero": {
+"badge": "Advanced optical metrology",
+"heading": "Technology that transforms optical measurements into actionable insight",
+"text": "Our integrated technology ecosystem combines precision wavefront sensing, advanced optical analysis software, and application-specific metrology systems to deliver high-accuracy measurements across research, manufacturing, telescope alignment, lens testing, and imaging applications.",
+"primary_button": {
+"label": "Explore our technology",
+"url": "/all-products"
+},
+"secondary_button": {
+"label": "Contact technical team",
+"url": "/contact"
+},
+"image": "/images/hero/technology-hero.png"
+},
+"technology_pillars": {
+"title": "Core technology pillars",
+"description": "Four integrated technologies form the foundation of every SpotOptics measurement solution.",
+"items": [
+{
+"icon": "wavefront",
+"title": "Shack-Hartmann wavefront sensing",
+"description": "High-resolution wavefront measurement using lenslet-array based Shack-Hartmann technology for optical characterization, alignment, and performance evaluation."
+},
+{
+"icon": "software",
+"title": "Advanced optical analysis",
+"description": "SenSoft software provides acquisition, visualization, contour mapping, spot diagrams, Zernike analysis, and optical diagnostics."
+},
+{
+"icon": "metrology",
+"title": "Precision optical metrology",
+"description": "Research-grade measurement solutions for lenses, mirrors, telescopes, imaging systems, and complex optical assemblies."
+},
+{
+"icon": "calibration",
+"title": "Calibration and optimization",
+"description": "Precision calibration, alignment verification, and optical system optimization for laboratory and industrial environments."
+}
+]
+},
+"software_platform": {
+"title": "SenSoft software platform",
+"subtitle": "Powerful software. Smarter optical results.",
+"description": "SenSoft is a complete software environment for wavefront acquisition, visualization, analysis, diagnostics, and measurement reporting. It connects directly with Shack-Hartmann sensors and provides comprehensive optical performance evaluation.",
+"image": "assets/images/applications/SenSoft-software.png",
+"features": [
+"Real-time wavefront acquisition",
+"Contour and spot diagram visualization",
+"Zernike coefficient analysis",
+"MTF and PSF evaluation",
+"Aberration diagnostics",
+"Automated measurement workflows",
+"Data export and technical reporting",
+"Multi-camera compatibility",
+"Optical system performance analysis"
+],
+"outputs": [
+{
+"title": "Wavefront contour maps",
+"image": "/images/software/wavefront-contour.png"
+},
+{
+"title": "Spot diagram analysis",
+"image": "/images/software/spot-diagram.png"
+},
+{
+"title": "Zernike coefficient reports",
+"image": "/images/software/zernike-analysis.png"
+}
+]
+},
+"products": {
+"title": "Technology-enabled products",
+"description": "Our products are built around a common technology platform that integrates precision optics, wavefront sensing, motorized positioning, and advanced software analysis.",
+"categories": [
+{
+"name": "Wavefront sensors",
+"description": "Shack-Hartmann sensors for optical testing and characterization."
+},
+{
+"name": "Motorized optical systems",
+"description": "Automated scanning and alignment systems for research and production environments."
+},
+{
+"name": "Lens testing systems",
+"description": "Optical performance evaluation and stress analysis solutions."
+},
+{
+"name": "Metrology platforms",
+"description": "Integrated hardware and software systems for advanced optical measurement."
+}
+],
+"related_products": [
+"Optino",
+"Lentino & Opal",
+"Sfera & Stella",
+"Contour",
+"Puntino"
+]
+},
+"applications": {
+"title": "Technology across real-world applications",
+"description": "The same core technology platform supports multiple industries and advanced optical measurement challenges.",
+"items": [
+{
+"title": "Automotive optics",
+"description": "HUD testing, windshield optics, optical alignment, and automotive imaging systems.",
+"image": "/assets/images/applications/display.png"
+},
+{
+"title": "Ophthalmic optics",
+"description": "Lens testing, optical quality evaluation, and vision-related optical measurements.",
+"image": "/assets/images/applications/Ophthalmic-Optics.png"
+},
+{
+"title": "Telescope metrology",
+"description": "Mirror alignment, active optics support, telescope diagnostics, and astronomical optical analysis.",
+"image": "/assets/images/applications/telescope-metrology.png"
+},
+{
+"title": "Imaging systems",
+"description": "Camera lens testing, MTF analysis, image quality evaluation, and optical imaging performance.",
+"image": "/assets/images/applications/Imaging-Systems.png"
+}
+]
+},
+"workflow": {
+"title": "Integrated measurement workflow",
+"description": "Our technology ecosystem connects hardware, software, diagnostics, and optimization in a unified measurement process.",
+"steps": [
+{
+"step": "01",
+"title": "Acquire",
+"description": "Capture wavefront data using precision Shack-Hartmann sensors."
+},
+{
+"step": "02",
+"title": "Analyze",
+"description": "Process optical data with SenSoft analysis software."
+},
+{
+"step": "03",
+"title": "Diagnose",
+"description": "Identify aberrations, alignment errors, optical defects, and performance limitations."
+},
+{
+"step": "04",
+"title": "Optimize",
+"description": "Apply calibration, alignment, and correction strategies for improved optical performance."
+}
+]
+},
+"calibration": {
+"title": "Calibration and system optimization",
+"description": "Our calibration technology enables accurate compensation of optical elements and optimization of complete measurement setups.",
+"items": [
+"Reference sphere calibration",
+"Optical element compensation",
+"Alignment verification",
+"System optimization procedures",
+"Measurement traceability"
+]
+},
+"technical_capabilities": {
+"title": "Technical capabilities",
+"items": [
+"Wavefront measurement and analysis",
+"Zernike polynomial computation",
+"MTF and PSF evaluation",
+"Contour and spot diagram analysis",
+"Lens mounting stress analysis",
+"Telescope alignment diagnostics",
+"Mirror surface characterization",
+"Optical system performance evaluation",
+"Active optics support",
+"Multi-camera measurement systems"
+]
+},
+"advantages": {
+"title": "Why our technology matters",
+"items": [
+{
+"title": "High accuracy",
+"description": "Reliable and repeatable wavefront measurements for demanding optical applications."
+},
+{
+"title": "Research-grade performance",
+"description": "Designed for laboratories, research institutions, and scientific optical systems."
+},
+{
+"title": "Integrated hardware and software",
+"description": "Seamless connection between sensors, software, analysis, and reporting."
+},
+{
+"title": "Custom engineering",
+"description": "Tailored optical metrology solutions for specialized research and industrial requirements."
+},
+{
+"title": "Broad application support",
+"description": "Technology adaptable across automotive, ophthalmic, telescope, and imaging industries."
+},
+{
+"title": "Technical expertise",
+"description": "Comprehensive support for complex optical measurement and alignment challenges."
+}
+]
+}
+}

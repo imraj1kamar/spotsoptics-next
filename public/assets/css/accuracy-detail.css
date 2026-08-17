@@ -1,0 +1,122 @@
+/* ================= HERO BANNER ================= */
+.text-primary-red {
+  color: var(--primary-red);
+}
+
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+
+.text-secondary-red {
+  color: var(--secondary-red);
+}
+
+.custom-link-text a {
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+
+.custom-link-text a:hover {
+  color: var(--secondary-red);
+}
+
+
+.badge.rounded-circle{
+  background-color:var(--primary-blue) !important;
+  color: #edf2f7 !important ;
+}
+
+
+.accuracy-hero-banner {
+  background: radial-gradient(circle at 80% 50%, #0a3d91 0%, #001f5c 50%, #001238 100%);
+  min-height: 180px;
+}
+
+.accuracy-hero-title {
+  font-size: 2.1rem;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.comparison-floating-badge{
+    background-color: var(--primary-blue) !important;  
+}
+
+
+
+.hero-accent-line {
+  width: 60px;
+  height: 4px;
+  background: var(--primary-blue);
+  border-radius: 2px;
+}
+
+.hero-3d-lens-wrapper .hero-lens-img {
+  max-height: 160px;
+  filter: drop-shadow(0 0 20px rgba(13, 110, 253, 0.4));
+}
+
+/* ================= CARDS & BOXES ================= */
+.accuracy-card {
+  border-color: #e2e8f0 !important;
+}
+
+.comparison-media-box {
+  min-height: 280px;
+  border: 1px solid #edf2f7;
+}
+
+/* ================= ALERT BOXES ================= */
+.accuracy-alert-box {
+  background: #f0f7ff;
+  border: 1px solid #d0e4ff;
+}
+
+.alert-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= BULLET LIST ================= */
+.accuracy-bullet-list li {
+  position: relative;
+  list-style-type: disc;
+}
+
+/* ================= DOWNLOAD DOCUMENT CARD ================= */
+.download-doc-card {
+  background: #f0f7ff;
+  border: 1.5px dashed #bcdcff;
+  transition: all 0.3s ease;
+}
+
+.download-doc-card:hover {
+  background: #e2efff;
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+/* ================= PARAMETERS TABLE ================= */
+.accuracy-custom-table th {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border-color: #e2e8f0;
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.accuracy-custom-table td {
+  padding: 12px 16px;
+  border-color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* ================= BOTTOM DARK BANNER ================= */
+.accuracy-footer-banner {
+  background: #001744;
+  min-height: 60px;
+}

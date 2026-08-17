@@ -1,0 +1,209 @@
+/* ==========================================
+   Hero Section - Light Clean Theme
+   ========================================== */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 30px; 
+    overflow: hidden;
+        background-color: var(--sky-light, #EFF6FF);
+}
+
+/* ==========================================
+   Typography & UI Elements
+   ========================================== */
+.text-primary-blue {
+    color: var(--primary-blue) !important;
+}
+
+.hero-tagline {
+    letter-spacing: var(--ls-hero-tagline);
+}
+
+.hero-heading {
+    letter-spacing: var(--ls-hero-heading);
+    color: var(--heading-text);
+}
+
+.hero-description {
+    color: var(--para-text);
+    max-width: 550px;
+}
+
+.hero-feature-desc {
+    color: var(--muted-text);
+}
+
+.feature-icon svg {
+    color: var(--primary-blue);
+}
+
+.feature-icon {
+    opacity: 0.8;
+}
+
+/* Updated Buttons to match the Image */
+.btn-primary-custom, .btn-outline-custom {
+    border-radius: 6px !important; /* Slightly squarish like the image */
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom {
+    background-color: #0171cf;
+    color: #FFFFFF !important;
+    border: 1px solid #0171cf;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0171cf !important;
+    border-color: #0171cf !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(30, 94, 255, 0.3);
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--heading-text);
+    border: 1px solid var(--border-color);
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--sky-light);
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
+/* Product Image Layer */
+.hero-product-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.05); /* Slightly pops out */
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+}
+
+/* ==========================================
+   Background Parallax Effects (Untouched)
+   ========================================== */
+.optical-starburst {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.starburst-core {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px; height: 8px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 30px rgba(96, 165, 250, 0.8), 
+                0 0 100px 60px rgba(30, 94, 255, 0.5);
+}
+
+.starburst-ray-h {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; height: 2px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96,165,250,0.3) 30%, transparent 70%);
+}
+
+.starburst-ray-v {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; height: 40vh;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96,165,250,0.3) 30%, transparent 70%);
+}
+
+.starburst-ray-diag {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    width: 30vw; height: 3px;
+    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(30,94,255,0.2) 40%, transparent 70%);
+}
+
+.optical-streak {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    border: 2px solid transparent;
+}
+
+.streak-1 {
+    width: 140vw; height: 140vh;
+    bottom: -50%; right: -20%;
+    border-top: 5px solid rgba(96, 165, 250, 0.6);
+    border-left: 2px solid rgba(30, 94, 255, 0.2);
+    filter: drop-shadow(0 0 25px rgba(96, 165, 250, 0.9));
+    transform: rotate(20deg);
+}
+
+.streak-2 {
+    width: 160vw; height: 160vh;
+    top: -20%; right: -40%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(96, 165, 250, 0.1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+    transform: rotate(-10deg);
+}
+
+.flare-bg {
+    position: absolute;
+    width: 600px; height: 600px;
+    /* background: rgba(30, 94, 255, 0.15); */
+    border-radius: 50%;
+    filter: blur(100px);
+    top: 20%; right: 5%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media (max-width: 991px) {
+    .hero-tagline { font-size: 0.75rem; }
+    .hero-description { margin: 0 auto; }
+    .hero-product-img { transform: scale(1); max-width: 100%; margin-top: 1rem; }
+    .optical-streak { opacity: 0.5; }
+    .starburst-ray-h, .starburst-ray-diag { width: 100vw; }
+    
+    .hero-section {
+        padding-top: 0px;
+        margin-top: 0px;   
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .optical-starburst {
+    position: absolute;
+    top: 19%;
+    left: 5%;
+    z-index: 1;
+    pointer-events: none;
+}
+}
+
+@media (max-width: 767px) {
+    .hero-content {
+        padding: 15px 0px;
+    }
+}
+
+/* GPU Hardware Acceleration for Smooth Parallax Scroll */
+.gs-parallax,
+.hero-section,
+.hero-product-img,
+.optical-streak,
+.optical-starburst {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

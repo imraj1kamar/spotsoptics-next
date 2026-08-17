@@ -1,0 +1,60 @@
+{
+  "site": {
+    "name": "SpotOptics S.r.l.",
+    "tagline": "High Performance Shack-Hartmann Wavefront Sensors",
+    "description": "SpotOptics S.r.l. specializes in high-performance Shack-Hartmann wavefront sensors, optical metrology instruments, and precision measurement solutions for research, industrial, and astronomical applications across DUV to LWIR wavelengths.",
+    "url": "https://www.spotoptics.com",
+    "logo": "/assets/images/logo.png",
+    "language": "en",
+    "region": "IT",
+    "theme_color": "#1E5EFF",
+    "backgroundColor": "#F8FAFC",
+    "keywords": [
+      "Shack-Hartmann wavefront sensor",
+      "optical metrology",
+      "wavefront measurement",
+      "optical testing equipment",
+      "laser beam profiling",
+      "precision optics",
+      "adaptive optics",
+      "MTF measurement",
+      "optical engineering",
+      "lens testing",
+      "astronomical optics",
+      "SpotOptics",
+      "SpotOptics S.r.l.",
+      "wavefront sensing technology",
+      "optical instruments manufacturer",
+      "OPD measurement",
+      "Padova optics",
+      "Italian optical instruments"
+    ]
+  },
+  "organization": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SpotOptics S.r.l.",
+    "description": "Manufacturer of high-performance Shack-Hartmann wavefront sensors and optical metrology instruments for research, industry, and astronomy. Based in Padova, Italy.",
+    "url": "https://www.spotoptics.com",
+    "logo": "/assets/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@spot-optics.com",
+      "contactType": "sales"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Turazza 48",
+      "addressLocality": "Padova",
+      "addressRegion": "PD",
+      "postalCode": "35128",
+      "addressCountry": "IT"
+    },
+    "sameAs": [
+      "https://facebook.com/spotoptics",
+      "https://instagram.com/spotoptics",
+      "https://linkedin.com/company/spotoptics",
+      "https://twitter.com/spotoptics"
+    ]
+  }
+}

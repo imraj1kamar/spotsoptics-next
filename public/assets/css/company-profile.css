@@ -1,0 +1,232 @@
+/* ==========================================
+   Company Profile Page - SpotOptics Theme
+   Premium Enhanced UI
+   ========================================== */
+
+.company-profile-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 120px 0 80px;
+   
+        background-color: var(--sky-light, #EFF6FF);
+}
+
+/* --- Hero / Page Header --- */
+.page-title {
+    color: var(--heading-text) !important;
+    font-weight: var(--fw-bold);
+    letter-spacing: -1.5px;
+    margin-bottom: 0.5rem;
+    line-height: var(--lh-tight);
+}
+
+
+/* --- Section Titles --- */
+.section-title {
+    color: var(--heading-text);
+    font-weight: var(--fw-bold);
+    position: relative;
+    padding-bottom: 18px;
+    letter-spacing: var(--ls-tight);
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-blue);
+    border-radius: 4px;
+}
+
+.text-center .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-intro {
+    color: var(--para-text);
+    font-size: var(--text-lg);
+    line-height: var(--body-line-height);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* --- ✨ Ultra-Premium Glass Cards --- */
+
+
+
+.expertise-content p {
+    color: var(--para-text);
+    line-height: var(--body-line-height);
+    font-size: var(--text-base);
+    margin-bottom: 1.2rem;
+}
+
+/* --- ✨ Mathematically Perfect Timeline --- */
+.vertical-timeline {
+    position: relative;
+    padding-left: 60px; /* More breathing room */
+    margin-top: 40px;
+}
+
+/* Base Grey Track */
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* perfectly aligned */
+    height: 100%;
+    width: 4px; /* Thicker premium track */
+    background: rgba(30, 94, 255, 0.1); /* Very soft blue background line */
+    border-radius: 4px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+/* Timeline Dot */
+.timeline-marker {
+    position: absolute;
+    top: 24px;
+    left: -45px; /* Perfect center math: 60 - 48 = 12px space. Dot is 20px wide (center is 22px). Track is at 20px width 4px (center is 22px). EXACT MATCH! */
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    border: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(30, 94, 255, 0.1); /* Soft outer ring */
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 0px;
+}
+
+/* Small product thumbnail in timeline header */
+.timeline-product-thumb {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(30, 94, 255, 0.15);
+    background: var(--sky-hover, #DBEAFE);
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(30, 94, 255, 0.12);
+}
+
+.timeline-year {
+    background: rgba(30, 94, 255, 0.08); /* Tinted background instead of grey */
+    color: var(--primary-blue);
+    padding: 6px 16px;
+    border-radius: 10px;
+    font-weight: var(--fw-extrabold);
+    font-size: var(--text-sm);
+    white-space: nowrap;
+    border: 1px solid rgba(30, 94, 255, 0.15);
+}
+
+.timeline-product {
+    margin: 0;
+    color: var(--heading-text);
+    font-size: var(--text-md);
+    letter-spacing: -0.3px;
+}
+
+/* Timeline Links */
+.timeline-product-link {
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(var(--primary-blue), var(--primary-blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+}
+
+.timeline-product-link:hover {
+    color: var(--secondary-red);
+    background-size: 100% 2px;
+}
+
+.timeline-desc {
+    color: var(--para-text);
+    margin: 0;
+    line-height: var(--body-line-height);
+    font-size: var(--text-md);
+}
+
+/* --- ✨ Modern Tinted Expertise Pills --- */
+.expertise-pills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.expertise-pill {
+    background: rgba(30, 94, 255, 0.04);
+    border: 1px solid rgba(30, 94, 255, 0.12);
+    color: var(--primary-blue);
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: var(--text-base);
+    font-weight: var(--fw-semibold);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+}
+
+.expertise-pill:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: #FFFFFF;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(30, 94, 255, 0.25);
+}
+
+.profile-content p{
+    color: var(--para-text);
+    line-height: var(--body-line-height);
+    font-size: var(--text-base);
+    margin-bottom: 1.5rem;
+}
+
+.timeline-content p {
+   font-size: var(--text-md);
+}
+/* ==========================================
+   Responsive Updates
+   ========================================== */
+@media (max-width: 991px) {
+    .vertical-timeline {
+        padding-left: 45px;
+    }
+    .vertical-timeline::before {
+        left: 15px;
+    }
+    .timeline-marker {
+        left: -34px;
+        width: 12px;
+        height: 12px;
+        border-width: 3px;
+    }
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+
+

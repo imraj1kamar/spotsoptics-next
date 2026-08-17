@@ -1,0 +1,59 @@
+{
+  "brand": {
+    "name": "SPOTOPTICS",
+    "tagline": "Precision in Light & Shape",
+    "description": "High performance Shack-Hartmann wavefront sensors and optical metrology solutions.",
+    "copyright": "© SpotOptics S.r.l. 2025 All rights reserved.",
+    "socials": [
+      { "platform": "linkedin", "url": "https://linkedin.com", "label": "LinkedIn" },
+      { "platform": "x", "url": "https://x.com", "label": "X" },
+      { "platform": "facebook", "url": "https://facebook.com", "label": "Facebook" },
+      { "platform": "instagram", "url": "https://instagram.com", "label": "Instagram" },
+      { "platform": "youtube", "url": "https://youtube.com", "label": "YouTube" }
+    ]
+  },
+  "columns": [
+    {
+      "title": "PRODUCTS",
+      "links": [
+        { "label": "OMI-BLUV-VIS", "url": "/all-products?product=0" },
+        { "label": "OMI-BLUV-IR", "url": "/all-products?product=1" },
+        { "label": "CMI-SWIR", "url": "/all-products?product=2" },
+        { "label": "CMI-MWIR", "url": "/all-products?product=3" },
+        { "label": "All Products", "url": "/all-products" }
+      ]
+    },
+    {
+      "title": "APPLICATIONS",
+      "links": [
+        { "label": "Automotive Optics", "url": "/applications#automotive" },
+        { "label": "Ophthalmic Optics", "url": "/applications#ophthalmic" },
+        { "label": "Telescope Metrology", "url": "/applications#telescope" },
+        { "label": "Imaging Systems", "url": "/applications#imaging" },
+        { "label": "All Applications", "url": "/applications" }
+      ]
+    },
+    {
+      "title": "COMPANY",
+      "links": [
+        { "label": "About Us", "url": "/company-profile" },
+        { "label": "Our Technology", "url": "/technology" },
+        { "label": "Careers", "url": "/careers" },
+        { "label": "News & Events", "url": "/news" }
+      ]
+    },
+    {
+      "title": "SUPPORT",
+      "links": [
+        { "label": "Contact Us", "url": "/contact" },
+        { "label": "Get a Quote", "url": "/contact#quote" },
+        { "label": "Technical Support", "url": "/support" },
+        { "label": "FAQ", "url": "/faq" }
+      ]
+    }
+  ],
+  "legal_links": [
+    { "label": "Privacy Policy", "url": "/privacy-policy" },
+    { "label": "Terms & Conditions", "url": "/terms-and-conditions" }
+  ]
+}

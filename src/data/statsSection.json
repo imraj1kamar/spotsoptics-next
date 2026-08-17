@@ -1,0 +1,26 @@
+[
+  {
+    "id": "years-innovation",
+    "value": "25+",
+    "label": "Years of Innovation",
+    "icon_type": "INNOVATION"
+  },
+  {
+    "id": "systems-delivered",
+    "value": "1000+",
+    "label": "Systems Delivered",
+    "icon_type": "SYSTEMS"
+  },
+  {
+    "id": "countries-served",
+    "value": "40+",
+    "label": "Countries Served",
+    "icon_type": "GLOBE"
+  },
+  {
+    "id": "technical-support",
+    "value": "24/7",
+    "label": "Technical Support",
+    "icon_type": "SUPPORT"
+  }
+]

@@ -1,0 +1,227 @@
+/* ==========================================
+   Downloads Page - SpotOptics Theme
+   Premium Enhanced UI (matches company-profile)
+   ========================================== */
+
+.downloads-page{
+    background:#f8fbff;
+}
+
+.downloads-hero{
+    padding:80px 0 40px;
+    background:
+        radial-gradient(circle at top left, rgba(30,94,255,.06), transparent 45%),
+        radial-gradient(circle at top right, rgba(96,165,250,.08), transparent 40%);
+}
+
+.hero-content{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto;
+}
+
+.hero-content h1{
+    font-size:56px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:14px;
+    letter-spacing:-1px;
+}
+
+.hero-line{
+    width:70px;
+    height:4px;
+    background:#2563eb;
+    border-radius:999px;
+    margin:0 auto 22px;
+}
+
+.hero-content p{
+    color:#475569;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* --- Main Section (mirrors company-profile-wrapper) --- */
+.downloads-section{
+    position: relative;
+    z-index: 2;
+    padding: 120px 0 80px;
+    background-color: var(--sky-light, #EFF6FF);
+}
+
+/* --- Hero / Page Header --- */
+.downloads-section .page-title {
+    color: var(--heading-text) !important;
+    font-weight: var(--fw-bold);
+    letter-spacing: -1.5px;
+    margin-bottom: 0.5rem;
+    line-height: var(--lh-tight);
+}
+
+
+
+/* ==========================================
+   Premium Glass Downloads Panel
+   ========================================== */
+/* .downloads-panel{
+    position: relative;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 20px 26px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.downloads-panel:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-md), 0 0 15px rgba(1, 113, 207, 0.15);
+} */
+
+/* ==========================================
+   Timeline layout (matches company-profile)
+   ========================================== */
+.vertical-timeline {
+    position: relative;
+    padding-left: 60px; /* More breathing room */
+    margin-top: 20px;
+}
+
+/* Base Grey Track */
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* perfectly aligned */
+    height: 100%;
+    width: 4px; /* Thicker premium track */
+    background: rgba(30, 94, 255, 0.1); /* Very soft blue background line */
+    border-radius: 4px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Timeline Dot */
+.timeline-marker {
+    position: absolute;
+    top: 24px;
+    left: -45px; /* Perfect center math: 60 - 48 = 12px space. Dot is 20px wide (center is 22px). Track is at 20px width 4px (center is 22px). EXACT MATCH! */
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    border: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(30, 94, 255, 0.1); /* Soft outer ring */
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* ==========================================
+   Download Items
+   ========================================== */
+.download-item{
+    position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.download-item:last-child{
+    border-bottom: none;
+}
+
+.download-content{
+    position: relative;
+    z-index: 1;
+}
+
+.download-content h5{
+    margin: 0;
+    color: var(--heading-text);
+    font-size: var(--text-md);
+    letter-spacing: -0.3px;
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-snug);
+    transition: color 0.3s ease;
+}
+
+
+
+/* Download link styled like timeline links (animated underline) */
+.download-content a{
+    color: var(--primary-red);
+    text-decoration:none;
+    font-size: var(--text-base);
+    display:inline-block;
+    margin-top: 6px;
+    position: relative;
+    background-image: linear-gradient(var(--primary-blue), var(--primary-blue));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease;
+}
+
+.download-content a:hover{
+    background-size: 100% 2px;
+    text-decoration: none;
+    color: var( --secondary-red);
+}
+
+.download-btn{
+    min-width:150px;
+    height:46px;
+    border:1px solid #2563eb;
+    color:#2563eb;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+@media(max-width:991px){
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .download-btn{
+        width:100%;
+        min-width:100%;
+    }
+
+    .downloads-panel{
+        padding:18px;
+    }
+
+    /* Timeline responsive updates (matches company-profile) */
+    .vertical-timeline {
+        padding-left: 45px;
+    }
+    .vertical-timeline::before {
+        left: 15px;
+    }
+    .timeline-marker {
+        left: -34px;
+        width: 12px;
+        height: 12px;
+        border-width: 3px;
+    }
+}
+

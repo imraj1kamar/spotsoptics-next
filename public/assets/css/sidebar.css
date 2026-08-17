@@ -1,0 +1,67 @@
+/* =============================================
+   Sidebar Component — Categories Card
+   Standalone stylesheet for components/sidebar.php
+   ============================================= */
+
+.sidebar-card{
+    background:#fff;
+    border:1px solid #e5edf7;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(15,23,42,.04);
+    position:sticky;
+    top:120px;
+}
+
+.sidebar-card h4{
+    font-size:22px;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:12px;
+}
+
+.sidebar-line{
+    width:52px;
+    height:3px;
+    background:#2563eb;
+    border-radius:999px;
+    margin-bottom:20px;
+}
+
+.sidebar-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar-card li{
+    border-bottom:1px solid #edf2f7;
+}
+
+.sidebar-card li:last-child{
+    border-bottom:none;
+}
+
+.sidebar-card a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 0;
+    color:#334155;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.sidebar-card a:hover{
+    color:#2563eb;
+}
+
+@media(max-width:991px){
+
+    .sidebar-card{
+        position:static;
+    }
+
+}
+

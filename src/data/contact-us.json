@@ -1,0 +1,66 @@
+{
+  "page": {
+    "title": "Contact Us",
+    "description": "SpotOptics wavefront sensors and wavefront sensor based instruments are available through our dedicated distributors, worldwide. Please contact our distributors with your requirements for wavefront sensors or customized solutions based on our wavefront sensors. You will receive their immediate attention.",
+    "distributors": [
+      {
+        "country": "China",
+        "company": "Beijing Fyne-Tech Co., Ltd",
+        "logo": "assets/images/distributors/Fyne-tech-logo.webp",
+        "address": [
+          "501-08 room, 5th F, No. 1 Building,",
+          "1st Dishengbei St. Yizhuang Dist.,",
+          "Beijing, China"
+        ],
+        "email": "contact@fyne-tech.com",
+        "website": "www.fyne-tech.com"
+      },
+      {
+        "country": "Japan",
+        "company": "Kyokko Tsusho Corporation",
+        "logo": "assets/images/distributors/kyokko_logo.webp",
+        "address": [
+          "Yubinbango 150-0012, Shibuya-ku,",
+          "Tokyo Hiroo 1-1-39 Ebisu"
+        ],
+        "email": "info@kyokko.com",
+        "website": "www.kyokko.com"
+      },
+      {
+        "country": "South Korea",
+        "company": "SUNJIN TECH",
+        "logo": "assets/images/distributors/Sunjin_logo.webp",
+        "address": [
+          "#912, Centralbiz tower, 260 Changyong-dero,",
+          "Youngtong-gu, Suwon-city, Gyeonggi-do,",
+          "16229 Korea"
+        ],
+        "email": "jnsseonkim@sj-tech.kr",
+        "website": "www.sj-tech.kr"
+      },
+      {
+        "country": "For all other countries",
+        "company": "SpotOptics S.r.l.",
+        "logo": "assets/images/distributors/Logo_spot.webp",
+        "tagline": "The software people for optics",
+        "address": [
+          "Via Turazza 48",
+          "35128 Padova",
+          "Italy"
+        ],
+        "email": "contact@spot-optics.com",
+        "website": "www.spotoptics.com"
+      }
+    ],
+    "footer": {
+      "company": "SpotOptics s.r.l.",
+      "address": [
+        "Via Turazza 48",
+        "35128 Padova, ITALY"
+      ],
+      "phone": "Ph: +39 049 8078529",
+      "email": "contact@spot-optics.com",
+      "copyright": "Copyright © SpotOptics s.r.l. 2025"
+    }
+  }
+}

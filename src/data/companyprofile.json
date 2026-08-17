@@ -1,0 +1,119 @@
+{
+  "page": {
+    "brand": "About SpotOptics",
+    "sections": [{
+      "id": "company-profile",
+      "title": "",
+      "content": ["Established in 1996 in Padova, SpotOptics specializes in Shack-Hartmann wavefront sensors and their applications in research and industry.", "Since 1996 we have been continuously developing and improving our instruments.", "Our first Shack-Hartmann wavefront sensor for testing an astronomical telescope dates back to 1993. We presented a paper titled 'Shack-Hartmann analysis of the optical quality of the primary mirror of the Italian Telescopic Nazionale Galileo' at SPIE's 1993 International Symposium on Optics, Imaging and Instrumentation in San Diego (USA).", "The telescope correct alignment procedure was analyzed in the paper 'Telescope alignment: is the zero-coma condition sufficient?' presented at SPIE's 1995 Symposium on OE/Aerospace Sensing and Dual Use Photonics, in Orlando (USA).", "A complete method for analyzing the quality of astronomical telescopes, 'Using the Shack-Hartmann system for a complete analysis of optical telescopes', was presented at the SPIE Optical Science, Engineering and Instrumentation '97 conference in San Diego (USA). This paper is also included in 'Selected SPIE Papers on CD-ROM: Optical Testing Vol. 3', edited by Daniel Malacara-Hernandez (1999).", "5Star, Stella and Sfera are the world's first off-axis wavefront sensors. Our article published in Laser Focus World in 2008, 'TEST & MEASUREMENT: Wavefront sensing goes off-axis', received 'Commendation for Excellence in Technical Communications' from the Laser Focus World editors."]
+    }, {
+      "id": "milestones",
+      "title": "Milestones and Product Development",
+      "intro": "The company has achieved notable milestones including the development of various wavefront sensors for different applications and wavelengths, from 1995 to 2024.",
+      "timeline": [{
+        "year": "1995",
+        "product": "OMI",
+        "image": "assets/images/products/1.png",
+        "description": "Wavefront sensor for testing optical elements and lasers in single pass.",
+        "url": "/all-products"
+      }, {
+        "year": "1995",
+        "product": "Puntino",
+        "image": "assets/images/products/9.png",
+        "description": "Dual channel wavefront sensor for testing astronomical telescopes.",
+        "url": "/all-products/?product=1"
+      }, {
+        "year": "1999",
+        "product": "Optino",
+        "image": "assets/images/products/3.png",
+        "description": "Metrology of optical systems in both single pass (transmission) and double pass (reflection) in the visible wavelength region.",
+        "url": "/all-products/?product=2"
+      }, {
+        "year": "2002",
+        "product": "Optino-SWIR",
+        "image": "assets/images/products/5.png",
+        "description": "Metrology of optical systems and lasers in the SWIR (950–1700 nm) wavelength region.",
+        "url": "/all-products/?product=3"
+      }, {
+        "year": "2002",
+        "product": "Motorized Beam Expanders",
+        "description": "Testing optical elements with diameters up to 60 mm.",
+        "url": ""
+      }, {
+        "year": "2002",
+        "product": "OMI with Remote Communication Software",
+        "description": "Testing HUD displays in single-pass production environments.",
+        "url": ""
+      }, {
+        "year": "2004",
+        "product": "Lentino",
+        "image": "assets/images/products/6.png",
+        "description": "Testing optical systems in parallel light and at focus in single and double pass, with a built-in beam expander for optics up to 25 mm.",
+        "url": ""
+      }, {
+        "year": "2006",
+        "product": "5Star",
+        "description": "Five Shack-Hartmann wavefront sensors operating simultaneously for off-axis testing in production lines.",
+        "url": ""
+      }, {
+        "year": "2007",
+        "product": "Stella",
+        "image": "assets/images/products/7.png",
+        "description": "Off-axis testing of lithography lenses and optical systems, reconstructing aberration maps across the field.",
+        "url": ""
+      }, {
+        "year": "2007",
+        "product": "Sfera",
+        "image": "assets/images/products/7.png",
+        "description": "Off-axis testing of mobile phone lenses and small lenses, reconstructing aberration maps across the field.",
+        "url": ""
+      }, {
+        "year": "2008",
+        "product": "OPAL",
+        "image": "assets/images/products/6.png",
+        "description": "Testing optical systems in parallel light and at focus in single and double pass, with a built-in beam expander for optics up to 60 mm.",
+        "url": ""
+      }, {
+        "year": "2009–2010",
+        "product": "Optino-CO₂",
+        "description": "Testing high-power CO₂ lasers in the LWIR (8–14 µm) wavelength region.",
+        "url": ""
+      }, {
+        "year": "2010",
+        "product": "Contour",
+        "image": "assets/images/products/8.png",
+        "description": "Testing contact lenses.",
+        "url": ""
+      }, {
+        "year": "2015–2017",
+        "product": "iOptino",
+        "description": "Dual channel wavefront sensor for space projects.",
+        "url": ""
+      }, {
+        "year": "2017–2019",
+        "product": "OMI-MWIR",
+        "description": "Metrology of optical systems and lasers in the MWIR (1.5–6 µm) wavelength region.",
+        "url": ""
+      }, {
+        "year": "2020–2022",
+        "product": "Sfera190",
+        "description": "Off-axis testing of mobile phone and automotive lenses, reconstructing aberration maps across the field.",
+        "url": ""
+      }, {
+        "year": "2023",
+        "product": "Lentino-HR",
+        "description": "High-resolution testing of optical systems in parallel light and at focus with sampling up to 165 × 165 spots.",
+        "url": ""
+      }, {
+        "year": "2023–2024",
+        "product": "SensoftPro",
+        "description": "Completely redesigned software for instrument control and Shack-Hartmann analysis.",
+        "url": ""
+      }]
+    }, {
+      "id": "expertise",
+      "title": "Comprehensive Expertise and Advanced Solutions in Optics",
+      "content": ["SpotOptics offers turnkey solutions with cutting-edge technology in optical measurement, design, and analysis, supported by advanced software and modeling techniques.", "Our expertise covers all that is required for giving our clients instruments with the latest cutting-edge technology, offering turnkey solutions for accurate measurement of optics, optical systems and lasers. We also provide diagnostic tools to understand how to optimize optical systems and lasers.", "From 3D modeling for mechanics, the latest software techniques, and optical ray-tracing, we draw on our vast experience to solve your problems using our expertise in the following fields:"],
+      "expertiseAreas": []
+    }]
+  }
+}

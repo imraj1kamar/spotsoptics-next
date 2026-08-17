@@ -1,0 +1,1004 @@
+{
+    "section_tagline": "OUR PRODUCTS",
+    "section_heading": "Our complete range of Shack-Hartmann Wavefront Sensors",
+    "view_all_link": "#all-products",
+    "items": [
+        {
+            "name": "OMI: Test in Single Pass",
+            "image": "assets/images/products/1.png",
+            "description": "High resolution sensors for wavefront measurement and analysis.",
+            "features": [
+                "Metrology in transmission (single pass) of lasers and optical elements",
+                "Large wavelength range (DUV, Vis, SWIR, MWIR and LWIR)",
+                "High repeatability (λ/1000) and accuracy (λ/60)",
+                "Compact and lightweight",
+                "Calibration unit included",
+                "<a href=\"#\">SenSoft</a> software for Shack-Hartmann image acquisition and analysis",
+                "Wide range of accessories for testing different beam sizes",
+                "Calibration done by user in-situ for high accuracy"
+            ],
+            "productFamily": [
+                {
+                    "name": "OMI-HS",
+                    "image": "assets/images/products/family/omi-hs.png",
+                    "active": true,
+                    "specifications": [
+                        {
+                            "label": "Resolution",
+                            "value": "45 x 45 spots"
+                        },
+                        {
+                            "label": "Wavelength Range",
+                            "value": "Vis - SWIR",
+                            "graph": "assets/graphs/product/omi-duv-hr.png"
+                        },
+                        {
+                            "label": "Accuracy",
+                            "value": "λ/80"
+                        },
+                        {
+                            "label": "Repeatability",
+                            "value": "λ/1200"
+                        },
+                        {
+                            "label": "Speed",
+                            "value": "Up to 50 Hz"
+                        }
+                    ]
+                },
+                {
+                    "name": "OMI-45",
+                    "image": "assets/images/products/family/omi-45.png",
+                    "active": false,
+                    "specifications": [
+                        {
+                            "label": "Resolution",
+                            "value": "45 x 45 spots"
+                        },
+                        {
+                            "label": "Wavelength Range",
+                            "value": "DUV - LWIR",
+                            "graph": "assets/graphs/product/OMI-DUV-VIS-NIR.png"
+                        },
+                        {
+                            "label": "Accuracy",
+                            "value": "λ/60"
+                        },
+                        {
+                            "label": "Repeatability",
+                            "value": "λ/1000"
+                        },
+                        {
+                            "label": "Design",
+                            "value": "Standard"
+                        }
+                    ]
+                },
+                {
+                    "name": "OMI-HR",
+                    "image": "assets/images/products/family/omi-hr.png",
+                    "active": false,
+                    "specifications": [
+                        {
+                            "label": "Resolution",
+                            "value": "1024 x 1024"
+                        },
+                        {
+                            "label": "Wavelength Range",
+                            "value": "DUV - LWIR",
+                            "graph": "assets/graphs/product/omi-uv.png"
+                        },
+                        {
+                            "label": "Accuracy",
+                            "value": "λ/60"
+                        },
+                        {
+                            "label": "Repeatability",
+                            "value": "λ/1000"
+                        },
+                        {
+                            "label": "Design",
+                            "value": "High Resolution"
+                        }
+                    ]
+                },
+                {
+                    "name": "OMI-SWIR-HR",
+                    "image": "assets/images/products/family/omi-swir-hr.png",
+                    "active": false,
+                    "specifications": [
+                        {
+                            "label": "Resolution",
+                            "value": "640 x 512"
+                        },
+                        {
+                            "label": "Wavelength Range",
+                            "value": "SWIR - MWIR",
+                            "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
+                        },
+                        {
+                            "label": "Accuracy",
+                            "value": "λ/40"
+                        },
+                        {
+                            "label": "Repeatability",
+                            "value": "λ/800"
+                        },
+                        {
+                            "label": "Sensor",
+                            "value": "InGaAs"
+                        }
+                    ]
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Lens Inspection",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "1024 x 1024"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/60"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Compact & Lightweight"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "OMI Selection Guide",
+                    "link": "/omi-selection-guide"
+                },
+                {
+                    "title": "OMI Brochure",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "OMI-CMOS-DUV-VIS",
+                    "link": "assets/brochures/SpotOptics-OMI-CMOS-DUV-VIS.pdf"
+                },
+                {
+                    "title": "OMI-DUV-HR-VIS",
+                    "link": "assets/brochures/SpotOptics-OMI-DUV-HR-VIS.pdf"
+                },
+                {
+                    "title": "OMI-UV-VIS",
+                    "link": "assets/brochures/SpotOptics-OMI-UV-VIS.pdf"
+                },
+                {
+                    "title": "OMI-SWIR",
+                    "link": "assets/brochures/SpotOptics_OMI-SWIR.pdf"
+                },
+                {
+                    "title": "OMI-MWIR",
+                    "link": "assets/brochures/SpotOptics-OMI-MWIR.pdf"
+                }
+            ],
+            "navigation": {
+                "previous": "",
+                "next": "HASO Wavefront Sensors"
+            },
+            "images": [
+                "assets/images/products/1.png",
+                "assets/images/products/family/omi-hs.png",
+                "assets/images/products/family/omi-hr.png",
+                "assets/images/products/family/omi-swir-hr.png",
+                "assets/graphs/product/omi-duv-hr.png"
+            ]
+        },
+        {
+            "name": "iOptino-mu: Pocket-size, Single & Double Pass",
+            "image": "assets/images/products/2.png",
+            "description": "Compact Shack-Hartmann wavefront sensor designed for portable, high-precision metrology in research and industrial environments.",
+            "features": [
+                "World's smallest Shack-Hartmann wavefront sensor with single and double pass capability",
+                "Pocket-sized format: 70 x 25 x 30 mm and only 200 g",
+                "Accuracy comparable to interferometric measurements",
+                "Built-in calibration source for fast setup",
+                "Optional direct imaging channel for dual-channel operation",
+                "Motorized stage compatibility for simplified calibration and alignment",
+                "<a href=\"#\">SenSoft</a> software for acquisition and wavefront analysis",
+                "Resolution: 45 x 45 spots",
+                "Zernike coefficient precision: λ/3000",
+                "Wavefront RMS precision: λ/1000",
+                "High-speed operation up to 50 Hz"
+            ],
+            "applications": [
+                {
+                    "title": "Optical Metrology",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Lens Inspection",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "Vis - SWIR",
+                    "graph": "assets/graphs/product/OMI-DUV-VIS-NIR.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/3000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Pocket Size"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Optino-mu Brochure",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Wavefront Sensors Guide",
+                    "link": "/all-products"
+                }
+            ],
+            "navigation": {
+                "previous": "OMI: Test in Single Pass",
+                "next": "Optino : Dual channel, Single & Double Pass"
+            },
+            "images": [
+                "assets/images/products/2.png",
+                "assets/images/products/family/omi-45.PNG",
+                "assets/graphs/product/OMI-DUV-VIS-NIR.png"
+            ]
+        },
+        {
+            "name": "Optino: Dual-channel, Single & Double Pass",
+            "image": "assets/images/products/3.png",
+            "description": "Dual-channel Shack-Hartmann wavefront sensor combining direct imaging and high-accuracy wavefront analysis for alignment and testing.",
+            "features": [
+                "Dual-channel Shack-Hartmann wavefront sensor",
+                "Single and double pass acquisitions with standard or large-format camera",
+                "Dedicated imaging channel for direct beam and surface visualization",
+                "Built-in calibration source",
+                "Low-diffuse-light model for enhanced measurement stability",
+                "SenSoft software for simultaneous wavefront, imaging, and alignment analysis"
+            ],
+            "applications": [
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Imaging Systems",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-uv.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1200"
+                },
+                {
+                    "label": "Design",
+                    "value": "Dual Channel"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Optino Brochure",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Application Notes",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Optino-mu: Pocket size, Single & Double Pass",
+                "next": "Laserino-mu: Dual Channel, Single Pass"
+            },
+            "images": [
+                "assets/images/products/3.png",
+                "assets/images/products/family/omi-hs.png",
+                "assets/graphs/product/omi-uv.png"
+            ]
+        },
+        {
+            "name": "Laserino-mu: Dual-channel, Single Pass",
+            "image": "assets/images/products/4.png",
+            "description": "Laser-focused metrology solution combining direct imaging and Shack-Hartmann analysis for beam quality, M², and MTF evaluation.",
+            "features": [
+                "Dual-channel wavefront sensor for laser testing",
+                "Single-pass Shack-Hartmann channel with standard or large-format camera",
+                "Direct imaging channel for beam profiling and focusing",
+                "Advanced software for synchronized acquisition and analysis",
+                "M<sup>2</sup> evaluation directly from Shack-Hartmann data",
+                "MTF extraction without a scanning system"
+            ],
+            "applications": [
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Imaging Systems",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Analysis",
+                    "value": "M² & MTF Direct"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Laserino-mu Data Sheet",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Laser Testing Guide",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Optino : Dual channel, Single & Double Pass",
+                "next": "Optino: Single & Double Pass"
+            },
+            "images": [
+                "assets/images/products/4.png",
+                "assets/images/products/family/omi-swir-hr.png",
+                "assets/graphs/product/omi-uv-vis-nir.jpeg"
+            ]
+        },
+        {
+            "name": "Optino: Single & Double Pass",
+            "image": "assets/images/products/5.png",
+            "description": "Versatile Shack-Hartmann platform for transmission measurements across a broad wavelength range and multiple optical configurations.",
+            "features": [
+                "Metrology in transmission in single and double pass",
+                "Wide wavelength coverage from DUV to LWIR",
+                "High repeatability and accuracy",
+                "Suitable for optical element and laser testing",
+                "Compact configuration for easy integration into lab workflows",
+                "Supports calibration and repeatability checks during setup"
+            ],
+            "applications": [
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Lens Inspection",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-duv-hr.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Single & Double Pass"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Optino Guide",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Optical Testing Overview",
+                    "link": "/all-products"
+                }
+            ],
+            "navigation": {
+                "previous": "Laserino-mu: Dual Channel, Single Pass",
+                "next": "Lentino & Opal: On-axis Motorized"
+            },
+            "images": [
+                "assets/images/products/5.png",
+                "assets/images/products/family/omi-hr.png",
+                "assets/graphs/product/omi-duv-hr.png"
+            ]
+        },
+        {
+            "name": "Lentino & Opal: On-axis Motorized",
+            "image": "assets/images/products/6.png",
+            "description": "Motorized on-axis measurement platform for automated alignment and repeatable optical testing in research and production.",
+            "features": [
+                "On-axis motorized metrology platform",
+                "High repeatability for automated optical measurement",
+                "Wide spectral coverage from DUV to LWIR",
+                "Optimized for beam and surface characterization",
+                "Improves setup repeatability and calibration efficiency",
+                "Supports integration into standard laboratory testing workflows"
+            ],
+            "applications": [
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Lens Inspection",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/OMI-DUV-VIS-NIR.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "On-axis Motorized"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Motorized Metrology Brochure",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Automated Testing Guide",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Optino: Single & Double Pass",
+                "next": "Sfera & Stella: Off-axis Motorized"
+            },
+            "images": [
+                "assets/images/products/6.png",
+                "assets/images/products/family/omi-swir-hr.png",
+                "assets/graphs/product/OMI-DUV-VIS-NIR.png"
+            ]
+        },
+        {
+            "name": "Sfera & Stella: Off-axis Motorized",
+            "image": "assets/images/products/7.png",
+            "description": "Off-axis motorized metrology solutions for dynamic alignment and precision testing in complex optical setups.",
+            "features": [
+                "Off-axis motorized measurement platform",
+                "Suitable for alignment-sensitive optical testing",
+                "Broad wavelength range from DUV to LWIR",
+                "High repeatability for precision measurements",
+                "Designed for reproducible axis positioning and calibration",
+                "Supports advanced research and production inspection"
+            ],
+            "applications": [
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Imaging Systems",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-uv.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Off-axis Motorized"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Off-axis Metrology Overview",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Alignment Systems Guide",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Lentino & Opal: On-axis Motorized",
+                "next": "Contour: for contact lenses"
+            },
+            "images": [
+                "assets/images/products/7.png",
+                "assets/images/products/family/omi-45.PNG",
+                "assets/graphs/product/omi-uv.png"
+            ]
+        },
+        {
+            "name": "Contour: For Contact Lenses",
+            "image": "assets/images/products/8.png",
+            "description": "Specialized wavefront metrology solution for contact lens quality control, surface analysis, and optical validation.",
+            "features": [
+                "Optimized for contact lens metrology",
+                "High-resolution wavefront acquisition for curved optics",
+                "Wide spectral range for ocular and lens testing",
+                "Supports precision quality inspection",
+                "Reliable repeatability for ophthalmic measurements",
+                "Compatible with high-accuracy optical analysis workflows"
+            ],
+            "applications": [
+                {
+                    "title": "Lens Inspection",
+                    "icon": "lens"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "Vis - NIR",
+                    "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Application",
+                    "value": "Contact Lenses"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Contour Lens Brochure",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Ophthalmic Applications",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Sfera & Stella: Off-axis Motorized",
+                "next": "Puntino: Dual-channel, for astronomical telescopes"
+            },
+            "images": [
+                "assets/images/products/8.png",
+                "assets/images/products/family/omi-hs.png",
+                "assets/graphs/product/omi-uv-vis-nir.jpeg"
+            ]
+        },
+        {
+            "name": "Puntino: Dual-channel, for Astronomical Telescopes",
+            "image": "assets/images/products/9.png",
+            "description": "Dual-channel metrology solution for large optics and high-precision astronomical alignment and telescope testing.",
+            "features": [
+                "Dual-channel architecture for telescope metrology",
+                "Dedicated wavefront analysis for large optical systems",
+                "High accuracy for astronomical mirror and optical element testing",
+                "Compatible with precision alignment and calibration workflows",
+                "Supports optical quality evaluation in research and observatory environments",
+                "Reliable operation across visible and near-infrared wavelengths"
+            ],
+            "applications": [
+                {
+                    "title": "Telescope Metrology",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser"
+                }
+            ],
+            "quickSpecifications": [
+                {
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "Vis - SWIR",
+                    "graph": "assets/graphs/product/omi-duv-hr.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Dual-channel, Telescope"
+                }
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Astronomical Metrology Guide",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Telescope Applications",
+                    "link": "/applications"
+                }
+            ],
+            "navigation": {
+                "previous": "Contour: for contact lenses",
+                "next": "OMI: Test in Single Pass"
+            },
+            "images": [
+                "assets/images/products/9.png",
+                "assets/images/products/family/omi-hr.png",
+                "assets/graphs/product/omi-duv-hr.png"
+            ]
+        },
+        {
+            "name":"5Star : Off-axis Multi Camera",
+            "image": "assets/images/products/10.png",
+            "description": "Off-axis multi-camera metrology solution for simultaneous wavefront and imaging analysis in complex optical systems.",
+            "features": [
+                "Off-axis multi-camera wavefront sensor",
+                "Simultaneous acquisition of wavefront and imaging data",
+                "High-precision metrology for complex optical setups",
+                "Optimized for alignment and calibration of multi-element systems", 
+                "Supports advanced research and industrial applications",
+                "Reliable operation across a wide spectral range"
+            ],
+            "productFamily": [
+                {
+                    "name": "5Star : Off-axis Multi Camera",
+                    "image": "assets/images/products/family/5star-off.png",
+                    "active": true,
+                    "specifications": []
+                   
+                },
+                {
+                    "name": "Countour of wavefront",
+                    "image": "assets/images/products/family/Slide5.png",
+                    "active": false,
+                    "specifications": []
+                },
+                {
+                    "name": "Spot diagram",
+                    "image": "assets/images/products/family/Slide6.png",
+                    "active": false,
+                    "specifications": []
+                },
+                {
+                    "name": "Mtf from Shack-Hartmann analysis",
+                    "image": "assets/images/products/family/Slide8.png",
+                    "active": false,
+                    "specifications": []
+                }
+            ],
+            "applications": [
+                {
+                    "title": "Optical Alignment",
+                    "icon": "alignment"
+                },
+                {
+                    "title": "Wavefront Analysis",
+                    "icon": "wave"
+                },
+                {
+                    "title": "Laser Testing",
+                    "icon": "laser" 
+                },
+                {
+                    "title": "Beam Profiling",
+                    "icon": "beam"
+                },
+                {
+                    "title": "Imaging Systems",
+                    "icon": "lens"
+                }
+            ],
+            "quickSpecifications": [
+                {   
+                    "label": "Resolution",
+                    "value": "45 x 45 spots"
+                },
+                {
+                    "label": "Wavelength Range",
+                    "value": "DUV - LWIR",
+                    "graph": "assets/graphs/product/omi-uv.png"
+                },
+                {
+                    "label": "Accuracy",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Repeatability",
+                    "value": "λ/1000"
+                },
+                {
+                    "label": "Design",
+                    "value": "Off-axis Multi Camera"
+                }   
+            ],
+            "buttons": {
+                "quote": {
+                    "title": "REQUEST A QUOTE",
+                    "link": "/contact"
+                }
+            },
+            "brochures": [
+                {
+                    "title": "Off-axis Multi Camera",
+                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                },
+                {
+                    "title": "Multi-Camera Applications",
+                    "link": "/applications"
+                }   
+            ],
+            "navigation": {
+                "previous": "Puntino: Dual-channel, for astronomical telescopes",
+                "next": "OMI: Test in Single Pass"
+            }
+            
+
+        }
+    ]
+}
