@@ -97,7 +97,7 @@ export default function DownloadsPage() {
             className="all-products-breadcrumbs"
           />
 
-          <div className="top-bar-center">
+          <div className="d-none d-lg-block top-bar-center">
             <h1 className="product-detail-title">{page.title || 'Downloads'}</h1>
           </div>
           <div className="all-products-counter text-end">

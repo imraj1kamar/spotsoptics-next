@@ -318,6 +318,7 @@ p {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   padding: 4px 0;
+  display: contents;
 }
 
 .spotoptics-breadcrumb-wrapper::-webkit-scrollbar {

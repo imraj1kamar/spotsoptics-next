@@ -106,7 +106,7 @@ export default function CompanyProfilePage() {
             className="all-products-breadcrumbs"
           />
 
-          <div className="top-bar-center">
+          <div className="d-none d-lg-block top-bar-center">
             <h1 className="product-detail-title">{pageInfo.brand || 'SpotOptics'}</h1>
           </div>
 

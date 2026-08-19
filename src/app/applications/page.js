@@ -121,7 +121,7 @@ export default function ApplicationsSection() {
             className="all-products-breadcrumbs"
           />
 
-          <div className="top-bar-center">
+          <div className="d-none d-lg-block top-bar-center">
             <h1 className="product-detail-title">Applications</h1>
           </div>
 

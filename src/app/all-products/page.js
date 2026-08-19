@@ -53,7 +53,7 @@ export default function AllProductsCatalogPage() {
               className="all-products-breadcrumbs"
             />
 
-            <div className="top-bar-center">
+            <div className="d-none d-lg-block top-bar-center">
               <h1 className="product-detail-title">All Products</h1>
             </div>
 
