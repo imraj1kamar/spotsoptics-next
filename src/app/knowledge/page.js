@@ -1,85 +1,128 @@
-
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Dynamic Data & Components Import
+// Dynamic Data & Components
 import Sidebar from '@/components/common/Sidebar';
 import Breadcrumbs from '@/components/common/Breadcrumbs';
 import Cta from '@/components/common/Cta';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
 
-// CSS Imports
+// Stylesheets
 import '../../../public/assets/css/all-products.css';
 import '../../../public/assets/css/knowledge.css';
 
+// Helper to normalize image paths
+const normalizeSrc = (src) => {
+  if (!src) return '';
+  return src.startsWith('/') || src.startsWith('http') ? src : `/${src}`;
+};
+
 export default function KnowledgePage() {
+  const containerRef = useRef(null);
+  const [activeCategory, setActiveCategory] = useState('ALL');
+  const [searchQuery, setSearchQuery] = useState('');
+
   const page = knowledgeData?.page || {};
-  const articles = knowledgeData?.articles || [];
+  const allArticles = useMemo(() => knowledgeData?.articles || [], []);
 
-  // Format articles count with leading zero (e.g. 04)
-  const formattedCount = String(articles.length).padStart(2, '0');
+  // Format articles count with leading zero
+  const totalCountFormatted = String(allArticles.length).padStart(2, '0');
 
-  // GSAP Scroll Animations
+  // Filter articles based on search & category
+  const filteredArticles = useMemo(() => {
+    return allArticles.filter((article) => {
+      const matchesSearch =
+        searchQuery === '' ||
+        article.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        article.description?.toLowerCase().includes(searchQuery.toLowerCase());
+
+      const category = article.category || article.tag || 'METROLOGY';
+      const matchesCategory =
+        activeCategory === 'ALL' ||
+        category.toUpperCase() === activeCategory.toUpperCase();
+
+      return matchesSearch && matchesCategory;
+    });
+  }, [allArticles, searchQuery, activeCategory]);
+
+  // Extract unique categories for quick filter chips
+  const categories = useMemo(() => {
+    const set = new Set(['ALL']);
+    allArticles.forEach((art) => {
+      const cat = art.category || art.tag;
+      if (cat) set.add(cat.toUpperCase());
+    });
+    return Array.from(set);
+  }, [allArticles]);
+
+  // GSAP Scroll Animations with context cleanup
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
+    if (typeof window === 'undefined') return;
 
-      // 1. Fade + Slide Up Animation for Article Cards
-      const articleCards = document.querySelectorAll('.knowledge-article');
-      articleCards.forEach((card) => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // 1. Article Cards Staggered Reveal
+      const cards = gsap.utils.toArray('.knowledge-article-card');
+      if (cards.length > 0) {
         gsap.fromTo(
-          card,
-          { opacity: 0, y: 24 },
+          cards,
+          { opacity: 0, y: 30 },
           {
             opacity: 1,
             y: 0,
-            duration: 0.5,
+            duration: 0.6,
+            stagger: 0.08,
             ease: 'power2.out',
-            clearProps: 'all',
+            clearProps: 'transform,opacity',
             scrollTrigger: {
-              trigger: card,
+              trigger: '.knowledge-articles-grid',
               start: 'top 85%',
-              toggleActions: 'play none none reverse',
+              toggleActions: 'play none none none',
             },
           }
         );
-      });
+      }
 
-      // 2. Image Zoom-In for Article Images
-      const articleImages = document.querySelectorAll('.knowledge-article-image');
-      articleImages.forEach((img) => {
+      // 2. Media Image Hover Parallax / Scale
+      const mediaFigures = gsap.utils.toArray('.knowledge-media-box');
+      mediaFigures.forEach((box) => {
         gsap.fromTo(
-          img,
-          { opacity: 0, scale: 1.05 },
+          box,
+          { opacity: 0, scale: 0.98 },
           {
             opacity: 1,
             scale: 1,
-            duration: 0.6,
+            duration: 0.5,
             ease: 'power2.out',
-            clearProps: 'all',
+            clearProps: 'transform,opacity',
             scrollTrigger: {
-              trigger: img,
-              start: 'top 90%',
-              toggleActions: 'play none none reverse',
+              trigger: box,
+              start: 'top 92%',
+              toggleActions: 'play none none none',
             },
           }
         );
       });
-    }
-  }, []);
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, [filteredArticles]);
 
   return (
-    <section className="page-section knowledge-page-wrapper py-5">
-      <div className="container mt-5">
-         {/* Top Bar: Breadcrumbs & Counter Badge */}
-          <div className="d-flex justify-content-between align-items-start position-relative z-2 mb-4 mx-3">
+    <section ref={containerRef} className="page-section knowledge-page-wrapper py-5">
+      <div className="container mt-4">
+        
+        {/* ================= 1. TOP BAR: BREADCRUMBS & COUNTER ================= */}
+     
+  <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-2 mx-3">
             <Breadcrumbs
               items={[
                 { label: 'Home', href: '/' },
@@ -102,180 +145,272 @@ export default function KnowledgePage() {
               </div>
               <div className="counter-info">
                 <span className="counter-label">TOTAL ARTICLES</span>
-                <span className="counter-value">{formattedCount}</span>
+                <span className="counter-value">{totalCountFormatted}</span>
               </div>
             </div>
           </div>
-        {/* ================= EXACT TOP HERO BANNER CARD ================= */}
+        {/* ================= 2. HERO BANNER ================= */}
         <motion.div
-          className="knowledge-hero-card position-relative overflow-hidden mb-5 p-4 p-md-5"
+          className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         >
-          {/* Right Background 3D Optical Lens Graphic */}
-          <div className="knowledge-hero-bg-graphic" aria-hidden="true">
-            <Image
-              src={page.hero_graphic || '/assets/images/focal-lance.png'}
-              alt="Optical Wavefront Sensor"
-              width={650}
-              height={320}
-              className="hero-lens-img"
-              priority
-              unoptimized
-            />
-          </div>
-
-         
-
-          {/* Hero Main Content (Left aligned) */}
-          <div className="row position-relative z-2">
-            <div className="col-xl-7 col-lg-8 col-md-9">
-              <h1 className="knowledge-hero-title mb-3">
+          <div className="row align-items-center position-relative z-2">
+            <div className="col-lg-6 col-md-7">
+              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 text-white border border-white border-opacity-15 mb-3">
+                <span className="hero-pulse-dot"></span>
+                <span className="small fw-semibold letter-spacing-1 text-uppercase">
+                  Optical Metrology & Wavefront Research
+                </span>
+              </div>
+              <h1 className="knowledge-hero-title text-white fw-bold mb-3">
                 {page.title || 'Knowledge Corner'}
               </h1>
-              <p className="knowledge-hero-text mb-0">
-                {page.description }  </p>
+              <div className="hero-accent-line mb-3"></div>
+              <p className="knowledge-hero-description text-white text-opacity-75 mb-0">
+                {page.description}
+              </p>
             </div>
+
+            {page.hero_graphic && (
+             
+              <div className="col-lg-6 col-md-4 text-end position-relative z-1 d-none d-md-block">
+                            <div className="hero-3d-lens-wrapper">
+                              <Image
+                                             
+                                             src={normalizeSrc(page.hero_graphic)}
+                                             alt='Optical wavefront schematic'
+                                             width={850}
+                                             height={380}
+                                             className="img-fluid rounded object-fit-contain"
+                                             style={{ maxHeight: '360px' }}
+                                             priority
+                                             unoptimized
+                                             
+                                           />
+                            </div>
+                          </div>
+            )}
           </div>
+          <div className="hero-card-glow-bg" aria-hidden="true"></div>
         </motion.div>
 
-        {/* ================= ARTICLES GRID & SIDEBAR ================= */}
+        {/* ================= 3. FILTER / SEARCH CONTROLS ================= */}
+        {categories.length > 1 && (
+          <div className="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+            <div className="d-flex flex-wrap gap-2">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setActiveCategory(cat)}
+                  className={`btn-filter-chip ${activeCategory === cat ? 'active' : ''}`}
+                >
+                  {cat === 'ALL' ? 'All Publications' : cat}
+                </button>
+              ))}
+            </div>
+
+            <div className="knowledge-search-input-wrapper">
+              <input
+                type="text"
+                placeholder="Search technical papers..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="form-control form-control-sm knowledge-search-input"
+              />
+              <svg
+                className="search-icon"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        )}
+
+        {/* ================= 4. ARTICLES GRID & SIDEBAR ================= */}
         <div className="row g-4 mb-5">
           
-          {/* Left Column: 2x2 Article Cards Grid (9/12) */}
+          {/* Main Articles Area (9 Cols) */}
           <div className="col-lg-9">
-            {articles.length > 0 ? (
+            {filteredArticles.length > 0 ? (
               <div className="row g-4 knowledge-articles-grid">
-                {articles.map((article, index) => {
-                  const coverImageSrc = article.image
-                    ? article.image.startsWith('/') ? article.image : `/${article.image}`
-                    : '';
-
+                {filteredArticles.map((article, index) => {
+                  const coverImageSrc = normalizeSrc(article.image);
                   const galleryImages = article.image_gallery || [];
+                  const categoryBadge = article.category || article.tag || 'OPTICAL TESTING';
 
                   return (
-                    <div key={article.id || index} className="col-12 col-md-6">
+                    <div key={article.id || index} className="col-12 col-md-6 d-flex">
                       <article
-                        className="knowledge-article custom-glass-card h-100 d-flex flex-column bg-white rounded-4 border p-3"
+                        className="knowledge-article-card custom-glass-card w-100 d-flex flex-column rounded-4 p-0"
                         id={article.id || `knowledge-article-${index}`}
                       >
-                        {/* 1. Article Images Area */}
-                        <div className="knowledge-article-media mb-3">
+                        {/* Media Section (Cover or Gallery) */}
+                        <div className="knowledge-media-wrapper p-3 pb-0">
                           {coverImageSrc ? (
-                            <figure className="knowledge-article-figure mb-0 overflow-hidden rounded-3 bg-light text-center">
-                              <Image
-                                src={coverImageSrc}
-                                alt={article.title || 'Knowledge article'}
-                                width={500}
-                                height={280}
-                                style={{ width: '100%', height: '220px', objectFit: 'contain' }}
-                                className="knowledge-article-image p-2"
-                                unoptimized
-                              />
+                            <figure className="comparison-media-box rounded-3 p-3 bg-light d-flex flex-column align-items-center justify-content-between h-100 border">
+                              <div className="media-img-container">
+                                <Image
+                                  src={coverImageSrc}
+                                  alt={article.caption || article.title || 'Wavefront technical diagram'}
+                                  width={500}
+                                  height={260}
+                                  className="knowledge-article-img"
+                                  unoptimized
+                                />
+                              </div>
                               {article.caption && (
-                                <figcaption className="knowledge-article-caption small text-muted p-2 text-start">
-                                  {article.caption}
+                                <figcaption className="knowledge-caption px-3 py-2">
+                                  <span className="caption-dot"></span>
+                                  <span className="caption-text">{article.caption}</span>
                                 </figcaption>
                               )}
                             </figure>
                           ) : galleryImages.length > 0 ? (
-                            /* Side-by-Side Gallery Images */
-                            <div className="row g-2 knowledge-article-gallery">
+                            <div className="knowledge-gallery-grid">
                               {galleryImages.map((galleryItem, gIdx) => {
-                                const gSrc = galleryItem.image
-                                  ? galleryItem.image.startsWith('/') ? galleryItem.image : `/${galleryItem.image}`
-                                  : '';
-
+                                const gSrc = normalizeSrc(galleryItem.image);
                                 return (
-                                  <div key={gIdx} className="col-6">
-                                    <figure className="knowledge-gallery-item mb-0 text-center bg-light rounded-3 p-1 h-100 d-flex flex-column justify-content-between">
+                                  <figure
+                                    key={gIdx}
+                                    className="knowledge-media-box gallery-sub-box mb-0 rounded-3 border overflow-hidden"
+                                  >
+                                    <div className="gallery-img-container">
                                       {gSrc && (
                                         <Image
                                           src={gSrc}
-                                          alt={article.title || 'Gallery item'}
-                                          width={220}
-                                          height={150}
-                                          style={{ width: '100%', height: '120px', objectFit: 'contain' }}
-                                          className="knowledge-article-image rounded"
+                                          alt={galleryItem.caption || `Comparative analysis ${gIdx + 1}`}
+                                          width={240}
+                                          height={140}
+                                          className="knowledge-article-img"
                                           unoptimized
                                         />
                                       )}
-                                      {galleryItem.caption && (
-                                        <figcaption className="knowledge-gallery-caption text-muted text-start mt-2" style={{ fontSize: '11px', lineHeight: '1.3' }}>
-                                          {galleryItem.caption}
-                                        </figcaption>
-                                      )}
-                                    </figure>
-                                  </div>
+                                    </div>
+                                    {galleryItem.caption && (
+                                      <figcaption className="knowledge-caption micro-caption px-2 py-1">
+                                        <span className="caption-dot"></span>
+                                        <span className="caption-text"> {galleryItem.caption}</span>
+                                       
+                                      </figcaption>
+                                    )}
+                                  </figure>
                                 );
                               })}
                             </div>
                           ) : null}
                         </div>
 
-                        {/* 2. Article Body */}
-                        <div className="knowledge-article-body d-flex flex-column flex-grow-1">
-                          
-                          {/* Technology Badge */}
+                        {/* Content Body */}
+                        <div className="knowledge-body-content p-4 d-flex flex-column flex-grow-1">
                           <div className="mb-2">
-                            <span className="badge bg-primary-subtle text-primary fw-semibold px-2 py-1 rounded-2 text-uppercase" style={{ fontSize: '11px', letterSpacing: '0.5px' }}>
-                              {article.category || article.tag || 'TECHNOLOGY'}
+                            <span className="comparison-floating-badge badge  text-white px-3 py-2 rounded-pill fw-semibold mb-2">
+                              {categoryBadge}
                             </span>
                           </div>
 
-                          {/* Article Title */}
-                          <h5 className="knowledge-article-title fw-bold text-dark mb-2" style={{ fontSize: '1.1rem', lineHeight: '1.4' }}>
-                            {article.title || ''}
-                          </h5>
+                          <h3 className="knowledge-item-title mb-2">
+                            <Link href={article.url || '#'} className="title-link">
+                              {article.title}
+                            </Link>
+                          </h3>
 
-                          {/* Article Description */}
                           {article.description && (
-                            <p className="knowledge-article-excerpt text-muted mb-4 small flex-grow-1" style={{ lineHeight: '1.6' }}>
+                            <p className="knowledge-item-excerpt text-muted mb-4">
                               {article.description}
                             </p>
                           )}
 
-                          {/* Article Link (Read More) */}
-                          <div className="knowledge-article-footer mt-auto pt-2">
+                          {/* Card Footer Action */}
+                          <div className="knowledge-card-footer mt-auto pt-3 border-top d-flex align-items-center justify-content-between">
                             <Link
                               href={article.url || '#'}
-                              className="knowledge-article-link text-primary text-decoration-none fw-semibold d-inline-flex align-items-center gap-1 small"
+                              className="a-link mt-auto d-inline-flex align-items-center gap-2 text-decoration-none text-uppercase"
+                              aria-label={`Read more about ${article.title}`}
                             >
-                              <span>{article.button_text || 'Read More'}</span>
-                              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                              <span>{article.button_text || 'Read Technical Paper'}</span>
+                              <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                className="arrow-icon"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth="2.2"
+                                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                />
                               </svg>
                             </Link>
                           </div>
                         </div>
-
                       </article>
                     </div>
                   );
                 })}
               </div>
             ) : (
-              <div className="custom-glass-card p-4 text-center">
-                <p className="text-muted mb-0">Knowledge content coming soon.</p>
+              <div className="empty-state-card text-center p-5 rounded-4 border bg-white">
+                <svg
+                  width="48"
+                  height="48"
+                  fill="none"
+                  stroke="#94a3b8"
+                  viewBox="0 0 24 24"
+                  className="mb-3"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <h5 className="text-dark fw-bold">No articles match your query</h5>
+                <p className="text-muted small mb-3">Try adjusting your search terms or filters.</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveCategory('ALL');
+                    setSearchQuery('');
+                  }}
+                  className="btn btn-outline-primary btn-sm rounded-pill px-3"
+                >
+                  Reset Filters
+                </button>
               </div>
             )}
           </div>
 
-          {/* Right Column: Sidebar (3/12) */}
+          {/* Right Column: Sticky Sidebar (3 Cols) */}
           <div className="col-lg-3 d-none d-lg-block">
-            <div className="sticky-top" style={{ top: '100px' }}>
+            <aside className="sticky-top" style={{ top: '100px', zIndex: 10 }}>
               <Sidebar
-                title={sidebarData?.title || 'Categories'}
+                title={sidebarData?.title || 'Knowledge Categories'}
                 links={sidebarData?.links || []}
               />
-            </div>
+            </aside>
           </div>
 
         </div>
 
-        {/* ================= BOTTOM CTA BANNER ================= */}
-        <div className="knowledge-cta-wrapper mb-4">
+        {/* ================= 5. BOTTOM CTA ================= */}
+        <div className="knowledge-cta-section mt-5">
           <Cta />
         </div>
 

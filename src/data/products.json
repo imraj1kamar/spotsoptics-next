@@ -4,6 +4,7 @@
     "view_all_link": "#all-products",
     "items": [
         {
+            "id" : "omi-test-in-single-pass",
             "name": "OMI: Test in Single Pass",
             "image": "assets/images/products/1.png",
             "description": "High resolution sensors for wavefront measurement and analysis.",
@@ -225,6 +226,7 @@
             ]
         },
         {
+            "id": "ioptino-mu-pocket-size-single-and-double-pass",
             "name": "iOptino-mu: Pocket-size, Single & Double Pass",
             "image": "assets/images/products/2.png",
             "description": "Compact Shack-Hartmann wavefront sensor designed for portable, high-precision metrology in research and industrial environments.",
@@ -313,6 +315,7 @@
             ]
         },
         {
+            "id": "optino-dual-channel-single-and-double-pass",
             "name": "Optino: Dual-channel, Single & Double Pass",
             "image": "assets/images/products/3.png",
             "description": "Dual-channel Shack-Hartmann wavefront sensor combining direct imaging and high-accuracy wavefront analysis for alignment and testing.",
@@ -396,6 +399,7 @@
             ]
         },
         {
+            "id": "laserino-mu-dual-channel-single-pass",
             "name": "Laserino-mu: Dual-channel, Single Pass",
             "image": "assets/images/products/4.png",
             "description": "Laser-focused metrology solution combining direct imaging and Shack-Hartmann analysis for beam quality, M², and MTF evaluation.",
@@ -479,6 +483,7 @@
             ]
         },
         {
+            "id": "optino-single-and-double-pass",
             "name": "Optino: Single & Double Pass",
             "image": "assets/images/products/5.png",
             "description": "Versatile Shack-Hartmann platform for transmission measurements across a broad wavelength range and multiple optical configurations.",
@@ -562,6 +567,7 @@
             ]
         },
         {
+            "id": "lentino-opal-on-axis-motorized",
             "name": "Lentino & Opal: On-axis Motorized",
             "image": "assets/images/products/6.png",
             "description": "Motorized on-axis measurement platform for automated alignment and repeatable optical testing in research and production.",
@@ -645,6 +651,7 @@
             ]
         },
         {
+            "id": "sfera-stella-off-axis-motorized",
             "name": "Sfera & Stella: Off-axis Motorized",
             "image": "assets/images/products/7.png",
             "description": "Off-axis motorized metrology solutions for dynamic alignment and precision testing in complex optical setups.",
@@ -728,6 +735,7 @@
             ]
         },
         {
+            "id": "contour-for-contact-lenses",
             "name": "Contour: For Contact Lenses",
             "image": "assets/images/products/8.png",
             "description": "Specialized wavefront metrology solution for contact lens quality control, surface analysis, and optical validation.",
@@ -811,6 +819,7 @@
             ]
         },
         {
+            "id": "puntino-dual-channel-for-astronomical-telescopes",
             "name": "Puntino: Dual-channel, for Astronomical Telescopes",
             "image": "assets/images/products/9.png",
             "description": "Dual-channel metrology solution for large optics and high-precision astronomical alignment and telescope testing.",
@@ -894,6 +903,7 @@
             ]
         },
         {
+            "id": "5star-off-axis-multi-camera",
             "name":"5Star : Off-axis Multi Camera",
             "image": "assets/images/products/10.png",
             "description": "Off-axis multi-camera metrology solution for simultaneous wavefront and imaging analysis in complex optical systems.",

@@ -20,7 +20,7 @@ export default function Cta() {
             {/* Left Content */}
             <div className="col-lg-7">
               <div className="d-flex align-items-start gap-3">
-                <div className="tech-icon">
+                <div className="tech-icon ">
                   <svg
                     width="24"
                     height="24"

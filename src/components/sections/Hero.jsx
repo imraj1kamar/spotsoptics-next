@@ -105,7 +105,7 @@ export default function Hero() {
 
       {/* Main Container */}
       <div
-        className="container-fluid px-4 px-xl-5 position-relative"
+        className="container-fluid  px-xl-5 position-relative"
         style={{ maxWidth: '1400px', zIndex: 3 }}
       >
         <div className="row align-items-center min-vh-100 pt-0 mt-0 hero-row">

@@ -107,9 +107,15 @@ export default function ZernikePolynomialsDetailPage({ data }) {
                     unoptimized
                   />
                 )}
-                <span className="small text-muted mt-2">
+                {/* <span className="small text-muted mt-2">
                   {currentData.caption || 'Zernike Coordinate System on Circular Pupil'}
-                </span>
+                </span> */}
+
+                <figcaption className="justify-content-center align-items-center knowledge-caption micro-caption px-2 py-1">
+                                        <span className="caption-dot"></span>
+                                        <span className="caption-text">  {currentData.caption || 'Zernike Coordinate System on Circular Pupil'}</span>
+                                       
+                                      </figcaption>
               </div>
             </div>
 

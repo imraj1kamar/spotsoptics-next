@@ -1,7 +1,9 @@
 {
 "page": {
 "title": "Knowledge Corner",
-"description": "SpotOptics is pleased to present information on the principles of their wavefront sensors and wavefront sensor based systems. You can learn more on Zernike polynomials, Shack Hartmann wavefront sensor comparison with interferometers, aberrations and photo gallery on aberrations. FAQ on SH test is also available."
+"description": "SpotOptics is pleased to present information on the principles of their wavefront sensors and wavefront sensor based systems. You can learn more on Zernike polynomials, Shack Hartmann wavefront sensor comparison with interferometers, aberrations and photo gallery on aberrations. FAQ on SH test is also available.",
+"hero_graphic":"assets/images/knowledge/knowladge.png"
+
 },
 "articles": [
 {
@@ -12,14 +14,16 @@
   "description": "In the classical Hartmann test, a screen with holes is placed before the element being tested. The spots corresponding to these holes are recorded on a CCD, before or after the focus. The positions of these spots are mapped back onto the optical element, and the difference between the positions of these spots and the holes of the screen are used to compute the aberrations. This method is mostly obsolete now, as the Shack-Hartmann test has replaced it.",
   "button_text": "Read More",
   "url": "/knowledge/shack-hartmann-vs-hartmann",
+  
 
   "details": {
     "page_title": "Shack-Hartmann vs. Hartmann Test",
-"subtitle": "A technical comparison of classical Hartmann screen testing and modern Shack-Hartmann wavefront sensors, highlighting calibration advantages, precision, and sensitivity.",
+    "subtitle": "A technical comparison of classical Hartmann screen testing and modern Shack-Hartmann wavefront sensors, highlighting calibration advantages, precision, and sensitivity.",
     "hero": {
       "title": "Shack-Hartmann vs. Hartmann Test",
       "image": "assets/images/knowledge/hartmann.webp",
       "caption": "Hartmann Screen Test vs Shack-Hartmann Test Setup"
+     
     },
 
     "hartmann_test": {
@@ -132,7 +136,7 @@
 "hero": {
 "title": "Exceptional accuracy and precision of our Wavefront Sensors",
 "description": "Independent comparison of SpotOptics Shack-Hartmann wavefront sensors with industry-standard interferometers including Zygo and Veeco systems.",
-"image": "/assets/images/focal-lance.png"
+"image": "assets/images/focal-lance.png"
 },
 "comparison": {
 "title": "Veeco results vs Optino results contour of wavefront",

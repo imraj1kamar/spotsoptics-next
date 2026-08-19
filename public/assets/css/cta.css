@@ -126,3 +126,18 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+.tech-icon{
+  display: none !important;
+}
+.tech-cta-title {
+  font-size: var(--text-lg);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+
+}
+.tech-cta-text {
+  font-size: var(--text-xs);
+}
+}

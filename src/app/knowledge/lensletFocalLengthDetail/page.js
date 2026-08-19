@@ -118,9 +118,12 @@ export default function LensletFocalLengthDetailPage({ data }) {
                     )}
 
                     {item.caption && (
-                      <p className="small text-muted text-center mt-3 mb-0" style={{ lineHeight: '1.4' }}>
-                        {item.caption}
-                      </p>
+                      
+                       <figcaption className="justify-content-center align-items-center knowledge-caption micro-caption px-2 py-1">
+                                        <span className="caption-dot"></span>
+                                        <span className="caption-text"> {item.caption}</span>
+                                       
+                                      </figcaption>
                     )}
                   </div>
                 </div>

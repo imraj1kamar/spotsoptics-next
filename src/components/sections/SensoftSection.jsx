@@ -88,7 +88,7 @@ export default function SensoftSection() {
           </div>
 
           {/* RIGHT COLUMN: Tagline, Heading, Description & Checkmarks List */}
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 text-center text-lg-start">
             <span className="text-uppercase products-tag mb-2 d-inline-block">
               {sensoftData?.tagline || 'SENSOFT™ SOFTWARE'}
             </span>

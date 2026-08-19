@@ -84,7 +84,7 @@ export default function OurTechnologyPage() {
               className="all-products-breadcrumbs"
             />
 
-            <div className="top-bar-center">
+            <div className="top-bar-center d-none d-lg-block">
               <h1 className="product-detail-title">{page.title || 'Our Technology'}</h1>
             </div>
           </motion.div>
@@ -102,7 +102,7 @@ export default function OurTechnologyPage() {
           2. CORE TECHNOLOGY PILLARS
           ========================================== */}
       {pillars.items && pillars.items.length > 0 && (
-      <section className="tech-pillars-section py-5" id="pillars">
+      <section className="tech-pillars-section pb-5" id="pillars">
         <div className="container py-lg-4">
           <header className="text-center mb-5">
             <h2 className="tech-section-title text-uppercase mb-0">
@@ -114,7 +114,7 @@ export default function OurTechnologyPage() {
           <div className="row g-4">
             {pillars.items.map((pillar, idx) => (
               <div key={idx} className="col-12 col-md-6 col-lg-3">
-                <div className="tech-pillar-card p-4 rounded-4 h-100 d-flex flex-column">
+                <div className="tech-pillar-card p-4 rounded-4 h-100 d-flex flex-column text-center">
                   <div className="tech-pillar-icon-box mb-4">
                     {ICON_MAP[pillar.icon] || ICON_MAP.wavefront}
                   </div>
@@ -138,10 +138,10 @@ export default function OurTechnologyPage() {
       {software.title && (
       <section className="tech-sensoft-section py-5" id="software">
         <div className="container py-lg-4">
-          <div className="row align-items-center g-5">
+          <div className="row align-items-center ">
             
             {/* Left Content */}
-            <div className="col-12 col-lg-5">
+            <div className="col-12 col-lg-5 text-center text-lg-start">
               <span className="tech-sub-tagline text-uppercase mb-2 d-inline-block">
                 {software.subtitle}
               </span>
@@ -252,7 +252,7 @@ export default function OurTechnologyPage() {
                   )}
                   <div className="tech-app-card-overlay" />
                   
-                  <div className="tech-app-content position-relative z-2">
+                  <div className="tech-app-content position-relative z-2 text-center">
                     <h3 className="tech-app-title mb-2">{app.title}</h3>
                     <p className="tech-app-desc mb-0">{app.description}</p>
                   </div>
@@ -313,9 +313,9 @@ export default function OurTechnologyPage() {
               <div className="row mb-5">
                 <div className="col-lg-8 mx-auto">
                   {calibration.items && (
-                    <ul className="list-unstyled">
+                    <ul className="list-unstyled"> {/* text-center here for any block-level text, but flex items need more */}
                       {calibration.items.map((item, idx) => (
-                        <li key={idx} className="d-flex align-items-center gap-3 py-3 border-bottom">
+                        <li key={idx} className="d-flex align-items-center justify-content-center gap-3 py-3 border-bottom">
                           <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="text-primary flex-shrink-0">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>

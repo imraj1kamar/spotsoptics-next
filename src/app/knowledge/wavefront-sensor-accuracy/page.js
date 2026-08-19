@@ -70,14 +70,15 @@ export default function WavefrontAccuracyDetailPage({ data }) {
             <div className="col-lg-5 col-md-4 text-end position-relative z-1 d-none d-md-block">
               <div className="hero-3d-lens-wrapper">
                 <Image
-                  src={resolveImg(hero.image || '/assets/images/focal-lance.png')}
-                  alt="3D Optical Lens"
-                  width={380}
-                  height={220}
-                  className="img-fluid hero-lens-img"
-                  priority
-                  unoptimized
-                />
+                               src={resolveImg(hero.image)}
+                               alt={hero.caption || 'Hartmann vs Shack-Hartmann Setup'}
+                               width={850}
+                               height={380}
+                               className="img-fluid rounded object-fit-contain"
+                               style={{ maxHeight: '360px' }}
+                               priority
+                               unoptimized
+                             />
               </div>
             </div>
           </div>

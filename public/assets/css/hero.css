@@ -2,10 +2,11 @@
    Hero Section - Light Clean Theme
    ========================================== */
 .hero-section {
+    top: 35px;
     min-height: 100vh;
     padding-top: 30px; 
     overflow: hidden;
-        background-color: var(--sky-light, #EFF6FF);
+    background-color: var(--sky-light, #EFF6FF);
 }
 
 /* ==========================================

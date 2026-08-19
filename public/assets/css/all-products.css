@@ -615,12 +615,13 @@
     .all-products-top-bar {
         flex-wrap: wrap;
         padding: 12px 16px;
-        gap: 10px;
+        gap: 10px; /* Keep gap for spacing */
         border-radius: 12px;
+        justify-content: center; /* Center items horizontally when wrapped */
+        text-align: center; /* Ensure text alignment for block elements within */
     }
     .all-products-back {
         padding: 6px 10px;
-        font-size: 0.65rem;
         gap: 6px;
         order: 1;
     }
@@ -630,8 +631,8 @@
     }
     .top-bar-center {
         order: 3;
-        flex: 0 0 100%;
-        text-align: left;
+        flex: 0 0 100%; /* Ensure it takes full width */
+        /* Removed text-align: left; to allow it to inherit text-align: center from parent */
     }
     .top-bar-center .product-detail-tag {
         font-size: 0.5rem;
@@ -909,7 +910,7 @@
     background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    z-index: 99999;
+    z-index: 9;
     justify-content: center;
     align-items: center;
     padding: 20px;

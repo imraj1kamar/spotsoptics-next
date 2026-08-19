@@ -94,12 +94,7 @@ html {
     scroll-padding-top: 80px; /* Adjust based on your navbar height */
         overflow-x: hidden;
 }
-.spotoptics-navbar .nav-link.active {
-  color: var(--primary-blue) !important;
-  border-bottom: 3px solid var(--primary-blue);
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -186,7 +181,7 @@ p {
 
 
 .section-heading {
-      font-size: var(--text-3xl);
+    font-size: var(--text-3xl);
     color: var(--heading-text);
     font-weight: var(--fw-bold);
     line-height: var(--lh-snug);
@@ -284,17 +279,14 @@ p {
 ==================================== */
 
 @media (max-width:767px) {
-    :root {
-        --h1-font-size: 1.9rem;
-        --h2-font-size: 1.7rem;
-        --h3-font-size: 1.45rem;
-        --h4-font-size: 1.25rem;
-        --h5-font-size: 1.1rem;
-        --h6-font-size: 1rem;
-        --body-font-size: .95rem;
-        --body-line-height: 1.7;
-        --text-md: .875rem;
-    }
+   
+    .section-heading {
+    font-size: var(--text-lg);
+    color: var(--heading-text);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-snug);
+    letter-spacing: var(--ls-tight);
+}
 }
 
 /* ====================================
@@ -315,6 +307,172 @@ p {
     }
 }
 
+/* ==========================================================================
+   SpotOptics Responsive Breadcrumb Styles
+   ========================================================================== */
+
+/* Outer Wrapper: Allows smooth horizontal scrolling on very narrow screens */
+.spotoptics-breadcrumb-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  padding: 4px 0;
+}
+
+.spotoptics-breadcrumb-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Breadcrumb Ordered List */
+.spotoptics-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap; /* Keeps items inline on mobile with horizontal scroll */
+  white-space: nowrap;
+}
+
+/* Individual Breadcrumb Item */
+.spotoptics-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  color: #6c757d;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Separator between items */
+.spotoptics-breadcrumb-item + .spotoptics-breadcrumb-item::before {
+  content: "/";
+  display: inline-block;
+  color: #adb5bd;
+  font-weight: 400;
+  user-select: none;
+}
+
+/* Clickable Links */
+.spotoptics-breadcrumb-item .breadcrumb-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.spotoptics-breadcrumb-item .breadcrumb-link:hover {
+  color: var(--secondary-blue);
+  text-decoration: underline;
+}
+
+/* Current / Active Page (Last Item) */
+.spotoptics-breadcrumb-item.active .breadcrumb-current {
+  color: #212529;
+  font-weight: 600;
+  cursor: default;
+}
+
+.hero-accent-line {
+    background: var(--primary-blue);
+    border-radius: 2px;
+    width: 60px;
+    height: 4px;
+}
+.comparison-floating-badge {
+    background-color: var(--primary-blue) !important;
+}
+
+.knowledge-caption {
+    color: var(--text-muted-custom);
+    border-top: 1px solid var(--border-soft);
+    background: #f8fafc;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    display: flex;
+}
+.caption-dot {
+    background: var(--primary-blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+}
+/* ==========================================================================
+   BREAKPOINTS: Mobile, Tablet & Desktop Font Sizing
+   ========================================================================== */
+
+/* 📱 1. Mobile Devices (< 576px) */
+@media (max-width: 575.98px) {
+  .spotoptics-breadcrumb-item {
+    font-size: 0.78125rem; /* ~12.5px */
+    line-height: 1.3;
+  }
+
+  .spotoptics-breadcrumb-item + .spotoptics-breadcrumb-item::before {
+    margin: 0 6px;
+    font-size: 0.75rem;
+  }
+
+  /* Optional: Truncate very long active titles on mobile */
+  .spotoptics-breadcrumb-item.active .breadcrumb-current {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* 📱 2. Large Mobile & Small Tablets (576px - 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .spotoptics-breadcrumb-item {
+    font-size: 0.84375rem; /* ~13.5px */
+  }
+
+  .spotoptics-breadcrumb-item + .spotoptics-breadcrumb-item::before {
+    margin: 0 8px;
+  }
+
+  .spotoptics-breadcrumb-item.active .breadcrumb-current {
+    max-width: 260px;
+  }
+}
+
+/* 💻 3. Tablets / iPad (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .spotoptics-breadcrumb-list {
+    flex-wrap: wrap; /* Can wrap naturally on tablet+ */
+    white-space: normal;
+  }
+
+  .spotoptics-breadcrumb-item {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.4;
+  }
+
+  .spotoptics-breadcrumb-item + .spotoptics-breadcrumb-item::before {
+    margin: 0 10px;
+  }
+}
+
+/* 🖥️ 4. Desktop & Large Screens (>= 992px) */
+@media (min-width: 992px) {
+  .spotoptics-breadcrumb-list {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .spotoptics-breadcrumb-item {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.5;
+  }
+
+  .spotoptics-breadcrumb-item + .spotoptics-breadcrumb-item::before {
+    margin: 0 12px;
+    font-size: 0.875rem;
+  }
+}
 
 .page-tagline {
     color: var(--para-text);
@@ -339,124 +497,7 @@ p {
   /* Soft Ambient Glow */
   filter: drop-shadow(0 4px 12px rgba(30, 94, 255, 0.25));
 }
-.spotoptics-navbar {
-    background: rgba(255, 255, 255, 0.82);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    border-left: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 50px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    top: 25px !important; 
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    transition: all 0.4s ease-out;
-    padding: 8px 24px;
-z-index: 10;
 
-}
-
-.spotoptics-navbar .navbar-brand {
-    color: var(--heading-text) !important;
-    letter-spacing: 1px;
-    margin-left: 10px;
-}
-
-.spotoptics-navbar .nav-link {
-    color: var(--para-text);
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;
-}
-
-.spotoptics-navbar .nav-link:hover {
-    color: var(--primary-blue);
-}
-
-.search-trigger {
-    color: var(--heading-text);
-    transition: color 0.3s ease;
-}
-
-.search-trigger:hover {
-    color: var(--primary-blue) !important;
-}
-
-.search-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(248, 250, 252, 0.98);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-radius: 50px;
-    z-index: 1050;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.98);
-    transition: all 0.3s ease-out;
-}
-
-.search-overlay.active {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-}
-
-.search-input {
-    background: transparent !important;
-    border: none !important;
-    color: var(--heading-text) !important;
-    font-size: 1.2rem;
-    box-shadow: none !important;
-    padding: 0;
-}
-
-.search-input::placeholder {
-    color: var(--muted-text);
-    font-weight: 400;
-}
-.spotoptics-navbar .dropdown-menu {
-  min-width: 260px;
-  margin-top: 0px;
-  border: 1px solid #eef2f7;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
-}
-
-.spotoptics-navbar .dropdown-item {
-  font-size: 14px;
-  font-weight: 500;
-  color: #334155;
-  transition: all 0.2s ease;
-}
-
-.spotoptics-navbar .dropdown-item:hover {
-  background: #f8fafc;
-  color: var(--primary-blue);
-}
-
-.spotoptics-navbar .dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.spotoptics-navbar .dropdown-toggle::after {
-  margin-left: 6px;
-  font-size: 12px;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    color: var(--sky-light) !important;
-    background-color: var(--primary-blue) !important;
-    text-decoration: none;
-}
 /* =========================
    Footer Styles
 ========================= */
@@ -782,7 +823,7 @@ z-index: 10;
 }
 
 .products-tag {
-    color: #0171cf;
+    color: var(--primary-blue);
     font-size: var(--text-xs);
     letter-spacing: var(--ls-wider);
     font-weight: var(--fw-bold);

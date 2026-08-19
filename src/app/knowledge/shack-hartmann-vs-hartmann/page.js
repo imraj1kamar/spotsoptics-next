@@ -104,9 +104,13 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
               />
             </div>
             {hero.caption && (
-              <p className="small text-muted mt-3 mb-0 fw-medium">
-                {hero.caption}
-              </p>
+              
+             
+                                       <figcaption className="  justify-content-center align-items-center knowledge-caption micro-caption px-2 py-1">
+                                        <span className="caption-dot"></span>
+                                        <span className="caption-text">  {hero.caption}</span>
+                                       
+                                      </figcaption>
             )}
           </div>
         )}
@@ -201,16 +205,15 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
             </div>
             <div>
               <h5 className="fw-bold text-dark mb-2">{history.title || 'Application of Shack-Hartmann Technology'}</h5>
-              {history.paragraphs?.map((p, idx) => (
-                // <p key={idx} className="text-muted small mb-2" style={{ lineHeight: '1.6' }}>
-                //   {p}
-                // </p>
-                 <p 
-  className="text-muted small mb-3 custom-link-text" 
-  style={{ lineHeight: '1.7' }}
-  dangerouslySetInnerHTML={{ __html: p }}
-/>
-              ))}
+      {history.paragraphs?.map((p, idx) => (
+  <p
+    key={idx}
+    suppressHydrationWarning
+    className="text-muted small mb-3 custom-link-text"
+    style={{ lineHeight: '1.7' }}
+    dangerouslySetInnerHTML={{ __html: p }}
+  />
+))}
 
               {/* Scientists & Organization Tags */}
               <div className="d-flex flex-wrap gap-2 mt-3">

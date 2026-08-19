@@ -9,8 +9,10 @@ import ResourcesSection from "@/components/sections/ResourcesSection";
 
 export default function Home() {
   return (
-    <div>
-      <Hero />
+    <>
+    <Hero />
+    <div className="container">
+      
       <ProductsSection />
       <ApplicationSection />
       <StatsSection />
@@ -18,5 +20,6 @@ export default function Home() {
     <SensoftSection />
       <ResourcesSection />
     </div>
+    </>
   );
 }

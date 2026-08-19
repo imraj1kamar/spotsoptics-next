@@ -168,7 +168,7 @@ export default function CookieConsent() {
 
             {/* Right Side */}
             <div className="cookie-banner-actions flex-shrink-0">
-              <div className="d-flex flex-wrap align-items-center gap-2">
+              <div className="d-flex flex-wrap align-items-center gap-2 justify-content-center">
                 <button
                   type="button"
                   className="btn btn-cookie-outline"

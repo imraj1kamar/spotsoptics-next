@@ -193,3 +193,27 @@
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+@media (max-width: 378px) {
+  .cookie-shield-icon-wrapper {
+    display: none;
+  }
+  .cookie-banner-text { 
+  font-size: 0.7rem !important;  
+}
+
+.btn-cookie-outline {
+  width: 40%;
+  font-size: 0.7rem !important;
+  padding: 6px 10px !important;
+}
+
+.btn-cookie-accept{
+  width: 100%;
+  font-size: 0.7rem !important;
+  padding: 6px 10px !important;
+}
+
+
+
+}

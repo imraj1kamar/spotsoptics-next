@@ -433,3 +433,18 @@
     font-size: var(--h2-font-size);
   }
 }
+
+@media (max-width:770px) {
+  .tech-pillar-icon-box {
+    align-self: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background-color: var(--sky-hover);
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+}

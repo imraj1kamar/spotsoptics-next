@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang={siteData.site.language}>
+    <html lang={siteData.site.language} suppressHydrationWarning>
       <head>
        
        <script
@@ -119,16 +119,18 @@ export default function RootLayout({ children }) {
           fetchPriority="high" 
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col`}>
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col`}>
         <BootstrapClient />
         <Preloader />
-        <Navbar />
+      
         <CookieConsent />
-        <main className="flex-grow ">
+        <main >
+            <Navbar />
             {children}
+            <FooterSection/>
         </main>
         
-      <FooterSection/>
+      
       </body>
     </html>
   );

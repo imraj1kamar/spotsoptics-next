@@ -51,9 +51,9 @@ export default function FooterSection() {
           
           {/* Brand Info Column */}
           <div className="col-12 col-lg-4">
-            <div className="pe-lg-3">
+            <div className="pe-lg-3 text-center text-lg-start">
               {/* Brand Logo */}
-              <Link href="/" className="footer-logo d-inline-flex align-items-center gap-2 text-decoration-none mb-2">
+              <Link href="/" className="footer-logo d-inline-flex align-items-center  gap-2 text-decoration-none mb-2">
                 <div className="footer-logo-target-icon">
                   <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="9" strokeWidth="2" />
@@ -77,7 +77,7 @@ export default function FooterSection() {
               </p>
 
               {/* Social Icons Row */}
-              <div className="d-flex align-items-center gap-2 footer-socials">
+              <div className="d-flex justify-content-center justify-content-lg-start gap-2 footer-socials">
                 {brand.socials?.map((social, idx) => (
                   <a
                     key={idx}
