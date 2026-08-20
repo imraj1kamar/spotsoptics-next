@@ -134,10 +134,7 @@ export default function ResourcesSection() {
                 {/* Email Form */}
         {/* Email Form */}
 <form 
-  onSubmit={handleSubscribe} 
-  className="newsletter-form-box position-relative mb-2"
-  suppressHydrationWarning // <-- Add this here
->
+  onSubmit={handleSubscribe} className="newsletter-form-box position-relative mb-2" suppressHydrationWarning >
   <input
     type="email"
     required
@@ -145,7 +142,7 @@ export default function ResourcesSection() {
     value={email}
     onChange={(e) => setEmail(e.target.value)}
     className="form-control newsletter-input rounded-pill py-2.5 ps-3.5 pe-5 shadow-none"
-    suppressHydrationWarning // <-- And add this here
+    suppressHydrationWarning 
   />
   <button
     type="submit"

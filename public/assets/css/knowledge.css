@@ -48,13 +48,7 @@
   line-height: 1.1;
 }
 
-/* --- Hero Banner Card --- */
-.knowledge-hero-card {
-      background: radial-gradient(circle at 80%, #0a3d91 0%, #001f5c 50%, #001238 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  min-height: 280px;
-  box-shadow: 0 16px 36px -12px rgba(0, 31, 92, 0.35);
-}
+
 
 .hero-pulse-dot {
   width: 8px;
@@ -65,11 +59,7 @@
   display: inline-block;
 }
 
-.knowledge-hero-title {
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
-  letter-spacing: -0.5px;
-  line-height: 1.15;
-}
+
 
 .hero-accent-line {
   width: 50px;
@@ -331,12 +321,7 @@
 
 /* ================= Responsive Adjustments ================= */
 @media (max-width: 991px) {
-  .knowledge-hero-card {
-    min-height: auto;
-  }
-  .knowledge-hero-title {
-    font-size: 1.85rem;
-  }
+
   .knowledge-item-excerpt {
   font-size: var(--text-sm);
   line-height: 1.6;

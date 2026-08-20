@@ -63,7 +63,7 @@ export default function ProductCard({
 
       <Link
         href={productUrl}
-        className="a-link mt-auto d-inline-flex align-items-center gap-2 text-decoration-none text-uppercase"
+        className="  a-link mt-auto d-inline-flex align-items-center gap-2 text-decoration-none text-uppercase"
       >
         <span>VIEW PRODUCT</span>
         <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">

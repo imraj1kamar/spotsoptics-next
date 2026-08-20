@@ -1,0 +1,145 @@
+{
+  "page": {
+    "title": "SenSoft – Shack-Hartmann analysis software",
+    "subtitle": "Comprehensive software package for hardware control, Shack-Hartmann image analysis, diagnostics, and optical simulations.",
+    "breadcrumb": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "Test in Single Pass",
+        "url": "/all-products/omi-test-in-single-pass"
+      },
+      {
+        "label": "SenSoft",
+        "url": "/software/sensoft"
+      }
+    ]
+  },
+  "overview": {
+    "title": "About SenSoft",
+    "paragraphs": [
+      "SenSoft is a sophisticated software package that includes the features for hardware control of our instruments and the analysis of Shack-Hartmann images. Users can take advantage of a complete set of numerical and graphical tools resulting in a full diagnostics of the optical element under test at any wavelength from DUV to LWIR.",
+      "We also have special versions of the software that can be used during the production process and give results for on-axis as well as off-axis test of the optical elements.",
+      "A highlight of SenSoft is the very extensive Help. Detailed information of all the essential aspects of optics, with detailed figures and explanations, are available at your fingertips.",
+      "See also how you can learn about Shack-Hartmann using our Simulation packages.",
+      "According to your requirements, we can also study special software features for your specific application or for control of special hardware or develop special analysis software."
+    ]
+  },
+  "highlights": {
+    "title": "Highlight of SenSoft software",
+    "items": [
+      {
+        "label": "Precision",
+        "value": "1nm rms on the wavefront"
+      },
+      {
+        "label": "Max resolution",
+        "value": "200 x 200 spots (Limited by size of detector)"
+      },
+      {
+        "label": "Zernike polynomials",
+        "value": "Annular, Standard or Fringe Zernike as well as Seidel polynomial terms can be selected (more than 50 different terms)."
+      },
+      {
+        "label": "Output from analysis",
+        "value": "Focus, coma, spherical aberration, astigmatism, and other higher order aberrations (more than 50 terms), 80% EE, zonal and modal wavefront/mirror surface, and Strehl ratio"
+      },
+      {
+        "label": "Graphical output",
+        "value": "Spot diagrams, EE profile and distribution of residuals over the pupil; 3D and contour plot of zonal and modal wavefront [or mirror surface]; MTF, PSF and EE profile from spot diagrams"
+      }
+    ]
+  },
+  "diagnostics": {
+    "title": "Diagnostics with SenSoft",
+    "items": [
+      {
+        "feature": "Focal plane",
+        "description": "Given the optical element parameters, SenSoft suggests the changes required to correct defocus and spherical aberration."
+      },
+      {
+        "feature": "Alignment of composite optical elements",
+        "description": "Given the optical element parameters, SenSoft suggests the changes required to correct coma aberrations."
+      },
+      {
+        "feature": "Collimation",
+        "description": "SenSoft can detect if the light source used for the test is collimated (or divergent or convergent)."
+      },
+      {
+        "feature": "Mounting problems",
+        "description": "Support problems of the mountings can be identified from the contour plots of the wavefront after subtracting out the lower-order aberration terms."
+      },
+      {
+        "feature": "Reduce noise due to air effects",
+        "description": "In the laboratory and in the manufacturing workshop as well as at the telescope, air turbulence effects can limit the accuracy of the analysis. SenSoft has the facility for averaging coefficients from multiple frames to improve the accuracy."
+      }
+    ]
+  },
+  "advanced_capabilities": [
+    {
+      "id": "mtf-without-scanning",
+      "title": "MTF without scanning system",
+      "description": "MTF is computed from Shack-Hartmann analysis. No scanning system is required. MTF contribution due to each of the Zernike terms can be computed."
+    },
+    {
+      "id": "m2-without-scanning",
+      "title": "M² without scanning system",
+      "description": "M² for laser systems is computed from Shack-Hartmann analysis. No scanning system is required."
+    },
+    {
+      "id": "remote-control",
+      "title": "Remote control",
+      "description": "SpotOptics instruments can be controlled from a remote PC: a special protocol has been developed in SenSoft to allow control over TCP/IP."
+    }
+  ],
+  "simulation_packages": {
+    "title": "Simulation package",
+    "description": "SenSoft can be completed by adding one or all of three optional simulation packages:",
+    "packages": [
+      {
+        "id": "learning-sh-analysis",
+        "title": "Simulations for learning about SH analysis",
+        "description": "The software can create artificial SH frames for analysis starting from a combination of aberrations selected by the user. The analysis output will be given in numerical as well as graphical form enabling users to learn quickly about the system.",
+        "outputs": [
+          "Spot Diagram",
+          "Encircled Energy Profile",
+          "Residual Distribution over the normalized pupil",
+          "3D and Contour of Wavefront"
+        ]
+      },
+      {
+        "id": "telescope-design-theory",
+        "title": "Design of telescope using analytical theory",
+        "description": "A quick look at a particular telescope design, without having to do ray tracing. Given 4 parameters, the program prints out the characteristics of a telescope with Cassegrain or Gregorian configuration (Ritchey-Chretien, Classical or Dall-Kirkham) in terms of:",
+        "outputs": [
+          "Field aberrations",
+          "Sensitivity of telescope due to misalignment (decentering and tilt) of the secondary mirror",
+          "Sensitivity of telescope to despace errors between primary and secondary mirrors"
+        ]
+      },
+      {
+        "id": "diffraction-theory-analysis",
+        "title": "MTF, PSF and EE from diffraction theory",
+        "description": "Compare the results obtained from the SH analysis with theoretical ones obtained from diffraction analysis. The software can compute MTF, PSF and EE for any combination of the following components:",
+        "supported_components": [
+          "perfect mirror",
+          "aberrated mirror",
+          "ripple on the mirror surface",
+          "micro ripple on the mirror surface",
+          "pixel error",
+          "seeing error",
+          "pointing error"
+        ]
+      }
+    ]
+  },
+  "downloads": {
+    "brochure": {
+      "title": "Download brochure of SenSoft",
+      "url": "/assets/brochures/SpotOptics-Sensoft.pdf",
+      "type": "PDF"
+    }
+  }
+}

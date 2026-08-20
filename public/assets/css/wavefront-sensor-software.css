@@ -1,0 +1,249 @@
+/* ==========================================================================
+   SenSoft Wavefront Sensor Software - Dedicated Stylesheet
+   Inherits Global CSS Variables & Color Tokens
+   ========================================================================== */
+
+/* --- Page Wrapper --- */
+.software-page-wrapper {
+  background-color: var(--sky-light, #f8fafc);
+  min-height: 100vh;
+}
+
+/* --- Top Precision Badge --- */
+.software-precision-badge {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 8px rgba(0, 18, 56, 0.04);
+}
+
+.precision-tag {
+  background: rgba(1, 113, 207, 0.1);
+  color: var(--primary-blue, #0171cf);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* --- Hero Banner Card --- */
+.software-hero-card {
+  background: radial-gradient(
+    circle at 85% 30%,
+    #0d4fa8 0%,
+    var(--navy-mid, #001f5c) 55%,
+    var(--navy-dark, #001238) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 16px 36px -10px rgba(0, 31, 92, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pill-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.hero-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan, #38bdf8);
+  box-shadow: 0 0 8px var(--accent-cyan, #38bdf8);
+  display: inline-block;
+}
+
+.software-hero-title {
+  font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.hero-accent-line {
+  width: 48px;
+  height: 3.5px;
+  background: linear-gradient(90deg, var(--accent-cyan, #38bdf8), var(--primary-blue, #0171cf));
+  border-radius: 2px;
+}
+
+.hero-info-glass-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  max-width: 320px;
+}
+
+/* --- Section Headers --- */
+.section-title-bar {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--heading-text, #0f172a);
+  border-left: 4px solid var(--primary-blue, #0171cf);
+  padding-left: 12px;
+  margin-bottom: 1.25rem;
+}
+
+/* --- General Content Cards --- */
+.software-content-card {
+  background: #ffffff;
+  border: 1px solid var(--border-card, #e5eaf2);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 18, 56, 0.03);
+}
+
+/* --- Highlights Grid Cards --- */
+.software-highlight-card {
+  background: #ffffff;
+  border: 1px solid var(--border-card, #e5eaf2);
+  border-radius: 16px;
+  padding: 22px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+  height: 100%;
+}
+
+.software-highlight-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(1, 113, 207, 0.35);
+  box-shadow: 0 12px 26px -6px rgba(1, 113, 207, 0.15);
+}
+
+.highlight-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(1, 113, 207, 0.08);
+  color: var(--primary-blue, #0171cf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* --- Diagnostics Capability Items --- */
+.diagnostic-item {
+  background: #f8fafc;
+  border: 1px solid var(--border-soft, #e2e8f0);
+  border-left: 3px solid var(--primary-blue, #0171cf);
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: background 0.25s ease;
+}
+
+.diagnostic-item:hover {
+  background: #f1f5f9;
+}
+
+/* --- Advanced Capabilities 3-Column Grid --- */
+.advanced-cap-card {
+  background: #ffffff;
+  border: 1px solid var(--border-card, #e5eaf2);
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.advanced-cap-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(1, 113, 207, 0.12);
+}
+
+.cap-badge-pill {
+  background: var(--primary-blue, #0171cf);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Simulation Package Cards --- */
+.simulation-pkg-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-card, #e5eaf2);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.pkg-number-badge {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--primary-blue, #0171cf);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pkg-output-pill {
+  background: #ffffff;
+  color: var(--text-body, #475569);
+  border: 1px solid var(--border-soft, #e2e8f0);
+  font-size: 11.5px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+
+/* --- Brochure Banner Box --- */
+.brochure-download-banner {
+  background: linear-gradient(135deg, rgba(1, 113, 207, 0.08) 0%, rgba(56, 189, 248, 0.08) 100%);
+  border: 1px solid rgba(1, 113, 207, 0.25);
+  border-radius: 16px;
+  padding: 24px 30px;
+}
+
+.btn-brochure-download {
+  background: var(--primary-blue, #0171cf);
+  color: #ffffff;
+  border: 1px solid var(--primary-blue, #0171cf);
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brochure-download:hover {
+  background: var(--primary-blue-hover, #005bb5);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(1, 113, 207, 0.25);
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 991px) {
+  .software-hero-card {
+    padding: 2rem 1.5rem !important;
+  }
+  .software-hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .software-highlight-card,
+  .advanced-cap-card,
+  .simulation-pkg-card {
+    padding: 18px;
+  }
+  .brochure-download-banner {
+    padding: 20px;
+  }
+}

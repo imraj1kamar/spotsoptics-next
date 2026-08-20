@@ -122,7 +122,15 @@
     display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 947px) {
+    .product-glass-card {
+text-align: center;
+
+}
+
+.product-glass-card a{
+    align-self: flex-end;
+}
     .products-heading {
     font-size: var(--text-2xl);
     color: var(--heading-text);

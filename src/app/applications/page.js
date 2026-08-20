@@ -367,15 +367,25 @@ function DetailModal({ app, onClose }) {
       tabIndex="-1"
       onClick={handleClose}
     >
+      
       <div
         className={`modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable ${
           isClosing ? 'animate-modal-dialog-out' : 'animate-modal-dialog'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
+        
         <div className="modal-content rounded-4 border-0 p-3 p-md-4 shadow-lg position-relative overflow-hidden">
-          
-          <div className="modal-header border-0 pb-0">
+           <button
+              type="button"
+              className="btn-close"
+              onClick={handleClose}
+              aria-label="Close"
+              style={{
+                alignSelf:"flex-end"
+              }}
+            />
+          <div className="modal-header border-0 pb-0 d-none d-lg-block">
             <div>
               {app.subtitle && (
                 <span className="badge bg-primary bg-opacity-10 text-primary mb-2 text-uppercase">
@@ -384,12 +394,7 @@ function DetailModal({ app, onClose }) {
               )}
               <h4 className="modal-title fw-bold text-dark">{app.title || app.subtitle}</h4>
             </div>
-            <button
-              type="button"
-              className="btn-close"
-              onClick={handleClose}
-              aria-label="Close"
-            />
+           
           </div>
 
           <div className="modal-body py-4">

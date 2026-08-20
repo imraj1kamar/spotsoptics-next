@@ -42,9 +42,14 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/assets/icons/favicon.ico",
-    apple: siteData.site.logo,
+    icon: "/assets/icons/favicon.png",
+    shortcut: "/assets/icons/favicon.png",
+    apple: "/assets/icons/favicon.png",
+    other:
+      "/assets/icons/favicon.png",
   },
+  
+
   openGraph: {
     type: "website",
     url: siteData.site.url,
@@ -100,7 +105,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang={siteData.site.language} suppressHydrationWarning>
+    <html lang={siteData.site.language} suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
        
        <script

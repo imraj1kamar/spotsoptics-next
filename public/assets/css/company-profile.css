@@ -203,7 +203,7 @@
 }
 
 .timeline-content p {
-   font-size: var(--text-md);
+   font-size: var(--text-sm);
 }
 /* ==========================================
    Responsive Updates

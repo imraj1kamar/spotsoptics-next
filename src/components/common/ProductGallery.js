@@ -132,7 +132,7 @@ export default function ProductGallery({
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
               />
             </svg>
-            <small className="fw-bold">CLICK TO ZOOM</small>
+            
           </button>
         )}
       </div>
@@ -150,7 +150,9 @@ export default function ProductGallery({
               onClick={() => handleThumbClick(imgUrl, i)}
               aria-label={`View image ${i + 1} of ${galleryImages.length}`}
             >
-              <img
+              <Image
+              width={90}
+  height={90}
                 src={imgUrl}
                 alt={`${name} - image ${i + 1}`}
                 style={{ width: '60px', height: '60px', objectFit: 'cover' }}
@@ -269,11 +271,14 @@ export default function ProductGallery({
                   type="button"
                   className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
                   onClick={() => setModalImage(null)}
+                  
                 />
-<img
+                <Image
                   src={normalizeImageSrc(modalImage)}
                   alt="Enlarged preview"
                   className="img-fluid rounded"
+                   width={390}
+      height={390}
                 />
               </div>
             </div>

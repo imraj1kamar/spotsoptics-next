@@ -14,7 +14,7 @@
                 "High repeatability (λ/1000) and accuracy (λ/60)",
                 "Compact and lightweight",
                 "Calibration unit included",
-                "<a href=\"#\">SenSoft</a> software for Shack-Hartmann image acquisition and analysis",
+                "<a href='wavefront-sensor-software' >SenSoft</a> software for Shack-Hartmann image acquisition and analysis",
                 "Wide range of accessories for testing different beam sizes",
                 "Calibration done by user in-situ for high accuracy"
             ],
@@ -237,7 +237,7 @@
                 "Built-in calibration source for fast setup",
                 "Optional direct imaging channel for dual-channel operation",
                 "Motorized stage compatibility for simplified calibration and alignment",
-                "<a href=\"#\">SenSoft</a> software for acquisition and wavefront analysis",
+                "SenSoft software for acquisition and wavefront analysis",
                 "Resolution: 45 x 45 spots",
                 "Zernike coefficient precision: λ/3000",
                 "Wavefront RMS precision: λ/1000",

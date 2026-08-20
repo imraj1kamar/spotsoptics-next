@@ -400,12 +400,29 @@ p {
     width: 5px;
     height: 5px;
 }
+
+
+.knowledge-hero-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+
 /* ==========================================================================
    BREAKPOINTS: Mobile, Tablet & Desktop Font Sizing
    ========================================================================== */
 
 /* 📱 1. Mobile Devices (< 576px) */
 @media (max-width: 575.98px) {
+
+    .spotoptics-breadcrumb-item .breadcrumb-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  font-size: 10px;
+}
+
   .spotoptics-breadcrumb-item {
     font-size: 0.78125rem; /* ~12.5px */
     line-height: 1.3;
@@ -422,9 +439,14 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 10px;
   }
 }
-
+.modal-dialog-scrollable .modal-content{
+    max-height: 85%;
+    overflow: hidden !important;
+    margin-top: 18px;
+}
 /* 📱 2. Large Mobile & Small Tablets (576px - 767.98px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .spotoptics-breadcrumb-item {
@@ -457,8 +479,25 @@ p {
   }
 }
 
+/* --- Hero Banner Card --- */
+.knowledge-hero-card {
+      background: radial-gradient(circle at 80%, #0a3d91 0%, #001f5c 50%, #001238 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  min-height: 280px;
+  box-shadow: 0 16px 36px -12px rgba(0, 31, 92, 0.35);
+}
+
 /* 🖥️ 4. Desktop & Large Screens (>= 992px) */
 @media (min-width: 992px) {
+
+      .knowledge-hero-card {
+    min-height: auto;
+  }
+  
+    .knowledge-hero-title {
+    font-size: 1.85rem;
+  }
+
   .spotoptics-breadcrumb-list {
     flex-wrap: wrap;
     white-space: normal;
