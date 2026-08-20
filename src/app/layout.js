@@ -49,7 +49,11 @@ export const metadata = {
       "/assets/icons/favicon.png",
   },
   
+alternates: {
+    canonical: './',
+  },
 
+  
   openGraph: {
     type: "website",
     url: siteData.site.url,
