@@ -33,7 +33,13 @@ export const metadata = {
     default: siteData.site.name, 
     template: `%s | ${siteData.site.name}`, 
   },
+
+ 
+
   description: siteData.site.description,
+   alternates: {
+    canonical: './',
+  },
   keywords: siteData.site.keywords,
   authors: [{ name: siteData.site.name }],
   applicationName: siteData.site.name,
@@ -42,18 +48,14 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/assets/icons/favicon.png",
-    shortcut: "/assets/icons/favicon.png",
-    apple: "/assets/icons/favicon.png",
-    other:
-      "/assets/icons/favicon.png",
-  },
+  icon: "/assets/icons/favicon.png",
+  shortcut: "/assets/icons/favicon.png",
+  apple: "/assets/icons/favicon.png",
+},
   
-alternates: {
-    canonical: './',
-  },
 
-  
+
+
   openGraph: {
     type: "website",
     url: siteData.site.url,
