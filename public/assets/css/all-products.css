@@ -694,6 +694,7 @@
 .product-detail-features li a {
     display: contents;
     color: var(--primary-red);
+    text-decoration: underline;
 }
 
 .product-detail-features li a :hover {

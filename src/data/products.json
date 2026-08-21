@@ -226,8 +226,8 @@
             ]
         },
         {
-            "id": "ioptino-mu-pocket-size-single-and-double-pass",
-            "name": "iOptino-mu: Pocket-size, Single & Double Pass",
+            "id": "optino-mu-pocket-size-single-and-double-pass",
+            "name": "Optino-mu: Pocket-size, Single & Double Pass",
             "image": "assets/images/products/2.png",
             "description": "Compact Shack-Hartmann wavefront sensor designed for portable, high-precision metrology in research and industrial environments.",
             "features": [
@@ -315,8 +315,8 @@
             ]
         },
         {
-            "id": "optino-dual-channel-single-and-double-pass",
-            "name": "Optino: Dual-channel, Single & Double Pass",
+            "id": "ioptino-dual-channel-single-and-double-pass",
+            "name": "Ioptino: Dual-channel, Single & Double Pass",
             "image": "assets/images/products/3.png",
             "description": "Dual-channel Shack-Hartmann wavefront sensor combining direct imaging and high-accuracy wavefront analysis for alignment and testing.",
             "features": [

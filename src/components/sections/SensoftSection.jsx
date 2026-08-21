@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { motion, useScroll, useTransform } from 'framer-motion';
-
+import Image from 'next/image';
 // Data & CSS Import
 import sensoftData from '@/data/sensoftSection.json';
 import applicationData from '@/data/application.json';
@@ -63,29 +63,52 @@ export default function SensoftSection() {
       <div className="container position-relative z-2 py-lg-4">
         <div className="row g-5 align-items-center">
           
-          {/* LEFT COLUMN: Desktop Monitor with Screen Overlay Carousel */}
-          <div className="col-12 col-lg-6 text-center">
-            <div className="desktop-frame-wrapper">
-              
-              {/* Outer Desktop Monitor Frame */}
-              <img
-                src="/assets/images/desktop.png"
-                alt="Desktop Monitor Frame"
-                className="desktop-frame-img"
-              />
+        {/* LEFT COLUMN: Desktop Monitor with Screen Overlay Carousel */}
+<div className="col-12 col-lg-6 text-center">
+  <div className="desktop-frame-wrapper position-relative d-inline-block">
+    
+    {/* 1. Outer Desktop Monitor Frame */}
+    <Image
+      src="/assets/images/desktop.png"
+      alt="Desktop Monitor Frame"
+      width={600}
+      height={420}
+      className="desktop-frame-img img-fluid"
+      style={{
+        width: '100%',
+        height: 'auto',
+        display: 'block',
+      }}
+      priority
+      unoptimized
+    />
 
-              {/* Inner Display Screen Area (Auto-play Screenshots Carousel) */}
-              <div className="monitor-screen-display">
-                <img
-                  key={currentSlideIndex}
-                  src={imgSrc}
-                  alt="SenSoft Software Screenshot"
-                  className="screen-slide-img"
-                />
-              </div>
+    {/* 2. Inner Display Screen Area (Auto-play Screenshots Carousel) */}
+    <div className="monitor-screen-display position-absolute">
+      <Image
+        key={currentSlideIndex}
+        src={
+          imgSrc
+            ? imgSrc.startsWith('/')
+              ? imgSrc
+              : `/${imgSrc}`
+            : '/assets/images/placeholder.png'
+        }
+        alt="SenSoft Software Screenshot"
+        width={520}
+        height={320}
+        className="screen-slide-img"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+        unoptimized
+      />
+    </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
           {/* RIGHT COLUMN: Tagline, Heading, Description & Checkmarks List */}
           <div className="col-12 col-lg-6 text-center text-lg-start">

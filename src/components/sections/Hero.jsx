@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
@@ -220,16 +221,32 @@ export default function Hero() {
 
           {/* Product Image Column */}
           <div
-            className="col-12 col-lg-6 position-relative text-center mb-5 mb-lg-0 order-1 order-lg-2 gs-parallax"
-            data-speed="-15"
-            style={{ zIndex: 4, willChange: 'transform' }}
-          >
-            <img
-              src={heroData?.image?.url || '/assets/images/hero-image.png'}
-              alt={heroData?.image?.alt || 'SpotOptics Product'}
-              className="img-fluid hero-product-img"
-            />
-          </div>
+  className="col-12 col-lg-6 position-relative text-center mb-5 mb-lg-0 order-1 order-lg-2 gs-parallax"
+  data-speed="-15"
+  style={{ zIndex: 4, willChange: 'transform' }}
+>
+  <Image
+    src={
+      heroData?.image?.url
+        ? heroData.image.url.startsWith('/')
+          ? heroData.image.url
+          : `/${heroData.image.url}`
+        : '/assets/images/hero-image.png'
+    }
+    alt={heroData?.image?.alt || 'SpotOptics Product'}
+    width={650}
+    height={450}
+    priority 
+    className="img-fluid hero-product-img"
+    style={{
+      width: '100%',
+      height: 'auto',
+      maxWidth: '580px',
+      objectFit: 'contain',
+    }}
+    unoptimized
+  />
+</div>
         </div>
       </div>
     </motion.section>

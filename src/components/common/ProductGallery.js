@@ -152,7 +152,7 @@ export default function ProductGallery({
             >
               <Image
               width={90}
-  height={90}
+               height={90}
                 src={imgUrl}
                 alt={`${name} - image ${i + 1}`}
                 style={{ width: '60px', height: '60px', objectFit: 'cover' }}
@@ -173,14 +173,14 @@ export default function ProductGallery({
               const isActive = selectedFamilyIndex === index;
               return (
              <button
-  key={index}
-  type="button"
-  className={`family-badge btn ${
-    isActive ? 'btn-primary active' : 'btn-outline-secondary'
-  } text-center`}
-  onClick={() => handleFamilyClick(index, family)}
-  title={family.name}
->
+                key={index}
+                type="button"
+                className={`family-badge btn ${
+                  isActive ? 'btn-primary active' : 'btn-outline-secondary'
+                } text-center`}
+                onClick={() => handleFamilyClick(index, family)}
+                title={family.name}
+              >
   {normalizeImageSrc(family.image) && (
     <Image
       src={normalizeImageSrc(family.image)}
@@ -259,31 +259,32 @@ export default function ProductGallery({
 
       {/* Lightbox / Zoom Modal */}
       {modalImage && (
-        <div
-          className="modal d-block bg-dark bg-opacity-75"
-          tabIndex="-1"
+    <div
+  className="modal d-block bg-dark bg-opacity-75"
+  tabIndex="-1"
+  onClick={() => setModalImage(null)}
+>
+  <div className="modal-dialog modal-dialog-centered modal-lg">
+    <div className="modal-content bg-transparent border-0 text-center">
+      <div className="modal-body position-relative">
+        <button
+          type="button"
+          className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
           onClick={() => setModalImage(null)}
-        >
-          <div className="modal-dialog modal-dialog-centered modal-lg">
-            <div className="modal-content bg-transparent border-0 text-center">
-              <div className="modal-body position-relative">
-                <button
-                  type="button"
-                  className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                  onClick={() => setModalImage(null)}
-                  
-                />
-                <Image
-                  src={normalizeImageSrc(modalImage)}
-                  alt="Enlarged preview"
-                  className="img-fluid rounded"
-                   width={390}
-      height={390}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        />
+        <Image
+          src={normalizeImageSrc(modalImage)}
+          alt="Enlarged preview"
+          className="img-fluid rounded"
+          width={390}
+          height={390}
+          style={{ width: 'auto', height: 'auto' }}
+          unoptimized
+        />
+      </div>
+    </div>
+  </div>
+</div>
       )}
     </div>
   );

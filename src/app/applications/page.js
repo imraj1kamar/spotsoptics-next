@@ -492,11 +492,23 @@ function DetailModal({ app, onClose }) {
                 className="btn-close btn-close-white position-absolute top-0 end-0 m-3"
                 onClick={() => setExpandedImage(null)}
               />
-              <img
-                src={expandedImage}
-                alt="Expanded view"
-                className="img-fluid max-h-100 rounded-3 shadow-lg slow-zoom-image"
-              />
+            
+
+<Image
+  src={expandedImage.startsWith('/') ? expandedImage : `/${expandedImage}`}
+  alt="Expanded view"
+  width={1200}
+  height={800}
+  className="img-fluid rounded-3 shadow-lg slow-zoom-image"
+  style={{
+    maxWidth: '100%',
+    height: 'auto',
+    maxHeight: '85vh',
+    objectFit: 'contain',
+  }}
+  priority
+  unoptimized
+/>
             </div>
           )}
 

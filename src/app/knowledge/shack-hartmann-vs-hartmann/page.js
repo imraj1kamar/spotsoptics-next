@@ -73,16 +73,17 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
             {/* 3D Glowing Lens Graphic */}
             <div className="col-lg-4 col-md-5 text-end position-relative z-1 d-none d-md-block">
               <div className="hero-3d-lens-wrapper">
-                <Image
-                  src="/assets/images/focal-lance.png"
-                  alt="3D Optical Lens"
-                  width={340}
-                  height={200}
-                  className="img-fluid hero-lens-img"
-                  priority
-                  unoptimized
-                />
-              </div>
+  <Image
+    src="/assets/images/focal-lance.png"
+    alt="3D Optical Lens"
+    width={340}
+    height={200}
+    className="img-fluid hero-lens-img"
+    style={{ width: 'auto', height: 'auto' }}
+    priority
+    unoptimized
+  />
+</div>
             </div>
           </div>
         </div>
@@ -91,18 +92,22 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
         {/* ================= 3. SETUP SCHEMATIC DIAGRAM CARD ================= */}
         {hero.image && (
           <div className="accuracy-card p-4 rounded-4 border mb-4 bg-white shadow-sm text-center">
-            <div className="p-3 bg-light rounded-3 d-inline-block w-100 border">
-              <Image
-                src={resolveImg(hero.image)}
-                alt={hero.caption || 'Hartmann vs Shack-Hartmann Setup'}
-                width={850}
-                height={380}
-                className="img-fluid rounded object-fit-contain"
-                style={{ maxHeight: '360px' }}
-                priority
-                unoptimized
-              />
-            </div>
+           <div className="p-3 bg-light rounded-3 d-inline-block w-100 border">
+  <Image
+    src={resolveImg(hero.image)}
+    alt={hero.caption || 'Hartmann vs Shack-Hartmann Setup'}
+    width={850}
+    height={380}
+    className="img-fluid rounded object-fit-contain"
+    style={{
+      width: '100%',
+      height: 'auto',
+      maxHeight: '360px',
+    }}
+    priority
+    unoptimized
+  />
+</div>
             {hero.caption && (
               
              

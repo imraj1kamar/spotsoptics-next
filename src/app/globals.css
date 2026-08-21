@@ -1,7 +1,10 @@
 :root {
     /* ----- Brand Colors ----- */
-    --primary-blue: #0171cf;
-    --secondary-blue: #60A5FA;
+    /* --primary-blue: #0171cf; */
+    --primary-blue: #29938B;
+    /* --secondary-blue: #60A5FA; */
+    --secondary-blue:     #33AA99;
+
     --primary-red: #e34949;
     --secondary-red: #B91C1C ;
     --sky-light: #EFF6FF;
@@ -11,7 +14,7 @@
     --glass-bg: rgba(255, 255, 255, 0.75);
     --glass-border: rgba(0, 0, 0, 0.08);
     --glass-border-light: rgba(0, 0, 0, 0.04);
-    --heading-text: #1E293B;
+    --heading-text: #1e3b2d;
     --para-text: #475569;
     --muted-text: #94A3B8;
     --border-color: rgba(0, 0, 0, 0.08);
@@ -107,8 +110,8 @@ body {
 main {
     /* overflow-x: hidden; */
     background:
-        radial-gradient(circle at 80% 20%, rgba(30, 94, 255, 0.04), transparent 50%),
-        radial-gradient(circle at 20% 80%, rgba(96, 165, 250, 0.03), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(30, 255, 131, 0.04), transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(96, 250, 173, 0.03), transparent 40%),
         linear-gradient(180deg, #F1F5F9 0%, #F8FAFC 30%, #FFFFFF 100%);
 }
 
@@ -218,7 +221,7 @@ p {
 .custom-glass-card:hover {
     transform: translateY(-4px);
     border-color: var(--primary-blue);
-    box-shadow: var(--shadow-md), 0 0 15px rgba(1, 113, 207, 0.15);
+    box-shadow: var(--shadow-md), 0 0 15px rgba(1, 207, 97, 0.15);
 }
 
 
@@ -535,7 +538,7 @@ p {
  
   
   /* Soft Ambient Glow */
-  filter: drop-shadow(0 4px 12px rgba(30, 94, 255, 0.25));
+  filter: drop-shadow(0 4px 12px rgba(30, 255, 150, 0.25));
 }
 
 /* =========================
@@ -544,7 +547,7 @@ p {
 
 .spotoptics-footer {
     position: relative;
-    background: rgba(15, 23, 42, 0.97);
+    background: rgba(15, 42, 28, 0.97);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     color: #CBD5E1;
@@ -711,7 +714,7 @@ p {
 .footer-newsletter-input:focus {
     outline: none;
     border-color: var(--primary-blue) !important;
-    box-shadow: 0 0 0 3px rgba(1, 113, 207, 0.15) !important;
+    box-shadow: 0 0 0 3px rgba(1, 207, 104, 0.15) !important;
     background: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -731,7 +734,7 @@ p {
 .footer-newsletter-btn:hover {
     background: var(--secondary-blue);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(1, 113, 207, 0.3);
+    box-shadow: 0 4px 12px rgba(1, 207, 70, 0.3);
 }
 
 .footer-newsletter-desc {
@@ -768,7 +771,7 @@ p {
     color: #FFFFFF;
     border-color: var(--primary-blue);
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(1, 113, 207, 0.25);
+    box-shadow: 0 6px 16px rgba(1, 207, 80, 0.25);
 }
 
 /* Copyright */

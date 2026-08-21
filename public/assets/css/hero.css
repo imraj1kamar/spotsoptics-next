@@ -49,17 +49,17 @@
 }
 
 .btn-primary-custom {
-    background-color: #0171cf;
+    background-color: var(--primary-blue);
     color: #FFFFFF !important;
-    border: 1px solid #0171cf;
+    border: 1px solid var( --secondary-blue);
 }
 
 .btn-primary-custom:hover {
-    background-color: #0171cf !important;
-    border-color: #0171cf !important;
+    background-color: var(--primary-blue) !important;
+    border-color: var( --secondary-blue) !important;
     color: #FFFFFF !important;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(30, 94, 255, 0.3);
+    box-shadow: 0 10px 20px var(--primary-blue);
 }
 
 .btn-outline-custom {
@@ -102,8 +102,8 @@
     width: 8px; height: 8px;
     background: #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 50px 30px rgba(96, 165, 250, 0.8), 
-                0 0 100px 60px rgba(30, 94, 255, 0.5);
+    box-shadow: 0 0 50px 30px var( --secondary-blue), 
+                0 0 100px 60px var(--primary-blue);
 }
 
 .starburst-ray-h {
@@ -111,7 +111,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 60vw; height: 2px;
-    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96,165,250,0.3) 30%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96, 250, 178, 0.3) 30%, transparent 70%);
 }
 
 .starburst-ray-v {
@@ -119,7 +119,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 2px; height: 40vh;
-    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96,165,250,0.3) 30%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(96, 250, 186, 0.3) 30%, transparent 70%);
 }
 
 .starburst-ray-diag {
@@ -127,7 +127,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%) rotate(25deg);
     width: 30vw; height: 3px;
-    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(30,94,255,0.2) 40%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(30, 255, 105, 0.189) 40%, transparent 70%);
 }
 
 .optical-streak {
@@ -141,9 +141,9 @@
 .streak-1 {
     width: 140vw; height: 140vh;
     bottom: -50%; right: -20%;
-    border-top: 5px solid rgba(96, 165, 250, 0.6);
-    border-left: 2px solid rgba(30, 94, 255, 0.2);
-    filter: drop-shadow(0 0 25px rgba(96, 165, 250, 0.9));
+    border-top: 5px solid rgba(96, 250, 165, 0.6);
+    border-left: 2px solid rgba(30, 255, 143, 0.2);
+    filter: drop-shadow(0 0 25px rgba(96, 250, 168, 0.9));
     transform: rotate(20deg);
 }
 

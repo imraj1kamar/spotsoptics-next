@@ -44,8 +44,8 @@ export default function CompanyProfilePage() {
         glowLine.style.left = window.innerWidth > 991 ? '20px' : '15px';
         glowLine.style.width = '4px';
         glowLine.style.height = '0%';
-        glowLine.style.background = '#1E5EFF';
-        glowLine.style.boxShadow = '0 0 20px 6px rgba(30, 94, 255, 0.5)';
+        glowLine.style.background = 'var(--primary-blue)';
+        glowLine.style.boxShadow= '0 0 25px 8px var(--secondary-blue)';
         glowLine.style.borderRadius = '4px';
         glowLine.style.zIndex = '0';
 
@@ -78,8 +78,8 @@ export default function CompanyProfilePage() {
               toggleActions: 'play reverse play reverse',
             },
             scale: 1.4,
-            boxShadow: '0 0 25px 8px rgba(30, 94, 255, 0.6)',
-            backgroundColor: '#1E5EFF',
+            boxShadow: '0 0 25px 8px var(--secondary-blue)',
+            backgroundColor: 'var(--primary-blue)',
             borderColor: '#FFFFFF',
             duration: 0.5,
             ease: 'back.out(1.7)',

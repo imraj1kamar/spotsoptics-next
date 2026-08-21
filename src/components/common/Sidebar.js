@@ -35,7 +35,7 @@ export default function Sidebar({
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="text-primary flex-shrink-0"
+                className="text-primary-blue flex-shrink-0"
               >
                 <path d="M3 7h5l2 2h11v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
               </svg>

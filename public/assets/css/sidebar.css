@@ -23,7 +23,7 @@
 .sidebar-line{
     width:52px;
     height:3px;
-    background:#2563eb;
+    background:var(--primary-blue);
     border-radius:999px;
     margin-bottom:20px;
 }

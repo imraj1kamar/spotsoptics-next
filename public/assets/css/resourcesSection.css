@@ -56,14 +56,14 @@
 }
 
 .btn-resource-action {
-  color: #1E5EFF !important;
+  color: var(--primary-blue) !important;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
   transition: all 0.2s ease;
 }
 
 .btn-resource-action:hover {
-  color: #0040D0 !important;
+  color: var(--secondary-blue) !important;
 }
 
 .btn-resource-action svg {
@@ -76,9 +76,9 @@
 
 /* Right Blue Newsletter Card */
 .newsletter-blue-card {
-  background: #060B18 !important;
+  background: #06180c !important;
   border-radius: 20px !important;
-  box-shadow: 0 15px 35px rgba(30, 94, 255, 0.3) !important;
+  box-shadow: 0 15px 35px rgba(30, 255, 116, 0.3) !important;
 }
 
 .newsletter-bg-glow {
@@ -116,7 +116,7 @@
 }
 
 .btn-newsletter-submit {
-  background-color: #1E5EFF !important;
+  background-color: var(--primary-blue) !important;
   color: #FFFFFF !important;
   width: 34px;
   height: 34px;
@@ -125,7 +125,7 @@
 }
 
 .btn-newsletter-submit:hover {
-  background-color: #0040D0 !important;
+  background-color: var(--secondary-blue) !important;
   transform: translateY(-50%) scale(1.05) !important;
 }
 
