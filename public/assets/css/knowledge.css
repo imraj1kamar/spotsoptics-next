@@ -54,8 +54,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #38bdf8;
-  box-shadow: 0 0 8px #38bdf8;
+  background-color: var(--primary-blue);
+  box-shadow: 0 0 8px var(--shadow-sm);
   display: inline-block;
 }
 
@@ -64,7 +64,7 @@
 .hero-accent-line {
   width: 50px;
   height: 3px;
-  background: linear-gradient(90deg, #38bdf8, #0171cf);
+  background: linear-gradient(90deg, var(--secondary-blue), var(--primary-blue));
   border-radius: 2px;
 }
 

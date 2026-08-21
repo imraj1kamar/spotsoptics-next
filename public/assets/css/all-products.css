@@ -431,7 +431,7 @@
     display: inline-block;
     width: 6px;
     height: 6px;
-    background: #0171cf;
+    background: var(--primary-blue);
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -465,14 +465,14 @@
 .product-detail-btn-primary {
     background: var(--primary-blue);
     color: #fff;
-    box-shadow: 0 4px 15px rgba(30, 94, 255, 0.3);
+    box-shadow: var(--shadow-md);
 }
 
 .product-detail-btn-primary:hover {
-    background: #2563EB;
+    background: var(--secondary-blue);
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(30, 94, 255, 0.4);
+     box-shadow: var(--shadow-md);
 }
 
 .product-detail-btn-secondary {
@@ -740,14 +740,14 @@
 .product-detail-btn-primary {
     background-color: var(--primary-blue);
     color: #FFFFFF !important;
-    border: 1px solid #1E5EFF;
+    border: 1px solid var(--secondary-blue);
 }
 
 .product-detail-btn-primary:hover {
-    background-color: #164ac7;
-    border-color: #164ac7;
+    background-color:  var(--secondary-blue);
+    border-color: var(--primary-blue);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(30, 94, 255, 0.25);
+    box-shadow: 0 4px 12px var(--shadow-sm);
 }
 
 /* Dedicated Brochures Section */
@@ -791,16 +791,16 @@
 }
 
 .product-brochure-item svg {
-    color: #1E5EFF;
+    color: var(--primary-blue);
     flex-shrink: 0;
 }
 
 .product-brochure-item:hover {
     background-color: #F8FAFC;
-    border-color: #1E5EFF;
-    color: #1E5EFF !important;
+    border-color: var(--primary-blue);
+    color: var(--primary-blue) !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(30, 94, 255, 0.08);
+    box-shadow: 0 4px 10px var(--shadow-sm);
 }
 
 /* --- PDF Link (Blue theme - default) --- */

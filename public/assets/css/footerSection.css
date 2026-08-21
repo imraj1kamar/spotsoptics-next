@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .footer-section-wrapper {
-  background-color: #060B18 !important; /* Deep Dark Navy Background */
+  background-color: #06180d !important; /* Deep Dark Navy Background */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: #94A3B8;
 }
@@ -88,7 +88,7 @@
   transform: translateY(-50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(30, 94, 255, 0.2) 0%, rgba(6, 11, 24, 0) 70%);
+  background: radial-gradient(circle, rgba(30, 255, 135, 0.2) 0%, rgba(6, 11, 24, 0) 70%);
   pointer-events: none;
   z-index: 1;
 }

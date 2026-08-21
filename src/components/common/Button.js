@@ -61,7 +61,7 @@ export default function Button({
   target,
   rel,
 }) {
-  const btnClass = `btn ${getVariantClass(variant)} ${className}`.trim();
+  const btnClass = `${getVariantClass(variant)} ${className}`.trim();
   const IconComponent = icon !== 'none' ? icons[icon] : null;
 
   return (

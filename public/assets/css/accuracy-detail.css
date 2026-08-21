@@ -117,6 +117,6 @@
 
 /* ================= BOTTOM DARK BANNER ================= */
 .accuracy-footer-banner {
-  background: #001744;
+  background: var(--primary-blue);
   min-height: 60px;
 }

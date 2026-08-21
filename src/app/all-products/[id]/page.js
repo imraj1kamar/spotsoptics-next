@@ -152,9 +152,10 @@ function AllProductsContent() {
 
                   <div className="product-detail-actions mb-4">
                     <Button
+                    className="w-100 btn btn-primary-custom px-2 px-sm-4 py-2 fw-bold d-inline-flex align-items-center justify-content-center gap-1 gap-sm-2 text-nowrap"
                       text="REQUEST A QUOTE"
                       url="/contact"
-                      variant="detail-primary"
+                      // variant="detail-primary"
                       icon="arrow"
                     />
                   </div>

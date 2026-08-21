@@ -88,7 +88,7 @@
   transform: translate(-50%, -50%);
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(30, 94, 255, 0.2) 0%, rgba(6, 11, 24, 0) 65%);
+  background: radial-gradient(circle, #1eff8733 0%, #060b1800 70%);
   pointer-events: none;
   z-index: 1;
 }

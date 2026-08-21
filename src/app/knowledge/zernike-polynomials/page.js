@@ -59,7 +59,7 @@ export default function ZernikePolynomialsDetailPage({ data }) {
         </div>
 
         {/* ================= 2. DARK BLUE HERO BANNER ================= */}
-        <div className="accuracy-hero-banner mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
+        <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
           <div className="row align-items-center">
             <div className="col-lg-8 col-md-7 position-relative z-2">
               <h1 className="accuracy-hero-title text-white fw-bold mb-3">
