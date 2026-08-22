@@ -10,7 +10,7 @@ export default function ProductFeatures({ features = [], className = '' }) {
     <ul className={`product-detail-features list-unstyled ${className}`.trim()}>
       {features.map((feature, index) => (
         <li key={index} className="feature-item mb-2">
-          {/* HTML tags (jaise <strong>, <a>, <sup>, <sub>) ko safely render karne ke liye */}
+          
           {typeof feature === 'string' ? (
             <span dangerouslySetInnerHTML={{ __html: feature }} />
           ) : (

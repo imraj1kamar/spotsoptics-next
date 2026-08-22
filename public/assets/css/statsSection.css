@@ -55,3 +55,59 @@
     font-size: 0.75rem;
   }
 }
+
+/* Container jo extra content ko chupa lega */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Main flex container jisme animation chalegi */
+.marquee-content {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  /* Left to Right ke liye 'marquee-ltr' use karein */
+  /* Animation speed (25s) apne hisaab se kam/zyada kar sakte ho */
+  animation: marquee-ltr 25s linear infinite;
+}
+
+/* User jab mouse text par layega toh animation ruk jayegi (padhne mein asani) */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Single Item Styling */
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 15px;
+}
+
+/* ------------------------------------------- */
+/* ANIMATIONS (Donon options hain, jo theek lage) */
+/* ------------------------------------------- */
+
+/* Left to Right (Tumhari requirement) */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Standard Right to Left (Agar normal news-ticker jaisa chahiye ho) */
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

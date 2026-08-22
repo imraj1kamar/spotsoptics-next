@@ -88,14 +88,14 @@
   padding: 10px 26px;
   border-radius: 10px !important;
   border: none !important;
-  box-shadow: 0 4px 15px rgba(30, 94, 255, 0.35);
+  box-shadow: 0 4px 15px var(--shadow-md);
   transition: all 0.2s ease;
 }
 
 .btn-cookie-accept:hover {
   background-color: var(--secondary-blue) !important;
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(30, 94, 255, 0.5);
+  box-shadow: 0 8px 20px var(--shadow-sm);
 }
 
 /* Modal Styling */

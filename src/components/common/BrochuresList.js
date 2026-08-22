@@ -57,7 +57,7 @@ export default function BrochuresList({
         {items.map((brochure, index) => {
           const link = brochure.link || '#';
           const isPdf = link.toLowerCase().endsWith('.pdf');
-          const isPage = link.startsWith('/');
+          const isPage = !link.toLowerCase().endsWith('.pdf');
 
           let href = link;
           let target = undefined;

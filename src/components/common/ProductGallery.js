@@ -58,6 +58,9 @@ export default function ProductGallery({
   className = '',
   show_thumbnails = true,
 }) {
+
+console.log(specifications);
+
   // Normalize gallery images list
   const rawGalleryImages = images && images.length > 0 ? images : image ? [image] : [];
   const galleryImages = rawGalleryImages.map(normalizeImageSrc).filter(Boolean);
@@ -231,25 +234,35 @@ export default function ProductGallery({
           </span>
           <div className="quick-specs-grid ">
             {currentSpecs.map((spec, idx) => {
-              const isWavelength = spec.label === 'Wavelength Range';
-              const hasGraph = isWavelength && spec.graph;
+             const isWavelength = spec.label === 'Wavelength Range';
+    const hasGraph = isWavelength && spec.graph;
+    const isUrl = Boolean(spec.url);
+    const isClickable = hasGraph || isUrl;
 
+    const handleClick = () => {
+      if (hasGraph) {
+        setModalImage(spec.graph);
+      } else if (isUrl) {
+        window.location.href = spec.url; // Direct page redirect
+      }
+    };
               return (
                 
-                  <div key={idx} 
-                    className={`quick-spec-card ${
-                      hasGraph ? 'spec-clickable cursor-pointer bg-light' : ''
-                    }`}
-                    onClick={() => hasGraph && setModalImage(spec.graph)}
-                    style={{ cursor: hasGraph ? 'pointer' : 'default' }}
-                  >
-                    <span className="spec-label d-block small text-muted">
-                      {spec.label}
-                    </span>
-                    <span className="spec-value d-block fw-bold">
-                      {spec.value}
-                    </span>
-                  </div>
+                 <div
+        key={idx}
+        className={`quick-spec-card ${
+          isClickable ? 'spec-clickable cursor-pointer bg-light' : ''
+        }`}
+        onClick={handleClick}
+        style={{ cursor: isClickable ? 'pointer' : 'default' }}
+      >
+        <span className="spec-label d-block small text-muted">
+          {spec.label}
+        </span>
+        <span className="spec-value d-block fw-bold">
+          {spec.value}
+        </span>
+      </div>
                
               );
             })}

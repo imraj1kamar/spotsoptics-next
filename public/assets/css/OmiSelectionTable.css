@@ -1,0 +1,214 @@
+/* ===================================================
+   OMI SELECTION TABLE COMPONENT CSS
+   Uses variables defined in global.css
+=================================================== */
+
+.omi-table-wrapper {
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px var(--glass-border);
+  margin: 20px 0;
+}
+
+/* Header & Controls */
+.omi-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.omi-table-title {
+  color: var(--heading-text);
+  font-size: var(--h4-font-size);
+  font-weight: var(--heading-font-weight-bold);
+  margin: 0;
+}
+
+.omi-table-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.omi-entries-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--para-text);
+}
+
+.omi-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  color: var(--heading-text);
+  font-size: var(--text-sm);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.omi-select:focus {
+  border-color: var(--primary-blue);
+}
+
+.omi-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--para-text);
+}
+
+.omi-search-input {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  color: var(--heading-text);
+  font-size: var(--text-sm);
+  min-width: 200px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.omi-search-input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(41, 147, 139, 0.15);
+}
+
+/* Responsive Table Container */
+.omi-table-responsive {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.omi-custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--text-sm);
+}
+
+.omi-custom-table th {
+  background-color: var(--sky-light);
+  color: var(--heading-text);
+  font-weight: var(--fw-semibold);
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.omi-custom-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--body-color);
+  vertical-align: middle;
+}
+
+.omi-custom-table tr:hover td {
+  background-color: var(--sky-hover);
+}
+
+/* Model Cell & Badge */
+.omi-model-name {
+  font-weight: var(--fw-semibold);
+  color: var(--heading-text);
+}
+
+.omi-model-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: var(--fw-semibold);
+  transition: color 0.2s ease;
+}
+
+.omi-model-link:hover {
+  color: var(--secondary-blue);
+  text-decoration: underline;
+}
+
+.omi-variant-tag {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--muted-text);
+  margin-top: 2px;
+}
+
+/* Multi-item listing (Sampling & Lenslets) */
+.omi-cell-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.omi-cell-item {
+  color: var(--para-text);
+}
+
+/* Footer & Pagination */
+.omi-table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.omi-info-text {
+  font-size: var(--text-sm);
+  color: var(--para-text);
+}
+
+.omi-pagination {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.omi-page-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  color: var(--heading-text);
+  font-size: var(--text-sm);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.omi-page-btn:hover:not(:disabled) {
+  background-color: var(--sky-light);
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.omi-page-btn.active {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+  font-weight: var(--fw-semibold);
+}
+
+.omi-page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Note Section */
+.omi-table-note {
+  margin-top: 16px;
+  padding-left: 20px;
+  font-size: var(--text-sm);
+  color: var(--para-text);
+  font-style: italic;
+}

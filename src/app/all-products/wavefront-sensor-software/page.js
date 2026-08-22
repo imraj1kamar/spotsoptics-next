@@ -107,7 +107,7 @@ export default function SensoftSoftwarePage() {
 
         {/* ================= 2. HERO BANNER ================= */}
         <motion.div
-          className="software-hero-card p-4 p-md-5 mb-5 text-white"
+          className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -146,7 +146,7 @@ export default function SensoftSoftwarePage() {
 
             <div className="col-lg-4 text-start text-lg-end mt-4 mt-lg-0">
               <div className="hero-info-glass-box p-3 d-inline-block text-start w-100">
-                <div className="text-uppercase small fw-bold text-info mb-1">Spectral Range</div>
+                <div className="text-uppercase small fw-bold text-primary mb-1">Spectral Range</div>
                 <h4 className="fw-bold text-white mb-1">DUV to LWIR</h4>
                 <p className="small text-white text-opacity-75 mb-0" style={{ fontSize: '12px', lineHeight: '1.4' }}>
                   Complete on-axis & off-axis diagnostics across all optical test wavelengths.

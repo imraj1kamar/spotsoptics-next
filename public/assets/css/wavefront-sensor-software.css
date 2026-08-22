@@ -54,8 +54,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--accent-cyan, #38bdf8);
-  box-shadow: 0 0 8px var(--accent-cyan, #38bdf8);
+  background-color: var(--primary-blue);
+  box-shadow: 0 0 8px var(--shadow-sm);
   display: inline-block;
 }
 

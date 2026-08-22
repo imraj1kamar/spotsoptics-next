@@ -22,7 +22,19 @@
 
 .hero-heading {
     letter-spacing: var(--ls-hero-heading);
-    color: var(--heading-text);
+    background: linear-gradient(to right, var(--secondary-blue), var(--primary-blue), #212529e0 );
+    
+    /* Background ko sirf text ke andar clip karne ke liye */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Text ke default color ko transparent karna taaki background gradient dikhe */
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+    
+    /* Font style adjust karne ke liye (optional) */
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 .hero-description {

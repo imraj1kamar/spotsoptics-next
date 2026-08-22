@@ -7,7 +7,7 @@
             "id" : "omi-test-in-single-pass",
             "name": "OMI: Test in Single Pass",
             "image": "assets/images/products/1.png",
-            "description": "High resolution sensors for wavefront measurement and analysis.",
+            "description": "High resolution sensors for wavefront measurement and analysis. \n\nAvailable lenslet arrays: Pitch: 0.15,0.3,0.5 mm, Focal lengths: 7-41 mm (*)",
             "features": [
                 "Metrology in transmission (single pass) of lasers and optical elements",
                 "Large wavelength range (DUV, Vis, SWIR, MWIR and LWIR)",
@@ -186,31 +186,31 @@
             "brochures": [
                 {
                     "title": "OMI Selection Guide",
-                    "link": "/omi-selection-guide"
+                    "link": "/all-products/omi-selection-table"
                 },
                 {
                     "title": "OMI Brochure",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics-OMI.pdf"
                 },
                 {
                     "title": "OMI-CMOS-DUV-VIS",
-                    "link": "assets/brochures/SpotOptics-OMI-CMOS-DUV-VIS.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics-OMI-CMOS-DUV-VIS.pdf"
                 },
                 {
                     "title": "OMI-DUV-HR-VIS",
-                    "link": "assets/brochures/SpotOptics-OMI-DUV-HR-VIS.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics-OMI-UV-VIS.pdf"
                 },
                 {
                     "title": "OMI-UV-VIS",
-                    "link": "assets/brochures/SpotOptics-OMI-UV-VIS.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics-OMI-UV-VIS.pdf"
                 },
                 {
                     "title": "OMI-SWIR",
-                    "link": "assets/brochures/SpotOptics_OMI-SWIR.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics_OMI-SWIR.pdf"
                 },
                 {
                     "title": "OMI-MWIR",
-                    "link": "assets/brochures/SpotOptics-OMI-MWIR.pdf"
+                    "link": "/assets/brochures/all-products/SpotOptics-OMI-MWIR.pdf"
                 }
             ],
             "navigation": {
@@ -270,11 +270,7 @@
                     "label": "Resolution",
                     "value": "45 x 45 spots"
                 },
-                {
-                    "label": "Wavelength Range",
-                    "value": "Vis - SWIR",
-                    "graph": "assets/graphs/product/OMI-DUV-VIS-NIR.png"
-                },
+               
                 {
                     "label": "Accuracy",
                     "value": "λ/3000"
@@ -294,16 +290,7 @@
                     "link": "/contact"
                 }
             },
-            "brochures": [
-                {
-                    "title": "Optino-mu Brochure",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Wavefront Sensors Guide",
-                    "link": "/all-products"
-                }
-            ],
+          
             "navigation": {
                 "previous": "OMI: Test in Single Pass",
                 "next": "Optino : Dual channel, Single & Double Pass"
@@ -316,7 +303,7 @@
         },
         {
             "id": "ioptino-dual-channel-single-and-double-pass",
-            "name": "Ioptino: Dual-channel, Single & Double Pass",
+            "name": "iOptino: Dual-channel, Single & Double Pass",
             "image": "assets/images/products/3.png",
             "description": "Dual-channel Shack-Hartmann wavefront sensor combining direct imaging and high-accuracy wavefront analysis for alignment and testing.",
             "features": [
@@ -349,29 +336,44 @@
                     "icon": "lens"
                 }
             ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/omi-uv.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1200"
-                },
-                {
-                    "label": "Design",
-                    "value": "Dual Channel"
-                }
-            ],
+           "quickSpecifications": [
+  {
+    "label": "Wavefront Sensing",
+    "value": "75x75 spots (Imaging field 1.7°)"
+  },
+  {
+    "label": "CMOS Autocollimator",
+    "value": "0.5\" accuracy"
+  },
+  {
+    "label": "Precision of Zernike Coefficients",
+    "value": "λ/3000"
+  },
+  {
+    "label": "Precision of Computed WF (rms)",
+    "value": "λ/1000"
+  },
+  {
+    "label": "Dimensions",
+    "value": "150mm x 100mm x 50mm"
+  },
+  {
+    "label": "Weight",
+    "value": "400gm"
+  },
+  {
+    "label": "Computational Speed (WF Channel)",
+    "value": "10 Hz"
+  },
+  {
+    "label": "Computational Speed (Imaging Channel)",
+    "value": "100 Hz"
+  },
+  {
+    "label": "Design",
+    "value": "Compact and light weight"
+  }
+],
             "buttons": {
                 "quote": {
                     "title": "REQUEST A QUOTE",
@@ -380,23 +382,16 @@
             },
             "brochures": [
                 {
-                    "title": "Optino Brochure",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Application Notes",
-                    "link": "/applications"
+                     "title": "iOptino",
+                    "link": "/assets/brochures/all-products/SpotOptics-iOptino.pdf"
                 }
+             
             ],
             "navigation": {
                 "previous": "Optino-mu: Pocket size, Single & Double Pass",
                 "next": "Laserino-mu: Dual Channel, Single Pass"
-            },
-            "images": [
-                "assets/images/products/3.png",
-                "assets/images/products/family/omi-hs.png",
-                "assets/graphs/product/omi-uv.png"
-            ]
+            }
+            
         },
         {
             "id": "laserino-mu-dual-channel-single-pass",
@@ -411,67 +406,57 @@
                 "M<sup>2</sup> evaluation directly from Shack-Hartmann data",
                 "MTF extraction without a scanning system"
             ],
-            "applications": [
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser"
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Imaging Systems",
-                    "icon": "lens"
-                }
-            ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Analysis",
-                    "value": "M² & MTF Direct"
-                }
-            ],
+    
+  "applications": [
+    {
+      "title": "Laser Testing",
+      "icon": "laser"
+    },
+    {
+      "title": "Beam Profiling",
+      "icon": "beam"
+    },
+    {
+      "title": "Wavefront Analysis",
+      "icon": "wave"
+    },
+    {
+      "title": "Direct Imaging",
+      "icon": "lens"
+    }
+  ],
+  "quickSpecifications": [
+    {
+      "label": "Design",
+      "value": "Dual Channel (Shack-Hartmann & Imaging)"
+    },
+    {
+      "label": "Camera Configuration",
+      "value": "Standard or Large Format (Single Pass)"
+    },
+    {
+      "label": "M² Analysis",
+      "value": "Directly obtained from Shack-Hartmann (No scanning)"
+    },
+    {
+      "label": "MTF Analysis",
+      "value": "Directly obtained from Shack-Hartmann (No scanning)"
+    },
+    {
+      "label": "Software",
+      "value": "Sensoft (Simultaneous acquisition & analysis)",
+      "url":"/all-products/wavefront-sensor-software"
+     
+    }
+  ],
+
             "buttons": {
                 "quote": {
                     "title": "REQUEST A QUOTE",
                     "link": "/contact"
                 }
             },
-            "brochures": [
-                {
-                    "title": "Laserino-mu Data Sheet",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Laser Testing Guide",
-                    "link": "/applications"
-                }
-            ],
+           
             "navigation": {
                 "previous": "Optino : Dual channel, Single & Double Pass",
                 "next": "Optino: Single & Double Pass"
@@ -488,12 +473,12 @@
             "image": "assets/images/products/5.png",
             "description": "Versatile Shack-Hartmann platform for transmission measurements across a broad wavelength range and multiple optical configurations.",
             "features": [
-                "Metrology in transmission in single and double pass",
-                "Wide wavelength coverage from DUV to LWIR",
-                "High repeatability and accuracy",
-                "Suitable for optical element and laser testing",
-                "Compact configuration for easy integration into lab workflows",
-                "Supports calibration and repeatability checks during setup"
+                "Optino is SpotOptics’ first Shack-Hartmann wavefront sensor for testing optical elements in single and double pass ",
+                "It is a very versatile wavefront sensor. The illumination light source for double pass is part of Optino ",
+                "Motorized version available for getting collimation at different wavelengths",
+                "Superior software SenSoft for full control of the instrument: image acquisition and  Shack-Hartmann analysis",
+                "On-line continuous collimation and alignment check during motor movement or manual adjustment"
+                
             ],
             "applications": [
                 {
@@ -517,29 +502,86 @@
                     "icon": "lens"
                 }
             ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/omi-duv-hr.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Design",
-                    "value": "Single & Double Pass"
-                }
-            ],
+   "specifications": [
+  {
+    "label": "Focal Ratios Covered",
+    "value": "All ratios (with collimator)"
+  },
+  {
+    "label": "Tested Element Diameter",
+    "value": "All diameters (with accessories)"
+  },
+  {
+    "label": "Test Setup",
+    "value": "Single & Double Pass"
+  },
+  {
+    "label": "Standard Lenslet Arrays",
+    "value": "(0.2mm, 11/22mm), (0.3mm, 41mm), (0.13mm, 7mm)"
+  },
+  {
+    "label": "Camera Interfaces",
+    "value": "Gigabit, USB2, USB3 (10–16 bit)"
+  },
+  {
+    "label": "Spots (9mm Pupil, USB3)",
+    "value": "45x45 (0.2mm) / 69x69 (0.13mm)"
+  },
+  {
+    "label": "Max Spots (15mm Pupil, Gigabit)",
+    "value": "75x75 (0.2mm) / 115x115 (0.13mm)"
+  },
+  {
+    "label": "Aspherical Elements",
+    "value": "~15% longitudinal spherical aberration"
+  },
+  {
+    "label": "Zernike Repeatability",
+    "value": "1–2 nm rms (λ/600 – λ/300) @ 633nm"
+  },
+  {
+    "label": "Wavefront Repeatability",
+    "value": "< λ/200 (RMS)"
+  },
+  {
+    "label": "Accuracy",
+    "value": "λ/10 – λ/100"
+  },
+  {
+    "label": "Dynamic Range",
+    "value": "±50 λ (Tilt subtracted)"
+  },
+  {
+    "label": "Wavelength Range",
+    "value": "UV (0.193-1.1μ), Vis (0.193-1.1μ), 0.95-1.7μ",
+    "graph": "assets/graphs/product/wave-optino.png"
+  },
+  {
+    "label": "Light Sources",
+    "value": "LEDs, LDs, Halogen (Monochromatic/White)"
+  },
+  {
+    "label": "Software",
+    "value": "Sensoft",
+    "url": "/all-products/wavefront-sensor-software"
+  },
+  {
+    "label": "Acquisition Speed",
+    "value": "15 – 500 Hz"
+  },
+  {
+    "label": "Processing Speed",
+    "value": "5 – 150 Hz"
+  },
+  {
+    "label": "Power Requirement",
+    "value": "12V / 2A DC (Motorized version)"
+  },
+  {
+    "label": "Trigger",
+    "value": "TTL 5V"
+  }
+],
             "buttons": {
                 "quote": {
                     "title": "REQUEST A QUOTE",
@@ -548,12 +590,8 @@
             },
             "brochures": [
                 {
-                    "title": "Optino Guide",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Optical Testing Overview",
-                    "link": "/all-products"
+                    "title": "Spotoptics Optino ",
+                    "link": "/assets/brochures/all-products/spotoptics_optino.pdf"
                 }
             ],
             "navigation": {
@@ -566,449 +604,420 @@
                 "assets/graphs/product/omi-duv-hr.png"
             ]
         },
+       {
+    "id": "lentino-opal-on-axis-motorized",
+    "name": "Lentino & Opal: On-axis Motorized",
+    "image": "assets/images/products/6.png",
+    "description": "On-axis motorized metrology platforms featuring accurate Z-movement, XY and tilt stages for easy lens centering, and in-built calibration units.",
+    "features": [
+        "Accurate motor for z-movement and XY/tilt stages for easy centering of lenses",
+        "Fully automated motor movement with encoders (~100nm resolution)",
+        "In-built calibration units for testing lenses in transmission and at focus with pinhole",
+        "In-built beam-expander (φ=12mm without expander; φ=60mm with beam expander for Opal)",
+        "Single and double pass capabilities for small lenses",
+        "Full control of instrument with SenSoft software",
+        "Models available for testing at different and multi-wavelengths"
+    ],
+    "applications": [
         {
-            "id": "lentino-opal-on-axis-motorized",
-            "name": "Lentino & Opal: On-axis Motorized",
-            "image": "assets/images/products/6.png",
-            "description": "Motorized on-axis measurement platform for automated alignment and repeatable optical testing in research and production.",
-            "features": [
-                "On-axis motorized metrology platform",
-                "High repeatability for automated optical measurement",
-                "Wide spectral coverage from DUV to LWIR",
-                "Optimized for beam and surface characterization",
-                "Improves setup repeatability and calibration efficiency",
-                "Supports integration into standard laboratory testing workflows"
-            ],
-            "applications": [
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser"
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Lens Inspection",
-                    "icon": "lens"
-                }
-            ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/OMI-DUV-VIS-NIR.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Design",
-                    "value": "On-axis Motorized"
-                }
-            ],
-            "buttons": {
-                "quote": {
-                    "title": "REQUEST A QUOTE",
-                    "link": "/contact"
-                }
-            },
-            "brochures": [
-                {
-                    "title": "Motorized Metrology Brochure",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Automated Testing Guide",
-                    "link": "/applications"
-                }
-            ],
-            "navigation": {
-                "previous": "Optino: Single & Double Pass",
-                "next": "Sfera & Stella: Off-axis Motorized"
-            },
-            "images": [
-                "assets/images/products/6.png",
-                "assets/images/products/family/omi-swir-hr.png",
-                "assets/graphs/product/OMI-DUV-VIS-NIR.png"
-            ]
+            "title": "Lens Centering",
+            "icon": "alignment"
         },
         {
-            "id": "sfera-stella-off-axis-motorized",
-            "name": "Sfera & Stella: Off-axis Motorized",
-            "image": "assets/images/products/7.png",
-            "description": "Off-axis motorized metrology solutions for dynamic alignment and precision testing in complex optical setups.",
-            "features": [
-                "Off-axis motorized measurement platform",
-                "Suitable for alignment-sensitive optical testing",
-                "Broad wavelength range from DUV to LWIR",
-                "High repeatability for precision measurements",
-                "Designed for reproducible axis positioning and calibration",
-                "Supports advanced research and production inspection"
-            ],
-            "applications": [
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser"
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Imaging Systems",
-                    "icon": "lens"
-                }
-            ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/omi-uv.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Design",
-                    "value": "Off-axis Motorized"
-                }
-            ],
-            "buttons": {
-                "quote": {
-                    "title": "REQUEST A QUOTE",
-                    "link": "/contact"
-                }
-            },
-            "brochures": [
-                {
-                    "title": "Off-axis Metrology Overview",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Alignment Systems Guide",
-                    "link": "/applications"
-                }
-            ],
-            "navigation": {
-                "previous": "Lentino & Opal: On-axis Motorized",
-                "next": "Contour: for contact lenses"
-            },
-            "images": [
-                "assets/images/products/7.png",
-                "assets/images/products/family/omi-45.PNG",
-                "assets/graphs/product/omi-uv.png"
-            ]
+            "title": "Lens Testing",
+            "icon": "lens"
         },
         {
-            "id": "contour-for-contact-lenses",
-            "name": "Contour: For Contact Lenses",
-            "image": "assets/images/products/8.png",
-            "description": "Specialized wavefront metrology solution for contact lens quality control, surface analysis, and optical validation.",
-            "features": [
-                "Optimized for contact lens metrology",
-                "High-resolution wavefront acquisition for curved optics",
-                "Wide spectral range for ocular and lens testing",
-                "Supports precision quality inspection",
-                "Reliable repeatability for ophthalmic measurements",
-                "Compatible with high-accuracy optical analysis workflows"
-            ],
-            "applications": [
-                {
-                    "title": "Lens Inspection",
-                    "icon": "lens"
-                },
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser"
-                }
-            ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "Vis - NIR",
-                    "graph": "assets/graphs/product/omi-uv-vis-nir.jpeg"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Application",
-                    "value": "Contact Lenses"
-                }
-            ],
-            "buttons": {
-                "quote": {
-                    "title": "REQUEST A QUOTE",
-                    "link": "/contact"
-                }
-            },
-            "brochures": [
-                {
-                    "title": "Contour Lens Brochure",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Ophthalmic Applications",
-                    "link": "/applications"
-                }
-            ],
-            "navigation": {
-                "previous": "Sfera & Stella: Off-axis Motorized",
-                "next": "Puntino: Dual-channel, for astronomical telescopes"
-            },
-            "images": [
-                "assets/images/products/8.png",
-                "assets/images/products/family/omi-hs.png",
-                "assets/graphs/product/omi-uv-vis-nir.jpeg"
-            ]
+            "title": "Transmission Testing",
+            "icon": "beam"
         },
         {
-            "id": "puntino-dual-channel-for-astronomical-telescopes",
-            "name": "Puntino: Dual-channel, for Astronomical Telescopes",
-            "image": "assets/images/products/9.png",
-            "description": "Dual-channel metrology solution for large optics and high-precision astronomical alignment and telescope testing.",
-            "features": [
-                "Dual-channel architecture for telescope metrology",
-                "Dedicated wavefront analysis for large optical systems",
-                "High accuracy for astronomical mirror and optical element testing",
-                "Compatible with precision alignment and calibration workflows",
-                "Supports optical quality evaluation in research and observatory environments",
-                "Reliable operation across visible and near-infrared wavelengths"
-            ],
-            "applications": [
-                {
-                    "title": "Telescope Metrology",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser"
-                }
-            ],
-            "quickSpecifications": [
-                {
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "Vis - SWIR",
-                    "graph": "assets/graphs/product/omi-duv-hr.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Design",
-                    "value": "Dual-channel, Telescope"
-                }
-            ],
-            "buttons": {
-                "quote": {
-                    "title": "REQUEST A QUOTE",
-                    "link": "/contact"
-                }
-            },
-            "brochures": [
-                {
-                    "title": "Astronomical Metrology Guide",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Telescope Applications",
-                    "link": "/applications"
-                }
-            ],
-            "navigation": {
-                "previous": "Contour: for contact lenses",
-                "next": "OMI: Test in Single Pass"
-            },
-            "images": [
-                "assets/images/products/9.png",
-                "assets/images/products/family/omi-hr.png",
-                "assets/graphs/product/omi-duv-hr.png"
-            ]
-        },
-        {
-            "id": "5star-off-axis-multi-camera",
-            "name":"5Star : Off-axis Multi Camera",
-            "image": "assets/images/products/10.png",
-            "description": "Off-axis multi-camera metrology solution for simultaneous wavefront and imaging analysis in complex optical systems.",
-            "features": [
-                "Off-axis multi-camera wavefront sensor",
-                "Simultaneous acquisition of wavefront and imaging data",
-                "High-precision metrology for complex optical setups",
-                "Optimized for alignment and calibration of multi-element systems", 
-                "Supports advanced research and industrial applications",
-                "Reliable operation across a wide spectral range"
-            ],
-            "productFamily": [
-                {
-                    "name": "5Star : Off-axis Multi Camera",
-                    "image": "assets/images/products/family/5star-off.png",
-                    "active": true,
-                    "specifications": []
-                   
-                },
-                {
-                    "name": "Countour of wavefront",
-                    "image": "assets/images/products/family/Slide5.png",
-                    "active": false,
-                    "specifications": []
-                },
-                {
-                    "name": "Spot diagram",
-                    "image": "assets/images/products/family/Slide6.png",
-                    "active": false,
-                    "specifications": []
-                },
-                {
-                    "name": "Mtf from Shack-Hartmann analysis",
-                    "image": "assets/images/products/family/Slide8.png",
-                    "active": false,
-                    "specifications": []
-                }
-            ],
-            "applications": [
-                {
-                    "title": "Optical Alignment",
-                    "icon": "alignment"
-                },
-                {
-                    "title": "Wavefront Analysis",
-                    "icon": "wave"
-                },
-                {
-                    "title": "Laser Testing",
-                    "icon": "laser" 
-                },
-                {
-                    "title": "Beam Profiling",
-                    "icon": "beam"
-                },
-                {
-                    "title": "Imaging Systems",
-                    "icon": "lens"
-                }
-            ],
-            "quickSpecifications": [
-                {   
-                    "label": "Resolution",
-                    "value": "45 x 45 spots"
-                },
-                {
-                    "label": "Wavelength Range",
-                    "value": "DUV - LWIR",
-                    "graph": "assets/graphs/product/omi-uv.png"
-                },
-                {
-                    "label": "Accuracy",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Repeatability",
-                    "value": "λ/1000"
-                },
-                {
-                    "label": "Design",
-                    "value": "Off-axis Multi Camera"
-                }   
-            ],
-            "buttons": {
-                "quote": {
-                    "title": "REQUEST A QUOTE",
-                    "link": "/contact"
-                }
-            },
-            "brochures": [
-                {
-                    "title": "Off-axis Multi Camera",
-                    "link": "assets/brochures/SpotOptics-OMI.pdf"
-                },
-                {
-                    "title": "Multi-Camera Applications",
-                    "link": "/applications"
-                }   
-            ],
-            "navigation": {
-                "previous": "Puntino: Dual-channel, for astronomical telescopes",
-                "next": "OMI: Test in Single Pass"
-            }
-            
-
+            "title": "Multi-Wavelength Testing",
+            "icon": "wave"
         }
+    ],
+    "quickSpecifications": [
+        {
+            "label": "Motor Resolution",
+            "value": "~100nm"
+        },
+        {
+            "label": "Lentino Dimensions",
+            "value": "289(W) x 200(L) x 454(H) mm"
+        },
+        {
+            "label": "Lentino Weight",
+            "value": "~5kg"
+        },
+        {
+            "label": "Opal Dimensions",
+            "value": "350(W) x 350(L) x 800(H) mm"
+        },
+        {
+            "label": "Opal Weight",
+            "value": "~15kg"
+        },
+        {
+            "label": "Software",
+            "value": "SenSoft"
+        }
+    ],
+    "buttons": {
+        "quote": {
+            "title": "REQUEST A QUOTE",
+            "link": "/contact"
+        }
+    },
+    "brochures": [
+        {
+            "title": "Download brochure of Lentino",
+            "link": "/assets/brochures/all-products/spotoptics_lentino.pdf"
+        },
+        {
+            "title": "Download brochure of Opal",
+            "link": "/assets/brochures/all-products/spotoptics_opal.pdf"
+        }
+    ],
+    "navigation": {
+        "previous": "Optino: Single & Double Pass",
+        "next": "Sfera & Stella: Off-axis Motorized"
+    }
+    
+},
+       {
+    "id": "sfera-stella-off-axis-motorized",
+    "name": "Sfera & Stella: Off-axis Motorized",
+    "image": "assets/images/products/7.png",
+    "description": "On-axis and off-axis motorized metrology solutions for precise transmission testing, featuring high-accuracy encoders, macro-defined field positions, and automatic scanning.",
+    "features": [
+        "Test in transmission (single pass) with an in-built calibration unit",
+        "Accurate motors with encoders for scanning movements (8 for Stella, 7 for Sfera)",
+        "Full control of the instrument with SenSoft software",
+        "Macro available for defining positions in the field with automatic scanning",
+        "Stella: Test on-axis and off-axis up to ±50° with high sampling of points",
+        "Sfera: Full 360° coverage in Φ, ±35° in Θ for small and mobile phone lenses",
+        "Designed for laboratory use"
+    ],
+    "applications": [
+        {
+            "title": "Telecentric Lenses",
+            "icon": "lens"
+        },
+        {
+            "title": "Digital Camera Lenses",
+            "icon": "lens"
+        },
+        {
+            "title": "TV & Cinema Lenses",
+            "icon": "lens"
+        },
+        {
+            "title": "Mobile Phone Lenses",
+            "icon": "lens"
+        },
+        {
+            "title": "Small Lens Testing",
+            "icon": "lens"
+        }
+    ],
+    "quickSpecifications": [
+        {
+            "label": "Test Mode",
+            "value": "Transmission (Single Pass)"
+        },
+        {
+            "label": "Stella Range",
+            "value": "Up to ±50° Off-axis"
+        },
+        {
+            "label": "Sfera Range",
+            "value": "360° in Φ, ±35° in Θ"
+        },
+        {
+            "label": "Stella Motors",
+            "value": "8 high-accuracy with encoders"
+        },
+        {
+            "label": "Sfera Motors",
+            "value": "7 high-accuracy with encoders"
+        },
+        {
+            "label": "Software",
+            "value": "SenSoft"
+        }
+    ],
+    "buttons": {
+        "quote": {
+            "title": "REQUEST A QUOTE",
+            "link": "/contact"
+        }
+    },
+    "brochures": [
+        {
+            "title": "Download brochure of Stella",
+            "link": "/assets/brochures/all-products/Stella-SpotOptics-poster.pdf"
+        }
+    ],
+    "navigation": {
+        "previous": "Lentino & Opal: On-axis Motorized",
+        "next": "Contour: for contact lenses"
+    }
+},
+       {
+    "id": "contour-for-contact-lenses",
+    "name": "Contour: For Contact Lenses",
+    "image": "assets/images/products/8.png",
+    "description": "Accurate and fast contact lens metrology solution designed for the production line. Extremely compact, lightweight, and capable of testing in wet and dry conditions with no moving parts.",
+    "features": [
+        "Accurate and fast contact lens metrology designed specifically for the production line",
+        "Capable of testing contact lenses in both wet and dry statuses",
+        "Highly compact (11.5cm height) and lightweight (350g) with absolutely no moving parts",
+        "Flexible operation: can be used vertically (default) or horizontally",
+        "Features a high-accuracy <a href='/knowledge/lensletFocalLengthDetail' >lenslet array with a long focal length</a>",
+        "Auto-centering of the lens achieved through a specialized cuvette design",
+        "Automatic adjustment of light intensity for optimized testing conditions",
+        "Includes an inbuilt light source for both calibration and active testing",
+        "Measurements trigger automatically the moment the lens is in place",
+        "Accurately measures Sphere, Cylinder, Prism, Zonal, Modal, and Ophthalmic power",
+        "Provides full optical details, including Zernike aberrations, MTF, and various graphs",
+        "High-speed measurements with standard camera acquisition up to 90 fps",
+        "Supports contact lenses with diameters up to 14.5mm and optical zones (OZD) up to 8mm",
+        "Easy-to-use SensoftProContour software delivers results with a single click",
+        "Available in two models: Standard (50x50 points) and High Resolution (80x80 points)"
+    ],
+    "applications": [
+        {
+            "title": "Production Line Metrology",
+            "icon": "alignment"
+        },
+        {
+            "title": "Lens Quality Control",
+            "icon": "lens"
+        },
+        {
+            "title": "Ophthalmic Power Testing",
+            "icon": "laser"
+        },
+        {
+            "title": "Aberration Analysis (MTF/Zernike)",
+            "icon": "wave"
+        }
+    ],
+    "quickSpecifications": [
+        {
+            "label": "Max Lens Diameter",
+            "value": "14.5mm"
+        },
+        {
+            "label": "Optical Zone (OZD)",
+            "value": "Up to 8mm"
+        },
+        {
+            "label": "Dimensions",
+            "value": "4.5(L) x 4.0(W) x 11.5(H) cm"
+        },
+        {
+            "label": "Weight",
+            "value": "350 g"
+        },
+        {
+            "label": "Resolution Options",
+            "value": "50x50 (Std) | 80x80 (HR)"
+        },
+        {
+            "label": "Software",
+            "value": "SensoftProContour"
+        }
+    ],
+    "buttons": {
+        "quote": {
+            "title": "REQUEST A QUOTE",
+            "link": "/contact"
+        }
+    },
+    "navigation": {
+        "previous": "Sfera & Stella: Off-axis Motorized",
+        "next": "Puntino: Dual-channel, for astronomical telescopes"
+    }
+},
+      {
+    "id": "puntino-dual-channel-for-astronomical-telescopes",
+    "name": "Puntino: Dual-channel, for Astronomical Telescopes",
+    "image": "assets/images/products/9.png",
+    "description": "Powerful dual-channel metrology solution to optimize telescope performance, featuring specialized tools for alignment, mirror mountings, and image quality evaluation. Can cover focal ratios from f/5 to f/18",
+    "features": [
+        "Covers focal ratios from f/5 to f/18 to optimize overall telescope performance",
+        "Dual-camera system: Cooled CCD for SH images and CMOS as a star finder and out-of-focus pupil",
+        "Internal motorized calibration unit with remote software control to compensate for nighttime temperature changes",
+        "Motorized finder lens with remote control for capturing and analyzing out-of-focus pupil images",
+        "Optimizes telescope image quality, alignment, and mirror mountings while finding the correct focal plane",
+        "Measures external and dome seeing using the dedicated finder camera",
+        "Fully controlled by Sensoft software for seamless operation",
+        "Supports <a href='https://opg.optica.org/josa/abstract.cfm?uri=josa-71-1-75' target='_blank'>Annular Zernike polynomials</a> (up to 70 terms) in Sensoft to account for secondary mirror obscuration"
+    ],
+    "applications": [
+        {
+            "title": "Telescope Metrology",
+            "icon": "wave"
+        },
+        {
+            "title": "Optical Alignment",
+            "icon": "alignment"
+        },
+        {
+            "title": "Focal Plane Detection",
+            "icon": "lens"
+        },
+        {
+            "title": "Dome Seeing Measurement",
+            "icon": "beam"
+        }
+    ],
+    "quickSpecifications": [
+        {
+            "label": "Focal Ratios",
+            "value": "f/5 to f/18"
+        },
+        {
+            "label": "Dimensions (for f/9)",
+            "value": "100(W) x 90(H) x 250(L) mm"
+        },
+        {
+            "label": "Weight",
+            "value": "~2kg"
+        },
+        {
+            "label": "Cameras",
+            "value": "Cooled CCD & CMOS"
+        },
+        {
+            "label": "Software",
+            "value": "Sensoft (up to 70 Zernike terms)"
+        }
+    ],
+    "buttons": {
+        "quote": {
+            "title": "REQUEST A QUOTE",
+            "link": "/contact"
+        }
+    },
+    "brochures": [
+        {
+            "title": "Download Puntino brochure",
+            "link": "/assets/brochures/all-products/SpotOptics_Puntino.pdf"
+        }
+    ],
+    "navigation": {
+        "previous": "Contour: for contact lenses",
+        "next": "OMI: Test in Single Pass"
+    }
+},
+
+
+
+        {
+    "id": "5star-off-axis-multi-camera",
+    "name": "5Star : Off-axis Multi Camera",
+    "image": "assets/images/products/10.png",
+    "description": "Advanced multi-camera metrology solution for simultaneous on-axis and off-axis testing in a single shot. Ideal for the production line and active alignment of composite optical elements without mechanical scanning.",
+    "features": [
+        "On-axis and off-axis testing in one single shot with fast measurement on 5 or 9 off-axis points",
+        "No mechanical scanning required, making it highly ideal for production lines",
+        "Supports active alignment of composite optical elements, lenses, and sensors",
+        "Compact hardware with a small footprint, easy maintenance, and field angles < 180°",
+        "Lightning-fast performance with a tact time of ≈ 2 seconds",
+        "Includes a special tool for precise calibration of on-axis and off-axis points",
+        "Powered by SenSoft with password-protected, distinct user interfaces for Operator and Supervisor",
+        "Automatic regulation of exposure time, collimation checks, and alignment via simultaneous image acquisition",
+        "Comprehensive simultaneous Shack-Hartmann analysis: Zernike coefficients, Zonal/Modal Wavefront, Spot Diagram, and MTF",
+        "Supports both on-line and off-line analysis with full flexibility in output graph composition"
+    ],
+    "productFamily": [
+        {
+            "name": "5Star : Off-axis Multi Camera",
+            "image": "assets/images/products/family/5star-off.png",
+            "active": true,
+            "specifications": []
+        },
+        {
+            "name": "Countour of wavefront",
+            "image": "assets/images/products/family/Slide5.png",
+            "active": false,
+            "specifications": []
+        },
+        {
+            "name": "Spot diagram",
+            "image": "assets/images/products/family/Slide6.png",
+            "active": false,
+            "specifications": []
+        },
+        {
+            "name": "Mtf from Shack-Hartmann analysis",
+            "image": "assets/images/products/family/Slide8.png",
+            "active": false,
+            "specifications": []
+        }
+    ],
+    "applications": [
+        {
+            "title": "Production Line Testing",
+            "icon": "alignment"
+        },
+        {
+            "title": "Active Alignment",
+            "icon": "beam"
+        },
+        {
+            "title": "Lens & Sensor Alignment",
+            "icon": "lens"
+        },
+        {
+            "title": "Wavefront Analysis",
+            "icon": "wave"
+        }
+    ],
+    "quickSpecifications": [
+        {
+            "label": "Measurement Points",
+            "value": "5 or 9 off-axis points"
+        },
+        {
+            "label": "Tact Time",
+            "value": "≈ 2 secs"
+        },
+        {
+            "label": "Field Angles",
+            "value": "< 180°"
+        },
+        {
+            "label": "Analysis Outputs",
+            "value": "Zernike, MTF, Spot Diagram"
+        },
+        {
+            "label": "Software UI",
+            "value": "Operator & Supervisor Modes"
+        },
+        {
+            "label": "Testing Method",
+            "value": "Single Shot (No Scanning)"
+        }
+    ],
+    "buttons": {
+        "quote": {
+            "title": "REQUEST A QUOTE",
+            "link": "/contact"
+        }
+    },
+    "brochures": [
+        {
+            "title": "Download brochure of 5Star",
+            "link": "/assets/brochures/all-products/spotoptics_5star.pdf"
+        }
+    ],
+    "navigation": {
+        "previous": "Puntino: Dual-channel, for astronomical telescopes",
+        "next": "OMI: Test in Single Pass"
+    }
+}
     ]
 }

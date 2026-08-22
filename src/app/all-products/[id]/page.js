@@ -141,8 +141,13 @@ function AllProductsContent() {
                     PRODUCT DETAILS
                   </span>
 
-                  <p className="product-detail-description mb-4 lead">
-                    {singleProduct.description || ''}
+                  <p className="product-detail-description lead">
+                   {(singleProduct.description || '').split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      
+    </React.Fragment>
+  ))}
                   </p>
 
                   <ProductFeatures
