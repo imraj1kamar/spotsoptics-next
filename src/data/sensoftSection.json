@@ -11,7 +11,7 @@
   ],
   "button": {
     "text": "EXPLORE SENSOFT",
-    "url": "/software"
+    "url": "/applications"
   },
   "image": {
     "url": "/assets/images/sensoft-monitor.png",

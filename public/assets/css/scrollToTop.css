@@ -1,0 +1,51 @@
+/* Base state (Hidden & Translated down slightly) */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  /* Using your global variables */
+  background-color: var(--primary-blue);
+  color: var(--bg-white);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  
+  /* Animation preparation */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active state (Visible) */
+.scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.scroll-to-top-btn:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-5px); /* Hover par thoda sa upar jump karega */
+  box-shadow: var(--shadow-sm); 
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}

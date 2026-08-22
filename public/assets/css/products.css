@@ -7,7 +7,14 @@
     padding: 10px 0; 
     
 }
-
+.product-text-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; /* Yahan 5 lines ka limit set kiya hai */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}
 /* --- Typography (Heading & Tags) --- */
 
 

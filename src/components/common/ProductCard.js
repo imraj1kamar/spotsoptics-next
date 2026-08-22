@@ -58,9 +58,10 @@ export default function ProductCard({
         )}
       </div>
 
-      {name && <h3 className="product-title mt-3">{name}</h3>}
-      {description && <p className="product-desc flex-grow-1">{description}</p>}
-
+   <div className="product-text-clamp flex-grow-1 mt-3">
+    {name && <h3 className="product-title mb-1">{name}</h3>}
+    {description && <p className="product-desc mb-0">{description}</p>}
+</div>
       <Link
         href={productUrl}
         className="  a-link mt-auto d-inline-flex align-items-center gap-2 text-decoration-none text-uppercase"

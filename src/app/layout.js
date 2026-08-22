@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Preloader from "@/components/common/Preloader";
 import BootstrapClient from "@/components/BootstrapClient";
 import CookieConsent from '@/components/CookieConsentClient';
+import ScrollToTop from '@/components/common/ScrollToTop';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
@@ -139,6 +140,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             {children}
             <FooterSection/>
+            <ScrollToTop />
         </main>
         
       

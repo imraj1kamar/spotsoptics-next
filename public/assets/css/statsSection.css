@@ -63,6 +63,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  min-height: 100px;
 }
 
 /* Main flex container jisme animation chalegi */
