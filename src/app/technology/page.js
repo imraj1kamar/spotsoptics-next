@@ -87,6 +87,24 @@ export default function OurTechnologyPage() {
             <div className="top-bar-center d-none d-lg-block">
               <h1 className="product-detail-title">{page.title || 'Our Technology'}</h1>
             </div>
+
+                  {/* Top Right Counter Card Badge */}
+            <div className="knowledge-counter-badge d-flex align-items-center gap-3">
+              <div className="counter-icon-box">
+                {/* <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                  />
+                </svg> */}
+              </div>
+              <div className="counter-info">
+                <span className="counter-label"></span>
+                <span className="counter-value"></span>
+              </div>
+            </div>
           </motion.div>
 
           {/* Page Description */}
@@ -95,6 +113,8 @@ export default function OurTechnologyPage() {
               <p className="page-tagline">{page.description || ''}</p>
             </div>
           </header>
+
+        
         </div>
       </section>
 

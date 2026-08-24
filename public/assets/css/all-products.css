@@ -109,14 +109,7 @@
     min-width: 72px;
 }
 
-.counter-label {
-    color: var(--muted-text);
-    font-size: 0.55rem;
-    font-weight: var(--fw-bold);
-    letter-spacing: var(--ls-wider);
-    text-transform: uppercase;
-    line-height: 1;
-}
+
 
 .counter-value {
     color: var(--primary-blue);
@@ -651,9 +644,7 @@
         min-width: 54px;
         border-radius: 8px;
     }
-    .counter-label {
-        display: none !important;
-    }
+   
     .counter-value {
         font-size: 0.85rem;
     }

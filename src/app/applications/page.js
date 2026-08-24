@@ -192,9 +192,13 @@ export default function ApplicationsSection() {
                           {/* Content Clamped to Image Height (~180px) */}
                           <div className="card-clamped-content text-muted small mb-2 position-relative">
                             {/* Description */}
-                            {application.description && (
-                              <p className="mb-2">{application.description}</p>
-                            )}
+               {application.description && application.description.split(/\n\s*\n/).map((paragraph, i) => (
+  <p 
+    key={i} 
+    className="mb-2 custom-link-text" 
+    dangerouslySetInnerHTML={{ __html: paragraph }}
+  />
+))}
 
                             {/* Top-level Bullets */}
                             {application.bullets && application.bullets.length > 0 && (
@@ -202,7 +206,7 @@ export default function ApplicationsSection() {
                                 {application.bullets.map((b, bIdx) => (
                                   <li key={bIdx} className="mb-1 d-flex align-items-start gap-1">
                                     <span className="text-primary fw-bold">✦</span>
-                                    <span>{b}</span>
+                                    <span className="mb-2 custom-link-text"  dangerouslySetInnerHTML={{ __html:b}}></span>
                                   </li>
                                 ))}
                               </ul>
@@ -221,7 +225,7 @@ export default function ApplicationsSection() {
                                         {sec.bullets.map((b, bIdx) => (
                                           <li key={bIdx} className="mb-1 d-flex align-items-start gap-1">
                                             <span className="text-primary fw-bold">✦</span>
-                                            <span>{b}</span>
+                                            <span className='custom-link-text' dangerouslySetInnerHTML={{ __html:b}}></span>
                                           </li>
                                         ))}
                                       </ul>
@@ -287,6 +291,7 @@ function CardCarousel({ gallery, appTitle, onImageClick }) {
 
   const currentImg = gallery[activeIndex]?.image || '/assets/images/placeholder.png';
   const imgSrc = currentImg.startsWith('/') ? currentImg : `/${currentImg}`;
+const currentCaption = gallery[activeIndex]?.caption || '';
 
   const handlePrev = (e) => {
     if (e) e.stopPropagation();
@@ -303,7 +308,7 @@ function CardCarousel({ gallery, appTitle, onImageClick }) {
       <Image
         key={activeIndex}
         src={imgSrc}
-        alt={appTitle || 'Application image'}
+        alt={currentCaption}
         width={360}
         height={260}
         className="img-fluid w-100 h-100 object-fit-cover cursor-pointer hover-zoom carousel-slide-fade"
@@ -402,7 +407,7 @@ function DetailModal({ app, onClose }) {
             {app.description && (
               <div className="app-content-section-box mb-4">
                 {app.description.split(/\n\s*\n/).map((para, i) => (
-                  <p key={i} className="mb-2 text-muted fs-6 lh-base">{para}</p>
+                  <p key={i} className="mb-2 text-muted fs-6 lh-base custom-link-text">  <span dangerouslySetInnerHTML={{ __html: para }} /></p>
                 ))}
               </div>
             )}
@@ -415,7 +420,7 @@ function DetailModal({ app, onClose }) {
                   {app.bullets.map((bullet, i) => (
                     <li key={i} className="mb-2 d-flex align-items-start gap-2 text-muted small">
                       <span className="text-primary fw-bold">✦</span>
-                      <span>{bullet}</span>
+                      <span><span dangerouslySetInnerHTML={{ __html: bullet }} /></span>
                     </li>
                   ))}
                 </ul>
@@ -435,7 +440,7 @@ function DetailModal({ app, onClose }) {
                         {sec.bullets.map((b, j) => (
                           <li key={j} className="mb-1.5 d-flex align-items-start gap-2 text-muted small">
                             <span className="text-primary fw-bold">✦</span>
-                            <span>{b}</span>
+                            <span dangerouslySetInnerHTML={{ __html: b }} ></span>
                           </li>
                         ))}
                       </ul>
