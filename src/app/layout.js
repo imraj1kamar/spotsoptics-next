@@ -70,7 +70,7 @@ export const metadata = {
     images: [siteData.site.logo],
   },
   verification: {
-    google: 'U3BvdE9wdGljczE5OTZmcm9tcGFkb3ZhY2l0eWl0YWx5ZXVyb3A=', 
+    google: 'zfGMJWWfmqta-PoYRCh0EgMgWcbYelP9cBj4wFcaGcY', 
   },
 };
 
