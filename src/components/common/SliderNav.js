@@ -24,6 +24,7 @@ export default function SliderNav({
         className={prevClass}
         onClick={onPrev}
         aria-label="Previous slide"
+        suppressHydrationWarning
         {...baseButtonProps}
         {...prevProps}
       >
@@ -48,6 +49,7 @@ export default function SliderNav({
         className={nextClass}
         onClick={onNext}
         aria-label="Next slide"
+        suppressHydrationWarning
         {...baseButtonProps}
         {...nextProps}
       >

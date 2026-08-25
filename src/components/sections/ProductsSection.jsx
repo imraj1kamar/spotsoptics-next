@@ -87,7 +87,7 @@ export default function ProductsSection() {
                 prevClass="slider-nav-btn swiper-prev"
                 nextClass="slider-nav-btn swiper-next"
                 size={20}
-                type="div"
+                type="button"
               />
             </div>
           </div>
@@ -99,6 +99,7 @@ export default function ProductsSection() {
             slidesPerView={1}
             spaceBetween={10}
             loop={true}
+            cssMode={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -133,7 +134,7 @@ export default function ProductsSection() {
             prevClass="slider-nav-btn swiper-prev"
             nextClass="slider-nav-btn swiper-next"
             size={20}
-            type="div"
+            type="button"
           />
 
         </div>

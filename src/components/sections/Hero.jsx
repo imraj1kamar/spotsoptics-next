@@ -232,7 +232,8 @@ export default function Hero() {
     alt={heroData?.image?.alt || 'SpotOptics Product'}
     width={650}
     height={450}
-    priority 
+    priority
+    sizes="(max-width: 991px) 100vw, 50vw"
     className="img-fluid hero-product-img"
     style={{
       width: '100%',

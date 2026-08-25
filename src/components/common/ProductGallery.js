@@ -113,6 +113,7 @@ console.log(specifications);
     style={{ width: '100%', height: 'auto' }}
     className="product-detail-image img-fluid"
     id="galleryMainImage"
+    sizes="(max-width: 991px) 100vw, 50vw"
   />
 ) : (
           <div className="product-detail-image img-fluid d-flex align-items-center justify-content-center bg-light text-muted">
@@ -158,6 +159,7 @@ console.log(specifications);
                 src={imgUrl}
                 alt={`${name} - image ${i + 1}`}
                 style={{ width: '60px', height: '60px', objectFit: 'cover' }}
+                sizes="60px"
               />
             </button>
           ))}
@@ -191,6 +193,7 @@ console.log(specifications);
       height={90}
       className="me-1"
       style={{ objectFit: 'cover' }}
+      sizes="90px"
     />
   )}
   <span>{family.name}</span>

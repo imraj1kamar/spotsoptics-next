@@ -114,12 +114,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/assets/images/hero-image.png" 
-          fetchPriority="high" 
-        />
+
       </head>
       <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
         <BootstrapClient />

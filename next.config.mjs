@@ -6,6 +6,11 @@ const nextConfig = {
     'localhost:3000',
     '127.0.0.1:3000',
   ],
+  images: {
+    // Task 1: Serve modern AVIF (preferred) with WebP fallback.
+    // AVIF is ~50% smaller than WebP and significantly improves LCP.
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 export default nextConfig;

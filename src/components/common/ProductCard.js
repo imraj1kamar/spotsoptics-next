@@ -49,6 +49,7 @@ export default function ProductCard({
             height={350}
             style={{ width: '100%', height: 'auto' }}
             className="img-fluid product-img"
+            sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 33vw, (max-width: 1199px) 25vw, 17vw"
           />
         ) : (
           <div className="product-img-placeholder bg-light text-muted d-flex align-items-center justify-content-center p-4">

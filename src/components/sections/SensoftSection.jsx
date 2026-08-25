@@ -97,6 +97,11 @@ export default function SensoftSection() {
         width={520}
         height={320}
         className="screen-slide-img"
+        // First slide is the LCP element — give it full fetch priority.
+        // All slides use eager to avoid lazy-loading inside the carousel.
+        priority={currentSlideIndex === 0}
+        loading="eager"
+        sizes="(max-width: 991px) 100vw, 45vw"
         style={{
           width: '100%',
           height: '100%',
