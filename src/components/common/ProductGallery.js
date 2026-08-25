@@ -113,7 +113,6 @@ console.log(specifications);
     style={{ width: '100%', height: 'auto' }}
     className="product-detail-image img-fluid"
     id="galleryMainImage"
-    unoptimized
   />
 ) : (
           <div className="product-detail-image img-fluid d-flex align-items-center justify-content-center bg-light text-muted">
@@ -192,7 +191,6 @@ console.log(specifications);
       height={90}
       className="me-1"
       style={{ objectFit: 'cover' }}
-      unoptimized
     />
   )}
   <span>{family.name}</span>
@@ -292,7 +290,6 @@ console.log(specifications);
           width={390}
           height={390}
           style={{ width: 'auto', height: 'auto' }}
-          unoptimized
         />
       </div>
     </div>

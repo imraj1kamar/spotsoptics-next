@@ -69,8 +69,8 @@ export default function ApplicationsSection() {
                       src={item.image}
                       alt={item.title}
                       fill
+                      sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
                       className="app-image-card-bg"
-                      unoptimized
                     />
 
                     {/* Dark Gradient Overlay */}

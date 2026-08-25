@@ -80,13 +80,7 @@ export default function Accessories() {
     <section ref={containerRef} className="page-section accessories-page-wrapper py-5">
       <div className="container mt-4">
         {/* ================= 1. BREADCRUMBS ================= */}
-        {/* <div className="d-flex justify-content-between align-items-center mb-4">
-          <nav className="accessories-breadcrumbs" aria-label="breadcrumb">
-            <Link href="/" className="crumb-link">Home</Link>
-            <span className="crumb-divider">/</span>
-            <span className="crumb-active">Accessories</span>
-          </nav>
-        </div> */}
+       
           <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-2 mx-3">
                     <Breadcrumbs
                       items={[

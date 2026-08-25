@@ -80,7 +80,6 @@ export default function SensoftSection() {
         display: 'block',
       }}
       priority
-      unoptimized
     />
 
     {/* 2. Inner Display Screen Area (Auto-play Screenshots Carousel) */}
@@ -103,7 +102,6 @@ export default function SensoftSection() {
           height: '100%',
           objectFit: 'cover',
         }}
-        unoptimized
       />
     </div>
 

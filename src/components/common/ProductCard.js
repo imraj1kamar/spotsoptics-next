@@ -49,7 +49,6 @@ export default function ProductCard({
             height={350}
             style={{ width: '100%', height: 'auto' }}
             className="img-fluid product-img"
-            unoptimized
           />
         ) : (
           <div className="product-img-placeholder bg-light text-muted d-flex align-items-center justify-content-center p-4">

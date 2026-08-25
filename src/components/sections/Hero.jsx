@@ -240,7 +240,7 @@ export default function Hero() {
       maxWidth: '580px',
       objectFit: 'contain',
     }}
-    unoptimized
+    
   />
 </div>
         </div>

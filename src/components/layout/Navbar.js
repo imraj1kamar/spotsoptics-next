@@ -372,6 +372,7 @@ appList.forEach((app) => {
                     type="button"
                     aria-label="Close Search"
                     onClick={handleCloseSearch}
+                    suppressHydrationWarning
                   >
                     <svg width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
@@ -418,6 +419,7 @@ appList.forEach((app) => {
             className="btn btn-light rounded-circle p-2 d-flex align-items-center justify-content-center border-0"
             onClick={() => setIsMobileOpen(false)}
             aria-label="Close menu"
+            suppressHydrationWarning
           >
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M6 18L18 6M6 6l12 12" />
@@ -444,6 +446,7 @@ appList.forEach((app) => {
                           isActive ? 'active-parent' : ''
                         }`}
                         onClick={() => toggleMobileDropdown(index)}
+                        suppressHydrationWarning
                       >
                         <span className="fw-semibold">{item.title}</span>
                         <svg
