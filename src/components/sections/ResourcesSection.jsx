@@ -162,9 +162,15 @@ export default function ResourcesSection() {
                 )}
 
                 {/* Privacy Disclaimer */}
-                <span className="newsletter-privacy-text xx-small text-white text-opacity-70 d-block mt-2">
-                  {newsletter.privacy_text || 'We respect your privacy. Unsubscribe anytime.'}
-                </span>
+                {/* <span className="newsletter-privacy-text xx-small text-white text-opacity-70 d-block mt-2">
+                 
+                </span> */}
+                <span 
+  className="newsletter-privacy-text text-white text-opacity-75 d-block mt-2" 
+  style={{ fontSize: 'var(--text-xs, 0.75rem)', lineHeight: '1.4' }}
+>
+   {newsletter.privacy_text || 'We respect your privacy. Unsubscribe anytime.'}
+</span>
               </div>
             </div>
           </div>

@@ -144,7 +144,7 @@ export default function KnowledgePage() {
                 </svg>
               </div>
               <div className="counter-info">
-                <span className="counter-label">TOTAL ARTICLES</span>
+                <span className="counter-label">TOTAL</span>
                 <span className="counter-value">{totalCountFormatted}</span>
               </div>
             </div>

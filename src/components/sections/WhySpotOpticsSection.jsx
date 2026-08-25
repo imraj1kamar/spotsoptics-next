@@ -49,7 +49,7 @@ export default function WhySpotOpticsSection() {
 
   return (
     <motion.section
-      className="why-spotoptics-wrapper py-5"
+      className="why-spotoptics-wrapper py-5 mt-3"
       id="why-spotoptics"
       style={{ y, scale, willChange: 'transform' }}
       initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function WhySpotOpticsSection() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <div className="container py-lg-4">
-        <div className="row  align-items-center">
+        <div className="row g-4 align-items-center">
           
           {/* LEFT COLUMN: Tagline, Heading, Description & Button */}
           <div className="col-12 col-lg-5 text-center text-lg-start py-3">

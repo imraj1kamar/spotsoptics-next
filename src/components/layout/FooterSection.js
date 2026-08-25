@@ -99,9 +99,8 @@ export default function FooterSection() {
             <div className="row g-4">
               {columns.map((col, cIdx) => (
                 <div key={cIdx} className="col-6 col-sm-3">
-                  <h6 className="footer-col-title fw-bold text-white text-uppercase tracking-wider mb-3">
-                    {col.title}
-                  </h6>
+                
+                  <h4 className="footer-col-title h6 fw-bold text-white text-uppercase tracking-wider mb-3"> {col.title}</h4>
                   <ul className="list-unstyled footer-nav-list mb-0">
                     {col.links?.map((link, lIdx) => (
                       <li key={lIdx} className="mb-2">

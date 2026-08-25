@@ -1,15 +1,13 @@
-
-
 {
   "logo": "SPOTOPTICS",
   "tagline": "Precision in Light & Shape",
   "menu": [
     {
-      "title": "HOME",
+      "title": "Home",
       "url": "/"
     },
     {
-      "title": "PRODUCTS",
+      "title": "Products",
       "url": "/all-products",
       "children": [
         {
@@ -19,7 +17,7 @@
       ]
     },
     {
-      "title": "APPLICATIONS",
+      "title": "Applications",
       "url": "/applications",
       "children": [
         {
@@ -44,17 +42,16 @@
         }
       ]
     },
-   
     {
-      "title": "DOWNLOADS",
+      "title": "Downloads",
       "url": "/downloads"
     },
     {
-      "title": "KNOWLEDGE CORNER",
+      "title": "Knowledge Corner",
       "url": "/knowledge"
     },
     {
-      "title": "COMPANY",
+      "title": "Company",
       "url": "/company-profile",
       "children": [
         {

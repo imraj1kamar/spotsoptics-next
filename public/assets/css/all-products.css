@@ -111,12 +111,7 @@
 
 
 
-.counter-value {
-    color: var(--primary-blue);
-    font-size: var(--text-lg);
-    font-weight: var(--fw-extrabold);
-    line-height: 1.2;
-}
+
 
 /* ==========================================
    PRODUCT NAVIGATION - Prev / Next Buttons

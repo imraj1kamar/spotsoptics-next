@@ -8,8 +8,9 @@
   border-left: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  top: 12px !important;
-  width: 95%;
+  position: fixed;
+  top: 5 !important;
+  width: 100%;
   max-width: 1350px;
   margin: 0 auto;
   left: 0;
@@ -34,11 +35,11 @@
 }
 
 .spotoptics-navbar .nav-link:hover {
-  color: var(--primary-blue, #0d6efd);
+  color: var(--primary-blue, );
 }
 
 .spotoptics-navbar .nav-link.active {
-  color: var(--primary-blue, #0d6efd) !important;
+  color: var(--primary-blue, ) !important;
   font-weight: 600;
 }
 
@@ -49,7 +50,7 @@
   left: 1rem;
   right: 1rem;
   height: 3px;
-  background-color: var(--primary-blue, #0d6efd);
+  background-color: var(--primary-blue, );
   border-radius: 3px;
 }
 

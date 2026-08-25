@@ -201,12 +201,8 @@ export default function Hero() {
                       dangerouslySetInnerHTML={{ __html: stat.icon_svg || '' }}
                     />
                     <div>
-                      <h6
-                        className="mb-1 fw-bold"
-                        style={{ fontSize: '0.95rem', color: 'var(--primary-blue)' }}
-                      >
-                        {stat.title || ''}
-                      </h6>
+                   
+                      <h2 className="h6 mb-1 fw-bold" style={{ color: 'var(--primary-blue)' }}>{stat.title || ''}</h2>
                       <p
                         className="mb-0 lh-sm hero-feature-desc"
                         style={{ fontSize: '0.8rem' }}

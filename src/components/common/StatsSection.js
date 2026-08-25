@@ -52,33 +52,38 @@ export default function StatsSection() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <div className="container-fluid px-0">
-        <div className="marquee-container bg-white border-top border-bottom py-3 shadow-sm">
-          <div className="marquee-content">
-            {repeatedStats.map((item, index) => (
-              <div key={`${item.id}-${index}`} className="marquee-item">
-                
-                {/* Icon */}
-                <div className="stats-icon-wrapper" style={{ color: '#42B1A2' }}>
-                  {ICONS[item.icon_type] || ICONS.INNOVATION}
-                </div>
-
-                {/* Text / Stats */}
-                <div className="d-flex align-items-baseline gap-2">
-                  <h3 className="fw-bold mb-0 text-dark">
-                    {item.value}
-                  </h3>
-                  <p className="text-muted mb-0 fw-medium">
-                    {item.label}
-                  </p>
-                </div>
-                
-                {/* Divider Dot/Separator */}
-                <span className="marquee-divider mx-4 text-muted">•</span>
-                
-              </div>
-            ))}
-          </div>
+       <div className="marquee-container bg-white border-top border-bottom py-3 shadow-sm">
+  <div className="marquee-content d-flex align-items-center">
+    {repeatedStats.map((item, index) => (
+      <div 
+        key={`${item.id}-${index}`} 
+        className="marquee-item d-inline-flex align-items-center flex-shrink-0"
+      >
+        {/* Icon */}
+        <div 
+          className="stats-icon-wrapper flex-shrink-0 d-flex align-items-center justify-content-center me-3" 
+          style={{ color: '#42B1A2' }}
+          aria-hidden="true"
+        >
+          {ICONS[item.icon_type] || ICONS.INNOVATION}
         </div>
+
+        {/* Text / Stats */}
+        <div className="d-flex align-items-baseline gap-2 text-nowrap">
+          <h3 className="fw-bold mb-0 text-dark">
+            {item.value}
+          </h3>
+          <p className="text-muted mb-0 fw-medium">
+            {item.label}
+          </p>
+        </div>
+        
+        {/* Divider Dot/Separator */}
+        <span className="marquee-divider mx-4 text-muted flex-shrink-0" aria-hidden="true">•</span>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
     </motion.section>
   );

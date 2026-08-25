@@ -102,7 +102,7 @@ export default function OurTechnologyPage() {
               </div>
               <div className="counter-info">
                 <span className="counter-label"></span>
-                <span className="counter-value"></span>
+                <span className="counter-value fw-bold"></span>
               </div>
             </div>
           </motion.div>

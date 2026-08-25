@@ -63,17 +63,20 @@
     --fw-extrabold: 800;
 
     /* Font Size Utilities */
-    --text-xs: 0.7rem;
-    --text-sm: 0.8rem;
-    --text-base: 0.9rem;
-    --text-md: 1rem;
-    --text-lg: 1.1rem;
-    --text-xl: 1.25rem;
-    --text-2xl: 1.5rem;
-    --text-3xl: 1.8rem;
-    --text-4xl: 2.2rem;
-    --text-5xl: 2.75rem;
-    --text-6xl: 3.5rem;
+   --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 2rem;      /* 32px */
+  --text-4xl: 2.5rem;    /* 40px */
+
+  --radius-sm: 4px;      /* Badges, tags */
+  --radius-md: 8px;      /* Buttons, inputs */
+  --radius-lg: 16px;     /* Cards, modals */
+  --radius-pill: 9999px; /* Rounded pill buttons */
+
 
     /* Line Height Utilities */
     --lh-tight: 1.15;
@@ -101,6 +104,7 @@ html {
 
 
 body {
+    
     font-family: 'Inter', sans-serif;
     color: var(--para-text);
         background-color: var(--sky-light, #EFF6FF);
@@ -186,6 +190,37 @@ p {
     transition: all 0.3s ease;
 }
 
+.product-card, .why-card { border-radius: var(--radius-lg); }
+.btn { border-radius: var(--radius-md); }
+.btn-pill, .form-control.rounded-pill { border-radius: var(--radius-pill); }
+
+/* Standard Button System */
+.btn-primary {
+  background-color: var(--primary-blue, #0d6efd);
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-blue, #0d6efd);
+  border: 1px solid currentColor;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+}
+
 .btn-primary-custom {
     background-color: var(--primary-blue);
     color: #FFFFFF !important;
@@ -230,6 +265,12 @@ p {
   box-shadow: var(--shadow-sm);
 }
 
+.counter-value {
+    color: var(--primary-blue);
+    font-size: var(--text-lg);
+    font-weight: var(--fw-extrabold);
+    line-height: 1.2;
+}
 
 .counter-label {
     color: var(--muted-text);

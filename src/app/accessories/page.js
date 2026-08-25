@@ -109,8 +109,8 @@ export default function Accessories() {
                         </svg>
                       </div>
                       <div className="counter-info">
-                        <span className="counter-label">TOTAL ARTICLES</span>
-                        <span className="counter-value">12</span>
+                        <span className="counter-label">TOTAL</span>
+                        <span className="counter-value fw-bold">12</span>
                       </div>
                     </div>
                   </div>
