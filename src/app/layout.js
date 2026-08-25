@@ -69,6 +69,9 @@ export const metadata = {
     description: siteData.site.description,
     images: [siteData.site.logo],
   },
+  verification: {
+    google: 'U3BvdE9wdGljczE5OTZmcm9tcGFkb3ZhY2l0eWl0YWx5ZXVyb3A=', 
+  },
 };
 
 export default function RootLayout({ children }) {
