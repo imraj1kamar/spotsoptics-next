@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 // Data & CSS Import
 import techData from '@/data/ourTechnology.json';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import Cta from '@/components/common/Cta';
 import Sidebar from '@/components/common/Sidebar';
 import sidebarData from '@/data/sidebar.json';
@@ -70,42 +70,14 @@ export default function OurTechnologyPage() {
       {/* Header Section */}
       <section className="technology-page mt-5">
         <div className="container">
-          <motion.div
-            className="all-products-top-bar mb-4"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
-            <Breadcrumbs
-              items={[
-                { label: 'Home', href: '/' },
-                { label: 'Our Technology' },
-              ]}
-              className="all-products-breadcrumbs"
-            />
-
-            <div className="top-bar-center d-none d-lg-block">
-              <h1 className="product-detail-title">{page.title || 'Our Technology'}</h1>
-            </div>
-
-                  {/* Top Right Counter Card Badge */}
-            <div className="knowledge-counter-badge d-flex align-items-center gap-3">
-              <div className="counter-icon-box">
-                {/* <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                  />
-                </svg> */}
-              </div>
-              <div className="counter-info">
-                <span className="counter-label"></span>
-                <span className="counter-value fw-bold"></span>
-              </div>
-            </div>
-          </motion.div>
+           {/* Top Section: Breadcrumbs + Counter */}
+         <PageTopBar
+  breadcrumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Our Technology' },
+  ]}
+ showCounter={false}
+/>
 
           {/* Page Description */}
           <header className="row mb-5 justify-content-center text-center">

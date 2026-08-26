@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
 import Sidebar from '@/components/common/Sidebar';
@@ -43,8 +43,8 @@ export default function ZernikePolynomialsDetailPage({ data }) {
         
         {/* ================= 1. BREADCRUMBS ================= */}
         <div className="mb-3">
-          <Breadcrumbs
-            items={[
+           <PageTopBar
+                            breadcrumbs={[
               { label: 'Home', href: '/' },
               ...(currentData.breadcrum?.map((item) => ({
                 label: item.label,
@@ -54,8 +54,8 @@ export default function ZernikePolynomialsDetailPage({ data }) {
                 { label: currentData.title || 'Zernike Polynomials' },
               ]),
             ]}
-            className="knowledge-breadcrumbs mb-0"
-          />
+                            showCounter={false}
+                            />
         </div>
 
         {/* ================= 2. DARK BLUE HERO BANNER ================= */}

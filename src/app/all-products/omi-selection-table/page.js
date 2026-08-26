@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Common Components & Data Imports
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import Sidebar from '@/components/common/Sidebar';
 import tableData from '@/data/omi-selection-guide.json';
 import sidebarData from '@/data/sidebar.json';
@@ -75,8 +75,13 @@ export default function OmiSelectionTable({ softwareData = null }) {
     }
   };
 
-  // Breadcrumbs items
-  const breadcrumbItems = [
+
+  return (
+    <section ref={sectionRef} className="page-section mt-5 py-4 py-lg-5">
+      <div className="container">
+        <div className="d-flex justify-content-between align-items-start position-relative z-2 mb-4">
+          <PageTopBar
+            breadcrumbs={[
     { label: 'Home', href: '/' },
     ...(softwareData?.page?.breadcrum?.map((item) => ({
       label: item.label,
@@ -85,14 +90,10 @@ export default function OmiSelectionTable({ softwareData = null }) {
       { label: 'Single Pass', href: '/all-products/omi-test-in-single-pass' },
       { label: softwareData?.title || 'OMI Selection Guide' },
     ]),
-  ];
-
-  return (
-    <section ref={sectionRef} className="page-section mt-5 py-4 py-lg-5">
-      <div className="container">
-        {/* ================= 1. BREADCRUMBS ================= */}
-        <div className="d-flex justify-content-between align-items-start position-relative z-2 mb-4">
-          <Breadcrumbs items={breadcrumbItems} className="knowledge-breadcrumbs mb-0" />
+  ]}
+            showCounter={false}
+          
+          />
         </div>
 
         {/* ================= 2. MAIN 2-COLUMN GRID ================= */}

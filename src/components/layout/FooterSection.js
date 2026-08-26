@@ -47,7 +47,7 @@ export default function FooterSection() {
       <div className="container py-lg-3">
         
         {/* Main Footer Body Grid */}
-        <div className="row g-4 g-lg-5 pb-5">
+        <div className="row g-4 g-lg-5 pb-5 text-center text-lg-start">
           
           {/* Brand Info Column */}
           <div className="col-12 col-lg-4">

@@ -1,0 +1,215 @@
+{
+  "page": {
+    "title": "Terms and Conditions",
+    "subtitle": "Legal terms governing the supply of SpotOptics optical instruments, Shack-Hartmann wavefront sensors, SenSoft software licenses, and technical services.",
+    "lastUpdated": "January 15, 2025",
+    "version": "v2.4",
+    "effectiveDate": "January 1, 2025",
+    "company": {
+      "name": "SpotOptics S.r.l.",
+      "tagline": "The software people for optics",
+      "address": "Via Turazza 48, 35128 Padova (PD), Italy",
+      "email": "contact@spot-optics.com",
+      "phone": "+39 049 8078529",
+      "website": "https://www.spotoptics.com"
+    },
+    "keyHighlights": [
+      {
+        "icon": "shield",
+        "title": "12-Month Warranty",
+        "description": "Comprehensive hardware warranty on optical sensors and metrology instruments."
+      },
+      {
+        "icon": "code",
+        "title": "Proprietary Software",
+        "description": "SenSoft wavefront reconstruction suite protected under SpotOptics licenses."
+      },
+      {
+        "icon": "globe",
+        "title": "Export Compliance",
+        "description": "Compliant with EU Dual-Use regulations and international trade guidelines."
+      },
+      {
+        "icon": "scale",
+        "title": "Italian Jurisdiction",
+        "description": "Governed by Italian law under the jurisdiction of the Court of Padova, Italy."
+      }
+    ],
+    "sections": [
+      {
+        "id": "general-scope",
+        "number": "01",
+        "title": "General Scope & Acceptance of Terms",
+        "summary": "Applicability of these terms to all quotations, purchases, software licenses, and technical services provided by SpotOptics S.r.l.",
+        "paragraphs": [
+          "These Terms and Conditions of Sale and Service (\"Terms\") apply to all contracts, quotations, purchase orders, sales, deliveries, software licenses, and engineering services concluded between SpotOptics S.r.l. (hereinafter referred to as \"SpotOptics\", \"we\", \"us\", or \"our\") and the purchaser, licensee, or customer (\"Client\", \"Buyer\", or \"You\").",
+          "By issuing a Purchase Order, accepting a formal quotation, downloading or installing SenSoft software, or taking delivery of optical metrology equipment (including but not limited to OMI and CMI series Shack-Hartmann wavefront sensors), the Client unconditionally agrees to be bound by these Terms.",
+          "Any general terms and conditions of the Buyer that deviate from, contradict, or supplement these Terms shall not become part of the contract unless explicitly acknowledged and approved in writing by an authorized representative of SpotOptics S.r.l."
+        ],
+        "keyPoints": [
+          "Applies to all hardware, wavefront sensors, optical metrology systems, SenSoft software, and calibration services.",
+          "Confirmatory purchase orders signify full acceptance of these terms.",
+          "Custom agreements must be confirmed in writing by SpotOptics management."
+        ]
+      },
+      {
+        "id": "quotations-orders",
+        "number": "02",
+        "title": "Quotations, Orders & Formation of Contract",
+        "summary": "Validity periods for commercial offers, order confirmations, and pricing terms.",
+        "paragraphs": [
+          "Commercial quotations issued by SpotOptics or its authorized international distributors are valid for a period of thirty (30) calendar days from the date of issue, unless explicitly stated otherwise in the written quotation.",
+          "A binding purchase contract is formed only upon SpotOptics issuing a formal written Order Confirmation (Conferma d'Ordine) or upon execution of shipment of the ordered products.",
+          "Quotations and technical descriptions, including sensor dimensions, pixel pitches, wavefront dynamic ranges, and optical wavelength specifications (DUV to LWIR), represent nominal laboratory standards and are subject to continuous technical enhancement without prior notice."
+        ],
+        "keyPoints": [
+          "Quotations are valid for 30 calendar days unless otherwise specified.",
+          "Contracts become binding solely upon written Order Confirmation from SpotOptics.",
+          "Custom optical configurations are tailored according to agreed Statement of Work (SOW)."
+        ]
+      },
+      {
+        "id": "pricing-payment",
+        "number": "03",
+        "title": "Prices, Taxes & Payment Terms",
+        "summary": "Currency, invoice terms, applicable VAT/customs duties, and payment schedules.",
+        "paragraphs": [
+          "All quoted prices are in Euros (€ / EUR) unless another currency is explicitly agreed upon in writing. Quoted prices exclude Value Added Tax (VAT), customs tariffs, import duties, shipping insurance, and freight handling charges, which shall be invoiced separately as applicable.",
+          "Unless specific credit terms have been approved in writing, standard payment terms require an advance payment upon order placement, with the remaining balance due prior to dispatch (Ex Works Padova, Italy).",
+          "In the event of overdue payments, SpotOptics reserves the right to charge statutory interest under EU Directive 2011/7/EU (Italian Legislative Decree 231/2002) and suspend ongoing deliveries, support services, or software license activations."
+        ],
+        "keyPoints": [
+          "Prices are in EUR (€) and exclude VAT, duties, and freight unless specified.",
+          "Standard payment: Pro-forma invoice advance or agreed Letter of Credit / net commercial terms.",
+          "Late payments incur statutory interest under Italian Legislative Decree 231/2002."
+        ]
+      },
+      {
+        "id": "delivery-shipping",
+        "number": "04",
+        "title": "Delivery, Shipping Terms & Risk of Loss",
+        "summary": "Incoterms 2020 rules, dispatch schedules, transit insurance, and inspection upon delivery.",
+        "paragraphs": [
+          "Deliveries are executed under Incoterms® 2020 rules, typically EXW (Ex Works Padova, Italy) or DAP/CIP as specified in the Order Confirmation. Risk of loss or damage to precision optical hardware transfers to the Buyer upon handover to the initial carrier.",
+          "Delivery lead times communicated by SpotOptics are estimated in good faith based on component availability (such as specialized microlens arrays, cameras, and optical coatings). SpotOptics shall not be held liable for reasonable delays caused by international shipping customs, component supply chain constraints, or Force Majeure events.",
+          "The Buyer must inspect optical packages and sensors immediately upon delivery. Any physical damage, missing components, or package tampering must be noted on the carrier consignment note and reported to SpotOptics in writing within seven (7) business days of receipt."
+        ],
+        "keyPoints": [
+          "Standard shipment: Incoterms® 2020 EXW Padova, Italy (or as agreed in Order Confirmation).",
+          "Risk passes to the buyer or chosen carrier at dispatch.",
+          "Damage or shortage claims must be submitted within 7 business days of receipt."
+        ]
+      },
+      {
+        "id": "software-license",
+        "number": "05",
+        "title": "Software Licensing (SenSoft & Modules)",
+        "summary": "Grant of license, intellectual property protections, restrictions, and software maintenance.",
+        "paragraphs": [
+          "SpotOptics grants the Client a non-exclusive, non-transferable, revocable license to use the SenSoft wavefront analysis software suite, proprietary reconstruction algorithms, and accompanying measurement modules solely in conjunction with authorized SpotOptics hardware or designated optical workstations.",
+          "All source code, algorithm architecture, Zernike/Legendre decomposition models, geometric spot centroiding routines, and graphical user interfaces remain the exclusive intellectual property of SpotOptics S.r.l.",
+          "The Client shall not, under any circumstances: (a) decompile, disassemble, reverse engineer, or attempt to extract source code from SenSoft; (b) sublicense, lease, resell, or distribute the software to unauthorized third parties; (c) bypass or tamper with hardware dongles, cryptographic keys, or licensing mechanisms."
+        ],
+        "keyPoints": [
+          "Non-exclusive, non-transferable license for wavefront acquisition and analysis.",
+          "Reverse engineering, decompilation, and unauthorized redistribution are strictly prohibited.",
+          "SenSoft updates and patch releases are provided according to active maintenance agreements."
+        ]
+      },
+      {
+        "id": "warranty-rma",
+        "number": "06",
+        "title": "Warranty, Calibration & RMA Support",
+        "summary": "Twelve-month hardware warranty, optical sensor recalibration, and Return Merchandise Authorization procedures.",
+        "paragraphs": [
+          "SpotOptics warrants that all new Shack-Hartmann wavefront sensors (OMI, CMI) and optical hardware accessories shall be free from manufacturing defects in materials and optical alignment under normal laboratory and industrial use for a period of twelve (12) months from the date of initial dispatch.",
+          "This warranty does not cover defects or damage resulting from: (a) laser-induced damage exceeding rated damage thresholds (LIDT); (b) improper optical handling, scratch/abrasion on microlens arrays, or dust contamination due to non-cleanroom disassembly; (c) unauthorized modifications, repair attempts, or use with incompatible power/trigger supplies; (d) normal wear and tear.",
+          "Prior to returning any item for warranty service, repair, or recalibration, the Client must obtain a Return Merchandise Authorization (RMA) number from SpotOptics support (contact@spot-optics.com). Items returned without an approved RMA will not be accepted."
+        ],
+        "keyPoints": [
+          "12-month standard manufacturer warranty on optical metrology instruments.",
+          "Laser damage above rated LIDT or physical mishandling voids warranty coverage.",
+          "All returns and recalibration services require an authorized RMA number."
+        ]
+      },
+      {
+        "id": "intellectual-property",
+        "number": "07",
+        "title": "Intellectual Property Rights",
+        "summary": "Protection of patents, optical designs, trademarks, technical documentation, and trade secrets.",
+        "paragraphs": [
+          "SpotOptics retains all rights, title, and interest in and to all inventions, patents, utility models, registered designs, optical architectures, software routines, trademarks (\"SpotOptics\", \"SenSoft\", \"OMI\", \"CMI\"), and technical documentation created prior to or during the performance of any contract.",
+          "No title to or ownership of intellectual property is transferred to the Buyer. The delivery of products, technical drawings, or software does not constitute a sale of intellectual property, but solely a limited right to operate the equipment as intended.",
+          "Custom engineering, application-specific wavefront calculation models, or optical metrology fixtures developed collaboratively remain the intellectual property of SpotOptics unless explicitly agreed otherwise in a signed bespoke development contract."
+        ],
+        "keyPoints": [
+          "SpotOptics retains 100% ownership of optical design, software IP, and trademarks.",
+          "Purchasers receive usage rights only; no underlying IP transfers.",
+          "Confidential documentation and schematics must not be disclosed to third parties."
+        ]
+      },
+      {
+        "id": "limitation-liability",
+        "number": "08",
+        "title": "Limitation of Liability & Optical Accuracy",
+        "summary": "Scope of liability, consequential damages disclaimer, and application-specific metrology considerations.",
+        "paragraphs": [
+          "SpotOptics wavefront sensors are high-precision metrology tools designed for optical characterization, telescope testing, laser beam profiling, and industrial inspection. Measurement accuracy depends on proper optical alignment, stable ambient thermal conditions, and correct software calibration settings.",
+          "To the maximum extent permitted by applicable law, SpotOptics shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of production, loss of laser equipment, downtime, lost profits, or third-party claims arising out of the use or inability to use the products or software.",
+          "In all events, the total cumulative liability of SpotOptics S.r.l. for all claims of any kind arising out of or related to a contract shall be strictly limited to the total net purchase price actually paid by the Client for the specific product or service giving rise to the claim."
+        ],
+        "keyPoints": [
+          "SpotOptics is not liable for indirect, incidental, or consequential damages.",
+          "Maximum liability is capped at the purchase price paid for the specific item.",
+          "Precision measurements require appropriate environmental control and calibration."
+        ]
+      },
+      {
+        "id": "export-control",
+        "number": "09",
+        "title": "Export Controls & International Sanctions",
+        "summary": "Compliance with European Union dual-use export regulations and trade compliance mandates.",
+        "paragraphs": [
+          "SpotOptics optical metrology products, wavefront sensors, and high-speed infrared sensors (including SWIR, MWIR, and LWIR variants) may be subject to national, European Union (Regulation (EU) 2021/821), and international export control laws and dual-use restrictions.",
+          "The Client guarantees that purchased equipment, software, or technical data will not be exported, re-exported, transferred, or utilized for unauthorized applications, or transferred to entities or countries subject to international embargoes or sanctions without prior authorization from the relevant export control authorities.",
+          "SpotOptics reserves the right to cancel or postpone orders if required export licenses or government approvals are denied, revoked, or subject to insurmountable regulatory constraints."
+        ],
+        "keyPoints": [
+          "Strict adherence to EU Regulation 2021/821 on Dual-Use optical technologies.",
+          "Buyers must provide End-User Statements (EUS) when requested by regulatory authorities.",
+          "Shipments subject to export licensing are conditional upon government clearance."
+        ]
+      },
+      {
+        "id": "governing-law",
+        "number": "10",
+        "title": "Governing Law & Dispute Resolution",
+        "summary": "Applicable Italian law, exclusion of UN CISG, and exclusive jurisdiction of Padova, Italy.",
+        "paragraphs": [
+          "These Terms and Conditions, as well as all contracts and relationships between SpotOptics S.r.l. and the Client, shall be governed by, construed, and interpreted in accordance with the laws of Italy, excluding its conflict of law principles.",
+          "The application of the United Nations Convention on Contracts for the International Sale of Goods (CISG) is expressly excluded.",
+          "Any dispute, controversy, or claim arising out of or relating to these Terms, the validity, breach, or termination thereof, which cannot be amicably settled within thirty (30) days of notification, shall be submitted to the exclusive jurisdiction of the competent courts of Padova (Tribunale di Padova), Italy."
+        ],
+        "keyPoints": [
+          "Governed exclusively by the substantive laws of Italy.",
+          "Exclusion of the UN Convention on Contracts for the International Sale of Goods (CISG).",
+          "Exclusive legal venue: Court of Padova (Tribunale di Padova), Italy."
+        ]
+      },
+      {
+        "id": "contact-inquiries",
+        "number": "11",
+        "title": "Legal Inquiries & Contact Details",
+        "summary": "Official communication channels for legal notices, contract questions, and compliance inquiries.",
+        "paragraphs": [
+          "For any questions regarding these Terms and Conditions, commercial agreements, software licensing verification, or formal legal notices, please direct your communication to our legal and customer operations desk:",
+          "SpotOptics S.r.l.\nVia Turazza 48\n35128 Padova (PD), Italy\nPhone: +39 049 8078529\nEmail: contact@spot-optics.com\nWebsite: www.spotoptics.com"
+        ],
+        "keyPoints": [
+          "Official notices should be sent in writing to SpotOptics S.r.l. headquarters in Padova, Italy.",
+          "Direct email inquiry for legal & licensing queries: contact@spot-optics.com."
+        ]
+      }
+    ]
+  }
+}

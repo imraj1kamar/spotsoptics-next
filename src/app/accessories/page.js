@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 // CSS file import
 import '../../../public/assets/css/accessories.css';
 import pageData from '@/data/accessories.json';
@@ -78,37 +78,19 @@ export default function Accessories() {
 
   return (
     <section ref={containerRef} className="page-section accessories-page-wrapper py-5">
-      <div className="container mt-4">
-        {/* ================= 1. BREADCRUMBS ================= */}
+      <div className="container mt-5">
+      
        
-          <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-2 mx-3">
-                    <Breadcrumbs
-                      items={[
-                        { label: 'Home', href: '/' },
-                        { label: page.title || 'Knowledge Corner' },
-                      ]}
-                      className="knowledge-breadcrumbs mb-0"
-                    />
-        
-                    {/* Top Right Counter Card Badge */}
-                    <div className="knowledge-counter-badge d-flex align-items-center gap-3">
-                      <div className="counter-icon-box">
-                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                          />
-                        </svg>
-                      </div>
-                      <div className="counter-info">
-                        <span className="counter-label">TOTAL</span>
-                        <span className="counter-value fw-bold">12</span>
-                      </div>
-                    </div>
-                  </div>
-
+         
+ <PageTopBar
+            breadcrumbs={[
+              { label: 'Home', href: '/' },
+              { label: 'Accessories' },
+            ]}
+            showCounter={true}
+            counterValue="12"
+            
+                           />
         {/* ================= 2. HERO BANNER ================= */}
         <div ref={heroRef} className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
           <div className="row align-items-center position-relative z-2">

@@ -8,7 +8,7 @@ import Image from 'next/image';
 import knowledgeData from '@/data/knowledge.json';
 
 import '../../../../public/assets/css/accuracy-detail.css';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import sidebarData from '@/data/sidebar.json';
 import Sidebar from '@/components/common/Sidebar';
 
@@ -46,14 +46,15 @@ export default function LensletFocalLengthDetailPage({ data }) {
      <div className="page-section py-5">
       <div className="container mt-5">
         <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-3 mx-3">
-                               <Breadcrumbs
-          items={[
+                           
+                     <PageTopBar
+                            breadcrumbs={[
             { label: 'Home', href: '/' },
             { label: 'Knowledge Corner', href: '/knowledge' },
             { label: 'Lance let Focal Length', href: '/knowledge/lensletFocalLengthDetail' },
           ]}
-          className="knowledge-breadcrumbs mb-0"
-        />
+                            showCounter={false}
+                            />
                     </div> 
         {/* ================= 1. DARK BLUE HERO BANNER ================= */}
         <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">

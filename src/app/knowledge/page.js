@@ -9,7 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Dynamic Data & Components
 import Sidebar from '@/components/common/Sidebar';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import Cta from '@/components/common/Cta';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
@@ -118,37 +118,21 @@ export default function KnowledgePage() {
 
   return (
     <section ref={containerRef} className="page-section knowledge-page-wrapper py-5">
-      <div className="container mt-4">
+      <div className="container mt-5">
         
         {/* ================= 1. TOP BAR: BREADCRUMBS & COUNTER ================= */}
      
-  <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-2 mx-3">
-            <Breadcrumbs
-              items={[
-                { label: 'Home', href: '/' },
-                { label: page.title || 'Knowledge Corner' },
-              ]}
-              className="knowledge-breadcrumbs mb-0"
-            />
 
-            {/* Top Right Counter Card Badge */}
-            <div className="knowledge-counter-badge d-flex align-items-center gap-3">
-              <div className="counter-icon-box">
-                <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                  />
-                </svg>
-              </div>
-              <div className="counter-info">
-                <span className="counter-label">TOTAL</span>
-                <span className="counter-value">{totalCountFormatted}</span>
-              </div>
-            </div>
-          </div>
+
+ <PageTopBar
+  breadcrumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Knowledge Corner' },
+  ]}
+ showCounter={true}
+ counterValue={totalCountFormatted || 0}
+/>
+
         {/* ================= 2. HERO BANNER ================= */}
         <motion.div
           className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5"

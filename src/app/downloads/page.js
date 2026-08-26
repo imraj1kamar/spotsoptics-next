@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Dynamic Data & Components Import
 import Sidebar from '@/components/common/Sidebar';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import downloadData from '@/data/download.json';
 import sidebarData from '@/data/sidebar.json';
 
@@ -83,28 +83,16 @@ export default function DownloadsPage() {
   return (
     <section className="page-section py-5">
       <div className="container mt-5">
-        <motion.div
-          className="all-products-top-bar mb-4"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Downloads' },
-            ]}
-            className="all-products-breadcrumbs"
-          />
+     
 
-          <div className="d-none d-lg-block top-bar-center">
-            <h1 className="product-detail-title">{page.title || 'Downloads'}</h1>
-          </div>
-          <div className="all-products-counter text-end">
-              <span className="counter-label d-block text-muted small">TOTAL</span>
-              <span className="counter-value fw-bold">{downloads.length}</span>
-            </div>
-        </motion.div>
+         <PageTopBar
+          breadcrumbs={[
+            { label: 'Home', href: '/' },
+            { label: 'Downloads' },
+          ]}
+         showCounter={true}
+         counterValue={downloads.length || 0}
+        />
 
         {/* Page Description */}
         <header className="row mb-5 justify-content-center text-center">

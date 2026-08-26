@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 import ProductCard from '@/components/common/ProductCard';
 import Sidebar from '@/components/common/Sidebar';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar  from '@/components/common/PageTopBar';
 import productsData from '@/data/products.json';
 import sidebarData from '@/data/sidebar.json';
 import '../../../public/assets/css/all-products.css';
@@ -39,29 +39,15 @@ export default function AllProductsCatalogPage() {
     >
       <section className="all-products-page">
         <div className="container">
-          <motion.div
-            className="all-products-top-bar mb-4"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
-            <Breadcrumbs
-              items={[
-                { label: 'Home', href: '/' },
-                { label: 'All Products' },
-              ]}
-              className="all-products-breadcrumbs"
-            />
-
-            <div className="d-none d-lg-block top-bar-center">
-              <h1 className="product-detail-title">All Products</h1>
-            </div>
-
-            <div className="all-products-counter text-end">
-              <span className="counter-label d-block text-muted small">TOTAL</span>
-              <span className="counter-value fw-bold">{items.length}</span>
-            </div>
-          </motion.div>
+      
+            <PageTopBar
+                            breadcrumbs={[
+                              { label: 'Home', href: '/' },
+                              { label: 'Applications' },
+                            ]}
+                           showCounter={true}
+                           counterValue={items.length || 0}
+                          />
 
           <div className="row g-4 ">
             <div className="col-lg-9">

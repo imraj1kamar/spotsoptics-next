@@ -9,7 +9,7 @@ import knowledgeData from '@/data/knowledge.json';
 import Sidebar from '@/components/common/Sidebar';
 import "../../../../public/assets/css/accuracy-detail.css";
 import sidebarData from '@/data/sidebar.json';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 
 export default function WavefrontAccuracyDetailPage({ data }) {
   // Data resolution: Prop se mile, ya articles array se find karein, ya direct JSON se
@@ -45,14 +45,14 @@ export default function WavefrontAccuracyDetailPage({ data }) {
       <div className="container mt-5">
 
 <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-3 mx-3">
-                       <Breadcrumbs
-  items={[
-    { label: 'Home', href: '/' },
-    { label: 'Knowledge Corner', href: '/knowledge' },
-    { label: 'Wavefront Sensor Accuracy', href: '/knowledge/wavefront-sensor-accuracy' },
-  ]}
-  className="knowledge-breadcrumbs mb-0"
-/>
+                      <PageTopBar
+                            breadcrumbs={[
+                            { label: 'Home', href: '/' },
+                            { label: 'Knowledge Corner', href: '/knowledge' },
+                            { label: 'Wavefront Sensor Accuracy', href: '/knowledge/wavefront-sensor-accuracy' },
+                            ]}
+                            showCounter={false}
+                            />
             </div> 
               {/* ================= 1. DARK BLUE HERO BANNER ================= */}
         <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">

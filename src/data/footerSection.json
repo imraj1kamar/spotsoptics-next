@@ -37,9 +37,8 @@
       "title": "COMPANY",
       "links": [
         { "label": "About Us", "url": "/company-profile" },
-        { "label": "Our Technology", "url": "/technology" },
-        { "label": "Careers", "url": "/careers" },
-        { "label": "News & Events", "url": "/news" }
+        { "label": "Our Technology", "url": "/technology" }
+
       ]
     },
     {
@@ -47,7 +46,7 @@
       "links": [
         { "label": "Contact Us", "url": "/contact" },
         { "label": "Get a Quote", "url": "/contact#quote" },
-        { "label": "Technical Support", "url": "/support" },
+
         { "label": "FAQ", "url": "/faq" }
       ]
     }

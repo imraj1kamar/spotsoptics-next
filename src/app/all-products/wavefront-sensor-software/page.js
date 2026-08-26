@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Common Components & Data Imports
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import Sidebar from '@/components/common/Sidebar';
 import Cta from '@/components/common/Cta';
 
@@ -88,8 +88,9 @@ export default function SensoftSoftwarePage() {
         <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-2 mx-3">
        
 
-          <Breadcrumbs
-                      items={[
+
+                     <PageTopBar
+                            breadcrumbs={[
                         { label: 'Home', href: '/' },
                         ...(softwareData.page.breadcrum?.map((item) => ({
                           label: item.label,
@@ -99,8 +100,9 @@ export default function SensoftSoftwarePage() {
                           { label: softwareData.title || 'Shack-Hartmann vs Hartmann' },
                         ]),
                       ]}
-                      className="knowledge-breadcrumbs mb-0"
-                    />
+                            showCounter={false}
+                            
+                           />
 
           
         </div>

@@ -9,7 +9,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Reusable Components & Dynamic Data Import
 import Sidebar from '@/components/common/Sidebar';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import companyProfileData from '@/data/companyprofile.json';
 import sidebarData from '@/data/sidebar.json';
 
@@ -92,30 +92,15 @@ export default function CompanyProfilePage() {
   return (
    <section className="page-section py-5">
       <div className="container mt-5">
-        <motion.div
-          className="all-products-top-bar mb-4"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'About Us' },
-            ]}
-            className="all-products-breadcrumbs"
-          />
-
-          <div className="d-none d-lg-block top-bar-center">
-            <h1 className="product-detail-title">{pageInfo.brand || 'SpotOptics'}</h1>
-          </div>
-
-          <div className="all-products-counter text-end">
-              <span className="counter-label d-block text-muted small">TOTAL MILESTONES</span>
-              <span className="counter-value fw-bold">{milestones?.timeline?.length || 0}</span>
-            </div>
-        </motion.div>
-
+       
+ <PageTopBar
+  breadcrumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'About Us' },
+  ]}
+ showCounter={true}
+ counterValue={milestones?.timeline?.length || 0}
+/>
         {/* Page Description */}
         <header className="row mb-5 justify-content-center text-center">
           <div className="col-lg-10">

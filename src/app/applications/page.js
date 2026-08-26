@@ -10,7 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Reusable SliderNav & Data & CSS Import
 import SliderNav from '@/components/common/SliderNav';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar  from '@/components/common/PageTopBar';
 import applicationData from '@/data/application.json';
 import '../../../public/assets/css/all-products.css';
 import '../../../public/assets/css/application.css';
@@ -107,29 +107,16 @@ export default function ApplicationsSection() {
     <section className="page-section py-5" id="applications" >
       
       <div className="container mt-5">
-        <motion.div
-          className="all-products-top-bar mb-4"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Applications' },
-            ]}
-            className="all-products-breadcrumbs"
-          />
+   
 
-          <div className="d-none d-lg-block top-bar-center">
-            <h1 className="product-detail-title">Applications</h1>
-          </div>
-
-          <div className="all-products-counter text-end">
-              <span className="counter-label d-block text-muted small">TOTAL</span>
-              <span className="counter-value fw-bold">{applications.length}</span>
-            </div>
-        </motion.div>
+         <PageTopBar
+                  breadcrumbs={[
+                    { label: 'Home', href: '/' },
+                    { label: 'Applications' },
+                  ]}
+                 showCounter={true}
+                 counterValue={applications.length || 0}
+                />
 
         {/* Page Description */}
         <header className="row mb-5 justify-content-center text-center">

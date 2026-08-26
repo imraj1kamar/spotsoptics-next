@@ -9,7 +9,7 @@ import ProductGallery from '@/components/common/ProductGallery';
 import ProductFeatures from '@/components/common/ProductFeatures';
 import Button from '@/components/common/Button';
 import BrochuresList from '@/components/common/BrochuresList';
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import '../../../../public/assets/css/all-products.css';
 
 function slugify(value = '') {
@@ -97,28 +97,20 @@ function AllProductsContent() {
         />
       )}
 
-      <section className="all-products-page">
-        <div className="container">
+      <section  className="page-section accessories-page-wrapper py-5">
+      <div className="container mt-5">
           {singleProduct && totalItems > 0 ? (
             <>
-              <div className="all-products-top-bar">
-                <Breadcrumbs
-                  items={[
-                    { label: 'All Products', href: '/all-products' },
+            
+
+                <PageTopBar
+                            breadcrumbs={[
+                               { label: 'All Products', href: '/all-products' },
                     { label: singleProduct.name || 'Product' },
-                  ]}
-                  className="all-products-breadcrumbs"
-                />
-
-               
-
-                <div className="all-products-counter text-end">
-                  <span className="counter-label d-block text-muted small">PRODUCT</span>
-                  <span className="counter-value fw-bold">
-                    {productIndex + 1} / {totalItems}
-                  </span>
-                </div>
-              </div>
+                            ]}
+                           showCounter={true}
+                           counterValue={`${productIndex + 1} / ${totalItems}`}
+                          />
 
               <div className="product-detail-wrapper">
                 
