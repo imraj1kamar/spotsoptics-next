@@ -5,11 +5,29 @@ import Image from 'next/image';
 
 // Dynamic Data & Components Import
 import Sidebar from '@/components/common/Sidebar';
+import PageTopBar from '@/components/common/PageTopBar';
 import contactData from '@/data/contact-us.json';
 import sidebarData from '@/data/sidebar.json';
 
 // CSS Import (Aapki CSS file path)
 import '../../../public/assets/css/contact-us.css';
+
+const CONTACT_ICON = (
+  <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+    />
+  </svg>
+);
 
 export default function ContactUsPage() {
   const pageInfo = contactData?.page || {};
@@ -18,6 +36,19 @@ export default function ContactUsPage() {
   return (
     <section className="company-profile-wrapper py-5">
       <div className="container mt-5">
+        
+        {/* Page Top Bar */}
+        <PageTopBar
+          breadcrumbs={[
+            { label: 'Home', href: '/' },
+            { label: 'Contact Us' },
+          ]}
+          counterLabel="LOCATIONS"
+          counterValue={distributors.length || 0}
+          counterIcon={CONTACT_ICON}
+          showCounter={true}
+        />
+
         {/* Page Hero Header — Dynamic H1 + Tagline */}
         <header className="row mb-5 justify-content-center text-center">
           <div className="col-lg-10">
