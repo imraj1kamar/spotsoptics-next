@@ -391,7 +391,7 @@
 
 /* Help & Support Banner Card */
 .terms-help-banner {
-  background: linear-gradient(135deg, var(--heading-text, #1e3b2d) 0%, #0d1e16 100%);
+  background: linear-gradient(135deg, rgba(15, 42, 28, .92) 0%, rgba(4, 54, 45, .88) 50%, rgba(30, 59, 45, .94) 100%) !important;
   border-radius: var(--radius-lg, 16px);
   padding: 2.25rem 2rem;
   color: #FFFFFF;
