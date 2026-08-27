@@ -76,7 +76,7 @@
 
 /* Right Blue Newsletter Card */
 .newsletter-blue-card {
-  background: #06180c !important;
+  background: linear-gradient(135deg, rgba(15, 42, 28, .92) 0%, rgba(4, 54, 45, .88) 50%, rgba(30, 59, 45, .94) 100%) !important ;
   border-radius: 20px !important;
   box-shadow: 0 15px 35px rgba(30, 255, 116, 0.3) !important;
 }

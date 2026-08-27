@@ -63,7 +63,7 @@ export default function SensoftSection() {
 
       <div className="container position-relative z-2 py-lg-4">
         <div className="row g-5 align-items-center">
-          
+          <div className="newsletter-bg-glow" />
         {/* LEFT COLUMN: Desktop Monitor with Screen Overlay Carousel */}
 <div className="col-12 col-lg-6 text-center">
   <div className="desktop-frame-wrapper position-relative d-inline-block">

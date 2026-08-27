@@ -303,7 +303,7 @@ p {
 }
 .page-section {
     z-index: 2;
-    background-color: var(--sky-light, #eff6ff);
+   
     padding: 120px 0 80px;
     position: relative;
 }
