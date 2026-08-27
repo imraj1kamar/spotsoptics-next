@@ -7,11 +7,12 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 // Swiper React components & modules
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 // Swiper CSS
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // Custom Components & Data & CSS
 import ProductCard from '@/components/common/ProductCard';
@@ -95,24 +96,27 @@ export default function ProductsSection() {
           {/* Swiper Slider */}
           <Swiper
             className="productsSwiper overflow-hidden"
-            modules={[Autoplay, Navigation]}
+            modules={[Autoplay, Navigation, Pagination]}
             slidesPerView={1}
-            spaceBetween={10}
+            spaceBetween={16}
             loop={true}
-            cssMode={true}
             autoplay={{
-              delay: 3000,
+              delay: 3500,
               disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
             }}
             navigation={{
               nextEl: '.swiper-next',
               prevEl: '.swiper-prev',
             }}
             breakpoints={{
-              576: { slidesPerView: 2, spaceBetween: 16 },
-              768: { slidesPerView: 3, spaceBetween: 20 },
-              992: { slidesPerView: 4, spaceBetween: 20 },
-              1200: { slidesPerView: 6, spaceBetween: 20 },
+              576: { slidesPerView: 1.5, spaceBetween: 18 },
+              768: { slidesPerView: 2.2, spaceBetween: 20 },
+              992: { slidesPerView: 3, spaceBetween: 24 },
+              1200: { slidesPerView: 3, spaceBetween: 24 },
             }}
           >
             {items.map((item, index) => (
@@ -122,7 +126,9 @@ export default function ProductsSection() {
                   name={item.name || ''}
                   description={item.description || ''}
                   image={item.image || ''}
-                  link={`/all-products/${encodeURIComponent(item.slug || index)}`}
+                  badge={item.price || item.tag || ''}
+                  rating={item.rating || 4}
+                  link={`/all-products/${encodeURIComponent(item.slug || item.id || index)}`}
                 />
               </SwiperSlide>
             ))}

@@ -4,20 +4,10 @@
 .products-section {
     position: relative;
     z-index: 2;
-    padding: 10px 0; 
-    
+    padding: 10px 0 30px; 
 }
-.product-text-clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 30px;
-}
+
 /* --- Typography (Heading & Tags) --- */
-
-
 .products-heading {
     font-size: var(--text-3xl);
     color: var(--heading-text);
@@ -49,109 +39,201 @@
     transform: translateX(5px);
 }
 
-/* --- The Premium Glass Card (1:1 Screenshot Match) --- */
-.product-glass-card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(239, 246, 255, 0.88));
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid transparent;
-    border-radius: 18px;
-    padding: 18px 18px 20px;
+/* ==========================================
+   Product Card (Contained Image, 3-line Desc, View Product)
+   ========================================== */
+.product-card-wrapper {
+    height: 100%;
+}
+
+.product-custom-card {
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
     transition: all 0.35s ease;
-    cursor: pointer;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    height: 100%;
 }
 
-.product-glass-card:hover {
+.product-custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 35px -10px rgba(30, 94, 255, 0.12) !important;
-    border-color: var(--primary-blue) !important;
+    box-shadow: 0 16px 32px rgba(1, 113, 207, 0.12);
+    border-color: rgba(1, 113, 207, 0.35);
 }
 
-/* --- Image Presentation --- */
-.product-img-wrapper {
-    height: 110px; /* Reduced to balance the tall aspect ratio of 6 cards */
-    margin-bottom: 16px;
+/* Fixed Consistent Image Box */
+.product-img-box {
+    width: 100%;
+    height: 190px;
+    background-color: var(--sky-light, #EFF6FF);
+   
+    border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    transition: background 0.35s ease;
 }
 
-.product-img {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.4s ease;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5)); 
+/* .product-custom-card:hover .product-img-box {
+    background: linear-gradient(145deg, #d2fbf0 0%, #e0f2fe 100%);
+} */
+
+.product-img-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.product-glass-card:hover .product-img {
-    transform: scale(1.05);
+.product-card-image {
+    object-fit: contain !important;
+    padding: 6px;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
+    transition: transform 0.45s ease, filter 0.45s ease;
 }
 
-/* --- Card Text Elements --- */
-.product-title {
-    font-size: var(--text-base); /* Compact title size */
-    line-height: 1.3;
-    color: var(--heading-text);
-    font-weight: var(--fw-semibold);
-    margin-bottom: 10px;
+.product-custom-card:hover .product-card-image {
+    transform: scale(1.06);
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.16));
 }
 
-.product-desc {
-    color: var(--para-text);
-    font-size: var(--text-sm); /* Smaller description to match image */
-    line-height: 1.5;
-    margin-bottom: 20px;
+.product-no-img {
+    font-size: 0.85rem;
+    color: var(--muted-text, #94a3b8);
 }
 
-/* --- Product Card Link --- */
+/* Badge / Pill */
+.product-badge-tag {
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+/* Card Body */
+.product-card-body {
+    padding: 20px 20px 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card-heading {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.product-title-link {
+    color: var(--heading-text, #0f172a);
+    transition: color 0.25s ease;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-title-link:hover {
+    color: var(--primary-blue, #0171cf);
+}
+
+/* 3-Line Description */
+.product-card-description {
+    color: var(--para-text, #64748b);
+    font-size: var(--text-xs);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: calc(0.3.06875rem * 1.55 * 3);
+    margin-bottom: 16px;
+}
+
+/* View Product Link */
+.product-card-footer {
+    border-top: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+.view-product-btn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-blue, #0171cf);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.view-product-btn .arrow-icon {
+    transition: transform 0.25s ease;
+}
+
+.view-product-btn:hover {
+    color: var(--secondary-blue, #00569e);
+    gap: 10px !important;
+}
+
+.view-product-btn:hover .arrow-icon {
+    transform: translateX(4px);
+}
 
 /* ==========================================
-   Carousel Navigation Buttons (Appended Code)
+   Swiper & Pagination Styling
    ========================================== */
+.productsSwiper {
+    padding: 10px 4px 38px !important;
+}
 
-
-/* Ensure Swiper Slides Stretch to Same Height */
 .productsSwiper .swiper-slide {
     height: auto; 
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    overflow: clip;
-    list-style: none;
-    padding: 5px;
-    z-index: 1;
-    display: block;
+.productsSwiper .swiper-pagination {
+    bottom: 4px !important;
+}
+
+.productsSwiper .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: #94a3b8;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin: 0 4px !important;
+}
+
+.productsSwiper .swiper-pagination-bullet-active {
+    background: var(--primary-blue, #0171cf);
+    opacity: 1;
+    transform: scale(1.25);
 }
 
 @media screen and (max-width: 947px) {
-    .product-glass-card {
-text-align: center;
-
-}
-
-.product-glass-card a{
-    align-self: flex-end;
-}
     .products-heading {
-    font-size: var(--text-2xl);
-    color: var(--heading-text);
-    font-weight: var(--fw-bold);
-    line-height: var(--lh-snug);
-    letter-spacing: var(--ls-tight);
-}
+        font-size: var(--text-2xl);
+        color: var(--heading-text);
+        font-weight: var(--fw-bold);
+        line-height: var(--lh-snug);
+        letter-spacing: var(--ls-tight);
+    }
 }
 
 /* GPU Acceleration for Smooth Scroll Scale & Swiper */
 .products-section,
 .productsSwiper,
 .swiper-slide {
-  will-change: transform;
-  transform: translateZ(0);
-  backface-visibility: hidden;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }

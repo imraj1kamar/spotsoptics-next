@@ -59,6 +59,7 @@ export default function SensoftSection() {
     >
       {/* Background Particle / Radial Glow */}
       <div className="sensoft-bg-glow" />
+      <div className="sensoft-bg-glow-secondary" />
 
       <div className="container position-relative z-2 py-lg-4">
         <div className="row g-5 align-items-center">
