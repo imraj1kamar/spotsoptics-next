@@ -57,13 +57,14 @@ export default function SensoftSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
+ <div className="newsletter-bg-glow" />
+
       {/* Background Particle / Radial Glow */}
       <div className="sensoft-bg-glow" />
       <div className="sensoft-bg-glow-secondary" />
-
       <div className="container position-relative z-2 py-lg-4">
         <div className="row g-5 align-items-center">
-          <div className="newsletter-bg-glow" />
+         
         {/* LEFT COLUMN: Desktop Monitor with Screen Overlay Carousel */}
 <div className="col-12 col-lg-6 text-center">
   <div className="desktop-frame-wrapper position-relative d-inline-block">

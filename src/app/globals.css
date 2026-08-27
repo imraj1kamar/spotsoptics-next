@@ -610,10 +610,11 @@ p {
 
 /* --- Hero Banner Card --- */
 .knowledge-hero-card {
-      background: radial-gradient(circle at 80%, #0a9150 0%, #115c00 50%, #003800 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+     background: linear-gradient(135deg, rgba(15, 42, 28, .92) 0%, rgba(4, 54, 45, .88) 50%, rgba(30, 59, 45, .94) 100%) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 15px 35px rgba(30, 255, 116, .3) !important;
   min-height: 280px;
-  box-shadow: 0 16px 36px -12px rgba(0, 31, 92, 0.35);
+  
 }
 
 /* 🖥️ 4. Desktop & Large Screens (>= 992px) */
