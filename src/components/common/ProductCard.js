@@ -43,49 +43,58 @@ export default function ProductCard({
       transition={{ duration: 0.45, ease: 'easeOut', delay: index * 0.05 }}
       whileHover={{ y: -6 }}
     >
-      <div className="product-custom-card h-100 d-flex flex-column">
-        {/* Uniform Image Container */}
-        <div className="product-img-box position-relative overflow-hidden">
-          {badgeText && (
-            <span className="product-badge-tag position-absolute">{badgeText}</span>
-          )}
-          {imageSrc ? (
-            <div className="product-img-inner position-relative w-100 h-100">
-              <Image
-                src={imageSrc}
-                alt={name || 'Product Image'}
-                fill
-                sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
-                className="product-card-image"
-              />
-            </div>
-          ) : (
-            <div className="product-no-img d-flex align-items-center justify-content-center h-100 w-100 text-muted">
-              No Image Available
-            </div>
-          )}
-        </div>
+      <Link href={productUrl} className="text-decoration-none d-block h-100">
+      <div className="product-custom-card position-relative overflow-hidden w-100">
+        {/* Full-Bleed Card Background Image */}
+       {/* Full-Bleed Card Background Image ki jagah ab Contained Wrapper */}
+        {imageSrc ? (
+          <div className="product-img-wrapper"> {/* 👈 YEH NAYA DIV ADD KIYA HAI */}
+            <Image
+              src={imageSrc}
+              alt={name || 'Product Image'}
+              
+              sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, (max-width: 991px) 33vw, 25vw"
+              className="product-card-image"
+              width={1000}
+              height={1000}
+            />
+          </div>
+        ) : (
+          <div className="product-img-wrapper product-no-img d-flex align-items-center justify-content-center">
+            <span>No Image Available</span>
+          </div>
+        )}
 
-        {/* Card Body with Title, 3-Line Description & View Product Link */}
-        <div className="product-card-body d-flex flex-column flex-grow-1">
+        {/* Bottom Dark Gradient for Clean Text Legibility */}
+        <div className="product-card-overlay" />
+
+        {/* Top-Left Pill Badge (e.g., FROM EUR 28 / Tag) */}
+        {badgeText && (
+          <div className="product-badge-tag position-absolute">
+            {badgeText}
+          </div>
+        )}
+
+        {/* Bottom Content Area (Title, 1-Line Description, View Product) */}
+        <div className="product-card-bottom-content position-absolute">
           {name && (
-            <h3 className="product-card-heading mb-2" title={name}>
-              <Link href={productUrl} className="text-decoration-none product-title-link">
+            <h3 className="product-card-heading mb-1 product-title-link text-decoration-none" title={name}>
+            
                 {name}
-              </Link>
+              
             </h3>
           )}
 
           {description && (
-            <p className="product-card-description mb-3" title={description}>
+            <p className="product-card-description mb-2" title={description}>
               {description}
             </p>
           )}
 
-          <div className="product-card-footer mt-auto pt-2">
+          {/* <div className="product-card-footer pt-1">
             <Link
               href={productUrl}
-              className="view-product-btn d-inline-flex align-items-center gap-2 text-decoration-none"
+              className="view-product-btn d-inline-flex align-items-center gap-1.5 text-decoration-none"
             >
               <span>VIEW PRODUCT</span>
               <svg
@@ -104,9 +113,10 @@ export default function ProductCard({
                 />
               </svg>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
+      </Link>
     </motion.div>
   );
 }
