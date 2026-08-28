@@ -279,7 +279,7 @@ console.log(specifications);
   onClick={() => setModalImage(null)}
 >
   <div className="modal-dialog modal-dialog-centered modal-lg">
-    <div className="modal-content bg-transparent border-0 text-center">
+    <div className="modal-content product-modal bg-transparent border-0 text-center">
       <div className="modal-body position-relative">
         <button
           type="button"
