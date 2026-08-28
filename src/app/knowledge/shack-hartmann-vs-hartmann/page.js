@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Breadcrumbs from '@/components/common/Breadcrumbs';
+import PageTopBar from '@/components/common/PageTopBar';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
 import Sidebar from '@/components/common/Sidebar';
@@ -43,19 +43,21 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
         
         {/* ================= 1. BREADCRUMBS ================= */}
         <div className="mb-3">
-          <Breadcrumbs
-            items={[
+        
+         <PageTopBar
+                     breadcrumbs={[
               { label: 'Home', href: '/' },
               ...(currentData.breadcrum?.map((item) => ({
                 label: item.label,
                 href: item.url,
               })) || [
-                { label: 'Knowledge Corner', href: '/knowledge' },
-                { label: currentData.title || 'Shack-Hartmann vs Hartmann' },
+                { label: 'Knowledge ', href: '/knowledge' },
+                { label:  'Shack-Hartmann vs Hartmann' },
               ]),
             ]}
-            className="knowledge-breadcrumbs mb-0"
-          />
+            showCounter={false}
+                     
+                                    />
         </div>
 
         {/* ================= 2. DARK BLUE HERO BANNER ================= */}
@@ -170,10 +172,10 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
         </div>
 
         {/* ================= 5. WHY SHACK-HARTMANN IS BETTER ================= */}
-        <div className="accuracy-card p-4 rounded-4 border mb-4 bg-white shadow-sm">
-          <div className="d-flex align-items-start gap-3">
-            <div className="alert-icon-circle flex-shrink-0 text-white" style={{ background: 'var(--primary-blue, #0d6efd)' }}>
-              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="accuracy-card technology-history-card p-4 rounded-4 border mb-4 bg-white shadow-sm">
+          <div className="technology-history-content d-flex align-items-start gap-3 ">
+            <div className="alert-icon-circle flex-shrink-0 text-white d-none d-md-block" style={{ background: 'var(--primary-blue, #0d6efd)', }}>
+              <svg style={{margin:' 10px' }} width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -202,13 +204,13 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
         {/* ================= 6. TECHNOLOGY HISTORY & ESO HERITAGE ================= */}
         <div className="accuracy-card p-4 rounded-4 border mb-4 bg-white shadow-sm">
           <div className="d-flex align-items-start gap-3">
-            <div className="alert-icon-circle flex-shrink-0 text-white bg-dark">
-              <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="d-none d-md-block alert-icon-circle flex-shrink-0 text-white bg-dark">
+              <svg style={{margin:' 10px' }} width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" strokeWidth="2"/>
                 <path strokeWidth="2" d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
               </svg>
             </div>
-            <div>
+            <div className="technology-history-copy">
               <h5 className="fw-bold text-dark mb-2">{history.title || 'Application of Shack-Hartmann Technology'}</h5>
       {history.paragraphs?.map((p, idx) => (
   <p
@@ -221,7 +223,7 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
 ))}
 
               {/* Scientists & Organization Tags */}
-              <div className="d-flex flex-wrap gap-2 mt-3">
+              <div className="technology-history-tags d-flex flex-wrap gap-2 mt-3">
                 <span className="badge bg-dark text-white px-3 py-2 rounded-pill small">
                   🏛️ {history.organization || 'ESO'} ({history.telescope || '3.5mt NTT Telescope'})
                 </span>
