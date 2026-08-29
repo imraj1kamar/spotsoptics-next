@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -119,7 +118,8 @@ export default function CompanyProfilePage() {
                     <article className="profile-card custom-glass-card">
                       <div className="profile-content mt-4">
                         {profile.content?.map((paragraph, index) => (
-                          <p key={index}>{paragraph}</p>
+                          <p className="text-muted small mb-3 custom-link-text" 
+  style={{ lineHeight: '1.7' }} key={index} dangerouslySetInnerHTML={{ __html: paragraph }}/>
                         ))}
                       </div>
                     </article>
@@ -197,14 +197,29 @@ export default function CompanyProfilePage() {
                       <h2 className="section-title">{expertise.title}</h2>
                       <div className="expertise-content mt-4">
                         {expertise.content?.map((paragraph, index) => (
-                          <p key={index}>{paragraph}</p>
+                          <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                         ))}
                       </div>
 
-                      <div className="expertise-pills-wrapper mt-4">
+                      <div
+                        className="expertise-pills-wrapper mt-4"
+                        role="list"
+                        aria-label="SpotOptics areas of expertise"
+                      >
                         {expertise.expertiseAreas?.map((area, index) => (
-                          <span key={index} className="expertise-pill">
-                            {area}
+                          <span key={index} className="expertise-pill" role="listitem">
+                            <span className="expertise-pill-number" aria-hidden="true">
+                              {String(index + 1).padStart(2, '0')}
+                            </span>
+                            <span
+                              className="expertise-pill-content"
+                              dangerouslySetInnerHTML={{
+                                __html: area.replace(
+                                  /<a\b([^>]*)>/,
+                                  '<a$1 class="timeline-product-link">'
+                                ),
+                              }}
+                            />
                           </span>
                         ))}
                       </div>

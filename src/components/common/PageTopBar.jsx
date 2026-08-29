@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import Breadcrumbs from './Breadcrumbs'; // Adjust the import path as needed

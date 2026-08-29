@@ -1,0 +1,31 @@
+{
+  "page": {
+    "title": "Opto-mechanical Design",
+    "description": "Precision mechanical design and construction for reliable optical instruments.",
+    "breadcrumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/company-profile" },
+      { "label": "Opto-mechanical Design" }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Precision engineering",
+    "title": "Our capabilities in fine mechanics",
+    "intro": "From concept through assembly, our in-house capabilities support the mechanical precision required by advanced optical instrumentation.",
+    "items": [
+      "Full 3D modeling capabilities with CAD/CAM",
+      "Use of high-accuracy 5-axis milling machines for making components",
+      "Accuracy checks with CMMs",
+      "3D printing techniques for special mechanical components",
+      "Use of sophisticated stepper motors with encoders",
+      "Construction of precise stages for use in our instruments"
+    ]
+  },
+  "visual": {
+    "eyebrow": "From concept to instrument",
+    "title": "From 3D modelling to mechanical construction and assembly",
+    "image": "/assets/images/companyprofile/From-3D-to-construction.webp",
+    "alt": "3D opto-mechanical design alongside the assembled Lentino optical instrument",
+    "caption": "Lentino"
+  }
+}

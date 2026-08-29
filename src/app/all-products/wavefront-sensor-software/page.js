@@ -294,7 +294,7 @@ export default function SensoftSoftwarePage() {
                   href={downloads.brochure.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-brochure-download text-nowrap"
+                  className="btn btn-primary-custom px-2 px-sm-4 py-2 fw-bold d-inline-flex align-items-center justify-content-center gap-1 gap-sm-2 text-nowrap"
                 >
                   Download Brochure
                 </a>

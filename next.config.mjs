@@ -11,6 +11,10 @@ const nextConfig = {
     // AVIF is ~50% smaller than WebP and significantly improves LCP.
     formats: ['image/avif', 'image/webp'],
   },
+  experimental: {
+    // Regenerate dev chunks on each server start to avoid stale Turbopack output.
+    turbopackFileSystemCacheForDev: false,
+  },
 };
 
 export default nextConfig;
