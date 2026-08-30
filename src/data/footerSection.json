@@ -16,20 +16,20 @@
     {
       "title": "PRODUCTS",
       "links": [
-        { "label": "OMI-BLUV-VIS", "url": "/all-products?product=0" },
-        { "label": "OMI-BLUV-IR", "url": "/all-products?product=1" },
-        { "label": "CMI-SWIR", "url": "/all-products?product=2" },
-        { "label": "CMI-MWIR", "url": "/all-products?product=3" },
+        { "label": "OMI: Test in Single Pass", "url": "/all-products/omi-test-in-single-pass" },
+        { "label": "Optino-mu: Pocket-size", "url": "/all-products/optino-mu-pocket-size-single-and-double-pass" },
+        { "label": "iOptino: Dual-channel", "url": "/all-products/ioptino-dual-channel-single-and-double-pass" },
+        { "label": "Laserino-mu: Dual-channel", "url": "/all-products/laserino-mu-dual-channel-single-pass" },
         { "label": "All Products", "url": "/all-products" }
       ]
     },
     {
       "title": "APPLICATIONS",
       "links": [
-        { "label": "Automotive Optics", "url": "/applications#automotive" },
-        { "label": "Ophthalmic Optics", "url": "/applications#ophthalmic" },
-        { "label": "Telescope Metrology", "url": "/applications#telescope" },
-        { "label": "Imaging Systems", "url": "/applications#imaging" },
+        { "label": "Automotive Optics", "url": "/applications?app=head-up-display-test" },
+        { "label": "Ophthalmic Optics", "url": "/applications?app=optino-lens-stress-test" },
+        { "label": "Telescope Metrology", "url": "/applications?app=telescope-mirror-test" },
+        { "label": "Imaging Systems", "url": "/applications?app=digital-camera-lens-test" },
         { "label": "All Applications", "url": "/applications" }
       ]
     },

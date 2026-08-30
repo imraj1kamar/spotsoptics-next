@@ -8,26 +8,14 @@
         "logo_text": "SPOTOPTICS"
     },
     "columns": [{
-        "title": "Products",
-        "links": [{
-            "label": "OMI-DUV-VIS",
-            "url": "#product-omi-duv-vis"
-        }, {
-            "label": "OMI-DUV-HR",
-            "url": "#product-omi-duv-hr"
-        }, {
-            "label": "OMI-UV-VIS-NIR",
-            "url": "#product-omi-uv-vis-nir"
-        }, {
-            "label": "OMI-SWIR",
-            "url": "#product-omi-swir"
-        }, {
-            "label": "OMI-MWIR",
-            "url": "#product-omi-mwir"
-        }, {
-            "label": "All Products",
-            "url": "/all-products"
-        }]
+     "title": "PRODUCTS",
+      "links": [
+        { "label": "OMI: Test in Single Pass", "url": "/all-products/omi-test-in-single-pass" },
+        { "label": "Optino-mu: Pocket-size", "url": "/all-products/optino-mu-pocket-size-single-and-double-pass" },
+        { "label": "iOptino: Dual-channel", "url": "/all-products/ioptino-dual-channel-single-and-double-pass" },
+        { "label": "Laserino-mu: Dual-channel", "url": "/all-products/laserino-mu-dual-channel-single-pass" },
+        { "label": "All Products", "url": "/all-products" }
+      ]
     }, {
         "title": "Company",
         "links": [{
@@ -38,10 +26,7 @@
             "url": "/knowledge"
         }, {
             "label": "Downloads",
-            "url": "#downloads"
-        }, {
-            "label": "Careers",
-            "url": "#careers"
+            "url": "/downloads"
         }]
     }, {
         "title": "Support",
@@ -56,7 +41,7 @@
             "url": "#support"
         }, {
             "label": "FAQ",
-            "url": "#faq"
+            "url": "/faq"
         }]
     }],
     "social": [{
