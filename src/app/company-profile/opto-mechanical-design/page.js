@@ -48,7 +48,7 @@ export default function OptoMechanicalDesignPage() {
           <div className="col-12 col-lg-6">
             <figure className="opto-mechanical-visual h-100 mb-0 p-3 p-md-4">
               <div className="d-flex align-items-center justify-content-between gap-3 mb-3">
-                <span className="opto-mechanical-eyebrow">{visual.eyebrow}</span>
+                <span className="comparison-floating-badge badge  text-white px-3 py-2 rounded-pill fw-semibold mb-2">{visual.eyebrow}</span>
                 <span className="opto-mechanical-caption">{visual.caption}</span>
               </div>
               <div className="opto-mechanical-image-frame">
@@ -61,8 +61,10 @@ export default function OptoMechanicalDesignPage() {
                   className="img-fluid w-100 h-auto"
                 />
               </div>
-              <figcaption className="opto-mechanical-visual-title mt-3 mb-0">
-                {visual.title}
+              <figcaption className="knowledge-caption px-3 py-2">
+                <span className="caption-dot"></span>
+                <span className="caption-text">{visual.title}</span>
+                
               </figcaption>
             </figure>
           </div>

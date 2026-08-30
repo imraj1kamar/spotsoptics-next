@@ -353,7 +353,7 @@ function DetailModal({ app, onClose }) {
 
   return (
     <div
-      className={`modal d-block bg-dark bg-opacity-75 ${
+      className={`modal d-block  bg-opacity-75 ${
         isClosing ? 'animate-modal-backdrop-out' : 'animate-modal-backdrop'
       }`}
       tabIndex="-1"
@@ -377,17 +377,7 @@ function DetailModal({ app, onClose }) {
                 alignSelf:"flex-end"
               }}
             />
-          <div className="modal-header border-0 pb-0 d-none d-lg-block">
-            <div>
-              {app.subtitle && (
-                <span className="badge bg-primary bg-opacity-10 text-primary mb-2 text-uppercase">
-                  {app.subtitle}
-                </span>
-              )}
-              <h4 className="modal-title fw-bold text-dark">{app.title || app.subtitle}</h4>
-            </div>
-           
-          </div>
+          
 
           <div className="modal-body py-4">
             {/* Full Description in Consistent Box */}
@@ -461,9 +451,13 @@ function DetailModal({ app, onClose }) {
                           />
                         </div>
                         {img.caption && (
-                          <small className="d-block text-muted text-center mt-1 xx-small">
-                            {img.caption}
-                          </small>
+                         
+                          <figcaption className="knowledge-caption px-3 py-2">
+                            <span className="caption-dot"></span>
+                            <span className="caption-text">
+                              {img.caption}
+                              </span>
+                              </figcaption>
                         )}
                       </div>
                     );
@@ -476,7 +470,7 @@ function DetailModal({ app, onClose }) {
           {/* Slow Motion Image Expansion Overlay inside Modal */}
           {expandedImage && (
             <div
-              className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-95 rounded-4 d-flex align-items-center justify-content-center p-3 z-3 modal-image-expand-overlay"
+              className="position-absolute top-0 start-0 w-100 h-100 application-modal-bg bg-opacity-95 rounded-4 d-flex align-items-center justify-content-center p-3 z-3 modal-image-expand-overlay"
               onClick={() => setExpandedImage(null)}
             >
               <button
@@ -497,6 +491,7 @@ function DetailModal({ app, onClose }) {
     height: 'auto',
     maxHeight: '85vh',
     objectFit: 'contain',
+    padding: '40px 20px',
   }}
   priority
   unoptimized

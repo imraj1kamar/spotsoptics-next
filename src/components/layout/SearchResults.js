@@ -68,15 +68,14 @@ export default function SearchResults({ results = [], query = '', onLinkClick })
                       {item.title}
                     </span>
                     {item.category && (
-                      <span className="badge bg-primary-subtle text-primary border rounded-pill px-2 py-0 small" style={{ fontSize: '10px' }}>
-                        {item.category}
-                      </span>
+                      <span className="badge bg-primary-subtle text-primary border rounded-pill px-2 py-0 small" style={{ fontSize: '10px' }} dangerouslySetInnerHTML={{ __html: item.category }} />
+                       
+                     
                     )}
                   </div>
                   {item.description && (
-                    <p className="result-desc text-muted mb-0 small text-truncate" style={{ maxWidth: '90%' }}>
-                      {item.description}
-                    </p>
+                    <p className="result-desc text-muted mb-0 small text-truncate custom-link-text" style={{ maxWidth: '90%' }} dangerouslySetInnerHTML={{ __html: item.description }} />
+                     
                   )}
                 </div>
 
