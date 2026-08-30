@@ -121,11 +121,11 @@ export default function PrivacyPolicyPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sections]);
 
-  const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
-    }
-  };
+  // const handlePrint = () => {
+  //   if (typeof window !== 'undefined') {
+  //     window.print();
+  //   }
+  // };
 
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -364,7 +364,7 @@ export default function PrivacyPolicyPage() {
                 </nav>
 
                 <div className="privacy-toc-actions">
-                  <button
+                  {/* <button
                     type="button"
                     onClick={handlePrint}
                     className="privacy-action-btn w-100"
@@ -372,7 +372,7 @@ export default function PrivacyPolicyPage() {
                   >
                     {ICONS.print}
                     <span>Print / Save as PDF</span>
-                  </button>
+                  </button> */}
                   <Link
                     href="/terms-and-conditions"
                     className="privacy-action-btn w-100"

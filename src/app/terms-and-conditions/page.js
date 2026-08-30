@@ -121,11 +121,11 @@ export default function TermsAndConditionsPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sections]);
 
-  const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
-    }
-  };
+  // const handlePrint = () => {
+  //   if (typeof window !== 'undefined') {
+  //     window.print();
+  //   }
+  // };
 
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -364,7 +364,7 @@ export default function TermsAndConditionsPage() {
                 </nav>
 
                 <div className="terms-toc-actions">
-                  <button
+                  {/* <button
                     type="button"
                     onClick={handlePrint}
                     className="terms-action-btn w-100"
@@ -372,7 +372,7 @@ export default function TermsAndConditionsPage() {
                   >
                     {ICONS.print}
                     <span>Print / Save as PDF</span>
-                  </button>
+                  </button> */}
                   <Link
                     href="/faq"
                     className="terms-action-btn w-100"

@@ -118,6 +118,7 @@ export default function Accessories() {
     alt={page.hero.alt || page.hero.title}
     width={800} 
     height={600} 
+    loading="eager"
     className="img-fluid rounded"
   />
 </div>
