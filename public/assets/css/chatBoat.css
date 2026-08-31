@@ -1,0 +1,209 @@
+/* =========================================
+   SPOTOPTICS RESPONSIVE CHATBOT STYLING
+   ========================================= */
+
+/* Floating Toggle Button */
+.chat-toggle-btn {
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    z-index: 1080;
+    font-size: 1.5rem;
+    background-color: var(--primary-blue, #1E5EFF);
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 8px 24px rgba(30, 94, 255, 0.3);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+}
+
+.chat-toggle-btn:hover {
+    transform: scale(1.08);
+    background-color: #1545d2;
+}
+
+/* Chat Window Base (Desktop & Tablet) */
+.chat-window {
+    bottom: 100px;
+    right: 24px;
+    width: 380px;
+    height: 520px;
+    max-height: calc(100vh - 130px);
+    z-index: 1080;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 24px;
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.18);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: bottom right;
+    overflow: hidden;
+}
+
+/* Animations */
+.chat-window.hide {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+    pointer-events: none;
+}
+
+.chat-window.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Header Styling */
+.chat-header {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(226, 232, 240, 0.8) !important;
+}
+
+.caption-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10B981;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+/* Messages Scrollbar & Area */
+.chat-messages {
+    background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 5px;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 10px;
+}
+
+/* Chat Bubbles */
+.chat-bubble {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    max-width: 85%;
+    line-height: 1.5;
+    word-break: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.user-bubble {
+    background: var(--primary-blue, #1E5EFF);
+    color: #FFFFFF;
+    border-radius: 18px 18px 4px 18px;
+    align-self: flex-end;
+}
+
+.bot-bubble {
+    background: #F1F5F9;
+    color: #1E293B;
+    border: 1px solid #E2E8F0;
+    border-radius: 18px 18px 18px 4px;
+    align-self: flex-start;
+}
+
+/* Input Form Layout */
+.chat-input-form {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #E2E8F0 !important;
+}
+
+.chat-input {
+    font-size: 0.9rem;
+    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    color: #0F172A;
+    padding: 10px 16px;
+}
+
+.chat-input:focus {
+    border-color: var(--primary-blue, #1E5EFF);
+    box-shadow: 0 0 0 3px rgba(30, 94, 255, 0.15);
+    background: #FFFFFF;
+}
+
+.chat-send-btn {
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-blue, #1E5EFF);
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.chat-send-btn:hover {
+    background-color: #1545d2;
+    transform: scale(1.05);
+}
+
+/* Typing Indicator Animation */
+.typing-dots {
+    display: inline-flex;
+    gap: 4px;
+    padding: 2px 4px;
+    align-items: center;
+}
+
+.typing-dots span {
+    width: 6px;
+    height: 6px;
+    background-color: #94A3B8;
+    border-radius: 50%;
+    animation: bounceEffect 1.4s infinite ease-in-out both;
+}
+
+.typing-dots span:nth-child(1) { animation-delay: -0.32s; }
+.typing-dots span:nth-child(2) { animation-delay: -0.16s; }
+.typing-dots span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes bounceEffect {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+
+/* =========================================
+   MEDIA QUERIES FOR FULL RESPONSIVENESS
+   ========================================= */
+
+/* Tablets & Small Laptops (768px down) */
+@media (max-width: 768px) {
+    .chat-window {
+        width: calc(100vw - 32px);
+        right: 16px;
+        bottom: 90px;
+        height: 480px;
+    }
+    
+    .chat-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 52px;
+        height: 52px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Phones (480px down) - Fullscreen Drawer Experience */
+@media (max-width: 480px) {
+    .chat-window {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        border: none;
+    }
+    
+    .chat-toggle-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+    }
+}

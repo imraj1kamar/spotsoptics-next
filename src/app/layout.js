@@ -9,7 +9,7 @@ import "./globals.css";
 import Navbar from '@/components/layout/Navbar';
 import siteData from "@/data/site.json"; 
 import FooterSection from "@/components/layout/FooterSection";
-
+import Chatbot from '@/components/common/Chatbot';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -126,6 +126,7 @@ export default function RootLayout({ children }) {
         </main>            
         <FooterSection/>        
         <ScrollToTop />
+        <Chatbot />
       </body>
     </html>
   );

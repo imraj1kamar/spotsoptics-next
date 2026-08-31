@@ -1,0 +1,17 @@
+[
+  {
+    "intent": "greeting",
+    "keywords": ["hi", "hello", "hey", "start"],
+    "answer": "Hello! Welcome to SpotOptics. How can I assist you with our optical instruments today?"
+  },
+  {
+    "intent": "products",
+    "keywords": ["products", "sensor", "wavefront", "buy", "items", "catalog", "haso"],
+    "answer": "We offer premium Shack-Hartmann Wavefront Sensors and Optical Metrology Systems. You can check out our Products page for detailed technical specifications."
+  },
+  {
+    "intent": "contact",
+    "keywords": ["contact", "email", "phone", "support", "help", "quote", "reach"],
+    "answer": "You can reach out to our support team via the Contact Us page or email us directly. We are always here to help!"
+  }
+]
