@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 // Static Data Import (Agar JSON direct import karna ho)
 import knowledgeData from '@/data/knowledge.json';
-
+import HeroBanner from '@/components/common/HeroBanner';
 import '../../../../public/assets/css/accuracy-detail.css';
 import PageTopBar from '@/components/common/PageTopBar';
 import sidebarData from '@/data/sidebar.json';
@@ -50,41 +50,24 @@ export default function LensletFocalLengthDetailPage({ data }) {
                      <PageTopBar
                             breadcrumbs={[
             { label: 'Home', href: '/' },
-            { label: 'Knowledge Corner', href: '/knowledge' },
+            { label: 'Knowledge', href: '/knowledge' },
             { label: 'Lance let Focal Length', href: '/knowledge/lensletFocalLengthDetail' },
           ]}
                             showCounter={false}
                             />
                     </div> 
         {/* ================= 1. DARK BLUE HERO BANNER ================= */}
-        <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
-          <div className="row align-items-center">
-            <div className="col-lg-8 col-md-7 position-relative z-2">
-              <h1 className="accuracy-hero-title text-white fw-bold mb-3">
-                {details.page_title || currentData.title || 'Importance of Using Lenslet Arrays with Long Focal Length'}
-              </h1>
-              <div className="hero-accent-line mb-3"></div>
-              <p className="text-white-50 mb-0 small" style={{ maxWidth: '650px', lineHeight: '1.6' }}>
-                {intro.description || currentData.description}
-              </p>
-            </div>
+     
 
-            {/* 3D Glowing Lens Graphic */}
-            <div className="col-lg-4 col-md-5 text-end position-relative z-1 d-none d-md-block">
-              <div className="hero-3d-lens-wrapper">
-                <Image
-                  src="/assets/images/focal-lance.png"
-                  alt="3D Optical Lens"
-                  width={340}
-                  height={200}
-                  className="img-fluid hero-lens-img"
-                  priority
-                  unoptimized
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+               <HeroBanner 
+          title= {details.page_title || currentData.title || 'Importance of Using Lenslet Arrays with Long Focal Length'}
+          description={intro.description || currentData.description}
+          imageSrc="/assets/images/focal-lance.png" 
+          tagline="Shack-Hartmann Image Comparison" 
+          imageAlt="3D Optical Lens"
+        />
+
+
          <div className="row">
         <div className="col-lg-9 col-12">
 

@@ -6,12 +6,14 @@ import Link from 'next/link';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PageTopBar from '@/components/common/PageTopBar';
+
 // CSS file import
 import '../../../public/assets/css/accessories.css';
 import pageData from '@/data/accessories.json';
 import Cta from '@/components/common/Cta';
 import Sidebar from '@/components/common/Sidebar';
 import sidebarData from '@/data/sidebar.json';
+import HeroBanner from '@/components/common/HeroBanner';
 
 export default function Accessories() {
   const containerRef = useRef(null);
@@ -81,8 +83,8 @@ export default function Accessories() {
       <div className="container mt-5">
       
        
-         
- <PageTopBar
+         <div className=' z-2 mt-5 mb-3 mx-3'>
+           <PageTopBar
             breadcrumbs={[
               { label: 'Home', href: '/' },
               { label: 'Accessories' },
@@ -91,42 +93,19 @@ export default function Accessories() {
             counterValue="12"
             
                            />
-        {/* ================= 2. HERO BANNER ================= */}
-        <div ref={heroRef} className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
-          <div className="row align-items-center position-relative z-2">
-            <div className="col-lg-7 col-md-7">
-              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 text-white border border-white border-opacity-15 mb-3">
-                <span className="hero-pulse-dot"></span>
-                <span className="small fw-semibold text-uppercase letter-spacing-1">
-                  {page?.hero?.tagline || 'Optical Metrology Accessories'}
-                </span>
-              </div>
-              <h1 className="knowledge-hero-title text-white fw-bold mb-3">
-                {section.title}
-              </h1>
-              <div className="hero-accent-line mb-3"></div>
-              <p className="hero-description text-white text-opacity-75 mb-0">
-                {section.description}
-              </p>
-            </div>
-
-            {page?.hero?.image && (
-              <div className="col-lg-5 col-md-5 text-center mt-4 mt-md-0 d-none d-lg-block">
-               <div className="hero-image-box">
-  <Image
-    src={page.hero.image}
-    alt={page.hero.alt || page.hero.title}
-    width={800} 
-    height={600} 
-    loading="eager"
-    className="img-fluid rounded"
-  />
-</div>
-              </div>
-            )}
           </div>
-          <div className="hero-card-glow-bg" aria-hidden="true"></div>
-        </div>
+
+        {/* ================= 2. HERO BANNER ================= */}
+    
+        <HeroBanner
+        title=   {section.title}
+        description ={section.description}
+        imageSrc = {page.hero.image}
+        imageAlt ={page.hero.alt || page.hero.title}
+        tagline =  {page?.hero?.tagline || 'Optical Metrology Accessories'}
+        
+        
+        />
 
         {/* ================= 3. MAIN 2-COLUMN LAYOUT ================= */}
         <div className="row g-4">

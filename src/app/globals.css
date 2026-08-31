@@ -174,7 +174,15 @@ p {
     color: var(--primary-red);
     text-decoration: underline;
 }
-
+.hero-pulse-dot
+ {
+    background-color: var(--primary-blue);
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 8px var(--shadow-sm);
+    border-radius: 50%;
+    display: inline-block;
+}
 .text-primary{
     color: var(--primary-blue) !important;
 }
@@ -434,7 +442,37 @@ p {
         --text-md: .85rem;
     }
 }
+.hero-accent-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--secondary-blue), var(--primary-blue));
+  border-radius: 2px;
+}
 
+.knowledge-hero-description {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+.hero-3d-lens-wrapper {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
+  filter: drop-shadow(0 12px 24px rgba(255, 255, 255, .33)) !important;
+}
+
+.hero-3d-lens-wrapper .hero-lens-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+  transition: transform 0.6s ease;
+}
+
+.hero-3d-lens-wrapper:hover .hero-lens-img {
+  transform: scale(1.03) rotate(1deg);
+}
 /* ==========================================================================
    SpotOptics Responsive Breadcrumb Styles
    ========================================================================== */

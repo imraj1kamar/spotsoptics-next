@@ -8,11 +8,13 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Dynamic Data & Components
+import HeroBanner from '@/components/common/HeroBanner';
 import Sidebar from '@/components/common/Sidebar';
 import PageTopBar from '@/components/common/PageTopBar';
 import Cta from '@/components/common/Cta';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
+
 
 // Stylesheets
 import '../../../public/assets/css/all-products.css';
@@ -134,51 +136,13 @@ export default function KnowledgePage() {
 />
 
         {/* ================= 2. HERO BANNER ================= */}
-        <motion.div
-          className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        >
-          <div className="row align-items-center position-relative z-2">
-            <div className="col-lg-6 col-md-7">
-              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 text-white border border-white border-opacity-15 mb-3">
-                <span className="hero-pulse-dot"></span>
-                <span className="small fw-semibold letter-spacing-1 text-uppercase">
-                  Optical Metrology & Wavefront Research
-                </span>
-              </div>
-              <h1 className="knowledge-hero-title text-white fw-bold mb-3">
-                {page.title || 'Knowledge Corner'}
-              </h1>
-              <div className="hero-accent-line mb-3"></div>
-              <p className="knowledge-hero-description text-white text-opacity-75 mb-0">
-                {page.description}
-              </p>
-            </div>
-
-            {page.hero_graphic && (
-             
-              <div className="col-lg-6 col-md-4 text-end position-relative z-1 d-none d-md-block">
-                            <div className="hero-3d-lens-wrapper">
-                              <Image
-                                             
-                                             src={normalizeSrc(page.hero_graphic)}
-                                             alt='Optical wavefront schematic'
-                                             width={850}
-                                             height={380}
-                                             className="img-fluid rounded object-fit-contain"
-                                             style={{ maxHeight: '360px' }}
-                                             priority
-                                             unoptimized
-                                             
-                                           />
-                            </div>
-                          </div>
-            )}
-          </div>
-          <div className="hero-card-glow-bg" aria-hidden="true"></div>
-        </motion.div>
+        <HeroBanner 
+  title={page.title}
+  description={page.description}
+  imageSrc={page.hero_graphic} 
+  tagline="Optical Metrology & Wavefront Research" 
+  imageAlt="Optical wavefront schematic"
+/>
 
         {/* ================= 3. FILTER / SEARCH CONTROLS ================= */}
         {categories.length > 1 && (

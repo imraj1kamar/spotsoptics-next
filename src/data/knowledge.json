@@ -382,6 +382,7 @@
 
   "details": {
     "page_title": "Zernike Polynomials in Sensoft",
+    "page_discription": "Accurately represent and analyze phase aberrations with Sensoft's advanced wavefront modeling. Whether you need standard mathematical fitting or need to account for central optical obscurations, our software adapts to your exact measurement needs.",
 
     "hero": {
       "title": "Zernike polynomials used in Sensoft – our wavefront sensor software",

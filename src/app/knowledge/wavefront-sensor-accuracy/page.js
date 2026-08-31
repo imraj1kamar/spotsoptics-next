@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 // Dynamic / Static Data Import
+import HeroBanner from '@/components/common/HeroBanner';
 import knowledgeData from '@/data/knowledge.json'; 
 import Sidebar from '@/components/common/Sidebar';
 import "../../../../public/assets/css/accuracy-detail.css";
@@ -34,6 +35,7 @@ export default function WavefrontAccuracyDetailPage({ data }) {
   const finalPlot = details?.final_plot || {};
   const footerCta = details?.footer_cta || {};
 
+
   // Safe image URL resolver
   const resolveImg = (src) => {
     if (!src) return '';
@@ -48,41 +50,20 @@ export default function WavefrontAccuracyDetailPage({ data }) {
                       <PageTopBar
                             breadcrumbs={[
                             { label: 'Home', href: '/' },
-                            { label: 'Knowledge Corner', href: '/knowledge' },
+                            { label: 'Knowledge ', href: '/knowledge' },
                             { label: 'Wavefront Sensor Accuracy', href: '/knowledge/wavefront-sensor-accuracy' },
                             ]}
                             showCounter={false}
                             />
             </div> 
               {/* ================= 1. DARK BLUE HERO BANNER ================= */}
-        <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
-          <div className="row align-items-center">
-
-                       
-            <div className="col-lg-7 col-md-8 position-relative z-2">
-              <h1 className="accuracy-hero-title text-white fw-bold mb-3">
-                {hero.title || 'Exceptional accuracy and precision of our Wavefront Sensors'}
-              </h1>
-              <div className="hero-accent-line mb-3"></div>
-            </div>
-            
-            
-            <div className="col-lg-5 col-md-4 text-end position-relative z-1 d-none d-md-block">
-              <div className="hero-3d-lens-wrapper">
-                <Image
-                               src={resolveImg(hero.image)}
-                               alt={hero.caption || 'Hartmann vs Shack-Hartmann Setup'}
-                               width={850}
-                               height={380}
-                               className="img-fluid rounded object-fit-contain"
-                               style={{ maxHeight: '360px' }}
-                               priority
-                               unoptimized
-                             />
-              </div>
-            </div>
-          </div>
-        </div>
+                   <HeroBanner 
+          title= {hero.title || 'Exceptional accuracy and precision of our Wavefront Sensors'}
+          description={hero.description}
+          imageSrc={resolveImg(hero.image)}
+          tagline="accuracy and precision of our Wavefront Sensors" 
+          imageAlt={hero.caption || 'Hartmann vs Shack-Hartmann Setup'}
+        />
        <div className="row">
         <div className="col-lg-9 col-12">
         

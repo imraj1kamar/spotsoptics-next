@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import PageTopBar from '@/components/common/PageTopBar';
+import HeroBanner from '@/components/common/HeroBanner';
 import knowledgeData from '@/data/knowledge.json';
 import sidebarData from '@/data/sidebar.json';
 import Sidebar from '@/components/common/Sidebar';
@@ -42,7 +43,7 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
       <div className="container mt-5">
         
         {/* ================= 1. BREADCRUMBS ================= */}
-        <div className="mb-3">
+        <div className="d-flex justify-content-between align-items-start position-relative z-2 mt-5 mb-3 mx-3">
         
          <PageTopBar
                      breadcrumbs={[
@@ -60,35 +61,17 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
                                     />
         </div>
 
-        {/* ================= 2. DARK BLUE HERO BANNER ================= */}
-        <div className="knowledge-hero-card mb-4 position-relative overflow-hidden rounded-4 p-4 p-lg-5">
-          <div className="row align-items-center">
-            <div className="col-lg-8 col-md-7 position-relative z-2">
-              <h1 className="accuracy-hero-title text-white fw-bold mb-3">
-                {details.page_title || currentData.title || 'Shack-Hartmann vs. Hartmann Test'}
-              </h1>
-              <div className="hero-accent-line mb-3"></div>
-              <p className="text-white-50 mb-0 small" style={{ maxWidth: '650px', lineHeight: '1.6' }}>
-                {details.subtitle }              </p>
-            </div>
+       
 
-            {/* 3D Glowing Lens Graphic */}
-            <div className="col-lg-4 col-md-5 text-end position-relative z-1 d-none d-md-block">
-              <div className="hero-3d-lens-wrapper">
-  <Image
-    src="/assets/images/focal-lance.png"
-    alt="3D Optical Lens"
-    width={340}
-    height={200}
-    className="img-fluid hero-lens-img"
-    style={{ width: 'auto', height: 'auto' }}
-    priority
-    unoptimized
-  />
-</div>
-            </div>
-          </div>
-        </div>
+     {/* ================= 2. HERO BANNER ================= */}
+        <HeroBanner 
+  title= {details.page_title || currentData.title || 'Shack-Hartmann vs. Hartmann Test'}
+  description={details.subtitle } 
+  imageSrc="/assets/images/focal-lance.png" 
+  tagline="Hartmann and Shack-Hartmann Research & Test" 
+  imageAlt="3D Optical Lens"
+/>
+        
        <div className="row">
         <div className="col-lg-9 col-12">
         {/* ================= 3. SETUP SCHEMATIC DIAGRAM CARD ================= */}
@@ -158,7 +141,7 @@ export default function ShackHartmannVsHartmannDetailPage({ data }) {
   dangerouslySetInnerHTML={{ __html: shackHartmann.description }}
 />
               {shackHartmann.aberration_analysis && (
-                <div className="p-3 bg-light rounded-3 border-start border-primary border-3 small text-dark mt-auto">
+                <div className="p-3 bg-light rounded-3 border-start border-3 small text-dark mt-auto" style={{borderLeft:'4px solid var(--primary-blue, #29938b) !important'}}>
                   <strong>Aberration Analysis: </strong>  <p 
   className="text-muted small mb-3 custom-link-text" 
   style={{ lineHeight: '1.7' }}

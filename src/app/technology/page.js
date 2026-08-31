@@ -1,18 +1,21 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Data & CSS Import
 import techData from '@/data/ourTechnology.json';
+import sidebarData from '@/data/sidebar.json';
 import PageTopBar from '@/components/common/PageTopBar';
 import Cta from '@/components/common/Cta';
 import Sidebar from '@/components/common/Sidebar';
-import sidebarData from '@/data/sidebar.json';
+
 import '../../../public/assets/css/all-products.css';
 import '../../../public/assets/css/ourTechnology.css';
+import HeroBanner from '@/components/common/HeroBanner';
 
 // Icon Mapping
 const ICON_MAP = {
@@ -51,313 +54,363 @@ const ICON_MAP = {
 };
 
 export default function OurTechnologyPage() {
-  const page = techData?.page || {};
+  const containerRef = useRef(null); // Added missing containerRef
+
   const hero = techData?.hero || {};
+  const page = techData?.page || {};
   const pillars = techData?.technology_pillars || {};
   const software = techData?.software_platform || {};
   const products = techData?.products || {};
   const applications = techData?.applications || {};
   const workflow = techData?.workflow || {};
   const calibration = techData?.calibration || {};
-  const capabilities = techData?.technical_capabilities || {};
   const advantages = techData?.advantages || {};
   const stats = techData?.statistics || [];
-  const cta = techData?.cta || {};
+
+  // GSAP Scroll Animations
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      // 1. Tech Pillar Cards Reveal
+      const pillarCards = gsap.utils.toArray('.tech-pillar-card');
+      if (pillarCards.length > 0) {
+        gsap.fromTo(
+          pillarCards,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.08,
+            ease: 'power2.out',
+            clearProps: 'transform,opacity',
+            scrollTrigger: {
+              trigger: '.tech-pillars-section',
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      }
+
+      // 2. Glass Cards Reveal (Products & Apps)
+      const glassCards = gsap.utils.toArray('.custom-glass-card');
+      glassCards.forEach((card) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, scale: 0.98, y: 20 },
+          {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+            clearProps: 'transform,opacity',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 92%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []); // Cleaned up dependency array
 
   return (
-    <main className="page-section py-5">
-      
+    <main className="page-section py-5" ref={containerRef}>
       {/* Header Section */}
       <section className="technology-page mt-5">
         <div className="container">
-           {/* Top Section: Breadcrumbs + Counter */}
-         <PageTopBar
-  breadcrumbs={[
-    { label: 'Home', href: '/' },
-    { label: 'Our Technology' },
-  ]}
- showCounter={false}
+          {/* Top Section: Breadcrumbs */}
+          <PageTopBar
+            breadcrumbs={[
+              { label: 'Home', href: '/' },
+              { label: 'Our Technology' },
+            ]}
+            showCounter={false}
+          />
+
+          {/* ================= 1. HERO BANNER ================= */}
+
+
+<HeroBanner
+title= {hero.heading || 'Our Technology'}
+description= {hero.description || ''}
+imageSrc={hero.image}
+imageAlt='Optical wavefront schematic'
+tagline={hero.badge}
 />
 
-          {/* Page Description */}
-          <header className="row mb-5 justify-content-center text-center">
-            <div className="col-lg-10">
-              <p className="page-tagline">{page.description || ''}</p>
-            </div>
-          </header>
+          <div className="row g-4 mb-5">
+            <div className="col-lg-9">
+              {/* ==========================================
+                  2. CORE TECHNOLOGY PILLARS
+                  ========================================== */}
+              {pillars.items && pillars.items.length > 0 && (
+                <section className="tech-pillars-section pb-5" id="pillars">
+                  <div className="container py-lg-4">
+                    <header className="text-center mb-5">
+                      <h2 className="tech-section-title text-uppercase mb-0">
+                        {pillars.title}
+                      </h2>
+                      <p className="section-intro mt-3">{pillars.description}</p>
+                    </header>
 
-        
-        </div>
-      </section>
-
-      {/* ==========================================
-          2. CORE TECHNOLOGY PILLARS
-          ========================================== */}
-      {pillars.items && pillars.items.length > 0 && (
-      <section className="tech-pillars-section pb-5" id="pillars">
-        <div className="container py-lg-4">
-          <header className="text-center mb-5">
-            <h2 className="tech-section-title text-uppercase mb-0">
-              {pillars.title}
-            </h2>
-            <p className="section-intro mt-3">{pillars.description}</p>
-          </header>
-
-          <div className="row g-4">
-            {pillars.items.map((pillar, idx) => (
-              <div key={idx} className="col-12 col-md-6 col-lg-3">
-                <div className="tech-pillar-card p-4 rounded-4 h-100 d-flex flex-column text-center">
-                  <div className="tech-pillar-icon-box mb-4">
-                    {ICON_MAP[pillar.icon] || ICON_MAP.wavefront}
+                    <div className="row g-2">
+                      {pillars.items.map((pillar, idx) => (
+                        <div key={idx} className="col-12 col-md-6 col-lg-12">
+                          <div className="tech-pillar-card h-100 p-3 p-md-4 rounded-4">
+                            <div className="tech-pillar-layout">
+                              <div className="tech-pillar-icon-box flex-shrink-0" aria-hidden="true">
+                                {ICON_MAP[pillar.icon] || ICON_MAP.wavefront}
+                              </div>
+                              <div className="tech-pillar-content">
+                                <h3 className="tech-pillar-title mb-2">{pillar.title}</h3>
+                                <p className="tech-pillar-desc mb-0">{pillar.description}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <h3 className="tech-pillar-title mb-3">
-                    {pillar.title}
-                  </h3>
-                  <p className="tech-pillar-desc mb-0 flex-grow-1">
-                    {pillar.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      )}
+                </section>
+              )}
 
-      {/* ==========================================
-          3. SENSOFT SOFTWARE PLATFORM
-          ========================================== */}
-      {software.title && (
-      <section className="tech-sensoft-section py-5" id="software">
-        <div className="container py-lg-4">
-          <div className="row align-items-center ">
-            
-            {/* Left Content */}
-            <div className="col-12 col-lg-5 text-center text-lg-start">
-              <span className="tech-sub-tagline text-uppercase mb-2 d-inline-block">
-                {software.subtitle}
-              </span>
+              {/* ==========================================
+                  3. SENSOFT SOFTWARE PLATFORM
+                  ========================================== */}
+              {software.title && (
+                <section className="tech-sensoft-section py-5" id="software">
+                  <div className="container py-lg-4">
+                    <div className="row align-items-center ">
+                      <div className="col-12 col-lg-5 text-center text-lg-start">
+                        <span className="tech-sub-tagline text-uppercase mb-2 d-inline-block">
+                          {software.subtitle}
+                        </span>
 
-              <h2 className="tech-sensoft-heading mb-4">
-                {software.title}
-              </h2>
+                        <h2 className="tech-sensoft-heading mb-4">{software.title}</h2>
+                        <p className="tech-sensoft-desc mb-4">{software.description}</p>
 
-              <p className="tech-sensoft-desc mb-4">
-                {software.description}
-              </p>
+                        {software.features && (
+                          <ul className="list-unstyled tech-checklist mb-4">
+                            {software.features.map((feat, idx) => (
+                              <li key={idx} className="d-flex align-items-start gap-2.5 mb-2.5">
+                                <span className="tech-check-badge flex-shrink-0">
+                                  <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
+                                  </svg>
+                                </span>
+                                <span className="tech-checklist-text">{feat}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
 
-              {/* Feature Checklist */}
-              {software.features && (
-              <ul className="list-unstyled tech-checklist mb-4">
-                {software.features.map((feat, idx) => (
-                  <li key={idx} className="d-flex align-items-start gap-2.5 mb-2.5">
-                    <span className="tech-check-badge flex-shrink-0">
-                      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    <span className="tech-checklist-text">{feat}</span>
-                  </li>
-                ))}
-              </ul>
+                      {software.image && (
+                        <div className="col-12 col-lg-7 text-center">
+                          <div className="tech-sensoft-ui-frame rounded-4 overflow-hidden shadow-lg border">
+                            <Image
+                              src={software.image}
+                              alt="SenSoft Software Wavefront Analysis UI"
+                              width={750}
+                              height={480}
+                              className="img-fluid w-100 h-auto"
+                              unoptimized
+                            />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* ==========================================
+                  4. TECHNOLOGY-ENABLED PRODUCTS
+                  ========================================== */}
+              {products.items && products.items.length > 0 && (
+                <section className="tech-products-section " id="products">
+                  <div className="container py-lg-4">
+                    <header className="text-center mb-5">
+                      <h2 className="tech-section-title text-uppercase mb-0">{products.title}</h2>
+                      <p className="section-intro mt-3">{products.description}</p>
+                    </header>
+
+                    <div className="row g-2">
+                      {products.items.map((prod, idx) => (
+                        <div key={idx} className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                          <div className="tech-product-card custom-glass-card p-4 rounded-4 h-100 d-flex flex-column text-center">
+                            <h4 className="tech-product-title mb-3">{prod.name}</h4>
+                            <p className="tech-product-desc mb-0 flex-grow-1">{prod.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* ==========================================
+                  5. APPLICATIONS GRID
+                  ========================================== */}
+              {applications.items && applications.items.length > 0 && (
+                <section className="tech-applications-section" id="applications">
+                  <div className="container py-lg-4">
+                    <header className="text-center mb-5">
+                      <h2 className="tech-section-title text-uppercase mb-0">{applications.title}</h2>
+                      <p className="section-intro mt-3">{applications.description}</p>
+                    </header>
+
+                    <div className="row g-2">
+                      {applications.items.map((app, idx) => (
+                        <div key={idx} className="col-12 col-md-6 col-lg-3">
+                          <div className="tech-app-dark-card custom-glass-card rounded-4 overflow-hidden position-relative d-flex flex-column justify-content-between p-4 text-decoration-none">
+                            {app.image && (
+                              <Image
+                                src={app.image}
+                                alt={app.title}
+                                fill
+                                className="tech-app-card-bg"
+                                unoptimized
+                                style={{ zIndex: 0 }}
+                              />
+                            )}
+                            <div className="tech-app-card-overlay" />
+                            <div className="tech-app-content position-relative z-2 text-center">
+                              <h3 className="tech-app-title mb-2">{app.title}</h3>
+                              <p className="tech-app-desc mb-0">{app.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* ==========================================
+                  6. INTEGRATED MEASUREMENT WORKFLOW
+                  ========================================== */}
+              {workflow.steps && workflow.steps.length > 0 && (
+                <section className="tech-workflow-section ">
+                  <div className="container py-lg-4">
+                    <header className="text-center mb-5">
+                      <h2 className="tech-section-title text-uppercase mb-0">{workflow.title}</h2>
+                      <p className="section-intro mt-3">{workflow.description}</p>
+                    </header>
+
+                    <div className="row g-2 justify-content-center text-center">
+                      {workflow.steps.map((step, idx) => (
+                        <div key={idx} className="col-12 col-sm-6 col-lg-3">
+                          <div className="tech-workflow-item custom-glass-card h-100 p-4 rounded-4">
+                            <div className="tech-step-circle-badge mx-auto mb-3">
+                              <span className="h3 mb-0">{step.step}</span>
+                            </div>
+                            <div className="tech-workflow-icon-box mx-auto mb-3">
+                              {ICON_MAP[step.icon] || ICON_MAP.wavefront}
+                            </div>
+                            <h4 className="tech-step-title mb-2">{step.title}</h4>
+                            <p className="tech-step-desc mb-0">{step.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {/* ==========================================
+                  7. CALIBRATION & ADVANTAGES
+                  ========================================== */}
+              {(calibration.items || advantages.items || stats.length > 0) && (
+                <section className="tech-calibration-section ">
+                  <div className="container py-lg-4">
+                    {calibration.title && (
+                      <>
+                        <header className="text-center mb-5">
+                          <h2 className="tech-section-title text-uppercase mb-0">{calibration.title}</h2>
+                          <p className="section-intro mt-3">{calibration.description}</p>
+                        </header>
+
+                        <div className="row mb-5">
+                          <div className="col-lg-8 mx-auto">
+                            {calibration.items && (
+                              <ul className="list-unstyled">
+                                {calibration.items.map((item, idx) => (
+                                  <li key={idx} className="d-flex gap-3 py-3 border-bottom">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="text-primary flex-shrink-0">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        </div>
+                      </>
+                    )}
+
+                    {advantages.items && advantages.items.length > 0 && (
+                      <div className="row g-2">
+                        <div className="col-12">
+                          <h3 className="text-center mb-5">{advantages.title}</h3>
+                        </div>
+                        {advantages.items.map((adv, idx) => (
+                          <div key={idx} className="col-md-6 col-lg-4">
+                            <div className="custom-glass-card p-4 h-100 rounded-4">
+                              <h5 className="mb-3">{adv.title}</h5>
+                              <p className="mb-0">{adv.description}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {stats.length > 0 && (
+                      <div className="row g-2 mt-5 text-center">
+                        {stats.map((stat, idx) => (
+                          <div key={idx} className="col-6 col-md-3">
+                            <div className="custom-glass-card p-4 rounded-4">
+                              <div className="h3 mb-2 fw-bold text-primary">{stat.value}</div>
+                              <p className="mb-0 small">{stat.label}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </section>
               )}
             </div>
 
-            {/* Right UI Screenshot */}
-            {software.image && (
-            <div className="col-12 col-lg-7 text-center">
-              <div className="tech-sensoft-ui-frame rounded-4 overflow-hidden shadow-lg border">
-                <Image
-                  src={software.image}
-                  alt="SenSoft Software Wavefront Analysis UI"
-                  width={750}
-                  height={480}
-                  className="img-fluid w-100 h-auto"
-                  unoptimized
+            {/* Right Column: Sticky Sidebar */}
+            <div className="col-lg-3 d-none d-lg-block">
+              <aside className="sticky-top" style={{ top: '100px', zIndex: 10 }}>
+                <Sidebar
+                  title={sidebarData?.title || 'Knowledge Categories'}
+                  links={sidebarData?.links || []}
                 />
-              </div>
+              </aside>
             </div>
-            )}
-
           </div>
         </div>
       </section>
-      )}
-
-      {/* ==========================================
-          4. TECHNOLOGY-ENABLED PRODUCTS
-          ========================================== */}
-      {products.items && products.items.length > 0 && (
-      <section className="tech-products-section " id="products">
-        <div className="container py-lg-4">
-          <header className="text-center mb-5">
-            <h2 className="tech-section-title text-uppercase mb-0">
-              {products.title}
-            </h2>
-            <p className="section-intro mt-3">{products.description}</p>
-          </header>
-
-          <div className="row g-4">
-            {products.items.map((prod, idx) => (
-              <div key={idx} className="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <div className="tech-product-card custom-glass-card p-4 rounded-4 h-100 d-flex flex-column text-center">
-                  <h4 className="tech-product-title mb-3">
-                    {prod.name}
-                  </h4>
-                  <p className="tech-product-desc mb-0 flex-grow-1">
-                    {prod.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      )}
-
-      {/* ==========================================
-          5. APPLICATIONS GRID
-          ========================================== */}
-      {applications.items && applications.items.length > 0 && (
-      <section className="tech-applications-section" id="applications">
-        <div className="container py-lg-4">
-          <header className="text-center mb-5">
-            <h2 className="tech-section-title text-uppercase mb-0">
-              {applications.title}
-            </h2>
-            <p className="section-intro mt-3">{applications.description}</p>
-          </header>
-
-          <div className="row g-4">
-            {applications.items.map((app, idx) => (
-              <div key={idx} className="col-12 col-md-6 col-lg-3">
-                <div className="tech-app-dark-card custom-glass-card rounded-4 overflow-hidden position-relative d-flex flex-column justify-content-between p-4 text-decoration-none">
-                  {app.image && (
-                    <Image
-                      src={app.image}
-                      alt={app.title}
-                      fill
-                      className="tech-app-card-bg"
-                      unoptimized
-                      style={{ zIndex: 0 }}
-                    />
-                  )}
-                  <div className="tech-app-card-overlay" />
-                  
-                  <div className="tech-app-content position-relative z-2 text-center">
-                    <h3 className="tech-app-title mb-2">{app.title}</h3>
-                    <p className="tech-app-desc mb-0">{app.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      )}
-
-      {/* ==========================================
-          6. INTEGRATED MEASUREMENT WORKFLOW
-          ========================================== */}
-      {workflow.steps && workflow.steps.length > 0 && (
-      <section className="tech-workflow-section ">
-        <div className="container py-lg-4">
-          <header className="text-center mb-5">
-            <h2 className="tech-section-title text-uppercase mb-0">
-              {workflow.title}
-            </h2>
-            <p className="section-intro mt-3">{workflow.description}</p>
-          </header>
-
-          <div className="row g-4 justify-content-center text-center">
-            {workflow.steps.map((step, idx) => (
-              <div key={idx} className="col-12 col-sm-6 col-lg-3">
-                <div className="tech-workflow-item custom-glass-card h-100 p-4 rounded-4">
-                  <div className="tech-step-circle-badge mx-auto mb-3">
-                    <span className="h3 mb-0">{step.step}</span>
-                  </div>
-                  <div className="tech-workflow-icon-box mx-auto mb-3">
-                    {ICON_MAP[step.icon] || ICON_MAP.wavefront}
-                  </div>
-                  <h4 className="tech-step-title mb-2">{step.title}</h4>
-                  <p className="tech-step-desc mb-0">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      )}
-
-      {/* ==========================================
-          7. CALIBRATION & ADVANTAGES
-          ========================================== */}
-      {(calibration.items || advantages.items || stats.length > 0) && (
-      <section className="tech-calibration-section ">
-        <div className="container py-lg-4">
-          {calibration.title && (
-            <>
-              <header className="text-center mb-5">
-                <h2 className="tech-section-title text-uppercase mb-0">{calibration.title}</h2>
-                <p className="section-intro mt-3">{calibration.description}</p>
-              </header>
-
-              <div className="row mb-5">
-                <div className="col-lg-8 mx-auto">
-                  {calibration.items && (
-                    <ul className="list-unstyled"> {/* text-center here for any block-level text, but flex items need more */}
-                      {calibration.items.map((item, idx) => (
-                        <li key={idx} className="d-flex  gap-3 py-3 border-bottom">
-                          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="text-primary flex-shrink-0">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </div>
-            </>
-          )}
-
-          {advantages.items && advantages.items.length > 0 && (
-            <div className="row g-4">
-              <div className="col-12">
-                <h3 className="text-center mb-5">{advantages.title}</h3>
-              </div>
-              {advantages.items.map((adv, idx) => (
-                <div key={idx} className="col-md-6 col-lg-4">
-                  <div className="custom-glass-card p-4 h-100 rounded-4">
-                    <h5 className="mb-3">{adv.title}</h5>
-                    <p className="mb-0">{adv.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {stats.length > 0 && (
-            <div className="row g-4 mt-5 text-center">
-              {stats.map((stat, idx) => (
-                <div key={idx} className="col-6 col-md-3">
-                  <div className="custom-glass-card p-4 rounded-4">
-                    <div className="h3 mb-2 fw-bold text-primary">{stat.value}</div>
-                    <p className="mb-0 small">{stat.label}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-      )}
-
+      
       {/* ==========================================
           8. BOTTOM CTA
           ========================================== */}
-        <Cta/>
-
+      <div className="knowledge-cta-section mt-5">
+        <Cta />
+      </div>
     </main>
   );
 }

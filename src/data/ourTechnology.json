@@ -7,7 +7,9 @@
 "hero": {
 "badge": "Advanced optical metrology",
 "heading": "Technology that transforms optical measurements into actionable insight",
-"text": "Our integrated technology ecosystem combines precision wavefront sensing, advanced optical analysis software, and application-specific metrology systems to deliver high-accuracy measurements across research, manufacturing, telescope alignment, lens testing, and imaging applications.",
+"description": "Our integrated technology ecosystem combines precision wavefront sensing, advanced optical analysis software, and application-specific metrology systems to deliver high-accuracy measurements across research, manufacturing, telescope alignment, lens testing, and imaging applications.",
+"image" :"/assets/images/technology/technology-hero.png",
+
 "primary_button": {
 "label": "Explore our technology",
 "url": "/all-products"
@@ -15,8 +17,8 @@
 "secondary_button": {
 "label": "Contact technical team",
 "url": "/contact"
-},
-"image": "/images/hero/technology-hero.png"
+}
+
 },
 "technology_pillars": {
 "title": "Core technology pillars",
