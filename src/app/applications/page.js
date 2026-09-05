@@ -132,7 +132,7 @@ export default function ApplicationsSection() {
             {applications.map((application, index) => {
               const gallery = application.image_gallery || application.gallery || [];
 
-              const subUpper = (application.subtitle || application.id || '').toUpperCase();
+              const subUpper = (application.title || application.id || '').toUpperCase();
               const categoryIcon = subUpper.includes('HUD') || subUpper.includes('HEAD-UP') || subUpper.includes('AUTOMOTIVE')
                 ? CATEGORY_ICONS.AUTOMOTIVE
                 : subUpper.includes('OPTINO') || subUpper.includes('OPHTHALMIC') || subUpper.includes('LENS')
@@ -142,7 +142,7 @@ export default function ApplicationsSection() {
                 : CATEGORY_ICONS.IMAGING;
 
               const hasSeparateTitle =
-                application.title && application.title !== application.subtitle;
+                application.title && application.title !== application.title;
 
               return (
                 <div key={index} className="col-12 col-lg-6 application-card-col">
@@ -153,7 +153,7 @@ export default function ApplicationsSection() {
                       <div className="col-12 col-md-5 order-1">
                         <CardCarousel
                           gallery={gallery}
-                          appTitle={application.subtitle || application.title}
+                          appTitle={application.title || application.title}
                           onImageClick={() => setDetailModalApp(application)}
                         />
                       </div>
@@ -162,10 +162,10 @@ export default function ApplicationsSection() {
                       <div className="col-12 col-md-7 order-2 d-flex flex-column h-100 justify-content-between">
                         <div>
                           {/* Subtitle Badge */}
-                          {application.subtitle && (
+                          {application.title && (
                             <div className="d-flex align-items-center gap-2 mb-2 products-tag fw-bold small text-uppercase tracking-wide">
                               {categoryIcon}
-                              <span>{application.subtitle}</span>
+                              <span>{application.title}</span>
                             </div>
                           )}
 

@@ -1,17 +1,156 @@
 [
   {
-    "intent": "greeting",
-    "keywords": ["hi", "hello", "hey", "start"],
-    "answer": "Hello! Welcome to SpotOptics. How can I assist you with our optical instruments today?"
+    "intent": "GREETING",
+    "keywords": [
+      "hi", "hello", "hey", "how are you", "good morning", "good afternoon", 
+      "good evening", "greetings", "how do you do", "what's up", "sup", 
+      "who are you", "are you ai", "are you a bot", "are you bot"
+    ],
+    "answer": "Hello! I am SpotOptics AI. I can help you find the right wavefront sensors, provide product specifications, or connect you with our experts. How can I assist you today?"
   },
   {
-    "intent": "products",
-    "keywords": ["products", "sensor", "wavefront", "buy", "items", "catalog", "haso"],
-    "answer": "We offer premium Shack-Hartmann Wavefront Sensors and Optical Metrology Systems. You can check out our Products page for detailed technical specifications."
+    "intent": "ABOUT_SPOTOPTICS",
+    "keywords": [
+      "company", "about", "profile", "history", "who are you", "team", "mission", 
+      "spotoptics", "italy", "padova", "where are you located", "what does spotoptics do", 
+      "what is spotoptics", "serve", "who is spotoptics", "spotoptics full name"
+    ],
+    "answer": "**SpotOptics S.r.l.**\n*\"The software people for optics\"*\n\nSpotOptics S.r.l. is an Italian company based in Padova, specializing in high-performance Shack-Hartmann wavefront sensors and optical metrology systems. We provide advanced solutions for optical testing across various industries including ophthalmic, automotive, aerospace, and general photonics.\n\nFor more information, visit our [Company Profile](/companyprofile) page."
+  },
+ {
+    "intent": "PRODUCT_DISCOVERY",
+    "keywords": ["which wavefront sensor", "which product", "right for me", "recommend", "looking for", "need a sensor"],
+    "answer": "We offer premium Shack-Hartmann wavefront sensors. Based on your needs, I can recommend the right product for you."
   },
   {
-    "intent": "contact",
-    "keywords": ["contact", "email", "phone", "support", "help", "quote", "reach"],
-    "answer": "You can reach out to our support team via the Contact Us page or email us directly. We are always here to help!"
+    "intent": "PRODUCT_DETAILS",
+    "keywords": ["specifications", "wavelength", "measurement range", "accuracy", "resolution", "specs", "features", "technical details", "dimension"],
+    "answer": "I can provide technical specifications for our products. Which product are you interested in?"
+  },
+  {
+    "intent": "PRODUCT_COMPARISON",
+    "keywords": ["compare", "difference between", "better for", "versus", "vs"],
+    "answer": "I can help you compare our products. Which products would you like to compare?"
+  },{
+    "intent": "ALL_PRODUCTS_LIST",
+    "keywords": [
+      "how many products", "all products", "list of products", 
+      "what products do you offer", "types of products", "product list", "kitne products"
+    ],
+    "answer": "We currently offer 10 premium Shack-Hartmann wavefront sensors for various optical metrology needs. Here is our complete list:\n\n1. [OMI: Test in Single Pass](/all-products/omi-test-in-single-pass) - High resolution sensors for wavefront measurement and analysis.\n2. [Optino-mu: Pocket-size, Single & Double Pass](/all-products/optino-mu-pocket-size-single-and-double-pass) - Compact Shack-Hartmann wavefront sensor designed for portable, high-precision metrology.\n3. [iOptino: Dual-channel, Single & Double Pass](/all-products/ioptino-dual-channel-single-and-double-pass) - Dual-channel Shack-Hartmann wavefront sensor combining direct imaging and high-accuracy wavefront analysis.\n4. [Laserino-mu: Dual-channel, Single Pass](/all-products/laserino-mu-dual-channel-single-pass) - Laser-focused metrology solution combining direct imaging and Shack-Hartmann analysis for beam quality, M², and MTF evaluation.\n5. [Optino: Single & Double Pass](/all-products/optino-single-and-double-pass) - Versatile Shack-Hartmann platform for transmission measurements across a broad wavelength range and multiple optical configurations.\n6. [Lentino & Opal: On-axis Motorized](/all-products/lentino-and-opal-on-axis-motorized) - On-axis motorized metrology platforms featuring accurate Z-movement, XY and tilt stages for easy lens centering.\n7. [Sfera & Stella: Off-axis Motorized](/all-products/sfera-and-stella-off-axis-motorized) - On-axis and off-axis motorized metrology solutions for precise transmission testing, featuring automatic scanning.\n8. [Contour: For Contact Lenses](/all-products/contour-for-contact-lenses) - Accurate and fast contact lens metrology solution designed for the production line (wet and dry conditions).\n9. [Puntino: Dual-channel, for Astronomical Telescopes](/all-products/puntino-dual-channel-for-astronomical-telescopes) - Powerful dual-channel metrology solution to optimize telescope performance, alignment, and image quality.\n10. [5Star : Off-axis Multi Camera](/all-products/5star-off-axis-multi-camera) - Advanced multi-camera metrology solution for simultaneous on-axis and off-axis testing in a single shot.\n\nLet me know if you want specifications for any specific product!\n\n🔗 [All products](/all-products) | 📞 [Contact us](/contact)"
+},{
+    "intent": "ALL_APPLICATIONS_LIST",
+    "keywords": [
+      "how many applications", "how many application do you have", "all applications", "list of applications", 
+      "what applications do you offer", "application list", "where are they used", "kitne applications"
+    ],
+    "answer": "Our optical metrology systems are used across multiple industries. Here are our 4 main applications:\n\n1. [Head-Up Display Test with OMI](/applications?app=head-up-display-test) - Production line testing of automotive Heads-Up Displays (HUD) using the OMI sensor and SenSoft software.\n2. [Testing Lenses with Optino: Measure Stress Due to Lens Mounting](/applications?app=optino-lens-stress-test) - Evaluate stress-induced aberrations and wavefront deformations in ophthalmic lenses caused by mounting or clamping.\n3. [Astronomical Telescope Test with Puntino: Measure Stress Due to Supports](/applications?app=telescope-mirror-test) - Analyze large telescope mirrors with annular pupils to measure surface stress and wavefront deformations due to supports.\n4. [Digital Camera Lens Test: On-Axis and Off-Axis Test](/applications?app=digital-camera-lens-test) - On-axis and off-axis testing of digital camera lenses and microscope objectives to analyze aberrations, wavefront, and MTF.\n\nTell me which application you are interested in, and I can suggest the best sensor for it.\n\n🔗 [All applications](/applications) | 📞 [Contact us](/contact)"
+},
+  {
+    "intent": "APPLICATION_MATCHING",
+    "keywords": ["application", "applications", "use case", "use cases", "test", "testing", "head up display", "lens stress", "telescope", "camera lens", "ophthalmic", "automotive", "imaging systems", "mirror", "contact lens", "mobile phone", "laser testing", "where", "industries", "fields", "uses", "where is it used"],
+    "answer": "Our solutions are used across various optical metrology applications. Tell me more about what you need to test."
+  },
+  {
+    "intent": "TECHNICAL_QUESTION",
+    "keywords": ["what is a wavefront", "what is a shack-hartmann", "how does", "what is optical metrology", "what is mtf", "interferometry", "why is wavefront", "how accurate", "factors affect"],
+    "answer": "I can help with technical questions about optical metrology and Shack-Hartmann sensors."
+  },
+  {
+    "intent": "WARRANTY_REPAIR",
+    "keywords": ["warranty", "repair", "calibration", "broken", "fix", "maintenance", "service", "guarantee"],
+    "answer": "We provide dedicated technical support, recalibration, and repair services for all our Shack-Hartmann sensors. Please email your instrument's serial number to contact@spot-optics.com or visit our [Contact Page](/contact) for assistance.\n\n**SpotOptics S.r.l.**\n*The software people for optics*\nVia Turazza 48\n35128 Padova, Italy"
+  },
+  {
+    "intent": "KNOWLEDGE_CORNER",
+    "keywords": ["learn about", "knowledge", "article", "theory", "explain", "how it works"],
+    "answer": "We have extensive technical articles in our Knowledge Corner."
+  },{
+    "intent": "CUSTOMIZATION_OEM",
+    "keywords": [
+      "custom sensor", "customization", "oem", "modify", "custom build", 
+      "integrate", "can you build", "specific requirement", "custom solution"
+    ],
+    "answer": "Yes! SpotOptics specializes in creating custom optical metrology solutions and offering OEM integrations tailored to your specific industrial or research requirements. Please reach out to our engineering team at contact@spot-optics.com to discuss your custom project."
+  },{
+    "intent": "TRAINING_INSTALLATION",
+    "keywords": [
+      "installation", "install", "training", "how to setup", "setup guide", 
+      "on-site", "teach", "learn to use", "technician visit", "onboarding"
+    ],
+    "answer": "We offer comprehensive support for installation and setup. Depending on your location and the product purchased, we can provide remote assistance, video tutorials, or arrange for an on-site visit by our technical experts for installation and staff training. Let us know your requirements!"
+  },{
+    "intent": "SOFTWARE_COMPATIBILITY",
+    "keywords": [
+      "system requirements", "os support", "windows", "mac", "linux", 
+      "compatibility", "computer specs", "pc requirements", "sensoft requirements"
+    ],
+    "answer": "Our SenSoft software is fully compatible with Windows operating systems (Windows 10 and 11). We recommend a modern PC with a dedicated graphics card and sufficient RAM for high-speed wavefront data processing. For detailed PC requirements, please refer to the product datasheet or [Contact Support](/contact)."
+  },{
+    "intent": "CALIBRATION_INFO",
+    "keywords": [
+      "calibration", "how to calibrate", "calibrate sensor", "recalibration", 
+      "calibration unit", "accuracy check", "self calibration"
+    ],
+    "answer": "Many of our wavefront sensors, like the OMI and Optino series, come with built-in calibration units that allow the user to easily calibrate the instrument in-situ for maximum accuracy. If you need factory recalibration services, our technical team is always ready to help."
+  },{
+    "intent": "SOFTWARE_LICENSING",
+    "keywords": [
+      "license", "software key", "updates", "upgrade sensoft", "free updates", 
+      "software license", "dongle", "activation"
+    ],
+    "answer": "SenSoft software is provided with a secure license (typically via a USB dongle). We regularly release software updates to introduce new features and improve performance. For details on your current license status or to request an upgrade, please email our support team."
+  },
+  {
+    "intent": "SENSOFT",
+    "keywords": ["software", "sensoft", "analysis", "wavefront analysis", "image processing", "data analysis", "software tools", "zernike", "analyze"],
+    "answer": "Our SenSoft software provides a complete suite of tools for acquisition, analysis and visualization of wavefront data."
+  },
+  {
+    "intent": "DOWNLOADS",
+    "keywords": ["download", "downloads", "manual", "brochure", "brochures", "datasheet", "pdf", "documentation", "user guide", "software download", "get sensoft", "guide", "catalog", "literature", "application notes", "case studies", "where can i download"],
+    "answer": "You can download all product brochures, technical datasheets, and software manuals directly from our [Resources & Downloads](/resources) page."
+  },
+  {
+    "intent": "PRICING",
+    "keywords": ["price", "cost", "how much", "pricing", "cost of"],
+    "answer": "Because our optical metrology systems are highly customized, we provide pricing via custom quotes."
+  },
+  {
+    "intent": "QUOTE_REQUEST",
+    "keywords": ["quote", "quotation", "request a quote", "estimate", "buy a", "purchase"],
+    "answer": "I can help you request a quotation."
+  },
+  {
+    "intent": "DEMO_REQUEST",
+    "keywords": ["demo", "demonstration", "try", "product demo"],
+    "answer": "You can request a product demonstration."
+  },
+  {
+    "intent": "CONTACT_INFO",
+    "keywords": ["phone number", "email", "contact number", "customer care", "support email", "how to call", "reach you", "helpline", "address", "location", "headquarters", "where are you located", "contact"],
+    "answer": "You can reach our technical team directly at **contact@spot-optics.com**.\n\n**SpotOptics S.r.l.**\n*The software people for optics*\nVia Turazza 48\n35128 Padova\nItaly\n\nFor more details, please visit our [Contact Us](/contact) page."
+  },
+  {
+    "intent": "DISTRIBUTORS",
+    "keywords": ["distributor", "distributors", "dealer", "reseller", "local agent", "where to buy", "sales network", "china", "japan", "korea", "india", "usa", "buy in china", "buy in japan", "buy in korea"],
+    "answer": "Here is the list of our official distributors worldwide:\n\n**🇨🇳 China**\nBeijing Fyne-Tech Co., Ltd\n501-08 room, 5th F, No. 1 Building,\n1st Dishengbei St. Yizhuang Dist., Beijing, China\nEmail: contact@fyne-tech.com\nWeb: www.fyne-tech.com\n\n**🇯🇵 Japan**\nKyokko Tsusho Corporation\nYubinbango 150-0012, Shibuya-ku,\nTokyo Hiroo 1-1-39 Ebisu\nEmail: info@kyokko.com\nWeb: www.kyokko.com\n\n**🇰🇷 Korea**\nSUNJIN TECH\n#912, Centralbiz tower, 260 Changyong-dero,\nYoungtong-gu, Suwon-city, Gyeonggi-do, 16229 Korea\nEmail: jnsseonkim@sj-tech.kr\nWeb: www.sj-tech.kr\n\n**🌍 For all other countries**\n**SpotOptics S.r.l.**\n*The software people for optics*\nVia Turazza 48, 35128 Padova, Italy\nEmail: contact@spot-optics.com You can also find more details on our [Distributors](/contact) page."
+  },
+  {
+    "intent": "GENERAL",
+    "keywords": ["shipping", "worldwide", "country", "buy in", "region", "terms", "conditions", "privacy", "policy", "faq", "question", "how", "why", "problem", "issue"],
+    "answer": "I can answer general questions about shipping, policies, and frequently asked questions."
+  },{
+    "intent": "LEAD_TIME_DELIVERY",
+    "keywords": [
+      "lead time", "delivery time", "how long to ship", "when will i receive", 
+      "shipping time", "how many days", "dispatch", "delivery duration", "order time"
+    ],
+    "answer": "Since our optical metrology systems are highly specialized and often customized, the standard lead time typically ranges from 4 to 8 weeks after order confirmation. For an exact delivery estimate based on your specific configuration, please [Contact Us](/contact)."
+  },  
+  {
+    "intent": "APPRECIATION_FAREWELL",
+    "keywords": ["thank you", "thanks", "thx", "ok", "okay", "great", "awesome", "bye", "goodbye", "see you"],
+    "answer": "You're very welcome! If you have any more questions about SpotOptics products or need further assistance, feel free to ask. Have a great day!"
   }
 ]

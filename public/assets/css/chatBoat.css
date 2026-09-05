@@ -4,8 +4,8 @@
 
 /* Floating Toggle Button */
 .chat-toggle-btn {
-    bottom: 24px;
-    right: 24px;
+        bottom: 134px;
+    right: 40px;
     width: 60px;
     height: 60px;
     z-index: 1080;
@@ -19,7 +19,44 @@
 
 .chat-toggle-btn:hover {
     transform: scale(1.08);
-    background-color: #1545d2;
+    background-color: var( --secondary-blue);
+}
+
+/* Chat Tooltip */
+.chat-tooltip {
+    position: absolute;
+    right: calc(100% + 16px);
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    background-color: #1E293B;
+    color: #FFFFFF;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.chat-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #1E293B;
+}
+
+.chat-toggle-btn:hover .chat-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
 }
 
 /* Chat Window Base (Desktop & Tablet) */
@@ -83,13 +120,23 @@
 /* Chat Bubbles */
 .chat-bubble {
     padding: 12px 16px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     max-width: 85%;
     line-height: 1.5;
     word-break: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
-
+.chat-bubble.bot-bubble a{
+    cursor: pointer !important;
+    text-decoration: underline !important;
+    color: var(--primary-blue, #1E5EFF) !important;
+    font-weight: 300 !important;
+    transition: color 0.2s ease;
+}
+.chat-bubble.bot-bubble a:hover{
+    color: var(--primary-blue, #1E5EFF) !important;
+    text-decoration: underline !important;
+}
 .user-bubble {
     background: var(--primary-blue, #1E5EFF);
     color: #FFFFFF;
@@ -103,12 +150,44 @@
     border: 1px solid #E2E8F0;
     border-radius: 18px 18px 18px 4px;
     align-self: flex-start;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Chat text container */
+.chat-text {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+/* Clickable links in chat */
+.chat-link {
+    color: var(--primary-blue, #1E5EFF);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    word-break: break-all;
+    display: inline;
+}
+
+.chat-link:hover {
+    color: #1545d2;
+    text-decoration-thickness: 2px;
+}
+
+.bot-bubble .chat-link {
+    color: var(--primary-blue, #1E5EFF);
 }
 
 /* Input Form Layout */
 .chat-input-form {
     background: rgba(255, 255, 255, 0.85);
     border-color: #E2E8F0 !important;
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 .chat-input {
@@ -117,26 +196,47 @@
     border: 1px solid #CBD5E1;
     color: #0F172A;
     padding: 10px 16px;
+    flex: 1;
+    min-width: 0;
 }
 
 .chat-input:focus {
     border-color: var(--primary-blue, #1E5EFF);
     box-shadow: 0 0 0 3px rgba(30, 94, 255, 0.15);
     background: #FFFFFF;
+    outline: none;
+}
+
+.chat-input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .chat-send-btn {
     width: 44px;
     height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     background-color: var(--primary-blue, #1E5EFF);
     color: #FFFFFF;
     border: none;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
-.chat-send-btn:hover {
+.chat-send-btn:hover:not(:disabled) {
     background-color: #1545d2;
     transform: scale(1.05);
+}
+
+.chat-send-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.chat-send-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* Typing Indicator Animation */
@@ -168,26 +268,68 @@
    MEDIA QUERIES FOR FULL RESPONSIVENESS
    ========================================= */
 
-/* Tablets & Small Laptops (768px down) */
+/* Tablets & Medium Screens (900px down) */
+@media (max-width: 900px) {
+    .chat-window {
+        width: min(90vw, 400px);
+        height: 500px;
+        max-height: calc(100vh - 130px);
+    }
+    
+    .chat-toggle-btn {
+            bottom: 134px;
+    right: 40px;
+        width: 56px;
+        height: 56px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablets (768px down) */
 @media (max-width: 768px) {
     .chat-window {
         width: calc(100vw - 32px);
         right: 16px;
         bottom: 90px;
-        height: 480px;
+        height: 70vh;
+        max-height: calc(100vh - 120px);
+        border-radius: 20px;
     }
     
     .chat-toggle-btn {
-        bottom: 16px;
-        right: 16px;
+            bottom: 134px;
+    right: 40px;
         width: 52px;
         height: 52px;
         font-size: 1.3rem;
     }
+    
+    .chat-tooltip {
+        display: none !important;
+    }
+    
+    .chat-header {
+        padding: 0.75rem 1rem !important;
+    }
+    
+    .chat-bubble {
+        font-size: 0.85rem;
+        padding: 10px 14px;
+    }
+    
+    .chat-input-form {
+        padding: 0.75rem !important;
+        gap: 0.5rem;
+    }
+    
+    .chat-input {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
 }
 
-/* Mobile Phones (480px down) - Fullscreen Drawer Experience */
-@media (max-width: 480px) {
+/* Mobile Phones (600px down) - Optimized for typing */
+@media (max-width: 600px) {
     .chat-window {
         width: 100vw;
         height: 100vh;
@@ -198,12 +340,133 @@
         top: 0;
         border-radius: 0;
         border: none;
+        box-shadow: none;
+        background: #FFFFFF;
     }
     
     .chat-toggle-btn {
-        bottom: 20px;
-        right: 20px;
-        width: 54px;
-        height: 54px;
+            bottom: 134px;
+    right: 40px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .chat-messages {
+        padding: 0.75rem !important;
+        gap: 0.75rem !important;
+    }
+    
+    .chat-bubble {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        max-width: 90%;
+    }
+    
+    .chat-input {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 8px 12px;
+        min-height: 40px;
+    }
+    
+    .chat-send-btn {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 1rem;
+    }
+    
+    .chat-header {
+        padding: 0.75rem 1rem !important;
+    }
+}
+
+/* Small Mobile Phones (480px down) - Full drawer with keyboard awareness */
+@media (max-width: 480px) {
+    .chat-window {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100dvh; /* Dynamic viewport height */
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        border: none;
+    }
+    
+    .chat-toggle-btn {
+           bottom: 134px;
+    right: 40px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .chat-messages {
+        padding: 0.5rem !important;
+        gap: 0.5rem !important;
+    }
+    
+    .chat-bubble {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        line-height: 1.4;
+        max-width: 95%;
+    }
+    
+    .chat-input-form {
+        padding: 0.5rem !important;
+        gap: 0.4rem;
+    }
+    
+    .chat-input {
+        font-size: 16px;
+        padding: 8px 12px;
+        min-height: 40px;
+    }
+    
+    .chat-send-btn {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 1rem;
+    }
+    
+    .typing-dots span {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+/* Extra Small Devices (360px down) */
+@media (max-width: 360px) {
+    .chat-bubble {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        max-width: 98%;
+    }
+    
+    .chat-header {
+        padding: 0.5rem 0.75rem !important;
+    }
+    
+    .chat-header h6 {
+        font-size: 0.9rem;
+    }
+    
+    .chat-input {
+        font-size: 16px; /* Still keep 16px to prevent iOS zoom */
+        padding: 6px 10px;
+        min-height: 38px;
+    }
+    
+    .chat-send-btn {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
+        font-size: 0.9rem;
     }
 }

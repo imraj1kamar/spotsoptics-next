@@ -1,7 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import siteData from "@/data/site.json";
 import "../../../public/assets/css/chatBoat.css";
+
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
@@ -62,6 +65,7 @@ export default function Chatbot() {
         aria-label="Toggle Chat"
       >
         {isOpen ? "✕" : "💬"}
+        <span className="chat-tooltip">{isOpen ? "Close" : "AI Chat"}</span>
       </button>
 
       {/* Chat Window Container */}
@@ -86,7 +90,17 @@ export default function Chatbot() {
         <div className="flex-grow-1 overflow-auto d-flex flex-column gap-3 p-3 chat-messages">
           {messages.map((msg, idx) => (
             <div key={idx} className={`chat-bubble ${msg.sender === "user" ? "user-bubble" : "bot-bubble"}`}>
-              {msg.text}
+              {msg.sender === "bot" ? (
+                /* 👇 Bot ke messages ke liye Markdown aur Links active kar diye hain */
+                <div className="markdown-content">
+                  <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                    {msg.text}
+                  </ReactMarkdown>
+                </div>
+              ) : (
+                /* User ka message simple text rahega */
+                msg.text
+              )}
             </div>
           ))}
           
@@ -103,7 +117,7 @@ export default function Chatbot() {
           <div ref={messagesEndRef} />
         </div>
 
-       <form onSubmit={handleSubmit} className="chat-input-form p-3 border-top d-flex align-items-center gap-2">
+       <form onSubmit={handleSubmit} suppressHydrationWarning={true} className="chat-input-form p-3 border-top d-flex align-items-center gap-2">
           <input 
             type="text" 
             className="form-control rounded-pill chat-input shadow-none" 

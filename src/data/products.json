@@ -605,7 +605,7 @@
             ]
         },
        {
-    "id": "lentino-opal-on-axis-motorized",
+    "id": "lentino-and-opal-on-axis-motorized",
     "name": "Lentino & Opal: On-axis Motorized",
     "image": "assets/images/products/6.png",
     "description": "On-axis motorized metrology platforms featuring accurate Z-movement, XY and tilt stages for easy lens centering, and in-built calibration units.",
@@ -685,7 +685,7 @@
     
 },
        {
-    "id": "sfera-stella-off-axis-motorized",
+    "id": "sfera-and-stella-off-axis-motorized",
     "name": "Sfera & Stella: Off-axis Motorized",
     "image": "assets/images/products/7.png",
     "description": "On-axis and off-axis motorized metrology solutions for precise transmission testing, featuring high-accuracy encoders, macro-defined field positions, and automatic scanning.",

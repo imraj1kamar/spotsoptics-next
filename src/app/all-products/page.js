@@ -43,7 +43,7 @@ export default function AllProductsCatalogPage() {
             <PageTopBar
                             breadcrumbs={[
                               { label: 'Home', href: '/' },
-                              { label: 'Applications' },
+                              { label: 'Products' },
                             ]}
                            showCounter={true}
                            counterValue={items.length || 0}
