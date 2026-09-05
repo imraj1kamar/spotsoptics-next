@@ -1,17 +1,57 @@
 [
   {
     "intent": "greeting",
-    "keywords": ["hi", "hello", "hey", "start"],
+    "keywords": ["hi", "hello", "hey", "good morning", "good evening", "start", "hey there", "welcome"],
     "answer": "Hello! Welcome to SpotOptics. How can I assist you with our optical instruments today?"
   },
   {
     "intent": "products",
-    "keywords": ["products", "sensor", "wavefront", "buy", "items", "catalog", "haso"],
-    "answer": "We offer premium Shack-Hartmann Wavefront Sensors and Optical Metrology Systems. You can check out our Products page for detailed technical specifications."
+    "keywords": ["product", "products", "sensor", "wavefront", "wavefront sensor", "omi", "optino", "puntino", "instrument", "specs", "features", "technical details", "buy", "purchase", "catalog", "price", "compare"],
+    "answer": "We offer premium Shack-Hartmann wavefront sensors and optical metrology systems. You can explore our Products page for detailed specifications and capabilities."
+  },
+  {
+    "intent": "applications",
+    "keywords": ["application", "applications", "use case", "usecase", "testing", "test", "head up display", "lens stress", "telescope", "camera lens", "optical testing", "metrology"],
+    "answer": "SpotOptics solutions are used in optical testing, lens analysis, telescope metrology, and digital imaging applications. You can explore the Applications section for specific examples."
+  },
+  {
+    "intent": "software",
+    "keywords": ["software", "sensoft", "analysis", "wavefront analysis", "image processing", "acquisition", "processing", "data analysis", "software tools"],
+    "answer": "Our SenSoft software provides wavefront analysis, acquisition, and image-processing tools for precision optical measurements."
+  },
+  {
+    "intent": "company",
+    "keywords": ["company", "about", "profile", "history", "who are you", "team", "mission", "spotoptics", "italy", "padova", "where are you located"],
+    "answer": "SpotOptics S.r.l. is an Italian company specializing in high-performance Shack-Hartmann wavefront sensors and optical metrology systems."
+  },
+  {
+    "intent": "downloads",
+    "keywords": ["download", "downloads", "brochure", "pdf", "manual", "datasheet", "documentation", "guide", "catalog", "literature"],
+    "answer": "You can access brochures, datasheets, and technical documents from the Downloads section on our website."
+  },
+  {
+    "intent": "faq",
+    "keywords": ["faq", "question", "how", "why", "what is", "how does", "can you explain", "problem", "issue", "help"],
+    "answer": "You can check the FAQ section for common questions and technical details, or contact our support team for specific help."
   },
   {
     "intent": "contact",
-    "keywords": ["contact", "email", "phone", "support", "help", "quote", "reach"],
-    "answer": "You can reach out to our support team via the Contact Us page or email us directly. We are always here to help!"
+    "keywords": ["contact", "support", "email", "phone", "call", "reach us", "sales", "quote", "demo", "distributor", "where to buy"],
+    "answer": "You can contact our team through the Contact page or email us directly for product support, quotes, and distributor information."
+  },
+  {
+    "intent": "accessories",
+    "keywords": ["accessory", "accessories", "mount", "adapter", "holder", "lens holder", "mounting", "optical accessories"],
+    "answer": "We provide optical accessories and mounting solutions to support your measurement and testing setup."
+  },
+  {
+    "intent": "design",
+    "keywords": ["design", "mechanical design", "opto-mechanical", "assembly", "dimensions", "custom design", "setup", "configuration"],
+    "answer": "Our opto-mechanical design services help tailor measurement and testing systems to your application requirements."
+  },
+  {
+    "intent": "terms",
+    "keywords": ["terms", "conditions", "policy", "privacy", "legal", "agreement", "terms and conditions"],
+    "answer": "You can review our legal policies and terms on the Terms & Conditions page."
   }
 ]
