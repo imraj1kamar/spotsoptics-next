@@ -88,25 +88,41 @@ export async function POST(req) {
 
     // Jin intents ke liye API call nahi karni, unki list:
 const bypassIntents = [
-      "ALL_PRODUCTS_LIST",
-      "ALL_APPLICATIONS_LIST",
-      "GREETING", 
-      "PRICING", 
-      "QUOTE_REQUEST", 
-      "DEMO_REQUEST", 
-      "ABOUT_SPOTOPTICS",
-      "APPRECIATION_FAREWELL",
-      "CONTACT_INFO",
-      "DISTRIBUTORS",
-      "DOWNLOADS",
-      "WARRANTY_REPAIR",
-      "CUSTOMIZATION_OEM",
-      "TRAINING_INSTALLATION",
-      "SOFTWARE_COMPATIBILITY",
-      "CALIBRATION_INFO",
-      "SOFTWARE_LICENSING",
-      "LEAD_TIME_DELIVERY"
-    ];
+  "ALL_PRODUCTS_LIST",
+  "ALL_APPLICATIONS_LIST",
+  "GREETING", 
+  "PRICING", 
+  "QUOTE_REQUEST", 
+  "DEMO_REQUEST", 
+  "ABOUT_SPOTOPTICS",
+  "APPRECIATION_FAREWELL",
+  "CONTACT_INFO",
+  "DISTRIBUTORS",
+  "DOWNLOADS",
+  "WARRANTY_REPAIR",
+  "CUSTOMIZATION_OEM",
+  "TRAINING_INSTALLATION",
+  "SOFTWARE_COMPATIBILITY",
+  "CALIBRATION_INFO",
+  "SOFTWARE_LICENSING",
+  "LEAD_TIME_DELIVERY",
+
+  "PRODUCT_OMI",
+  "PRODUCT_OPTINO_MU",
+  "PRODUCT_IOPTINO",
+  "PRODUCT_LASERINO_MU",
+  "PRODUCT_OPTINO",
+  "PRODUCT_LENTINO_OPAL",
+  "PRODUCT_SFERA_STELLA",
+  "PRODUCT_CONTOUR",
+  "PRODUCT_PUNTINO",
+  "PRODUCT_5STAR",
+
+  "APP_HUD_TEST",
+  "APP_LENS_STRESS",
+  "APP_TELESCOPE_MIRROR",
+  "APP_DIGITAL_CAMERA"
+];
 
     // Extra check for pricing keywords manually just in case
     const pricingKeywords = ["price", "cost", "how much", "pricing", "cost of", "quote"];
@@ -118,10 +134,10 @@ const bypassIntents = [
 
       // Custom formatting for specific bypasses (Taaki links properly jayein)
       if (isAskingPrice || (matchedIntent && (matchedIntent.intent === "PRICING" || matchedIntent.intent === "QUOTE_REQUEST"))) {
-        finalReply = "We work on highly customized optical systems, so pricing depends on your specific configuration. Please get in touch with our team or request a quote here: [Contact Us](/contact-us)";
+        finalReply = "We work on highly customized optical systems, so pricing depends on your specific configuration. Please get in touch with our team or request a quote here: [Contact Us](/contact)";
       }
       else if (matchedIntent && (matchedIntent.intent === "DEMO_REQUEST" || matchedIntent.intent === "CONTACT_EXPERT")) {
-        finalReply = "Our technical experts would be happy to assist you. You can request a product demo or speak with an engineer by visiting our [Contact Page](/contact-us).";
+        finalReply = "Our technical experts would be happy to assist you. You can request a product demo or speak with an engineer by visiting our [Contact Page](/contact).";
       }
 
       return NextResponse.json({
