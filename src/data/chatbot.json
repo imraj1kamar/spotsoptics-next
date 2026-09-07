@@ -4,32 +4,32 @@
     "keywords": [
       "hi", "hello", "hey", "how are you", "good morning", "good afternoon", 
       "good evening", "greetings", "how do you do", "what's up", "sup", 
-      "are you ai", "are you a bot", "are you bot"
+      "who are you", "are you ai", "are you a bot", "are you bot"
     ],
     "answer": "Hello! I am SpotOptics AI. I can help you find the right wavefront sensors, provide product specifications, or connect you with our experts. How can I assist you today?"
   },
   {
     "intent": "ABOUT_SPOTOPTICS",
     "keywords": [
-      "about spotoptics", "about company", "company profile", "history of spotoptics", "who are you", 
-      "team", "mission", "spotoptics", "italy", "padova", "what does spotoptics do", 
-      "what is spotoptics", "who is spotoptics", "spotoptics full name"
+      "company", "about", "profile", "history", "who are you", "team", "mission", 
+      "spotoptics", "italy", "padova", "where are you located", "what does spotoptics do", 
+      "what is spotoptics", "serve", "who is spotoptics", "spotoptics full name"
     ],
     "answer": "**SpotOptics S.r.l.**\n*\"The software people for optics\"*\n\nSpotOptics S.r.l. is an Italian company based in Padova, specializing in high-performance Shack-Hartmann wavefront sensors and optical metrology systems. We provide advanced solutions for optical testing across various industries including ophthalmic, automotive, aerospace, and general photonics.\n\nFor more information, visit our [Company Profile](/company-profile) page."
   },
   {
     "intent": "PRODUCT_DISCOVERY",
-    "keywords": ["which wavefront sensor", "which product", "right for me", "recommend a sensor", "looking for a sensor", "need a sensor"],
+    "keywords": ["which wavefront sensor", "which product", "right for me", "recommend", "looking for", "need a sensor"],
     "answer": "We offer premium Shack-Hartmann wavefront sensors. Based on your needs, I can recommend the right product for you."
   },
   {
     "intent": "PRODUCT_DETAILS",
-    "keywords": ["specifications", "wavelength", "measurement range", "accuracy", "resolution", "specs", "technical details", "dimension"],
+    "keywords": ["specifications", "wavelength", "measurement range", "accuracy", "resolution", "specs", "features", "technical details", "dimension"],
     "answer": "I can provide technical specifications for our products. Which product are you interested in?"
   },
   {
     "intent": "PRODUCT_COMPARISON",
-    "keywords": ["compare products", "difference between", "better for", "versus", "vs"],
+    "keywords": ["compare", "difference between", "better for", "versus", "vs"],
     "answer": "I can help you compare our products. Which products would you like to compare?"
   },
   {
@@ -89,6 +89,23 @@
     "intent": "PRODUCT_5STAR",
     "keywords": ["5star", "5 star", "off-axis multi camera", "multi-camera metrology", "simultaneous on-axis"],
     "answer": "[SpotOptics 5Star : Off-axis Multi Camera](/all-products/5star-off-axis-multi-camera)\n\nAdvanced multi-camera metrology solution for simultaneous on-axis and off-axis testing in a single shot. Ideal for the production line.\n\n**Key Specs:**\n- Measurement Points: 5 or 9 off-axis points\n- Tact Time: ≈ 2 secs (Lightning fast)\n- Testing Method: Single Shot (No mechanical scanning required)\n\n[Request a Quote](/contact) | [Download Brochure](/assets/brochures/all-products/spotoptics_5star.pdf)"
+  },
+  {
+    "intent": "PRODUCT_SENSOFT",
+    "keywords": [
+      "sensoft", "sensoft software", "wavefront analysis software", "shack-hartmann software", "shack hartmann software", 
+      "sensoft features", "zernike polynomials", "zernike", "mtf without scanning", "m2 without scanning", 
+      "optical diagnostics software", "wavefront analysis", "image processing", "data analysis", "software tools", "analyze"
+    ],
+    "answer": "**[SenSoft: Shack-Hartmann Analysis Software](/all-products/wavefront-sensor-software)**\n\nSenSoft is our comprehensive software package for hardware control, Shack-Hartmann image analysis, and full optical diagnostics (from DUV to LWIR).\n\n**Key Highlights:**\n- **Precision:** 1nm rms on the wavefront.\n- **Zernike Polynomials:** Supports Annular, Standard, Fringe, and Seidel (over 50 terms).\n- **Advanced Output:** Computes MTF and M² directly from Shack-Hartmann data with **no scanning system required**.\n- **Diagnostics:** Auto-suggests corrections for defocus/coma, detects mounting problems, and averages frames to reduce air turbulence noise.\n\n[Explore SenSoft Capabilities](/all-products/wavefront-sensor-software) | [Download Brochure](/assets/brochures/all-products/SpotOptics-Sensoft.pdf)"
+  },
+  {
+    "intent": "PRODUCT_SENSOFT_SIMULATIONS",
+    "keywords": [
+      "sensoft simulation", "simulation package", "learning sh analysis", "telescope design theory", 
+      "diffraction theory analysis", "artificial sh frames"
+    ],
+    "answer": "**[SenSoft Simulation Packages](/all-products/wavefront-sensor-software)**\n\nSenSoft can be upgraded with three optional simulation modules for advanced research and learning:\n\n1. **Learning SH Analysis:** Create artificial Shack-Hartmann frames from selected aberrations to learn about the system.\n2. **Telescope Design Theory:** Quick analytical design of Cassegrain or Gregorian telescopes (without ray tracing).\n3. **Diffraction Theory:** Compute theoretical MTF, PSF, and EE (including seeing/pixel errors) to compare with actual SH analysis.\n\n[Learn more about SenSoft Simulations](/all-products/wavefront-sensor-software)"
   },
   {
     "intent": "ALL_APPLICATIONS_LIST",
@@ -177,11 +194,6 @@
       "software license", "dongle", "activation"
     ],
     "answer": "SenSoft software is provided with a secure license (typically via a USB dongle). We regularly release software updates to introduce new features and improve performance. For details on your current license status or to request an upgrade, please email our support team."
-  },
-  {
-    "intent": "SENSOFT",
-    "keywords": ["sensoft software", "sensoft", "wavefront analysis", "image processing", "data analysis", "software tools", "zernike", "analyze"],
-    "answer": "Our SenSoft software provides a complete suite of tools for acquisition, analysis and visualization of wavefront data."
   },
   {
     "intent": "DOWNLOADS",
