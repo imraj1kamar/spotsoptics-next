@@ -1,7 +1,7 @@
 /* Base state (Hidden & Translated down slightly) */
 .scroll-to-top-btn {
   position: fixed;
-  bottom: 40px;
+  bottom: 115px;
   right: 40px;
   width: 50px;
   height: 50px;
@@ -43,9 +43,16 @@
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .scroll-to-top-btn {
-    bottom: 20px;
+    bottom: 100px;
     right: 20px;
     width: 45px;
     height: 45px;
+  }
+
+  /* Hide scroll-to-top when chatbot is open (full-screen on mobile) */
+  body.chatbot-open .scroll-to-top-btn {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
 }
