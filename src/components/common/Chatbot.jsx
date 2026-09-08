@@ -33,7 +33,7 @@ export default function Chatbot() {
   // Custom Welcome Message with siteData
   const [messages, setMessages] = useState([
     { 
-      text: `Hello! 👋 Welcome to ${siteData.site?.name || "SpotOptics"}. How can I assist you with our optical instruments today?`, 
+      text: `Hello! Welcome to ${siteData.site?.name || "SpotOptics"}. How can I assist you with our optical instruments today?`, 
       sender: "bot" 
     }
   ]);
@@ -41,6 +41,18 @@ export default function Chatbot() {
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef(null);
+
+  // Clear all chat messages (reset to welcome)
+  const clearChat = () => {
+    setMessages([
+      {
+        text: `Hello! 👋 Welcome to ${siteData.site?.name || "SpotOptics"}. How can I assist you with our optical instruments today?`,
+        sender: "bot",
+      },
+    ]);
+    setInput("");
+    setIsTyping(false);
+  };
 
   // Quick Replies Data
   const quickReplies = [
@@ -155,10 +167,25 @@ export default function Chatbot() {
           <button className="chat-close" onClick={() => setIsOpen(false)} aria-label="Close chat">×</button>
         </header>
 
+       
+
+        {/* Kicker + Clear chat — fixed top, does not scroll */}
+        <div className="chat-kicker-row">
+          <div className="welcome-kicker">SPOTOPTICS SUPPORT</div>
+          {messages.length > 1 && (
+            <a
+              href="#"
+              className="chat-clear-link"
+              onClick={(e) => { e.preventDefault(); clearChat(); }}
+              aria-label="Clear all chat messages"
+            >
+              Clear chat
+            </a>
+          )}
+        </div>
+
         {/* Messages Container */}
         <div className="chat-messages">
-          <div className="welcome-kicker">SPOTOPTICS SUPPORT</div>
-          
           {messages.map((message, index) => (
   <div key={`${message.sender}-${index}`} className={`message-row ${message.sender === "user" ? "user-row" : "bot-row"}`}>
     <div className={`chat-bubble ${message.sender === "user" ? "user-bubble" : "bot-bubble"}`}>
@@ -168,15 +195,19 @@ export default function Chatbot() {
             rehypePlugins={[rehypeRaw]}
             components={{
               a: ({ node, ...props }) => {
-                // Internal links ke liye Next.js Link use karein (Bina refresh page change)
+                // Internal links — chatbot close kar do taaki page dikh sake (especially mobile)
                 if (props.href && props.href.startsWith('/')) {
                   return (
-                    <Link href={props.href} className={props.className}>
+                    <Link
+                      href={props.href}
+                      className={props.className}
+                      onClick={() => setIsOpen(false)}
+                    >
                       {props.children}
                     </Link>
                   );
                 }
-                // External links ke liye standard anchor tag use karein (Naye tab mein open)
+                // External links — naye tab mein khulenge
                 return (
                   <a {...props} target="_blank" rel="noopener noreferrer">
                     {props.children}

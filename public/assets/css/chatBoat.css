@@ -5,7 +5,7 @@
 
 .chatbot-shell {
     position: relative;
-    z-index: 40;
+    z-index: 1000;
     /* Font inherited globally */
 }
 
@@ -14,7 +14,7 @@
     position: fixed;
     right: 28px;
     bottom: 28px;
-    z-index: 41;
+    z-index: 1001;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,7 @@
     position: fixed;
     right: 28px;
     bottom: 100px;
-    z-index: 40;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     width: min(392px, calc(100vw - 40px));
@@ -381,6 +381,32 @@
     color: var(--muted-text);
     text-align: center;
     font-size: 10px;
+}
+
+.chat-kicker-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px 8px;
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.chat-clear-link {
+    color: var(--muted-text);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.65;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+}
+
+.chat-clear-link:hover {
+    color: #e05c5c;
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 /* =========================================
