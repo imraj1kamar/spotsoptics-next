@@ -1,0 +1,12 @@
+{
+  "title": "Discuss your optical measurement challenge",
+  "description": "Our technology team can help configure the right wavefront sensing, analysis software, and metrology solution for your application.",
+  "primary_button": {
+    "label": "Request a consultation",
+    "url": "/contact"
+  },
+  "secondary_button": {
+    "label": "Explore applications",
+    "url": "/applications"
+  }
+}

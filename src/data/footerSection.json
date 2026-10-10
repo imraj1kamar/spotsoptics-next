@@ -1,0 +1,58 @@
+{
+  "brand": {
+    "name": "SPOTOPTICS",
+    "tagline": "Precision in Light & Shape",
+    "description": "High performance Shack-Hartmann wavefront sensors and optical metrology solutions.",
+    "copyright": "© SpotOptics S.r.l. 2025 All rights reserved.",
+    "socials": [
+      { "platform": "linkedin", "url": "https://linkedin.com", "label": "LinkedIn" },
+      { "platform": "x", "url": "https://x.com", "label": "X" },
+      { "platform": "facebook", "url": "https://facebook.com", "label": "Facebook" },
+      { "platform": "instagram", "url": "https://instagram.com", "label": "Instagram" },
+      { "platform": "youtube", "url": "https://youtube.com", "label": "YouTube" }
+    ]
+  },
+  "columns": [
+    {
+      "title": "PRODUCTS",
+      "links": [
+        { "label": "OMI: Test in Single Pass", "url": "/all-products/omi-test-in-single-pass" },
+        { "label": "Optino-mu: Pocket-size", "url": "/all-products/optino-mu-pocket-size-single-and-double-pass" },
+        { "label": "iOptino: Dual-channel", "url": "/all-products/ioptino-dual-channel-single-and-double-pass" },
+        { "label": "Laserino-mu: Dual-channel", "url": "/all-products/laserino-mu-dual-channel-single-pass" },
+        { "label": "All Products", "url": "/all-products" }
+      ]
+    },
+    {
+      "title": "APPLICATIONS",
+      "links": [
+        { "label": "Automotive Optics", "url": "/applications?app=head-up-display-test" },
+        { "label": "Ophthalmic Optics", "url": "/applications?app=optino-lens-stress-test" },
+        { "label": "Telescope Metrology", "url": "/applications?app=telescope-mirror-test" },
+        { "label": "Imaging Systems", "url": "/applications?app=digital-camera-lens-test" },
+        { "label": "All Applications", "url": "/applications" }
+      ]
+    },
+    {
+      "title": "COMPANY",
+      "links": [
+        { "label": "About Us", "url": "/company-profile" },
+        { "label": "Our Technology", "url": "/technology" }
+
+      ]
+    },
+    {
+      "title": "SUPPORT",
+      "links": [
+        { "label": "Contact Us", "url": "/contact" },
+        { "label": "Get a Quote", "url": "/contact#quote" },
+
+        { "label": "FAQ", "url": "/faq" }
+      ]
+    }
+  ],
+  "legal_links": [
+    { "label": "Privacy Policy", "url": "/privacy-policy" },
+    { "label": "Terms & Conditions", "url": "/terms-and-conditions" }
+  ]
+}

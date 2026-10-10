@@ -1,0 +1,68 @@
+{
+  "logo": "SPOTOPTICS",
+  "tagline": "Precision in Light & Shape",
+  "menu": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Products",
+      "url": "/all-products",
+      "children": [
+        {
+          "title": "All Products",
+          "url": "/all-products"
+        }
+      ]
+    },
+    {
+      "title": "Applications",
+      "url": "/applications",
+      "children": [
+        {
+          "title": "Automotive Optics (HUD Testing)",
+          "url": "/applications?app=head-up-display-test"
+        },
+        {
+          "title": "Ophthalmic Lens Testing",
+          "url": "/applications?app=optino-lens-stress-test"
+        },
+        {
+          "title": "Telescope Metrology",
+          "url": "/applications?app=telescope-mirror-test"
+        },
+        {
+          "title": "Digital Camera Lens Testing",
+          "url": "/applications?app=digital-camera-lens-test"
+        },
+        {
+          "title": "All Applications",
+          "url": "/applications"
+        }
+      ]
+    },
+    {
+      "title": "Downloads",
+      "url": "/downloads"
+    },
+    {
+      "title": "Knowledge Corner",
+      "url": "/knowledge"
+    },
+    {
+      "title": "Company",
+      "url": "/company-profile",
+      "children": [
+        {
+          "title": "About SpotOptics",
+          "url": "/company-profile"
+        },
+        {
+          "title": "Our Technology",
+          "url": "/technology"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// ============================================================
+// HIERARCHY: ADMIN -> DISTRIBUTOR -> CLIENT
+// ============================================================
+model User {
+  id        Int      @id @default(autoincrement())
+  role      String   // ENUM: 'ADMIN', 'DISTRIBUTOR', 'CLIENT'
+  name      String
+  username  String   @unique
+  password  String
+  parentId  Int?     
+  status    Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  parent           User?          @relation("UserHierarchy", fields: [parentId], references: [id])
+  children         User[]         @relation("UserHierarchy")
+  
+  softwareReceived SoftwareLink[] @relation("AssignedToLink")
+  softwareGiven    SoftwareLink[] @relation("AssignedByLink")
+  
+  messagesSent     Message[]      @relation("SentMessages")
+  messagesRecv     Message[]      @relation("ReceivedMessages")
+  activityLogs     ActivityLog[]
+ 
+}
+// ============================================================
+// DYNAMIC SIDEBAR MENU
+// ============================================================
+model Menu {
+  id         Int      @id @default(autoincrement())
+  label      String
+  href       String   @unique
+  icon       String?
+  sortOrder  Int      @default(0)
+  status     Int      @default(1)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  visibility Json?
+}
+
+// ============================================================
+// SOFTWARE & SECURE LINKS
+// ============================================================
+model Software {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  baseFileUrl String   // Actual hidden storage link
+  status      Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  links       SoftwareLink[]
+}
+
+model SoftwareLink {
+  id          Int      @id @default(autoincrement())
+  softwareId  Int
+  assignedTo  Int      // Jisko link mila (Distributor ya Client)
+  assignedBy  Int      // Jisne link generate kiya (Admin ya Distributor)
+  secureToken String   @unique // Time-sensitive or single-user token
+  isUsed      Boolean  @default(false)
+  status      Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  software    Software @relation(fields: [softwareId], references: [id])
+  receiver    User     @relation("AssignedToLink", fields: [assignedTo], references: [id])
+  creator     User     @relation("AssignedByLink", fields: [assignedBy], references: [id])
+
+  @@index([assignedTo])
+  @@index([assignedBy])
+  @@index([secureToken])
+}
+
+// ============================================================
+// UNIFIED CHAT & WEBSITE ENQUIRIES
+// ============================================================
+model Message {
+  id          Int      @id @default(autoincrement())
+  senderId    Int?     // Null if enquiry is from external website
+  receiverId  Int?     // Admin/Distributor/Client ID
+  senderName  String?  // External user name (Contact Us form)
+  senderEmail String?  // External user email
+  content     String   @db.Text
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  sender      User?    @relation("SentMessages", fields: [senderId], references: [id])
+  receiver    User?    @relation("ReceivedMessages", fields: [receiverId], references: [id])
+}
+
+// ============================================================
+// FUTURE CMS & SEO (MANAGE WEBSITE FROM ADMIN PANEL)
+// ============================================================
+model GlobalSetting {
+  id             Int      @id @default(autoincrement())
+  themeColors    String?  @db.Text // JSON: primary, secondary, backgrounds
+  fonts          String?  // Font family names
+  gaTrackingId   String?  // Google Analytics ID (e.g., G-XXXXX)
+  globalSeoTitle String?
+  updatedAt      DateTime @updatedAt
+}
+
+model PageSeo {
+  id          Int      @id @default(autoincrement())
+  pageSlug    String   @unique // e.g., "/", "/all-products"
+  title       String
+  description String   @db.Text
+  schemaJson  String?  @db.Text // JSON-LD for Google Ranking
+  status      Int      @default(1)
+}
+
+// ============================================================
+// ACTIVITY & AUDIT LOGS (UPGRADED FOR CRM)
+// ============================================================
+model ActivityLog {
+  id          Int      @id @default(autoincrement())
+  userId      Int?
+  action      String   // e.g., "CREATED_CLIENT", "DOWNLOADED_SOFTWARE", "LOGIN"
+  module      String?  // e.g., "USER_MANAGEMENT", "SOFTWARE_LINKS", "SETTINGS"
+  targetId    Int?     // Jis specific user ya software ID par action perform hua
+  oldData     String?  @db.Text // Update hone se pehle ka data
+  newData     String?  @db.Text // Update hone ke baad ka data
+  ipAddress   String?  // Security track karne ke liye
+  userAgent   String?  // Browser/Device details
+  details     String?  @db.Text
+  status      Int      @default(1)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User?    @relation(fields: [userId], references: [id])
+}

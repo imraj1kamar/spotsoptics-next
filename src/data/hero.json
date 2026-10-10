@@ -1,0 +1,39 @@
+{
+  "tagline": "PRECISION & INNOVATION IN LIGHT & SHAPE",
+  "heading_main": "High performance Shack-Hartmann wavefront sensors",
+  
+  "primary_cta": {
+    "text": "EXPLORE PRODUCTS",
+    "url": "#products"
+  },
+  "secondary_cta": {
+    "text": "GET A QUOTE",
+    "url": "#quote"
+  },
+  "image": {
+    "url": "assets/images/hero-image.png",
+    "alt": "SpotOptics High Performance Wavefront Sensor"
+  },
+  "tech_stats": [
+    {
+      "title": "Precision",
+      "desc": "High accuracy\nmeasurement",
+      "icon_svg": "<svg width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'></circle><circle cx='12' cy='12' r='3'></circle><path d='M12 3v-2m0 22v-2m9-9h2m-22 0h2'></path></svg>"
+    },
+    {
+      "title": "Reliability",
+      "desc": "Robust & proven\ntechnology",
+      "icon_svg": "<svg width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'></path><path d='M9 12l2 2 4-4'></path></svg>"
+    },
+    {
+      "title": "Innovation",
+      "desc": "Cutting-edge\noptical solutions",
+      "icon_svg": "<svg width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'></path></svg>"
+    },
+    {
+      "title": "Support",
+      "desc": "Global technical\nassistance",
+      "icon_svg": "<svg width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.5' viewBox='0 0 24 24'><path d='M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z'></path><path d='M19.071 19.071A9.953 9.953 0 0022 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10c2.761 0 5.261-1.12 7.071-2.929z'></path></svg>"
+    }
+  ]
+}

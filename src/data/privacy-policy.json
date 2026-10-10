@@ -1,0 +1,221 @@
+{
+  "page": {
+    "title": "Privacy Policy",
+    "subtitle": "Information on how SpotOptics S.r.l. collects, processes, protects, and manages personal data in compliance with the EU General Data Protection Regulation (GDPR 2016/679).",
+    "lastUpdated": "January 15, 2025",
+    "version": "v2.2",
+    "effectiveDate": "January 1, 2025",
+    "dataController": {
+      "name": "SpotOptics S.r.l.",
+      "representative": "Legal Representative",
+      "address": "Via Turazza 48, 35128 Padova (PD), Italy",
+      "email": "privacy@spot-optics.com",
+      "contactEmail": "contact@spot-optics.com",
+      "phone": "+39 049 8078529",
+      "website": "https://www.spotoptics.com"
+    },
+    "keyHighlights": [
+      {
+        "icon": "shield",
+        "title": "GDPR Compliant",
+        "description": "Full compliance with EU Regulation 2016/679 and Italian Privacy Code (D.Lgs. 196/2003)."
+      },
+      {
+        "icon": "lock",
+        "title": "Zero Unauthorized Sale",
+        "description": "We never sell or rent your personal data or optical research queries to third parties."
+      },
+      {
+        "icon": "cookie",
+        "title": "Granular Cookie Control",
+        "description": "Manage functional, statistical, and marketing cookies at any time via cookie preferences."
+      },
+      {
+        "icon": "userCheck",
+        "title": "Data Subject Rights",
+        "description": "Easy access to request data access, rectification, portability, or complete erasure."
+      }
+    ],
+    "sections": [
+      {
+        "id": "data-controller",
+        "number": "01",
+        "title": "Data Controller & Contact Information",
+        "summary": "Identification of the entity responsible for processing your personal data.",
+        "paragraphs": [
+          "The Data Controller responsible for the processing of your personal data under the EU General Data Protection Regulation (Regulation (EU) 2016/679, \"GDPR\") and applicable Italian data protection laws (Legislative Decree no. 196/2003 as amended) is SpotOptics S.r.l., with registered offices at Via Turazza 48, 35128 Padova (PD), Italy.",
+          "For any inquiries, requests to exercise your privacy rights, or questions regarding our data handling procedures, you may contact our dedicated privacy officer by emailing privacy@spot-optics.com or contact@spot-optics.com."
+        ],
+        "keyPoints": [
+          "Data Controller: SpotOptics S.r.l., Padova, Italy.",
+          "Direct Privacy Contact: privacy@spot-optics.com.",
+          "Governed by EU Regulation 2016/679 (GDPR) and Italian privacy legislation."
+        ]
+      },
+      {
+        "id": "data-collected",
+        "number": "02",
+        "title": "Categories of Personal Data We Collect",
+        "summary": "Types of information collected through website visits, quote inquiries, and software support.",
+        "paragraphs": [
+          "We collect personal data that you voluntarily provide to us when contacting us for technical quotations, distributor inquiries, software evaluation requests, or customer support. This includes: full name, business email address, professional telephone number, company/institution affiliation, job title, and geographic country.",
+          "When visiting our website, technical browsing data is automatically logged by our web servers, including: IP address (anonymized where applicable), browser user-agent, operating system, referrer URL, pages viewed, time spent per page, and timestamp of the visit.",
+          "We do not collect any special categories of personal data (sensitive personal data revealing racial or ethnic origin, political opinions, religious beliefs, or health data) or data relating to minors under 16 years of age."
+        ],
+        "keyPoints": [
+          "Contact & Business Data: Name, email, phone, company/institution, country.",
+          "Technical Data: IP address, browser type, device metadata, navigation logs.",
+          "No sensitive personal data or minors' data is collected."
+        ]
+      },
+      {
+        "id": "legal-basis-purposes",
+        "number": "03",
+        "title": "Purposes & Legal Bases for Data Processing",
+        "summary": "Why we process your information and the statutory legal grounds under GDPR Article 6.",
+        "paragraphs": [
+          "Fulfillment of Pre-contractual & Contractual Obligations (Art. 6(1)(b) GDPR): Processing your commercial inquiries, providing custom Shack-Hartmann sensor quotes, managing purchase orders, delivering products, and issuing SenSoft software licensing keys.",
+          "Compliance with Legal Obligations (Art. 6(1)(c) GDPR): Fulfilling statutory tax, accounting, customs, and dual-use export control obligations under Italian and European Union trade regulations.",
+          "Legitimate Interests (Art. 6(1)(f) GDPR): Ensuring network and IT security, preventing fraudulent transactions, analyzing aggregated website performance to improve user experience, and managing B2B customer relationships.",
+          "Consent (Art. 6(1)(a) GDPR): Sending technical newsletters, product updates, or using non-essential marketing and analytical cookies, where explicit consent has been granted through our Cookie Banner."
+        ],
+        "keyPoints": [
+          "Pre-contractual & Contractual necessity for quotes, hardware delivery, and licensing.",
+          "Statutory compliance for tax, invoicing, and EU export control laws.",
+          "Legitimate interest for IT security and website optimization.",
+          "Freely given consent for marketing cookies and technical bulletins."
+        ]
+      },
+      {
+        "id": "cookies-tracking",
+        "number": "04",
+        "title": "Cookie Policy & Tracking Technologies",
+        "summary": "How cookies and local storage are utilized, categorized, and managed by visitors.",
+        "paragraphs": [
+          "Our website uses cookies and similar storage technologies to ensure seamless navigation, remember user preferences, and collect anonymous traffic statistics. Cookies are classified into three distinct categories:",
+          "1. Essential & Functional Cookies: Strictly necessary for fundamental website security, load balancing, language settings, and saving your cookie consent preferences. These cookies cannot be deactivated in our systems.",
+          "2. Statistical / Analytical Cookies: Measure aggregated visitor interactions and navigation paths to help us improve page structure and technical resources without directly identifying individual users.",
+          "3. Marketing & Resource Cookies: Used to deliver relevant technical whitepapers, application guides, and distributor routing.",
+          "You can review, modify, or withdraw your cookie preferences at any time by accessing the Cookie Consent banner in the footer or adjusting your web browser settings."
+        ],
+        "keyPoints": [
+          "Essential cookies are required for basic site security and navigation.",
+          "Statistical & marketing cookies require active user consent.",
+          "Visitors can modify or revoke cookie preferences at any time."
+        ]
+      },
+      {
+        "id": "data-sharing-transfers",
+        "number": "05",
+        "title": "Data Sharing & International Data Transfers",
+        "summary": "Authorized recipients, global distributors, and safeguards for international data transfers.",
+        "paragraphs": [
+          "SpotOptics S.r.l. does not sell, rent, or trade your personal data. We may share information with trusted third parties solely to the extent necessary to deliver services: authorized regional distributors (e.g., in China, Japan, South Korea for localized assistance), logistics and shipping carriers, IT infrastructure and hosting providers, and accounting/legal advisors.",
+          "All external service providers act as Data Processors bound by strict data processing agreements (DPAs) in compliance with Article 28 of the GDPR.",
+          "If personal data is transferred outside the European Economic Area (EEA) to our authorized distributors, such transfers are governed by European Commission Standard Contractual Clauses (SCCs) or applicable adequacy decisions ensuring an equivalent level of data protection."
+        ],
+        "keyPoints": [
+          "Data shared only with authorized partners, logistics couriers, and IT processors.",
+          "Strict Data Processing Agreements (DPAs) enforce confidentiality.",
+          "Transfers outside the EEA utilize EU Standard Contractual Clauses (SCCs)."
+        ]
+      },
+      {
+        "id": "data-retention",
+        "number": "06",
+        "title": "Data Retention Periods",
+        "summary": "Criteria and retention timeframes for storing your personal information.",
+        "paragraphs": [
+          "We retain personal data only for as long as necessary to fulfill the specific purposes for which it was collected, or as required by applicable statutory limitation periods and legal obligations.",
+          "Commercial & Accounting Records: Stored for a minimum of ten (10) years in compliance with Italian civil and fiscal laws (Art. 2220 Italian Civil Code).",
+          "Customer Support & Inquiries: Retained for up to twenty-four (24) months after the last active communication unless an ongoing commercial or warranty relationship exists.",
+          "Website Analytical Logs: Automatically anonymized or deleted within twelve (12) months."
+        ],
+        "keyPoints": [
+          "Commercial and invoice records kept for 10 years per statutory requirements.",
+          "Inquiry communications retained for 24 months after resolution.",
+          "Analytics logs anonymized or purged within 12 months."
+        ]
+      },
+      {
+        "id": "security-measures",
+        "number": "07",
+        "title": "Data Security & Protection Protocols",
+        "summary": "Technical and organizational measures implemented to safeguard personal data.",
+        "paragraphs": [
+          "SpotOptics implements industry-standard technical and organizational security measures to protect personal data from accidental loss, unauthorized access, destruction, disclosure, or alteration.",
+          "These measures include HTTPS/TLS encryption for all web transmission, strict access control mechanisms with multi-factor authentication for internal systems, regular security audits, automated backups, and secure server hosting environments located in high-grade data centers within the European Union.",
+          "Despite rigorous precautions, no electronic transmission over the Internet can be guaranteed 100% secure. In the unlikely event of a security breach affecting your rights, SpotOptics will notify affected users and supervisory authorities in accordance with GDPR Articles 33 and 34."
+        ],
+        "keyPoints": [
+          "TLS/HTTPS 256-bit encryption across the entire web application.",
+          "Restricted role-based access control and secure EU server infrastructure.",
+          "Proactive incident response and statutory breach notification procedures."
+        ]
+      },
+      {
+        "id": "user-rights",
+        "number": "08",
+        "title": "Your Rights Under the GDPR",
+        "summary": "Comprehensive overview of your statutory data privacy rights and how to exercise them.",
+        "paragraphs": [
+          "Under Chapter III of the GDPR, you have the following fundamental rights regarding your personal data:",
+          "• Right of Access (Art. 15 GDPR): Obtain confirmation as to whether your data is being processed and receive a copy of your personal data.",
+          "• Right to Rectification (Art. 16 GDPR): Request the correction of inaccurate or incomplete personal information.",
+          "• Right to Erasure / \"Right to be Forgotten\" (Art. 17 GDPR): Request deletion of your data when it is no longer needed or if processing was unlawful, subject to legal retention obligations.",
+          "• Right to Restriction of Processing (Art. 18 GDPR): Limit the processing of your data under specific conditions.",
+          "• Right to Data Portability (Art. 20 GDPR): Receive your data in a structured, commonly used, and machine-readable format.",
+          "• Right to Object (Art. 21 GDPR): Object to data processing based on legitimate interests or direct marketing at any time.",
+          "• Right to Withdraw Consent (Art. 7(3) GDPR): Revoke previously given consent without affecting the lawfulness of prior processing."
+        ],
+        "keyPoints": [
+          "Right to access, rectify, erase, or restrict your personal data.",
+          "Right to object to legitimate interest processing or marketing.",
+          "Requests are processed free of charge within thirty (30) calendar days."
+        ]
+      },
+      {
+        "id": "supervisory-authority",
+        "number": "09",
+        "title": "Right to Lodge a Complaint with a Supervisory Authority",
+        "summary": "Information on supervisory bodies and regulatory escalation procedures.",
+        "paragraphs": [
+          "If you believe that our processing of your personal data infringes the provisions of the GDPR or national data protection legislation, you have the statutory right to lodge a complaint with a competent Data Protection Supervisory Authority.",
+          "In Italy, the lead supervisory authority is the Garante per la protezione dei dati personali (Piazza Venezia 11, 00187 Roma, Italy; www.garanteprivacy.it). You may also submit a complaint to the supervisory authority in your EU Member State of habitual residence or place of work."
+        ],
+        "keyPoints": [
+          "Italian Supervisory Authority: Garante per la protezione dei dati personali (Rome, Italy).",
+          "EU residents may also lodge complaints with their local national privacy authority."
+        ]
+      },
+      {
+        "id": "policy-updates",
+        "number": "10",
+        "title": "Changes & Updates to this Privacy Policy",
+        "summary": "Notification procedures for future revisions and legislative updates.",
+        "paragraphs": [
+          "We reserve the right to modify or update this Privacy Policy periodically to reflect changes in our operational practices, technological enhancements, or regulatory requirements.",
+          "Any amendments will be published on this page with an updated \"Last Updated\" and \"Effective Date\" timestamp. We encourage visitors to review this page periodically to remain informed about our data protection standards."
+        ],
+        "keyPoints": [
+          "Revisions are published with updated timestamp and version number.",
+          "Continued use of the website constitutes awareness of updated privacy practices."
+        ]
+      },
+      {
+        "id": "privacy-contact",
+        "number": "11",
+        "title": "Contact the Privacy Office",
+        "summary": "Direct communication channels to submit data subject requests or privacy inquiries.",
+        "paragraphs": [
+          "To exercise any of your statutory privacy rights, submit a data access request, or obtain further details on our data protection safeguards, please contact our privacy desk directly:",
+          "SpotOptics S.r.l. – Privacy Office\nVia Turazza 48\n35128 Padova (PD), Italy\nPhone: +39 049 8078529\nEmail: privacy@spot-optics.com / contact@spot-optics.com\nWebsite: www.spotoptics.com"
+        ],
+        "keyPoints": [
+          "Email: privacy@spot-optics.com (or contact@spot-optics.com).",
+          "Written requests: Via Turazza 48, 35128 Padova (PD), Italy."
+        ]
+      }
+    ]
+  }
+}

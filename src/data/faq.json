@@ -1,0 +1,48 @@
+{
+  "page": {
+    "title": "Questions on Shack-Hartmann test",
+    "description": "Frequently asked questions and technical guidance on Shack-Hartmann wavefront sensors, telescope alignment, optical testing, and active optics."
+  },
+  "faqs": [
+    {
+      "id": "shack-hartmann-vs-hartmann",
+      "question": "What is the Shack-Hartmann test and how is it different from the Hartmann test?",
+      "answer": "It is an extension of the Hartmann test. In the Hartmann test, a screen with holes is put in front of the primary mirror, and a photographic plate is placed near the telescope focus to record a pattern of spots. An analysis of the position of these spots gave the aberrations of the telescope.\n\nSince it is inconvenient to put a screen in front of the mirror every time the test has to be made, Shack in 1980 suggested that the test could be done on the transferred pupil, by putting a lenslet array instead of a screen, which could be of a much smaller size. This also allowed the use of CCD detectors, making the process of recording the SH pattern and its subsequent analysis much easier.\n\nThe SH method is now standard on most telescopes, and can be used both in the off-line and on-line mode (active optics)."
+    },
+    {
+      "id": "who-needs-wavefront-sensor",
+      "question": "Who needs a wavefront sensor?",
+      "answer": "Anyone who has adjusted a telescope will testify that aligning the mirror is one of the most difficult tasks one can undertake. Without the help of a diagnostic instrument, much effort is spent, by trial and error, to arrive at the correct alignment, simply by looking at the image quality. It can take days to get to the final optimum stage. Even then, external effects (like temperature) can rapidly lead to the degradation of image quality. Clearly, frequent adjustments of the telescope are required, which can only be done with a wavefront sensor."
+    },
+    {
+      "id": "shack-hartmann-efficiency",
+      "question": "What is the efficiency benefit of a Shack-Hartmann wavefront sensor?",
+      "answer": "It clearly depends on how well the initial adjustment of the telescope has been done, but a gain in efficiency by a factor of more than two has been achieved by us, using the Shack-Hartmann wavefront sensor (SHWFS). This translates into almost doubling the mirror diameter, as a bigger image (due to aberrations) causes the light from the star to spread over more CCD pixels."
+    },
+    {
+      "id": "check-frequency",
+      "question": "How frequently should the telescope optical quality be checked?",
+      "answer": "In a telescope where the mirror is actively controlled, the mirror figure is checked and changed every few minutes. For a normal telescope, the tests should preferably be done before the observations begin every evening."
+    },
+    {
+      "id": "analysis-duration",
+      "question": "How long does it take for the analysis?",
+      "answer": "Using a good PC, the whole analysis can be done in less than 10 sec."
+    },
+    {
+      "id": "correction-duration",
+      "question": "How long does it take to correct the errors?",
+      "answer": "In general, it depends on whether the telescope has active supports or not.\n\nFor example, coma, which is indicative of misalignment, can be corrected using the diagnostics provided by the program, in a few seconds if the secondary mirror can be tilted and/or decentered remotely.\n\nSpherical aberration (which can be due to the wrong conic coefficients of the mirror, or due to the wrong focal plane used) can be corrected by shifting the focal plane. The program tells you how much to move the focal plane (given the telescope parameters).\n\nAstigmatism arises mainly due to support errors. These can be identified and corrected using the contour plots of the mirror surface.\n\nIt can take less than an hour for an experienced person to effect these corrections, starting from scratch. For a well-adjusted telescope, daily adjustments take a few minutes."
+    },
+    {
+      "id": "missing-parameters",
+      "question": "What to do if I do not have accurate telescope parameters?",
+      "answer": "It is possible to start with the approximate parameters, and then find the corrections to be applied using the SHWFS, by successive iterations. In effect, an empirical model of the telescope is built."
+    },
+    {
+      "id": "active-optics-usage",
+      "question": "Can the instrument also be used for active optics?",
+      "answer": "Yes. The program is capable of communicating the Zernike polynomials to another program for computing the forces to be applied to the primary mirror supports, and for correcting the misalignment of the mirrors."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tagline": "RESOURCES",
+  "heading": "Knowledge. Insights. Downloads.",
+  "cards": [
+    {
+      "id": "knowledge-corner",
+      "title": "Knowledge Corner",
+      "description": "Technical articles, application notes and industry insights.",
+      "button_text": "EXPLORE ARTICLES",
+      "url": "/knowledge",
+      "icon_type": "KNOWLEDGE"
+    },
+    {
+      "id": "brochures-datasheets",
+      "title": "Brochures & Datasheets",
+      "description": "Download brochures, datasheets and product catalogs.",
+      "button_text": "VIEW DOWNLOADS",
+      "url": "/downloads",
+      "icon_type": "DOWNLOADS"
+    },
+    {
+      "id": "case-studies",
+      "title": "Case Studies",
+      "description": "Real-world success stories from our global users.",
+      "button_text": "VIEW CASE STUDIES",
+      "url": "/applications",
+      "icon_type": "CASE_STUDIES"
+    }
+  ],
+  "newsletter": {
+    "title": "Stay updated",
+    "description": "Subscribe to our newsletter for the latest product releases, technical articles and industry insights.",
+    "placeholder": "Enter your email",
+    "privacy_text": "We respect your privacy. Unsubscribe anytime."
+  }
+}

@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Knowledge Corner - SpotOptics Modern Metrology Theme
+   ========================================================================== */
+
+
+
+
+
+
+.counter-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.counter-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-blue);
+  line-height: 1.1;
+}
+
+
+
+
+
+
+
+
+
+.hero-card-glow-bg {
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(1, 113, 207, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* --- Filter Chips & Search Bar --- */
+.btn-filter-chip {
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  color: var(--text-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 30px;
+  transition: all 0.25s ease;
+}
+
+.btn-filter-chip:hover {
+  background: var(--sky-light);
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-filter-chip.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(1, 113, 207, 0.25);
+}
+
+.knowledge-search-input-wrapper {
+  position: relative;
+  min-width: 240px;
+}
+
+.knowledge-search-input {
+  border-radius: 30px;
+  padding-left: 36px;
+  border: 1px solid var(--border-card);
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.knowledge-search-input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(1, 113, 207, 0.12);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted-custom);
+  pointer-events: none;
+}
+
+/* --- Article Card --- */
+.knowledge-article-card {
+  
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.knowledge-article-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-blue) !important;
+  box-shadow: var(--shadow-hover);
+}
+
+/* --- Media Containers --- */
+.knowledge-media-box {
+  background: #f1f5f9;
+  border-color: var(--border-soft) !important;
+}
+
+.media-img-container {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.knowledge-article-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  transition: transform 0.4s ease;
+}
+
+.knowledge-article-card:hover .knowledge-article-img {
+  transform: scale(1.04);
+}
+
+.knowledge-caption {
+  font-size: 11.5px;
+  color: var(--text-muted-custom);
+  background: #f8fafc;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.4;
+}
+
+.caption-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+/* Multi-image Gallery Grid */
+.knowledge-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.gallery-sub-box {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-img-container {
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.micro-caption {
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--text-muted-custom);
+  background: #f8fafc;
+  border-top: 1px solid var(--border-soft);
+}
+
+/* --- Article Card Content --- */
+.badge-tech-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  background: rgba(1, 113, 207, 0.08);
+  border: 1px solid rgba(1, 113, 207, 0.15);
+  padding: 3px 9px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.knowledge-item-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.title-link {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.title-link:hover {
+  color: var(--primary-blue);
+}
+
+.knowledge-item-excerpt {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  color: var(--text-body) !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Action Button --- */
+.knowledge-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-decoration: none;
+  background: rgba(1, 113, 207, 0.06);
+  border: 1px solid rgba(1, 113, 207, 0.16);
+  padding: 8px 18px;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.knowledge-action-btn:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  border-color: var(--primary-blue);
+  box-shadow: 0 6px 18px rgba(1, 113, 207, 0.25);
+  transform: translateY(-1px);
+}
+
+.knowledge-action-btn .arrow-icon {
+  transition: transform 0.25s ease;
+}
+
+.knowledge-action-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 991px) {
+
+  .knowledge-item-excerpt {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--text-body) !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+}
+
+@media (max-width: 576px) {
+
+  .knowledge-search-input-wrapper {
+    width: 100%;
+  }
+}

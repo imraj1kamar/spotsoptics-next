@@ -1,0 +1,136 @@
+{
+  "page": {
+    "title": "Accessories",
+    "description": "Our wavefront sensors can be offered with several accessories to complete your test setup.",
+    "breadcrumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Accessories", "href": "/accessories" }
+    ],
+    "hero": {
+      "tagline": "Optical Metrology & Wavefront Accessories",
+      "image": "/assets/images/acceceries/iOptino-mu-e1515080546364.webp",
+      "alt": "ECM-XS external calibration unit for Optino",
+      "title": "ECM-XS: External calibration unit for Optino"
+    }
+  },
+  
+  "section": {
+    "title": "Accessories",
+    "description": "Our wavefront sensors can be offered with several accessories to complete your test setup."
+  },
+  "accessories": [
+    {
+      "bullets": [
+        "External Calibration unit Cal25",
+        "External Motorized Calibration unit <a href='#ecm25'>ECM25</a>",
+        "External Calibration pinhole light source PH50",
+        "Beam Expanders/Beam Compressors <a href='#beam-expanders-compressors'>BE25, BE60 and BE120</a>",
+        "Reference spheres with mountings",
+        "Reference flat mirros with mountings",
+        "Microscopes objectives",
+        "Mountings for optical elements",
+        "<a href='#motorized-stages'>Motorized stages</a>"
+      ]
+    },
+    {
+      "id": "cal25",
+      "name": "External Calibration unit",
+      "code": "Cal25",
+      "linkText": "Cal25",
+      "link": "#cal25"
+    },
+    {
+      "id": "ecm25",
+      "name": "External Motorized Calibration unit",
+      "code": "ECM25",
+      "title": "ECM-XS: External calibration unit for Optino",
+      "linkText": "ECM25",
+      "link": "#ecm25",
+      "description": "External motorized calibration unit designed for high precision calibration of Optino and wavefront measurement systems.",
+      "images": [
+        {
+          "image": "/assets/images/acceceries/ECM500.webp",
+          "caption": "ECM-XS: External calibration unit for Optino"
+        }
+      ],
+      "details": [
+        "Automated calibration workflow integrated with Sensoft software.",
+        "Ensures sub-nanometer wavefront reference accuracy across single and double pass setups."
+      ]
+    },
+    {
+      "id": "ph50",
+      "name": "External Calibration pinhole light source",
+      "code": "PH50",
+      "linkText": "PH50",
+      "link": "#ph50"
+    },
+    {
+      "id": "beam-expanders-compressors",
+      "name": "Beam Expanders/Beam Compressors",
+      "title": "Beam Expander and Beam Compressor for OMI/Optino",
+      "codes": ["BE-XS", "BE25", "BE60", "BE120"],
+      "linkText": "BE-XS, BE25, BE60 and BE120",
+      "link": "#beam-expanders-compressors",
+      "description": "SpotOptics can provide Beam Expanders that can expand/(compress) the optical beam to test optical elements up to 120mm diameter.",
+      "images": [
+        {
+          "image": "/assets/images/acceceries/BE120.webp",
+          "caption": "Beam Expander BE120 mounted on the Dual Channel wavefront sensor Optino600."
+        },
+        {
+          "image": "/assets/images/acceceries/BE60.webp",
+          "caption": "Beam Expander: BE60 motorized Beam Expander/compressor with OMI"
+        },
+        {
+          "image": "/assets/images/acceceries/BE-XS-e1515169767296-300x211.webp",
+          "caption": "Beam Expander: BE-XS (center) with the External Calibration unit ECM-XS (left) and Optino-XS (right)"
+        }
+      ],
+      "details": [
+        "The same unit can be also used in Beam Compressor configuration.",
+        "Each Beam Expander/Compressor cover different magnifications, that can be changed manually or automatically by software (in the motorized version).",
+        "Beam Expander contains optical elements whose effect/aberrations should be subtracted with the calibration. We provide the setup for calibration with our Beam Expanders."
+      ]
+    },
+    {
+      "id": "reference-spheres",
+      "name": "Reference spheres with mountings",
+      "link": "#reference-spheres"
+    },
+    {
+      "id": "reference-flat-mirrors",
+      "name": "Reference flat mirrors with mountings",
+      "link": "#reference-flat-mirrors"
+    },
+    {
+      "id": "microscopes-objectives",
+      "name": "Microscopes objectives",
+      "link": "#microscopes-objectives"
+    },
+    {
+      "id": "optical-element-mountings",
+      "name": "Mountings for optical elements",
+      "link": "#optical-element-mountings"
+    },
+    {
+      "id": "motorized-stages",
+      "name": "Motorized stages",
+      "code": "SX100",
+      "title": "SX100: Motorized stage for iOptino-mu",
+      "linkText": "Motorized stages",
+      "link": "#motorized-stages",
+      "description": "SX100 motor is automatically controlled in Sensoft. Single and Double pass setup is simplified using SX100.",
+      "images": [
+        {
+          "image": "/assets/images/acceceries/iOptino-mu-e1515080546364.webp",
+          "caption": "Ioptino-mu Mounted on Sx100"
+        }
+      ],
+      "details": [
+        "SX100 motor is automatically controlled in Sensoft.",
+        "Single and Double pass setup is simplified using SX100."
+      ]
+    }
+  ]
+}

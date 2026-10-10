@@ -1,0 +1,87 @@
+{
+  "page": {
+    "title": "Downloads",
+    "description": "Download brochures of our Shack-Hartmann wavefront sensors, alignment system and software for acquisition and analysis of Shack-Hartmann images."
+  },
+  "downloads": [{    
+    "id": 1,
+    "title": "OMI: Single Pass (transmission)",
+    "button_text": "Download OMI brochure",
+    "file": "assets/brochures/all-products/SpotOptics-OMI.pdf"
+  }, {
+    "title": "OMI-DUV-Vis: Single Pass covering from DUV to NIR (120-1100 nm) wavelength range",
+    "button_text": "Download OMI-DUV-VIS-NIR brochure",
+    "id": 2,
+    "file": "assets/brochures/all-products/SpotOptics-OMI-DUV-VIS.pdf"
+  }, {
+    "title": "OMI-UV-Vis: Single Pass covering from UV to NIR (300-1100 nm) wavelength range",
+    "button_text": "Download OMI-UV-VIS-NIR brochure",
+    "id": 3,
+    "file": "assets/brochures/all-products/SpotOptics-OMI-UV-VIS.pdf"
+  }, {
+    "title": "OMI-45 Vis-NIR: Single Pass covering from Vis to NIR (300-1100 nm) wavelength range",
+    "button_text": "Download OMI-45-VIS-NIR brochure",
+    "id": 4,
+    "file": "assets/brochures/all-products/SpotOptics-OMI-45-VIS-NIR-2022.pdf"
+  }, {
+    "title": "OMI-SWIR: Single Pass for the SWIR (700-1600 nm) wavelength range",
+    "button_text": "Download OMI-SWIR brochure",
+    "id": 5,
+    "file": "assets/brochures/all-products/SpotOptics_OMI-SWIR.pdf"
+  }, {
+    "title": "OMI-MWIR: Single Pass for the MWIR (1.5-6 μm) wavelength range",
+    "button_text": "Download OMI-MWIR brochure",
+    "id": 6,
+    "file": "assets/brochures/all-products/SpotOptics-OMI-MWIR.pdf"
+  }, {
+    "title": "Optino/Optino-μ: Single and Double Pass (both transmission and reflection)",
+    "button_text": "Download Optino brochure",
+    "id": 7,
+    "file": "assets/brochures/all-products/spotoptics_optino.pdf"
+  }, {
+    "title": "iOptino: Dual channel (Shack-Hartmann wavefront sensor and direct image)",
+    "button_text": "Download iOptino brochure",
+    "id": 8,
+    "file": "assets/brochures/all-products/SpotOptics-iOptino.pdf"
+  }, {
+    "title": "Lentino: Single and Double Pass, motorized. Test diameters from 0.3 mm up to 20 mm",
+    "button_text": "Download Lentino brochure",
+    "id": 9,
+    "file": "assets/brochures/all-products/spotoptics_lentino.pdf"
+  }, {
+    "title": "Opal: Single and Double Pass, motorized. Test diameters from 0.3 mm up to 60 mm",
+    "button_text": "Download Opal brochure",
+    "id": 10,
+    "file": "assets/brochures/all-products/spotoptics_opal.pdf"
+  }, {
+    "title": "Stella: Single pass. Test on-axis and off-axis in the field up to 100°",
+    "button_text": "Download Stella brochure",
+    "id": 11,
+    "file": "assets/brochures/all-products/SpotOptics-Stella.pdf"
+  }, {
+    "title": "Sfera: Test of mobile phone lenses and small lenses",
+    "button_text": "Download Sfera brochure",
+    "id": 12,
+    "file": "assets/brochures/all-products/spotopticsopal_stella_sfera.pdf"
+  }, {
+    "title": "Puntino: Dual channel wavefront sensor for testing Astronomical Telescopes",
+    "button_text": "Download Puntino brochure",
+    "id": 13,
+    "file": "assets/brochures/all-products/SpotOptics_Puntino.pdf"
+  }, {
+    "title": "5Star: Single Pass. Simultaneous test of optical systems on-axis and off-axis. 5/9/13 wavefront sensors",
+    "button_text": "Download 5Star brochure",
+    "id": 14,
+    "file": "assets/brochures/all-products/spotoptics_5star.pdf"
+  }, {
+    "title": "SpotOptics instruments and wavelength range: from UV (193 nm) to SWIR (1550 nm) MWIR (1.5-6 μ) and LWIR (10.6 μ high power CO₂ lasers)",
+    "button_text": "Download brochure with SpotOptics wavefront sensors for different wavelength ranges",
+    "id": 15,
+    "file": "assets/brochures/all-products/Wavelength.pdf"
+  }, {
+    "title": "Accuracy of SpotOptics Wavefront Sensors: SpotOptics WFS vs. Interferometers",
+    "button_text": "Download brochure on Accuracy of SpotOptics wavefront sensors",
+    "id": 16,
+    "file": "assets/brochures/all-products/Accuracy-of-SpotOptics-wavefront-sensors.pdf"
+  }]
+}
