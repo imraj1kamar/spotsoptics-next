@@ -4,6 +4,7 @@ import "./globals.css";
 import siteData from "@/data/site.json"; 
 import AppShell from "@/components/layout/AppShell";
 import ReduxProvider from "@/redux/Providers";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -114,6 +115,7 @@ export default function RootLayout({ children }) {
         <ReduxProvider>
           <AppShell>{children}</AppShell>
         </ReduxProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
